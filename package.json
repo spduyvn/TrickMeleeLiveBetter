@@ -1,0 +1,13 @@
+{
+  "name": "song-tot-hon",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Website kiến thức thực tiễn, biên soạn và kiểm chứng cho độc giả Việt Nam.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "preview": "node scripts/preview.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
