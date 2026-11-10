@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://example.github.io/song-tot-hon/sitemap.xml
+Sitemap: https://spduyvn.github.io/TrickMeleeLiveBetter/sitemap.xml
