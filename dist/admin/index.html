@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0f6b58">
+  <title>Quản trị &amp; Xác minh bài viết — Sống Tốt Hơn</title>
+  <script>(function(){try{var s=localStorage.getItem('guide-theme');var d=s?s==='dark':matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/admin.css">
+</head>
+<body class="admin-page">
+  <header class="a-nav">
+    <div class="a-nav-l">
+      <button type="button" class="a-icon-btn a-menu-btn" id="a-menu" aria-label="Mở danh sách bài" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+      </button>
+      <a class="a-brand" href="/admin/">
+        <span class="a-logo" aria-hidden="true">✓</span>
+        <span>Sống Tốt Hơn · Quản trị</span>
+      </a>
+      <span class="a-mode-badge" id="a-mode-badge">Đang kiểm tra…</span>
+    </div>
+
+    <div class="a-progress-wrap" id="a-progress-wrap" title="Tỷ lệ bài đã xác minh">
+      <span id="a-progress-text">0 / 0 đã xác minh</span>
+      <div class="a-progress-bar"><i id="a-progress-fill"></i></div>
+    </div>
+
+    <div class="a-nav-r">
+      <span class="a-user-badge" id="a-user-badge" hidden></span>
+      <button type="button" class="a-btn a-btn-ghost" id="a-build-btn" hidden>Build &amp; Kiểm tra</button>
+      <a class="a-btn a-btn-ghost" href="/?view=library">Thư viện</a>
+      <a class="a-btn a-btn-ghost" href="/guide/">Tra cứu</a>
+      <button type="button" class="a-btn a-btn-ghost" id="a-logout-btn" hidden>Đăng xuất</button>
+      <button type="button" class="a-icon-btn" id="a-theme" aria-label="Chuyển sáng/tối" title="Chuyển sáng/tối">
+        <svg class="a-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1zm0 13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zm8-6a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2zM5 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm12.07-5.07a1 1 0 0 1 0 1.41l-.7.71a1 1 0 1 1-1.42-1.41l.71-.71a1 1 0 0 1 1.41 0zM8.05 16.95a1 1 0 0 1 0 1.41l-.7.71a1 1 0 1 1-1.42-1.41l.71-.71a1 1 0 0 1 1.41 0zm9.02 0 .7.71a1 1 0 1 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.42-1.42zM6.34 5.93l.71.71a1 1 0 0 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.41-1.42zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg>
+        <svg class="a-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.1 22c-5.5 0-10-4.5-10-10 0-4.8 3.4-8.9 8-9.8.5-.1.9.4.7.9A8 8 0 0 0 20.9 13c.5-.2 1 .2.9.7-.9 4.7-5 8.3-9.7 8.3z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="a-auth-gate" id="a-auth-gate" aria-label="Xác thực quản trị">
+    <div class="a-auth-card">
+      <div class="a-auth-head">
+        <span class="a-auth-shield" aria-hidden="true">🔒</span>
+        <div>
+          <h1 id="a-auth-title">Đăng nhập Quản trị</h1>
+          <p id="a-auth-subtitle">Đang kiểm tra môi trường kết nối…</p>
+        </div>
+      </div>
+
+      <div class="a-auth-alert" id="a-auth-error" role="alert" hidden></div>
+
+      <!-- Setup notice when local server has no account configured yet -->
+      <div id="a-auth-setup" hidden>
+        <p class="a-auth-desc">Máy chủ cục bộ chưa có tài khoản Admin. Hãy tạo tài khoản trong terminal rồi bấm kiểm tra lại:</p>
+        <pre class="a-auth-cmd">npm run admin:setup</pre>
+        <p class="a-muted">Hoặc đặt biến môi trường <code>ADMIN_USER</code> và <code>ADMIN_PASS</code> trước khi chạy <code>npm run admin</code>.</p>
+        <div class="a-auth-actions">
+          <button type="button" class="a-btn a-btn-primary" id="a-auth-recheck">Kiểm tra lại</button>
+        </div>
+      </div>
+
+      <!-- Local username + password login -->
+      <form id="a-login-local" hidden>
+        <label class="a-field">
+          <span>Tên đăng nhập</span>
+          <input type="text" name="username" autocomplete="username" required placeholder="admin">
+        </label>
+        <label class="a-field">
+          <span>Mật khẩu</span>
+          <input type="password" name="password" autocomplete="current-password" required placeholder="••••••••">
+        </label>
+        <div class="a-auth-actions">
+          <button type="submit" class="a-btn a-btn-primary" id="a-login-local-btn">Đăng nhập</button>
+        </div>
+      </form>
+
+      <!-- GitHub Pages PAT login -->
+      <form id="a-login-github" hidden>
+        <p class="a-auth-desc">Trang đang chạy dưới dạng tĩnh (GitHub Pages). Đăng nhập bằng <strong>GitHub Fine-grained PAT</strong> có quyền ghi vào kho mã nguồn để mở khóa và commit chỉnh sửa trực tiếp.</p>
+        <div class="a-grid-2">
+          <label class="a-field">
+            <span>Kho GitHub (owner/repo)</span>
+            <input type="text" name="repo" value="spduyvn/TrickMeleeLiveBetter" required autocomplete="off">
+          </label>
+          <label class="a-field">
+            <span>Nhánh (branch)</span>
+            <input type="text" name="branch" value="main" required autocomplete="off">
+          </label>
+        </div>
+        <label class="a-field">
+          <span>GitHub Personal Access Token (PAT)</span>
+          <input type="password" name="token" required autocomplete="off" placeholder="github_pat_...">
+        </label>
+        <details class="a-auth-help">
+          <summary>Cách tạo GitHub Token an toàn (chỉ cấp quyền cho repo này)</summary>
+          <ol>
+            <li>Vào GitHub → <strong>Settings → Developer settings → Personal access tokens → Fine-grained tokens</strong>.</li>
+            <li>Ở mục <strong>Repository access</strong>, chọn <em>Only select repositories</em> → chọn kho này.</li>
+            <li>Ở <strong>Repository permissions</strong>, đặt <strong>Contents: Read and write</strong>.</li>
+            <li>Token chỉ lưu trong <code>sessionStorage</code> của tab trình duyệt hiện tại và tự xóa khi đóng tab hoặc bấm Đăng xuất.</li>
+          </ol>
+        </details>
+        <div class="a-auth-actions">
+          <button type="submit" class="a-btn a-btn-primary" id="a-login-github-btn">Xác thực GitHub &amp; Mở khóa</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="a-backdrop" id="a-backdrop"></div>
+
+  <div class="a-layout" id="a-layout" hidden>
+    <aside class="a-queue" id="a-queue" aria-label="Danh sách bài viết cần rà soát">
+      <div class="a-queue-head">
+        <input id="a-q" type="search" placeholder="Tìm ID, tiêu đề, thẻ…" autocomplete="off" aria-label="Tìm bài viết">
+        <div class="a-status-pills" id="a-status-pills">
+          <button type="button" class="a-pill active" data-status="">Tất cả <i id="cnt-all">0</i></button>
+          <button type="button" class="a-pill" data-status="needs_review">Chờ rà soát <i id="cnt-needs_review">0</i></button>
+          <button type="button" class="a-pill" data-status="verified">Đã xác minh <i id="cnt-verified">0</i></button>
+          <button type="button" class="a-pill" data-status="outdated">Cần cập nhật <i id="cnt-outdated">0</i></button>
+          <button type="button" class="a-pill" data-status="disputed">Tranh luận <i id="cnt-disputed">0</i></button>
+          <button type="button" class="a-pill" data-status="draft">Nháp <i id="cnt-draft">0</i></button>
+        </div>
+        <div class="a-filters">
+          <select id="a-f-cat" aria-label="Lọc danh mục"><option value="">Tất cả danh mục</option></select>
+          <select id="a-f-ev" aria-label="Lọc mức bằng chứng">
+            <option value="">Mọi bằng chứng</option>
+            <option value="A">Mức A</option>
+            <option value="B">Mức B</option>
+            <option value="C">Mức C</option>
+            <option value="unnormalized">Chưa chuẩn hóa (high/med/low)</option>
+            <option value="none">Chưa đánh giá</option>
+          </select>
+          <select id="a-f-file" aria-label="Lọc theo file" hidden><option value="">Tất cả tệp JSON</option></select>
+        </div>
+        <div class="a-queue-meta">
+          <span id="a-queue-count">Đang tải…</span>
+          <button type="button" class="a-link-btn" id="a-reset-filters">Xóa lọc</button>
+        </div>
+      </div>
+      <div class="a-queue-list" id="a-queue-list" role="listbox" aria-label="Danh sách bài"></div>
+    </aside>
+
+    <main class="a-main" id="a-main">
+      <div class="a-empty-main" id="a-empty-main">
+        <p>Đang tải danh sách bài viết…</p>
+      </div>
+
+      <div class="a-editor-shell" id="a-editor-shell" hidden>
+        <div class="a-toolbar">
+          <div class="a-toolbar-l">
+            <button type="button" class="a-btn a-btn-ghost" id="a-prev" title="Bài trước">← Trước</button>
+            <button type="button" class="a-btn a-btn-ghost" id="a-next" title="Bài kế tiếp">Sau →</button>
+            <span class="a-pos" id="a-pos">0 / 0</span>
+            <code class="a-id-badge" id="a-id-badge"></code>
+            <span class="a-file-badge" id="a-file-badge" hidden></span>
+            <span class="a-dirty" id="a-dirty" hidden>● Chưa lưu</span>
+          </div>
+          <div class="a-toolbar-r">
+            <a class="a-btn a-btn-ghost" id="a-view-guide" href="#" target="_blank" rel="noopener">Xem trên Tra cứu ↗</a>
+            <button type="button" class="a-btn a-btn-ghost" id="a-normalize-btn" hidden>Chuẩn hóa A/B/C</button>
+            <button type="button" class="a-btn a-btn-secondary" id="a-save-btn">Lưu thay đổi</button>
+            <button type="button" class="a-btn a-btn-primary" id="a-verify-btn">✓ Xác minh (Verified)</button>
+          </div>
+        </div>
+
+        <div class="a-toast" id="a-toast" hidden role="status" aria-live="polite"></div>
+        <div class="a-warnings" id="a-warnings" hidden></div>
+
+        <div class="a-tabs" role="tablist">
+          <button type="button" class="a-tab active" role="tab" aria-selected="true" data-tab="edit">Chỉnh sửa &amp; Xác minh</button>
+          <button type="button" class="a-tab" role="tab" aria-selected="false" data-tab="preview">Xem trước</button>
+          <button type="button" class="a-tab" role="tab" aria-selected="false" data-tab="checklist">Checklist kiểm chứng <span class="a-tab-count" id="a-check-badge"></span></button>
+          <button type="button" class="a-tab" role="tab" aria-selected="false" data-tab="json">JSON</button>
+        </div>
+
+        <!-- TAB: EDIT -->
+        <section class="a-panel" id="tab-edit">
+          <form id="a-form" autocomplete="off">
+            <div class="a-card">
+              <h2>Thông tin cơ bản &amp; Trạng thái rà soát</h2>
+              <div class="a-grid-2">
+                <label class="a-field a-span-2">
+                  <span>Tiêu đề (title) *</span>
+                  <input type="text" name="title" required>
+                </label>
+                <label class="a-field">
+                  <span>Slug (URL) *</span>
+                  <input type="text" name="slug" required>
+                </label>
+                <label class="a-field">
+                  <span>Danh mục *</span>
+                  <select name="category" id="f-category" required></select>
+                </label>
+                <label class="a-field">
+                  <span>Trạng thái rà soát *</span>
+                  <select name="review_status" id="f-review-status">
+                    <option value="needs_review">needs_review — Chờ rà soát</option>
+                    <option value="verified">verified — Đã xác minh</option>
+                    <option value="outdated">outdated — Cần cập nhật</option>
+                    <option value="disputed">disputed — Có tranh luận</option>
+                    <option value="draft">draft — Bản nháp (ẩn)</option>
+                  </select>
+                </label>
+                <label class="a-field">
+                  <span>Nhãn hiển thị (status_label)</span>
+                  <input type="text" name="status_label" placeholder="Ví dụ: Đã xác minh">
+                </label>
+                <label class="a-field">
+                  <span>Ngày xác minh (verified_at)</span>
+                  <div class="a-inline-input">
+                    <input type="text" name="verified_at" placeholder="YYYY-MM-DD">
+                    <button type="button" class="a-mini-btn" data-today="verified_at">Hôm nay</button>
+                  </div>
+                </label>
+                <label class="a-field">
+                  <span>Cập nhật lần cuối (last_updated)</span>
+                  <div class="a-inline-input">
+                    <input type="text" name="last_updated" placeholder="YYYY-MM-DD">
+                    <button type="button" class="a-mini-btn" data-today="last_updated">Hôm nay</button>
+                  </div>
+                </label>
+                <label class="a-field a-span-2">
+                  <span>Thẻ (tags — cách nhau bởi dấu phẩy)</span>
+                  <input type="text" name="tags" placeholder="sức khỏe, phòng bệnh, vắc-xin">
+                </label>
+              </div>
+            </div>
+
+            <div class="a-card">
+              <h2>Tóm tắt &amp; Chỉ số áp dụng</h2>
+              <div class="a-grid-2">
+                <label class="a-field a-span-2">
+                  <span>Mô tả ngắn (description) *</span>
+                  <textarea name="description" rows="2" required></textarea>
+                </label>
+                <label class="a-field">
+                  <span>Mức độ bằng chứng (evidence_level)</span>
+                  <select name="evidence_level" id="f-evidence-level">
+                    <option value="">Chưa đánh giá</option>
+                    <option value="A">A — Tổng quan hệ thống / RCT mạnh</option>
+                    <option value="B">B — Nghiên cứu quan sát / bằng chứng vừa</option>
+                    <option value="C">C — Đồng thuận chuyên gia / hạn chế</option>
+                    <option value="high">high (cần chuẩn hóa → A)</option>
+                    <option value="medium">medium (cần chuẩn hóa → B)</option>
+                    <option value="low">low (cần chuẩn hóa → C)</option>
+                  </select>
+                </label>
+                <label class="a-field">
+                  <span>Mức độ giá trị (value_level)</span>
+                  <select name="value_level" id="f-value-level">
+                    <option value="">Chưa đánh giá</option>
+                    <option value="Rất cao">Rất cao</option>
+                    <option value="Cao">Cao</option>
+                    <option value="Trung bình">Trung bình</option>
+                    <option value="high">high (cần chuẩn hóa → Cao)</option>
+                    <option value="medium">medium (cần chuẩn hóa → Trung bình)</option>
+                  </select>
+                </label>
+                <label class="a-field">
+                  <span>Thời lượng đọc (reading_time)</span>
+                  <input type="text" name="reading_time" placeholder="5 phút">
+                </label>
+                <label class="a-field">
+                  <span>Chi phí (cost)</span>
+                  <input type="text" name="cost">
+                </label>
+                <label class="a-field">
+                  <span>Thời gian áp dụng (time)</span>
+                  <input type="text" name="time">
+                </label>
+                <label class="a-field">
+                  <span>Công sức (effort)</span>
+                  <input type="text" name="effort">
+                </label>
+              </div>
+            </div>
+
+            <div class="a-card">
+              <h2>Lợi ích, Rủi ro &amp; Đối tượng (mỗi dòng 1 mục)</h2>
+              <div class="a-grid-1">
+                <label class="a-field">
+                  <span>Lợi ích (benefits)</span>
+                  <textarea name="benefits" rows="4"></textarea>
+                </label>
+                <label class="a-field">
+                  <span>Rủi ro &amp; ngoại lệ (risks)</span>
+                  <textarea name="risks" rows="3"></textarea>
+                </label>
+                <label class="a-field">
+                  <span>Đối tượng phù hợp (target_groups)</span>
+                  <textarea name="target_groups" rows="3"></textarea>
+                </label>
+              </div>
+            </div>
+
+            <div class="a-card">
+              <h2>Nội dung bài viết &amp; Đánh giá bằng chứng</h2>
+              <div class="a-grid-1">
+                <label class="a-field">
+                  <span class="a-label-row">Nội dung chi tiết (body) <small id="a-body-stats"></small></span>
+                  <textarea name="body" rows="12" class="a-mono-prose"></textarea>
+                </label>
+                <label class="a-field">
+                  <span>Ghi chú bằng chứng &amp; bối cảnh Việt Nam (evidence_notes)</span>
+                  <textarea name="evidence_notes" rows="4"></textarea>
+                </label>
+              </div>
+            </div>
+
+            <div class="a-card">
+              <div class="a-card-head">
+                <h2>Nguồn tham khảo (sources)</h2>
+                <button type="button" class="a-btn a-btn-ghost" id="a-add-source">+ Thêm nguồn</button>
+              </div>
+              <div id="a-sources-list" class="a-sources-list"></div>
+            </div>
+          </form>
+        </section>
+
+        <!-- TAB: PREVIEW -->
+        <section class="a-panel" id="tab-preview" hidden>
+          <div class="a-preview-box" id="a-preview-box"></div>
+        </section>
+
+        <!-- TAB: CHECKLIST -->
+        <section class="a-panel" id="tab-checklist" hidden>
+          <div class="a-card">
+            <h2>Checklist kiểm chứng theo EDITORIAL_RULES.md</h2>
+            <p class="a-muted">Kiểm tra tự động trước khi chuyển trạng thái sang <code>verified</code>.</p>
+            <ul class="a-checklist" id="a-checklist"></ul>
+          </div>
+        </section>
+
+        <!-- TAB: JSON -->
+        <section class="a-panel" id="tab-json" hidden>
+          <div class="a-card">
+            <div class="a-card-head">
+              <h2>JSON bản ghi hiện tại</h2>
+              <div class="a-json-actions">
+                <button type="button" class="a-btn a-btn-ghost" id="a-copy-json">Copy JSON</button>
+                <button type="button" class="a-btn a-btn-ghost" id="a-download-json">Tải JSON bài này</button>
+                <button type="button" class="a-btn a-btn-secondary" id="a-download-file" hidden>Tải cả file đã sửa</button>
+              </div>
+            </div>
+            <pre class="a-json-pre" id="a-json-pre"></pre>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/assets/admin.js" defer></script>
+</body>
+</html>
+

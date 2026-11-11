@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f7f3">
+  <meta name="theme-color" content="#f8f7f2">
   <meta name="description" content="Sống Tốt Hơn — kiến thức thực tiễn được biên soạn có trách nhiệm, ưu tiên nguồn Việt Nam.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Sống Tốt Hơn — Kiến thức cho cuộc sống">
   <meta property="og:description" content="Tìm hiểu những lựa chọn thực tiễn cho sức khỏe, tài chính, thời gian và chất lượng sống.">
   <link rel="canonical" href="https://spduyvn.github.io/TrickMeleeLiveBetter/">
+  <script>(function(){try{var p=new URLSearchParams(location.search);if(p.get('view')==='library'||location.hash)return;if(localStorage.getItem('sth-ui-mode')==='guide')location.replace('<!-- BASE_PATH -->/guide/'+(location.search||''));}catch(e){}})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,6 +24,7 @@
     <nav id="primary-nav" class="primary-nav" aria-label="Điều hướng chính">
       <a href="<!-- BASE_PATH -->/#kham-pha">Khám phá</a><a href="<!-- BASE_PATH -->/#danh-muc">Danh mục</a>
       <a href="<!-- BASE_PATH -->/sources/">Nguồn tham khảo</a><a href="<!-- BASE_PATH -->/method/">Phương pháp</a><a href="<!-- BASE_PATH -->/#gioi-thieu">Giới thiệu</a>
+      <a class="nav-mode-pill" href="<!-- BASE_PATH -->/guide/">Tra cứu nhanh</a>
     </nav>
   </header>
   <main id="main">
@@ -30,6 +32,10 @@
       <p class="eyebrow">KIẾN THỨC THỰC TIỄN · BIÊN SOẠN CHO VIỆT NAM</p>
       <h1 id="hero-title">Sống tốt hơn,<br><em>từng lựa chọn một.</em></h1>
       <p class="hero-copy">Cẩm nang mở về những quyết định có thể cải thiện sức khỏe, tài chính, thời gian và chất lượng sống — trình bày rõ căn cứ, giới hạn và mức độ phù hợp với bối cảnh Việt Nam.</p>
+      <div class="view-switcher-bar" id="view-switcher-bar">
+        <a class="view-switcher-link" href="<!-- BASE_PATH -->/guide/">Mở giao diện Tra cứu nhanh (lọc đa chiều) →</a>
+        <label class="view-default-toggle"><input type="checkbox" id="library-default-ui"> <span>Đặt giao diện Thư viện làm mặc định</span></label>
+      </div>
       <form class="search-form" role="search"><label for="search">Tìm bài viết, chủ đề hoặc thẻ</label><div class="search-control"><input id="search" type="search" placeholder="Ví dụ: sức khỏe, chi phí…" autocomplete="off"><button type="submit">Tìm kiếm</button></div></form>
       <p class="search-status" id="search-status" aria-live="polite"></p>
     </section>

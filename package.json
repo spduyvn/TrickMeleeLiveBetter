@@ -5,7 +5,9 @@
   "description": "Website kiến thức thực tiễn, biên soạn và kiểm chứng cho độc giả Việt Nam.",
   "scripts": {
     "build": "node scripts/build.js",
-    "preview": "node scripts/preview.js"
+    "preview": "node scripts/preview.js",
+    "admin": "node scripts/admin.js",
+    "admin:setup": "node scripts/admin.js --init-auth"
   },
   "engines": {
     "node": ">=20"

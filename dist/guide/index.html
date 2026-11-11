@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f6b58" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#171b19" media="(prefers-color-scheme: dark)">
+  <title>Sống Tốt Hơn — Giao diện tra cứu nhanh</title>
+  <meta name="description" content="Tra cứu nhanh 769 hướng dẫn thực tiễn cho người Việt: lọc theo chi phí, thời gian, công sức, đối tượng và mức độ bằng chứng.">
+  <link rel="canonical" href="https://spduyvn.github.io/TrickMeleeLiveBetter/guide/">
+  <script>(function(){try{var s=localStorage.getItem('guide-theme');var d=s?s==='dark':matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/guide.css">
+</head>
+<body class="guide-page">
+  <a class="g-skip" href="#guide-main">Bỏ qua điều hướng</a>
+
+  <header class="g-nav" id="guide-nav">
+    <div class="g-nav-in">
+      <button class="g-icon-btn g-menu-btn" id="g-menu" type="button" aria-label="Mở bộ lọc" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+      </button>
+      <a class="g-title" href="/?view=library" title="Về giao diện thư viện">
+        <span class="g-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span>Sống Tốt Hơn</span>
+      </a>
+      <label class="g-search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5" stroke-linecap="round"/></svg>
+        <input id="g-q" type="search" placeholder="Tìm mục, thẻ, nguồn…" autocomplete="off" aria-label="Tìm kiếm hướng dẫn">
+        <kbd>/</kbd>
+      </label>
+      <div class="g-nav-r">
+        <a class="g-mode-link" href="/?view=library" title="Chuyển sang giao diện thư viện hiện tại">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h7v6H4zm9 0h7v6h-7zM4 13h7v6H4zm9 0h7v6h-7z"/></svg>
+          <span>Giao diện thư viện</span>
+        </a>
+        <button class="g-icon-btn" id="g-method-btn" type="button" title="Phương pháp biên tập &amp; bằng chứng" aria-label="Phương pháp biên tập">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6zm8 1.5V8h4.5zM8 12h8v1.5H8zm0 3.5h8V17H8z"/></svg>
+        </button>
+        <button class="g-switch" id="g-theme" type="button" aria-label="Chuyển chế độ sáng/tối" title="Chuyển chế độ sáng/tối">
+          <span class="g-knob">
+            <svg class="g-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1zm0 13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zm8-6a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2zM5 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm12.07-5.07a1 1 0 0 1 0 1.41l-.7.71a1 1 0 1 1-1.42-1.41l.71-.71a1 1 0 0 1 1.41 0zM8.05 16.95a1 1 0 0 1 0 1.41l-.7.71a1 1 0 1 1-1.42-1.41l.71-.71a1 1 0 0 1 1.41 0zm9.02 0 .7.71a1 1 0 1 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.42-1.42zM6.34 5.93l.71.71a1 1 0 0 1-1.41 1.41l-.71-.7a1 1 0 0 1 1.41-1.42zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg>
+            <svg class="g-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.1 22c-5.5 0-10-4.5-10-10 0-4.8 3.4-8.9 8-9.8.5-.1.9.4.7.9A8 8 0 0 0 20.9 13c.5-.2 1 .2.9.7-.9 4.7-5 8.3-9.7 8.3z"/></svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="g-backdrop" id="g-backdrop"></div>
+
+  <aside class="g-sidebar" id="g-sidebar" aria-label="Bộ lọc và mục lục">
+    <div class="g-group g-default-box">
+      <label class="g-toggle">
+        <input type="checkbox" id="g-default-ui">
+        <span>Đặt làm giao diện mặc định</span>
+      </label>
+      <p class="g-default-hint" id="g-default-hint">Khi bật, lần sau mở trang chủ sẽ vào thẳng giao diện này.</p>
+    </div>
+
+    <div class="g-group">
+      <div class="g-gt">Tình huống của bạn <small>Lọc theo nhóm phù hợp</small></div>
+      <div class="g-chips" data-dim="audience">
+        <button class="g-chip" type="button" data-v="family" aria-pressed="false">Gia đình &amp; trẻ nhỏ</button>
+        <button class="g-chip" type="button" data-v="elderly" aria-pressed="false">Người cao tuổi</button>
+        <button class="g-chip" type="button" data-v="women" aria-pressed="false">Phụ nữ &amp; thai kỳ</button>
+        <button class="g-chip" type="button" data-v="worker" aria-pressed="false">Người đi làm</button>
+        <button class="g-chip" type="button" data-v="youth" aria-pressed="false">Giới trẻ &amp; học tập</button>
+        <button class="g-chip" type="button" data-v="chronic" aria-pressed="false">Bệnh mạn tính</button>
+        <button class="g-chip" type="button" data-v="general" aria-pressed="false">Chung cho mọi người</button>
+      </div>
+    </div>
+
+    <div class="g-group">
+      <div class="g-gt">Danh mục <small id="g-sec-count"></small></div>
+      <div class="g-sec-links" id="g-f-sec" data-dim="sec"></div>
+    </div>
+
+    <div class="g-group">
+      <div class="g-gt">Giá trị thực tiễn</div>
+      <div class="g-chips" data-dim="value">
+        <button class="g-chip" type="button" data-v="very_high" aria-pressed="false">Rất cao</button>
+        <button class="g-chip" type="button" data-v="high" aria-pressed="false">Cao</button>
+        <button class="g-chip" type="button" data-v="medium" aria-pressed="false">Trung bình</button>
+      </div>
+    </div>
+
+    <div class="g-group">
+      <div class="g-gt">Bằng chứng <small>Tổng quan · Nghiên cứu · Đồng thuận</small></div>
+      <div class="g-chips" data-dim="grade">
+        <button class="g-chip" type="button" data-v="A" aria-pressed="false">Mức A</button>
+        <button class="g-chip" type="button" data-v="B" aria-pressed="false">Mức B</button>
+        <button class="g-chip" type="button" data-v="C" aria-pressed="false">Mức C</button>
+      </div>
+    </div>
+
+    <div class="g-group">
+      <div class="g-gt">Chi phí</div>
+      <div class="g-chips" data-dim="cost">
+        <button class="g-chip" type="button" data-v="free" aria-pressed="false">Miễn phí / tiết kiệm</button>
+        <button class="g-chip" type="button" data-v="low" aria-pressed="false">Ít tốn</button>
+        <button class="g-chip" type="button" data-v="high" aria-pressed="false">Đáng kể</button>
+      </div>
+    </div>
+
+    <div class="g-group">
+      <div class="g-gt">Thời gian</div>
+      <div class="g-chips" data-dim="time">
+        <button class="g-chip" type="button" data-v="quick" aria-pressed="false">Nhanh / 1 lần</button>
+        <button class="g-chip" type="button" data-v="medium" aria-pressed="false">Vài giờ – tuần</button>
+        <button class="g-chip" type="button" data-v="habit" aria-pressed="false">Duy trì dài hạn</button>
+      </div>
+    </div>
+
+    <div class="g-group">
+      <div class="g-gt">Công sức</div>
+      <div class="g-chips" data-dim="effort">
+        <button class="g-chip" type="button" data-v="low" aria-pressed="false">Thấp / dễ</button>
+        <button class="g-chip" type="button" data-v="medium" aria-pressed="false">Trung bình</button>
+        <button class="g-chip" type="button" data-v="high" aria-pressed="false">Cao</button>
+      </div>
+    </div>
+
+    <div class="g-group">
+      <div class="g-gt">Trạng thái rà soát</div>
+      <div class="g-chips" data-dim="status">
+        <button class="g-chip" type="button" data-v="verified" aria-pressed="false">Đã xác minh</button>
+        <button class="g-chip" type="button" data-v="needs_review" aria-pressed="false">Chờ rà soát</button>
+        <button class="g-chip" type="button" data-v="outdated" aria-pressed="false">Cần cập nhật</button>
+        <button class="g-chip" type="button" data-v="disputed" aria-pressed="false">Có tranh luận</button>
+      </div>
+      <button class="g-reset" id="g-reset" type="button">Xóa bộ lọc</button>
+    </div>
+
+    <div class="g-hint">
+      <p>Danh mục: chọn 1 hoặc tất cả. Các nhóm chip: chọn nhiều (HOẶC trong cùng nhóm, VÀ giữa các nhóm).</p>
+      <p>Đang giữ song song với <a href="/?view=library">giao diện thư viện</a>; dữ liệu đồng bộ từ cùng một thư viện bài viết.</p>
+    </div>
+  </aside>
+
+  <main class="g-content" id="guide-main">
+    <div class="g-doc" id="g-doc">
+      <div class="g-doc-head">
+        <h1>Sống Tốt Hơn — Tra cứu nhanh</h1>
+        <p class="g-doc-desc">Cẩm nang thực tiễn đã Việt hóa theo bối cảnh Việt Nam: mỗi mục trình bày rõ tóm tắt, chi phí, lợi ích, rủi ro, mức độ bằng chứng và nguồn tham khảo.</p>
+        <p class="g-doc-stat" id="g-stat">Đang tải dữ liệu…</p>
+        <div class="g-doc-links">
+          <button class="g-link-btn" type="button" data-doc="editorial">Quy tắc biên tập</button>
+          <span aria-hidden="true">·</span>
+          <button class="g-link-btn" type="button" data-doc="grading">Tiêu chí bằng chứng (A/B/C)</button>
+          <span aria-hidden="true">·</span>
+          <button class="g-link-btn" type="button" data-doc="sources">Chính sách nguồn</button>
+        </div>
+      </div>
+
+      <div id="g-sections">
+        <div class="g-status" id="g-loading">
+          <span id="g-status-t">Đang tải thư viện kiến thức…</span>
+          <div class="g-bar"><i id="g-status-b"></i></div>
+        </div>
+      </div>
+
+      <div class="g-empty" id="g-empty" hidden>
+        <p>Không có mục nào khớp với bộ lọc hiện tại.</p>
+        <button type="button" id="g-reset2">Xóa toàn bộ bộ lọc</button>
+      </div>
+
+      <footer class="g-foot">
+        <p>Kiến thức chỉ mang tính tham khảo, không thay thế tư vấn y khoa, pháp lý hoặc tài chính cá nhân hóa. Dữ liệu dùng chung với <a href="/?view=library">Giao diện thư viện</a>.</p>
+      </footer>
+    </div>
+  </main>
+
+  <div id="doc-mask" hidden role="dialog" aria-modal="true" aria-labelledby="dm-t">
+    <div id="doc-modal">
+      <div class="dm-h">
+        <b id="dm-t">Chi tiết bài viết</b>
+        <a id="dm-ext" href="/" target="_blank" rel="noopener">Mở trang riêng ↗</a>
+        <button type="button" id="dm-x" aria-label="Đóng cửa sổ">Đóng (Esc)</button>
+      </div>
+      <div class="dm-b">
+        <nav class="dm-toc" id="dm-toc" aria-label="Mục lục bài đọc"></nav>
+        <div class="dm-doc" id="dm-doc"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/guide.js" defer></script>
+</body>
+</html>

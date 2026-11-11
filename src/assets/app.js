@@ -53,5 +53,12 @@ async function init() {
   document.querySelector('#sort-order').addEventListener('change', (event) => { state.sort = event.target.value; renderArticles(); });
   const toggle = document.querySelector('.menu-toggle');
   toggle.addEventListener('click', () => { const expanded = toggle.getAttribute('aria-expanded') === 'true'; toggle.setAttribute('aria-expanded', String(!expanded)); document.querySelector('#primary-nav').classList.toggle('is-open', !expanded); });
+  const defaultCheck = document.querySelector('#library-default-ui');
+  if (defaultCheck) {
+    try { defaultCheck.checked = localStorage.getItem('sth-ui-mode') !== 'guide'; } catch (e) {}
+    defaultCheck.addEventListener('change', () => {
+      try { localStorage.setItem('sth-ui-mode', defaultCheck.checked ? 'library' : 'guide'); } catch (e) {}
+    });
+  }
 }
 init();
