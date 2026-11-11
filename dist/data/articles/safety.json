@@ -4380,5 +4380,1058 @@
     "review_status": "needs_review",
     "status_label": "Chờ rà soát",
     "last_updated": "2026-11-10"
+  },
+  {
+    "id": "safety-heatstroke-first-aid-cold-ice-bath-081",
+    "slug": "safety-heatstroke-first-aid-cold-ice-bath-081",
+    "title": "Sơ cứu Sốc nhiệt (Say nắng nặng): Hạ thân nhiệt khẩn cấp trước khi chuyển viện để cứu não bộ",
+    "description": "Phân biệt Kiệt sức do nóng với Sốc nhiệt đe dọa tính mạng (thân nhiệt >40°C, rối loạn tri giác), nguyên tắc 'Làm mát trước - Vận chuyển sau' cứu sống tế bào não.",
+    "category": "safety",
+    "tags": [
+      "sốc nhiệt",
+      "say nắng",
+      "hạ thân nhiệt",
+      "cấp cứu mùa hè",
+      "chạy bộ"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Làm mát tích cực trong 30 phút vàng đầu tiên",
+    "effort": "medium",
+    "benefits": [
+      "Hạ nhanh nhiệt độ lõi cơ thể từ >40°C xuống dưới 38.5°C, ngăn ngừa chết tế bào não và suy đa tạng",
+      "Tránh sai lầm chết người khi để bệnh nhân nằm nguyên trên xe cấp cứu nóng bức đi suốt 30 phút tới viện mà không làm mát",
+      "Biết cách cứu sống đồng đội trong các giải chạy bộ, công trường xây dựng hoặc hành quân nắng gắt"
+    ],
+    "risks": [
+      "Cho bệnh nhân đang lơ mơ, co giật uống nước lọc gây sặc phổi ngạt thở",
+      "Uống thuốc hạ sốt Paracetamol trong khi sốc nhiệt (hoàn toàn vô tác dụng và gây thêm độc cho gan đang tổn thương)"
+    ],
+    "target_groups": [
+      "Công nhân làm việc ngoài trời nắng nóng, nông dân, vận động viên chạy bộ đường dài",
+      "Người cao tuổi, trẻ nhỏ bị bỏ quên trong ô tô đóng kín cửa hoặc phòng kín không quạt"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Hướng dẫn Cấp cứu Y khoa Chấn thương Nhiệt của Viện Korey Stringer (Đại học Connecticut) và Trung tâm Kiểm soát Bệnh tật Hoa Kỳ (CDC).",
+    "body": "## Sốc nhiệt (Heatstroke) khác hoàn toàn Say nắng thông thường!\n\nKhi hoạt động dưới nắng gắt, cơ thể có thể gặp hai mức độ tổn thương nhiệt:\n1. **Kiệt sức do nóng (Heat Exhaustion):** Đổ mồ hôi đầm đìa, mặt tái nhợt, khát nước, chóng mặt, buồn nôn nhưng **VẪN TỈNH TÁO** nói chuyện bình thường. Chỉ cần vào chỗ râm, quạt mát và uống nước điện giải Oresol.\n2. **SỐC NHIỆT (Heatstroke - CẤP CỨU TỐI KHẨN):** Thân nhiệt lõi vượt quá **$40^\\circ C$**, kết hợp với **RỐI LOẠN HỆ THẦN KINH TRUNG ƯƠNG** (lú lẫn, nói sảng, đi loạng choạng, co giật, hoặc hôn mê bất tỉnh). Lúc này, protein trong não và nội tạng đang bị \"nấu chín\" và phá hủy từng giây!\n\n## Nguyên tắc Vàng Y khoa: \"LÀM MÁT TRƯỚC - VẬN CHUYỂN SAU\" (Cool First, Transport Second)\n\nTrong cấp cứu sốc nhiệt, tiên lượng sống còn phụ thuộc hoàn toàn vào **thời gian thân nhiệt bị duy trì ở mức trên $40^\\circ C$**. Nếu bạn chỉ vội vã bế nạn nhân lên taxi hoặc xe cấp cứu chạy thẳng đến bệnh viện mất 30 phút mà không làm mát ngay tại hiện trường, não và thận của bệnh nhân có thể bị tổn thương vĩnh viễn trước khi tới được phòng cấp cứu!\n\n## 4 Bước hạ thân nhiệt khẩn cấp tại chỗ\n\n1. **Gọi 115 ngay lập tức**, nhưng đồng thời tiến hành làm mát ngay tại chỗ trong lúc chờ xe:\n2. **Di chuyển vào bóng râm / phòng điều hòa mát và cởi bỏ quần áo ngoài dày, mũ nón, tất giày.**\n3. **Ngâm nước đá hoặc Dội nước mát liên tục (Biện pháp mạnh nhất):**\n   * *Lý tưởng nhất:* Ngâm toàn bộ thân mình nạn nhân (chừa phần đầu và cổ ở trên) vào bồn nước đá, phao bơi hoặc xối vòi nước lạnh liên tục lên toàn bộ cơ thể.\n   * *Nếu không có bồn ngâm:* Liên tục dội nước mát xối xả lên người nạn nhân kết hợp bật quạt thổi mạnh để tăng tốc độ bay hơi; đồng thời **chườm túi đá lạnh hoặc khăn ướt lạnh vào 3 vùng tập trung mạch máu lớn**: **Hai bên cổ, Hai bên hố nách và Hai bên bẹn**.\n4. **Dừng làm mát khi nạn nhân tỉnh táo lại / thân nhiệt hạ xuống dưới $38.5^\\circ C$** (hoặc khi người bắt đầu run nhẹ) để tránh hạ thân nhiệt quá mức.\n* *(Cảnh báo: TUYỆT ĐỐI KHÔNG cho người đang lơ mơ bất tỉnh uống nước, và KHÔNG cho uống thuốc hạ sốt Paracetamol vì sốc nhiệt là do lỗi tản nhiệt vật lý, không phải do chất gây sốt tác động lên vùng dưới đồi).*",
+    "sources": [
+      {
+        "name": "Centers for Disease Control and Prevention (CDC) - Extreme Heat: Heat-Related Illnesses & First Aid",
+        "url": "https://www.cdc.gov/extreme-heat/signs-symptoms/index.html",
+        "note": "Khuyến cáo nhận diện và cấp cứu sốc nhiệt khẩn cấp của CDC Hoa Kỳ"
+      },
+      {
+        "name": "Korey Stringer Institute (University of Connecticut) - Exertional Heat Stroke: Cool First, Transport Second",
+        "url": "https://ksi.uconn.edu/emergency-conditions/heat-illnesses/exertional-heat-stroke/",
+        "note": "Nghiên cứu y học thể thao chứng minh quy tắc hạ nhiệt tại hiện trường đạt tỷ lệ sống sót gần 100%"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-chemical-eye-splash-immediate-irrigation-082",
+    "slug": "safety-chemical-eye-splash-immediate-irrigation-082",
+    "title": "Sơ cứu hóa chất bắn vào mắt (Axit, Kiềm, Nước thông cống): Rửa mắt liên tục 15-30 phút cứu thị lực",
+    "description": "Nguyên tắc 'Rửa mắt ngay tại vòi nước trong 10 giây đầu tiên', kỹ thuật banh mí mắt rửa sạch góc mắt và không tìm kiếm hóa chất trung hòa.",
+    "category": "safety",
+    "tags": [
+      "hóa chất bắn vào mắt",
+      "bỏng mắt",
+      "nước thông cống",
+      "sơ cứu mắt",
+      "nhãn khoa"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Rửa liên tục 15-30 phút ngay tại hiện trường",
+    "effort": "low",
+    "benefits": [
+      "Bảo toàn giác mạc và giữ lại ánh sáng thị lực trước khi hóa chất thấm sâu vào tiền phòng mắt",
+      "Giảm mức độ bỏng mắt từ độ nặng (mù lòa) xuống độ nhẹ hồi phục hoàn toàn",
+      "Tránh thảm họa phản ứng tỏa nhiệt gây bỏng kép khi dùng hóa chất khác để trung hòa"
+    ],
+    "risks": [
+      "Mất 30 phút chạy xe đi bệnh viện mà không rửa mắt ngay lập tức tại chỗ (khi tới nơi thì giác mạc đã bị nấu trắng đục hoàn toàn)",
+      "Bịt chặt mắt hoặc nhắm nghiền mắt lại giữ hóa chất bị kẹt bên trong túi kết mạc"
+    ],
+    "target_groups": [
+      "Mọi người sử dụng hóa chất gia dụng (nước thông cống kiềm mạnh, nước tẩy Javel, nước rửa bồn cầu axit, vôi tôi)",
+      "Kỹ thuật viên phòng thí nghiệm, công nhân cơ khí, xây dựng, nông dân pha thuốc trừ sâu"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Hướng dẫn Cấp cứu Bỏng mắt Hóa chất của Viện Hàn lâm Nhãn khoa Hoa Kỳ (AAO) và Bệnh viện Mắt Trung ương.",
+    "body": "## Mỗi giây chậm trễ là một phần giác mạc bị phá hủy!\n\nTrong tất cả các cấp cứu nhãn khoa, **Bỏng mắt do hóa chất** là trường hợp duy nhất bạn **PHẢI HÀNH ĐỘNG NGAY TẠI CHỖ TRƯỚC KHI GỌI BÁC SĨ HAY LÊN XE ĐI VIỆN**.\n\nĐặc biệt nguy hiểm là nhóm hóa chất **Kiềm mạnh** (như nước thông cống Natri Hydroxit NaOH, vôi tôi xây dựng, xi măng, amoniac): Không giống như axit tạo thành lớp protein đông tụ tự chặn lại ở bề mặt, chất kiềm gây ra hiện tượng **hoại tử hóa lỏng**, xuyên thủng màng tế bào và ăn sâu vào bên trong nhãn cầu liên tục suốt nhiều giờ nếu không được rửa trôi sạch hoàn toàn!\n\n## Quy trình Sơ cứu Bỏng mắt trong 10 giây đầu tiên\n\n1. **RỬA MẮT NGAY LẬP TỨC bằng nước sạch có sẵn gần nhất:**\n   * Dùng ngay nước máy sinh hoạt từ vòi rửa mặt, vòi hoa sen, chai nước suối đóng chai hoặc nước muối sinh lý $0.9\\%$ (nếu có sẵn ngay tầm tay). Tuyệt đối không mất thời gian đi tìm dung dịch chuyên dụng nếu vòi nước sạch đang ở ngay trước mặt!\n2. **Kỹ thuật rửa đúng cách (Cực kỳ quan trọng):**\n   * Dùng hai ngón tay **banh rộng hai mí mắt trên và dưới ra tối đa** (phản xạ đau đớn khiến nạn nhân nhắm tịt mắt lại, phải dùng tay giữ mở mí mắt mới rửa trôi được hóa chất kẹt dưới mí mắt).\n   * Đặt dòng nước chảy nhẹ từ phía **góc mắt trong (cạnh sống mũi) chảy trôi ra phía thái dương** (để hóa chất không chảy sang làm hỏng con mắt lành bên kia!).\n   * Trong lúc rửa, hướng dẫn nạn nhân đảo tròn nhãn cầu nhìn lên, xuống, trái, phải liên tục.\n3. **Thời gian rửa BẮT BUỘC: TỐI THIỂU 15 ĐẾN 30 PHÚT LIÊN TỤC:**\n   * Đừng chỉ tạt nước 30 giây rồi đi viện! Hãy nhìn đồng hồ và xả nước rửa liên tục ít nhất 15-20 phút (hoặc tới 30 phút nếu dính vôi/kiềm thông cống). Nếu là bột vôi khô rơi vào mắt, dùng tăm bông ẩm gạt sạch mảnh vôi to trước khi xối nước để tránh vôi gặp nước tỏa nhiệt nóng rát.\n4. **TUYỆT ĐỐI KHÔNG TỰ TRUNG HÒA HÓA CHẤT:**\n   * Nếu bị axit bắn vào mắt, **NGHIÊM CẤM** nhỏ nước kiềm/nước xà phòng vào để trung hòa (và ngược lại). Phản ứng hóa học giữa axit và bazơ ngay trên bề mặt mắt sẽ sinh ra nhiệt lượng rất cao, gây bỏng nhiệt cộng hưởng hủy hoại mắt nhanh hơn!\n5. Sau khi rửa đủ 20-30 phút, đắp nhẹ miếng gạc vô trùng lên mắt (không ấn đè) và đến ngay khoa Cấp cứu Bệnh viện Mắt (cầm theo vỏ chai hóa chất để bác sĩ biết chính xác tên chất gây bỏng).",
+    "sources": [
+      {
+        "name": "American Academy of Ophthalmology (AAO) - Chemical (Alkali and Acid) Injury of the Conjunctiva and Cornea",
+        "url": "https://eyewiki.org/Chemical_(Alkali_and_Acid)_Injury_of_the_Conjunctiva_and_Cornea",
+        "note": "Phác đồ nhãn khoa quốc tế về rửa mắt liên tục cấp cứu bỏng kiềm và axit"
+      },
+      {
+        "name": "Bệnh viện Mắt Trung ương - Hướng dẫn xử trí cấp cứu ban đầu bỏng mắt do hóa chất tại cộng đồng",
+        "url": "http://vnio.vn",
+        "note": "Khuyến cáo chuyên môn của bệnh viện đầu ngành nhãn khoa Việt Nam"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-elevator-malfunction-survival-myths-083",
+    "slug": "safety-elevator-malfunction-survival-myths-083",
+    "title": "Bị kẹt hoặc sự cố thang máy: Phá bỏ lầm tưởng nhảy lên trước khi rơi và tư thế bảo vệ chuẩn vật lý",
+    "description": "Cơ chế phanh hãm an toàn nhiều lớp của thang máy hiện đại, lý do tuyệt đối không được cạy cửa chui ra ngoài và tư thế nằm sấp/tựa lưng bảo vệ cột sống.",
+    "category": "safety",
+    "tags": [
+      "thang máy",
+      "kẹt thang máy",
+      "thoát hiểm",
+      "tai nạn thang máy",
+      "an toàn tòa nhà"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Áp dụng ngay khi thang máy đột ngột dừng hoặc mất điện",
+    "effort": "low",
+    "benefits": [
+      "Giữ bình tĩnh tuyệt đối khi thang máy bị mất điện đột ngột (thang máy hiện đại luôn có khe thông gió, không thể ngạt thở)",
+      "Tránh cái chết thương tâm do tự cạy cửa chui ra ngoài khi cabin kẹt lơ lửng giữa 2 tầng",
+      "Biết chính xác tư thế nằm ngửa bảo vệ não và cột sống nếu xảy ra trường hợp hy hữu thang trôi tốc độ cao"
+    ],
+    "risks": [
+      "Cố gắng cạy hé cửa thang máy rồi trèo ra ngoài – nguyên nhân gây tử vong số 1 trong mọi tai nạn thang máy",
+      "Nhảy bật lên trên không trung vào khoảnh khắc thang chạm đáy (hoàn toàn phản khoa học)"
+    ],
+    "target_groups": [
+      "Cư dân sống trong các tòa nhà chung cư cao tầng, nhân viên văn phòng đi thang máy hàng ngày",
+      "Trẻ em cần được dạy kỹ năng ứng xử an toàn khi bị kẹt thang máy một mình"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Nghiên cứu vật lý an toàn thang máy của Viện Công nghệ Massachusetts (MIT) và Tiêu chuẩn An toàn Thang máy Châu Âu EN 81 / TCVN 6396.",
+    "body": "## Thang máy không hề dễ \"đứt cáp rơi tự do\" như trong phim ảnh\n\nHầu hết nỗi sợ thang máy đến từ phim ảnh Hollywood. Thực tế, thang máy chở người hiện đại được thiết kế với **hệ thống bảo vệ 3 lớp**:\n1. Cabin được treo bởi từ **4 đến 8 sợi cáp thép chịu lực độc lập**; chỉ cần 1 sợi cáp duy nhất cũng đủ sức gánh toàn bộ trọng lượng tối đa của cả cabin đầy người.\n2. Hệ thống **Phanh cơ khí khẩn cấp (Safety Gear)** gắn trực tiếp với bộ khống chế vượt tốc (Governor): Ngay khi cabin chạy nhanh hơn tốc độ định mức khoảng 15%, các kẹp phanh thép sẽ tự động đóng chặt vào ray dẫn hướng, ghìm chặt cabin đứng yên tại chỗ ngay cả khi toàn bộ dây cáp bị cắt đứt cùng lúc!\n3. Nếu mất điện tòa nhà: Thang máy chỉ đơn giản là **phanh kẹp dừng lại êm ái tại vị trí đó**. Không gian cabin luôn có các khe thông gió cơ khí thông thẳng ra giếng thang nên **bạn không bao giờ bị hết oxy ngạt thở**, ngay cả khi bị kẹt trong nhiều giờ.\n\n## Sai lầm gây chết người số 1: TỰ Ý CẠY CỬA CHUI RA NGOÀI\n\n$90\\%$ các ca tử vong liên quan đến thang máy xảy ra khi hành khách hoảng loạn cạy cửa cabin hé mở (khi thang đang kẹt lơ lửng giữa hai tầng) và cố chui ra ngoài: Đúng lúc nửa người vừa thò ra, thang máy bất ngờ được khôi phục nguồn điện hoặc phanh nhả ra chạy tiếp $\\rightarrow$ Gây tai nạn kẹp cắt cực kỳ thảm khốc, hoặc nạn nhân trượt chân rơi thẳng xuống hố giếng thang sâu hàng chục mét!\n\n## Làm gì khi bị kẹt trong thang máy?\n\n1. **Bấm nút Chuông báo động (hình chiếc chuông) và nút Gọi liên lạc nội bộ (Intercom - hình ống nghe điện thoại)** trên bảng điều khiển (không bấm liên tục nút mở cửa làm hỏng mạch). Dùng điện thoại gọi bảo vệ tòa nhà hoặc số hotline cứu hộ dán trong thang máy (nếu mất sóng di động, hãy gọi 114 hoặc nhắn tin vì sóng 114 được ưu tiên).\n2. **Ngồi bệt xuống sàn tựa lưng vào vách cabin** để giữ sức và giữ bình tĩnh chờ đội kỹ thuật chuyên nghiệp đến mở cửa đưa thang về bằng tầng an toàn.\n\n## Phá bỏ lầm tưởng \"Nhảy lên trước khi thang chạm đất\"\n\nNhiều người tin rằng nếu thang máy rơi tự do, chỉ cần canh đúng giây cuối cùng nhảy bật lên khỏi sàn là sẽ sống sót. **Đây là sai lầm vật lý chết người!**\n* Thứ nhất: Trong hộp kín không có cửa sổ, bạn hoàn toàn không biết khi nào thang chạm đáy.\n* Thứ hai: Nếu thang đang rơi với vận tốc 60 km/h, cú nhảy của bạn chỉ làm giảm tốc độ tương đối đi khoảng 3 km/h $\\rightarrow$ Cơ thể bạn vẫn lao xuống sàn với vận tốc 57 km/h, trong khi đầu của bạn lại đập thẳng vào trần thang máy trước rồi mới rơi gãy cổ xuống sàn!\n* **Tư thế đúng duy nhất theo tính toán của các nhà vật lý (MIT):** Nằm ngửa duỗi thẳng toàn bộ cơ thể phẳng trên sàn thang máy (trọng lực va đập sẽ được phân tán đều lên toàn bộ diện tích lưng thay vì dồn vào xương chân và cột sống đứng), một tay kê bảo vệ sau gáy đầu, một tay che mặt để tránh mảnh vỡ rơi xuống.",
+    "sources": [
+      {
+        "name": "MIT Physics / Center for Injury Research - Elevator Free-Fall Survival Physics",
+        "url": "https://web.mit.edu/",
+        "note": "Phân tích động lực học va chạm chứng minh tư thế nằm ngửa phân tán lực là phương án an toàn nhất"
+      },
+      {
+        "name": "Bộ Xây dựng / Bộ Lao động TBXH - Quy chuẩn Kỹ thuật Quốc gia về An toàn lao động đối với thang máy (QCVN 02:2019/BLĐTBXH)",
+        "url": "https://www.molisa.gov.vn",
+        "note": "Quy chuẩn an toàn kỹ thuật bắt buộc về phanh cơ khí vượt tốc và thông gió cabin thang máy"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-carbon-monoxide-generator-indoor-danger-084",
+    "slug": "safety-carbon-monoxide-generator-indoor-danger-084",
+    "title": "Ngộ độc khí CO từ máy phát điện và bếp than trong phòng kín: Kẻ giết người thầm lặng không mùi không màu",
+    "description": "Cơ chế khí Carbon Monoxide (CO) tranh giành gắn kết Hemoglobin gấp 200 lần oxy gây chết não trong giấc ngủ, quy tắc đặt máy phát điện cách nhà tối thiểu 6 mét.",
+    "category": "safety",
+    "tags": [
+      "khí CO",
+      "ngộ độc khí",
+      "máy phát điện",
+      "bếp than tổ ong",
+      "sưởi ấm mùa đông"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Áp dụng tuyệt đối mỗi khi mất điện hoặc sưởi ấm mùa đông",
+    "effort": "low",
+    "benefits": [
+      "Ngăn ngừa thảm họa ngộ độc khí CO gây tử vong cả gia đình trong giấc ngủ mùa hè mất điện hoặc mùa đông giá rét",
+      "Nhận diện sớm triệu chứng giả cúm của ngộ độc CO nhẹ (đau đầu âm ỉ, chóng mặt, buồn nôn đồng loạt nhiều người)",
+      "Biết khoảng cách an toàn đặt máy phát điện và xử trí cấp cứu đưa nạn nhân ra nơi thoáng khí"
+    ],
+    "risks": [
+      "Đặt máy phát điện chạy xăng trong gara tầng trệt, hành lang kín hoặc ngay sát cửa sổ phòng ngủ",
+      "Đốt than củi, than tổ ong để sưởi ấm cho sản phụ sau sinh và trẻ sơ sinh trong phòng đóng kín cửa"
+    ],
+    "target_groups": [
+      "Gia đình sử dụng máy phát điện dự phòng khi mất điện lưới",
+      "Gia đình ở vùng núi phía Bắc đốt than sưởi ấm mùa đông hoặc đốt than hơ cho sản phụ ở cữ"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Hướng dẫn phòng chống ngộ độc khí Carbon Monoxide của CDC Hoa Kỳ và Trung tâm Chống độc Bệnh viện Bạch Mai.",
+    "body": "## \"Kẻ sát nhân vô hình\" trong giấc ngủ\n\nKhí Carbon Monoxide ($CO$) sinh ra từ quá trình đốt cháy không hoàn toàn nhiên liệu chứa carbon (xăng dầu từ máy phát điện, động cơ ô tô nổ máy trong gara kín, than tổ ong, than củi, bếp gas hỏng). \n\nKhí $CO$ **HOÀN TOÀN KHÔNG MÀU, KHÔNG MÙI, KHÔNG VỊ VÀ KHÔNG GÂY KÍCH ỨNG HO HAY SẶC**. Do đó, khi hít phải khí CO trong lúc ngủ, nạn nhân không hề bị sặc tỉnh giấc như khói cháy, mà chìm dần vào hôn mê rồi tử vong êm ái.\n\n*Cơ chế gây chết người:* Khí $CO$ có ái lực gắn kết với Hemoglobin trong hồng cầu **mạnh gấp 200 đến 250 lần so với Oxy ($O_2$)**. Khi vào máu, $CO$ chiếm chỗ của oxy tạo thành Carboxyhemoglobin (HbCO), khiến máu không còn khả năng mang oxy lên nuôi não và tim $\\rightarrow$ Tế bào não chết hàng loạt do ngạt từ bên trong.\n\n## 3 Tình huống gây tử vong hàng loạt phổ biến nhất tại Việt Nam\n\n1. **Chạy máy phát điện khi mất điện:** Đặt máy phát điện trong phòng khách, tầng hầm gara, hành lang hoặc ngay sát cửa sổ mở hé vì sợ bị trộm mất máy. Chỉ một máy phát điện gia đình nhỏ thải ra lượng khí $CO$ tương đương **hàng trăm chiếc ô tô nổ máy cùng lúc**, đủ giết chết cả nhà chỉ trong 15-30 phút!\n2. **Đốt than củi/than tổ ong sưởi ấm trong phòng kín:** Vào mùa rét miền Bắc hoặc đốt chậu than nằm cữ cho sản phụ và trẻ sơ sinh rồi đóng kín cửa tránh gió lùa.\n3. **Ngủ qua đêm trong ô tô đóng kín kính bật điều hòa tại tầng hầm/gara kín:** Hoặc khi ống xả ô tô bị rò rỉ/bị tuyết/nước ngập bịt kín làm khí thải trào ngược vào khoang lái.\n\n## Nguyên tắc Vàng An Toàn Tuyệt Đối\n\n* **ĐẶT MÁY PHÁT ĐIỆN NGOÀI TRỜI CÁCH NHÀ ÍT NHẤT 6 MÉT:** Luôn đặt máy phát điện hoàn toàn ngoài trời thoáng gió, hướng ống xả ra xa cửa sổ, cửa ra vào và lỗ thông gió điều hòa ít nhất **6 mét (20 feet)**. Tuyệt đối không chạy máy phát điện trong nhà kho, tầng hầm, hay dưới mái hiên kín.\n* **KHÔNG BAO GIỜ đốt than củi, than tổ ong hay bếp nướng BBQ bên trong nhà có cửa đóng kín.**\n* **Lắp thiết bị cảm biến báo khí CO** chạy pin (giá vài trăm nghìn đồng) gần khu vực phòng ngủ nếu gia đình thường xuyên dùng lò sưởi hoặc máy phát điện.\n\n## Xử trí cấp cứu khi nghi ngờ ngộ độc khí CO\n\n* Nếu thấy nhiều người trong cùng một căn phòng đồng loạt có dấu hiệu: **Đau đầu âm ỉ, chóng mặt, buồn nôn, mệt lả, lú lẫn** $\\rightarrow$ Hãy nghĩ ngay đến ngộ độc CO!\n* **Hành động tức thì:** Mở tung mọi cánh cửa sổ, tắt nguồn phát cháy (máy phát điện/bếp than), lập tức đưa tất cả mọi người thoát ra ngoài trời nơi có không khí trong lành, gọi cấp cứu 115 để được thở oxy cao áp càng sớm càng tốt (tránh di chứng tổn thương não muộn).",
+    "sources": [
+      {
+        "name": "Centers for Disease Control and Prevention (CDC) - Carbon Monoxide Poisoning Prevention & Generator Safety",
+        "url": "https://www.cdc.gov/carbon-monoxide/about/index.html",
+        "note": "Khuyến cáo an toàn khoảng cách tối thiểu 6 mét cho máy phát điện và xử trí ngộ độc khí CO"
+      },
+      {
+        "name": "Bệnh viện Bạch Mai - Trung tâm Chống độc: Cảnh báo ngộ độc khí CO do sưởi ấm bằng than và máy phát điện trong phòng kín",
+        "url": "http://bachmai.gov.vn",
+        "note": "Báo cáo ca bệnh lâm sàng và phác đồ cấp cứu oxy cao áp cho nạn nhân ngộ độc CO tại Việt Nam"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-drowning-rescue-reach-throw-row-dont-go-085",
+    "slug": "safety-drowning-rescue-reach-throw-row-dont-go-085",
+    "title": "Cứu người đuối nước an toàn: Quy tắc 'Vươn - Ném - Chèo - KHÔNG lao xuống' tránh thảm kịch chết đuối chùm",
+    "description": "Nguyên nhân người biết bơi giỏi vẫn chết khi nhảy xuống cứu người đuối nước và trình tự cứu hộ gián tiếp an toàn tuyệt đối bằng sào, dây, can nhựa.",
+    "category": "safety",
+    "tags": [
+      "đuối nước",
+      "cứu hộ đuối nước",
+      "sơ cứu",
+      "an toàn nước",
+      "chết đuối"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Phản ứng khẩn cấp tại hiện trường sông hồ biển",
+    "effort": "low",
+    "benefits": [
+      "Cứu sống người bị nạn mà không biến bản thân thành nạn nhân thứ hai",
+      "Hiểu rõ trạng thái phản xạ hoảng loạn dìm chết người cứu của nạn nhân đang đuối nước",
+      "Xử trí hồi sức đúng cách sau khi đưa nạn nhân lên bờ (Tuyệt đối KHÔNG dốc ngược chạy vòng quanh)"
+    ],
+    "risks": [
+      "Trực tiếp nhảy ào xuống nước tiếp cận đối diện với người đang hoảng loạn vùng vẫy",
+      "Xốc ngược nạn nhân vác lên vai chạy lòng vòng làm mất 5 phút vàng ép tim thổi ngạt"
+    ],
+    "target_groups": [
+      "Tất cả mọi người khi đi bơi, đi du lịch sông hồ biển hoặc sống gần vùng sông nước",
+      "Học sinh, sinh viên cần được trang bị kiến thức cứu hộ chuẩn quốc tế"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Nguyên tắc Cứu hộ Thủy sinh của Hội Chữ thập đỏ Hoa Kỳ (American Red Cross) và Hiệp hội Cứu hộ Đuối nước Quốc tế (ILS).",
+    "body": "## Tại sao người biết bơi giỏi lại bị chết chùm khi cứu người đuối nước?\n\nMỗi mùa hè tại Việt Nam đều xảy ra những thảm kịch đau lòng: Một em nhỏ sảy chân xuống sông, 3-4 người thân hoặc bạn bè biết bơi nhảy xuống cứu và **tất cả cùng thiệt mạng**.\n\nNguyên nhân là vì **Phản xạ Đuối nước Bản năng (Instinctive Drowning Response)**: Khi sắp ngạt thở, não bộ của nạn nhân hoàn toàn mất đi lý trí, bản năng sinh tồn điều khiển hai tay đập mạnh xuống mặt nước để đẩy đầu lên hớp khí. Nếu bạn bơi thẳng đến trước mặt họ, họ sẽ **vồ lấy cổ, đầu hoặc vai bạn bằng sức mạnh điên cuồng**, nhấn chìm bạn xuống đáy để cố leo lên trên mặt nước thở! Ngay cả vận động viên bơi lội chuyên nghiệp cũng khó thoát khỏi vòng khóa siết của người đang chết đuối nếu không có phao cứu sinh chuyên dụng.\n\n## Quy tắc Vàng Quốc tế: \"VƯƠN - NÉM - CHÈO - KHÔNG LAO XUỐNG\" (Reach - Throw - Row - Don't Go)\n\nThứ tự ưu tiên cứu người an toàn từ trên bờ:\n\n1. **VƯƠN (Reach):** Nếu nạn nhân ở gần bờ (1-3 mét), hãy **nằm sấp rạp người xuống mặt đất hoặc bám chặt vào gốc cây** (để không bị kéo ngã theo xuống nước!), sau đó vươn một cây sào dài, cành cây chắc chắn, ống quần dài buộc nối lại, hoặc chiếc áo khoác ra cho nạn nhân nắm lấy và kéo vào bờ.\n2. **NÉM (Throw):** Nếu nạn nhân ở xa bờ hơn, ném ngay các vật nổi có buộc dây (phao tròn, can nhựa rỗng đậy kín nắp, quả bóng, thùng xốp) về phía trước mặt nạn nhân để họ ôm lấy nổi trên mặt nước, sau đó từ từ kéo dây vào bờ.\n3. **CHÈO (Row):** Sử dụng thuyền, bè, ván chèo đứng (SUP) tiếp cận nạn nhân (không đứng trên thuyền nhỏ kéo người lên từ một bên mạn dễ gây lật thuyền; cho họ bám vào đuôi/mũi thuyền hoặc mặc áo phao rồi kéo về).\n4. **KHÔNG LAO XUỐNG TRỰC TIẾP (Don't Go):** Chỉ nhân viên cứu hộ chuyên nghiệp được huấn luyện kỹ thuật tiếp cận từ phía sau lưng và có phao cứu hộ (Rescue Tube) mới được phép xuống nước trực tiếp.\n\n## Cấp cứu trên bờ: TUYỆT ĐỐI KHÔNG DỐC NGƯỢC NẠN NHÂN CHẠY!\n\n* Hình ảnh vác nạn nhân đuối nước dốc ngược đầu xuống đất chạy vòng quanh để \"xốc nước trong phổi ra\" là **PHẢN KHOA HỌC VÀ GIẾT NGƯỜI**! Nước vào phổi thực chất rất ít và đã thấm ngay vào mạch máu, số nước trào ra khi dốc ngược chỉ là nước ở trong dạ dày, đồng thời hành động chạy lòng vòng làm trễ mất 3-5 phút vàng cứu não đang ngừng thở!\n* **Phác đồ đúng duy nhất:** Đặt nạn nhân nằm ngửa trên mặt phẳng cứng. Kiểm tra thở và mạch: Nếu ngừng thở/ngừng tim $\\rightarrow$ Gọi 115 và **lập tức tiến hành Hà hơi thổi ngạt (5 hơi cứu mạng đầu tiên) kết hợp Ép tim ngoài lồng ngực (tỷ lệ 30 ép tim : 2 thổi ngạt)** liên tục không ngừng nghỉ cho đến khi nhân viên y tế tới hoặc nạn nhân tự thở lại.",
+    "sources": [
+      {
+        "name": "American Red Cross - Reach or Throw, Don't Go Water Safety Guideline",
+        "url": "https://www.redcross.org/",
+        "note": "Nguyên tắc vàng cứu hộ người đuối nước an toàn của Hội Chữ thập đỏ"
+      },
+      {
+        "name": "International Life Saving Federation (ILS) - Medical Position Statement on Resuscitation of Drowning Victims",
+        "url": "https://www.ilsf.org/",
+        "note": "Khuyến cáo y khoa quốc tế bác bỏ hoàn toàn kỹ thuật xốc nước dốc ngược nạn nhân đuối nước"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-dog-bite-rabies-post-exposure-prophylaxis-086",
+    "slug": "safety-dog-bite-rabies-post-exposure-prophylaxis-086",
+    "title": "Bị chó mèo cắn cào: Rửa vết thương xà phòng 15 phút và tiêm phòng dại (PEP) – Đừng đợi 'xem con chó có chết không'",
+    "description": "Bệnh dại có tỷ lệ tử vong 100% khi đã lên cơn, quy trình rửa sạch vết thương dưới vòi nước xà phòng 15 phút và tiêm vắc-xin/huyết thanh kháng dại kịp thời.",
+    "category": "safety",
+    "tags": [
+      "chó cắn",
+      "bệnh dại",
+      "tiêm phòng dại",
+      "vắc xin dại",
+      "sơ cứu vết thương"
+    ],
+    "cost": "low",
+    "reading_time": 7,
+    "time": "Rửa ngay 15 phút và đi tiêm vắc-xin trong vòng 24 giờ",
+    "effort": "medium",
+    "benefits": [
+      "Ngăn chặn 100% nguy cơ phát bệnh dại chết người nhờ tiêm dự phòng sau phơi nhiễm (PEP) đúng phác đồ",
+      "Loại bỏ hơn 90% lượng virus dại bám trong nước bọt ngay tại vết thương nhờ rửa xà phòng đúng kỹ thuật",
+      "Phá bỏ hủ tục đắp lá cây, thầy lang 'lấy nọc dại' hoặc chủ quan đợi chó nhà nuôi không sao"
+    ],
+    "risks": [
+      "Đợi theo dõi con chó 10 ngày mới đi tiêm trong khi bị cắn ở vùng đầu mặt cổ (virus dại chạy lên não chỉ trong vài ngày)",
+      "Khâu kín vết thương chó cắn ngay lập tức làm nhốt chặt virus và vi khuẩn kỵ khí bên trong"
+    ],
+    "target_groups": [
+      "Bất kỳ ai bị chó, mèo (kể cả chó nhà nuôi hoặc chó con mới đẻ) cắn, cào xước da hoặc liếm vào vết thương hở",
+      "Cha mẹ có con nhỏ thích chơi đùa tiếp xúc với thú nuôi"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Căn cứ Hướng dẫn Giám sát và Phòng chống Bệnh dại trên người của Bộ Y tế Việt Nam (Quyết định 1622/QĐ-BYT) và Tổ chức Y tế Thế giới (WHO).",
+    "body": "## Sự thật tuyệt đối: Một khi đã lên cơn Dại, TỶ LỆ TỬ VONG LÀ 100%\n\nBệnh dại do virus *Lyssavirus* lây truyền qua nước bọt của động vật mắc dại (chó, mèo, dơi). Cho đến ngày nay, y học hiện đại **CHƯA CÓ BẤT KỲ THUỐC ĐẶC HIỆU NÀO CHỮA KHỎI** một khi người bệnh đã khởi phát triệu chứng lên cơn dại (sợ nước, sợ gió, co giật). Thời gian ủ bệnh có thể kéo dài từ vài ngày đến vài tháng (tùy khoảng cách từ vết cắn lên não bộ).\n\nTin vui duy nhất: Bệnh dại hoàn toàn **CÓ THỂ PHÒNG NGỪA ĐƯỢC $100\\%$** nếu bạn xử lý vết thương và tiêm vắc-xin phòng dại kịp thời ngay sau khi bị cắn!\n\n## Bước 1: Rửa sạch vết thương ĐÚNG 15 PHÚT (Bắt buộc ngay tại chỗ!)\n\nMỗi phút chậm rửa vết thương là virus càng có cơ hội bám vào đầu mút dây thần kinh:\n1. Lập tức đưa vết thương vào dưới **vòi nước sạch chảy mạnh liên tục** và dùng **xà phòng đặc (xà phòng tắm, xà phòng rửa tay hoặc nước rửa chén)** xoa rửa kỹ lưỡng bên trong và xung quanh vết cắn trong suốt **tối thiểu 15 phút đồng hồ** (nhìn đồng hồ bấm giờ!). Chất kiềm và chất hoạt động bề mặt trong xà phòng phá vỡ lớp vỏ bọc lipid của virus dại cực kỳ hiệu quả.\n2. Sau khi rửa sạch xà phòng bằng nước sạch, sát trùng vết thương bằng cồn $70^circ$ hoặc dung dịch Povidone-Iodine (Betadine).\n3. **TUYỆT ĐỐI KHÔNG:** Không nặn bóp mạnh cho máu chảy thêm (làm virus phát tán sâu hơn vào mô), không đắp lá trầu không/thuốc nam/tỏi ớt lên vết cắn, và không băng kín mít vết thương.\n\n## Bước 2: Đến ngay Trung tâm Tiêm chủng / Y tế Dự phòng (Trong vòng 24 giờ)\n\nBác sĩ sẽ đánh giá phân độ vết thương (Độ I, II, III) để chỉ định tiêm **Vắc-xin phòng dại** và/hoặc **Huyết thanh kháng dại (RIG)** (tiêm phong bế trực tiếp quanh vết thương nếu vết cắn sâu chảy máu hoặc ở vùng gần thần kinh trung ương như mặt, cổ, đầu ngón tay).\n\n### Phá bỏ 3 lầm tưởng chết người về Bệnh dại:\n* **Lầm tưởng 1: \"Chó nhà nuôi sạch sẽ, không ra ngoài nên không có dại!\"** $\\rightarrow$ **SAI!** Chó nhà vẫn có thể lây dại từ chó hoang chạy ngang qua hàng rào hoặc từ chuột/dơi, hoặc chưa được tiêm phòng đầy đủ hàng năm. Con chó có thể bài tiết virus dại qua nước bọt **3-5 ngày TRƯỚC KHI** chính con chó đó biểu hiện triệu chứng điên dại!\n* **Lầm tưởng 2: \"Cứ đợi theo dõi con chó 10 ngày xem nó có chết không rồi mới đi tiêm!\"** $\\rightarrow$ **CỰC KỲ NGUY HIỂM!** Nếu bạn bị cắn ở mặt, cổ, đầu, hoặc bị chó thả rông chạy mất tích, nếu đợi 10 ngày thì virus đã đi theo dây thần kinh lên đến não bộ rồi, lúc đó tiêm vắc-xin cũng không còn kịp nữa! Hãy **đi tiêm NGAY LẬP TỨC**; nếu sau 10 ngày theo dõi thấy con chó vẫn sống khỏe mạnh bình thường thì bác sĩ có thể xem xét dừng các mũi tiêm cuối (nếu điều kiện theo dõi tin cậy).\n* **Lầm tưởng 3: \"Tiêm vắc-xin dại làm suy giảm trí nhớ, hại não!\"** $\\rightarrow$ **HOÀN TOÀN LỖI THỜI!** Đó là biến chứng của loại vắc-xin sản xuất từ mô não chuột thế hệ cũ (Fuenzalida) đã bị khai tử từ hàng chục năm trước. Vắc-xin dại thế hệ mới hiện nay (Verorab, Abhayrab) sản xuất trên tế bào Vero tinh khiết, cực kỳ an toàn cho cả phụ nữ mang thai và trẻ sơ sinh.",
+    "sources": [
+      {
+        "name": "World Health Organization (WHO) - Rabies Fact Sheet & Post-Exposure Prophylaxis Guidelines",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/rabies",
+        "note": "Hướng dẫn toàn cầu của WHO về rửa vết thương 15 phút và phác đồ tiêm PEP"
+      },
+      {
+        "name": "Bộ Y tế Việt Nam - Hướng dẫn giám sát và phòng chống bệnh dại trên người (Quyết định 1622/QĐ-BYT)",
+        "url": "https://kcb.vn",
+        "note": "Phác đồ quốc gia tiêm vắc-xin và huyết thanh kháng dại tại Việt Nam"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-snake-bite-first-aid-do-nots-087",
+    "slug": "safety-snake-bite-first-aid-do-nots-087",
+    "title": "Sơ cứu rắn độc cắn chuẩn y khoa: Bất động chi thấp hơn tim và TUYỆT ĐỐI KHÔNG rạch, hút nọc hay garo chặt",
+    "description": "Phân biệt cách sơ cứu rắn độc cắn chuẩn Trung tâm Chống độc (Nẹp bất động, giữ nạn nhân yên tĩnh, tới bệnh viện có huyết thanh) với các mẹo dân gian gây hoại tử cắt cụt chi.",
+    "category": "safety",
+    "tags": [
+      "rắn cắn",
+      "rắn độc",
+      "sơ cứu rắn cắn",
+      "huyết thanh kháng nọc",
+      "chống độc"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Xử trí khẩn cấp ngay sau khi bị cắn",
+    "effort": "low",
+    "benefits": [
+      "Làm chậm tối đa tốc độ khuếch tán nọc độc qua hệ bạch huyết về tim và não",
+      "Tránh biến chứng hoại tử thối rữa chi phải cắt cụt chân tay do buộc dây garo quá chặt",
+      "Được tiêm Huyết thanh kháng nọc đặc hiệu kịp thời tại bệnh viện tuyến trên"
+    ],
+    "risks": [
+      "Dùng dao lam rạch chữ thập vết cắn rồi lấy miệng hút nọc (gây nhiễm trùng uốn ván, chảy máu không cầm và ngộ độc người hút)",
+      "Tìm thầy lang đắp thuốc lá bỏ lỡ thời gian vàng khiến nạn nhân suy hô hấp ngưng thở"
+    ],
+    "target_groups": [
+      "Người làm vườn, nông dân đi ruộng rẫy, người đi trekking dã ngoại leo núi rừng",
+      "Người sống ở vùng nông thôn, ven sông nơi thường xuất hiện rắn lục đuôi đỏ, rắn hổ mang, cạp nia"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Hướng dẫn chẩn đoán, xử trí và phòng chống rắn độc cắn của Trung tâm Chống độc Bệnh viện Bạch Mai và Tổ chức Y tế Thế giới (WHO).",
+    "body": "## 5 Điều TUYỆT ĐỐI KHÔNG ĐƯỢC LÀM khi bị rắn cắn\n\nHầu hết các ca cắt cụt chi và tử vong do rắn cắn tại Việt Nam bị nặng thêm là do những cách sơ cứu dân gian sai lầm:\n1. **KHÔNG buộc Garo thắt chặt:** Buộc dây thun/dây vải siết thật chặt cắt đứt hoàn toàn dòng máu động mạch sẽ làm toàn bộ phần chân/tay bên dưới bị thiếu máu **hoại tử thối rữa chỉ sau 1-2 tiếng**, buộc bác sĩ phải cưa bỏ chân tay dù vết rắn cắn ban đầu có thể cứu được! *(Chưa kể với nọc rắn hổ mang gây hoại tử tại chỗ, việc garo giữ nọc tập trung một chỗ làm thịt thối nhanh hơn gấp bội).*\n2. **KHÔNG dùng dao rạch nặn máu vết cắn:** Nọc rắn thấm qua hệ bạch huyết cực nhanh ngay khi răng rắn rút ra; việc rạch da chỉ gây mất máu ồ ạt (nhất là với rắn lục đuôi đỏ gây rối loạn đông máu!) và nhiễm trùng nặng.\n3. **KHÔNG dùng miệng hút nọc:** Nếu miệng người hút có vết loét hay chảy máu chân răng, nọc độc sẽ ngấm trực tiếp vào máu người hút.\n4. **KHÔNG đắp lá cây, đá lạnh hoặc kích điện lên vết cắn.**\n5. **KHÔNG để nạn nhân tự đi bộ, chạy nhảy hoặc hoảng loạn:** Vận động co cơ bắp sẽ bơm nọc độc qua mạch bạch huyết chạy về tim nhanh gấp 10 lần!\n\n## 5 Bước Sơ Cứu Rắn Cắn Chuẩn Y Khoa (Bệnh viện Bạch Mai / WHO)\n\n1. **Giữ nạn nhân nằm yên tuyệt đối và trấn an tinh thần:** Đặt người bị cắn nằm yên tại chỗ, không cho cử động chân tay bị cắn.\n2. **Tháo bỏ nhẫn, đồng hồ, vòng tay, giày tất chật** trên chi bị cắn ngay lập tức (vì vết cắn sẽ sưng phù nề rất nhanh làm thít chặt gây hoại tử ngón).\n3. **Bất động chi bị cắn bằng nẹp và đặt THẤP HƠN MỨC TIM:** Dùng thanh gỗ/cành cây cứng hoặc bìa carton làm nẹp cố định khớp cổ tay/cổ chân của chi bị cắn (giống như nẹp gãy xương), buộc lỏng vừa phải. Nếu bị cắn vào tay, có thể treo nhẹ tay trước ngực; nếu ở chân, giữ chân nằm ngang thấp hơn tim.\n4. *(Lưu ý kỹ thuật băng ép bất động:)* Chỉ áp dụng băng ép bằng băng chun giãn (băng toàn bộ chi từ ngọn chi lên gốc chi với độ chặt vừa phải nhét lọt 1 ngón tay, KHÔNG cản trở mạch máu động mạch) đối với nhóm **rắn gây liệt thần kinh không gây hoại tử** như rắn cạp nia, cạp nong, hổ mang chúa; **KHÔNG băng ép nếu nghi ngờ rắn lục đuôi đỏ hoặc hổ mang đất** gây sưng nề hoại tử tại chỗ!\n5. **Đưa thẳng đến Bệnh viện có khoa Hồi sức/Chống độc bằng cáng/xe:** Ghi nhớ hình dạng, màu sắc con rắn hoặc chụp ảnh an toàn từ xa (nếu con rắn đã bị đánh chết có thể mang theo cẩn thận để bác sĩ định danh chọn đúng **Huyết thanh Kháng nọc Đặc hiệu** – vũ khí duy nhất trung hòa nọc rắn).",
+    "sources": [
+      {
+        "name": "World Health Organization (WHO) - Guidelines for the Management of Snakebites",
+        "url": "https://www.who.int/publications/i/item/9789290225300",
+        "note": "Hướng dẫn y khoa quốc tế về sơ cứu bất động chi và chống chỉ định rạch, hút, garo"
+      },
+      {
+        "name": "Trung tâm Chống độc (Bệnh viện Bạch Mai) - Phác đồ cấp cứu ban đầu và điều trị rắn độc cắn tại Việt Nam",
+        "url": "http://bachmai.gov.vn",
+        "note": "Khuyến cáo phân biệt xử trí rắn hổ mang, cạp nia, rắn lục đuôi đỏ bằng huyết thanh kháng nọc"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-flash-flood-landslide-warning-signs-088",
+    "slug": "safety-flash-flood-landslide-warning-signs-088",
+    "title": "Nhận biết dấu hiệu Lũ quét và Sạt lở đất vùng đồi núi: Nước suối đột ngột đục ngầu, tiếng nổ và sơ tán khẩn",
+    "description": "Dấu hiệu tiền triệu của thảm họa lũ quét và trượt lở đất đá khi mưa lớn kéo dài, hướng sơ tán vuông góc với dòng chảy và không quay lại lấy tài sản.",
+    "category": "safety",
+    "tags": [
+      "lũ quét",
+      "sạt lở đất",
+      "thiên tai",
+      "miền núi",
+      "sơ tán khẩn cấp"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Sơ tán ngay trong vài phút khi thấy dấu hiệu bất thường",
+    "effort": "low",
+    "benefits": [
+      "Thoát hiểm trước khi khối đất đá hàng nghìn tấn hoặc bức tường nước lũ quét đổ ập xuống trong đêm",
+      "Chọn đúng hướng chạy lên triền dốc cao thay vì chạy xuôi dọc theo lòng suối",
+      "Bảo vệ an toàn cho cả gia đình khi đi du lịch vùng núi cao mùa mưa bão"
+    ],
+    "risks": [
+      "Thấy nước suối đột nhiên rút cạn giữa cơn mưa to rồi xuống lòng suối bắt cá (dấu hiệu thượng nguồn đang bị đất lở chắn dòng chuẩn bị vỡ đập)",
+      "Quay lại nhà vớt vát đồ đạc tài sản hoặc cố lái xe qua ngầm tràn đang chảy xiết"
+    ],
+    "target_groups": [
+      "Cư dân sinh sống tại vùng đồi núi, ven suối, chân ta luy dốc (khu vực Tây Bắc, Đông Bắc, Miền Trung, Tây Nguyên)",
+      "Khách du lịch đi phượt, cắm trại gần sông suối vùng núi vào mùa mưa bão"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Tài liệu Hướng dẫn phòng tránh lũ quét, sạt lở đất của Cục Quản lý Đê điều và Phòng chống Thiên tai (Bộ NN&PTNT) và Cơ quan Khảo sát Địa chất Hoa Kỳ (USGS).",
+    "body": "## Lũ quét và Sạt lở đất: Tốc độ hủy diệt tính bằng giây\n\nLũ quét (Flash Flood) và sạt lở đất (Landslide) không dâng nước từ từ như lũ đồng bằng mà ập đến với sức công phá khổng lồ cuốn theo đất đá, cây cối với vận tốc lên tới 30-50 km/h. Sự sống chết được quyết định hoàn toàn ở khả năng nhận biết **Dấu hiệu Tiền triệu** sớm hơn vài phút.\n\n## 5 Dấu hiệu Tiền triệu Báo động Đỏ – BỎ CHẠY NGAY LẬP TỨC!\n\nKhi trời có mưa lớn kéo dài nhiều giờ (hoặc sau một trận mưa vừa kết thúc ở thượng nguồn):\n\n### Dấu hiệu Lũ quét tại sông suối:\n1. **Nước suối bỗng nhiên chuyển từ trong sang đục ngầu bùn đất**, kèm theo nhiều cành cây, rác lá trôi về dồn dập.\n2. **Mực nước suối ĐỘT NGỘT RÚT CẠN BẤT THƯỜNG giữa trời mưa to:** Đây là tín hiệu cực kỳ nguy hiểm! Có nghĩa là ở phía thượng nguồn vừa có một vụ sạt lở đất lớn lấp ngang chặn dòng tạo thành một \"đập nước tạm\". Chỉ vài phút sau, khối nước khổng lồ tích tụ sẽ phá vỡ đập bùn đất này và lao thẳng xuống hạ lưu thành bức tường lũ quét!\n3. **Nghe thấy tiếng ầm ầm từ xa** giống tiếng tàu hỏa chạy hoặc tiếng sấm rền liên tục dưới mặt đất dù trời không có sấm sét.\n\n### Dấu hiệu Sạt lở đất tại chân đồi, ta-luy:\n4. **Xuất hiện vết nứt mới trên tường nhà, nền sân, mặt đường** hoặc cửa ra vào, cửa sổ bỗng nhiên bị kẹt cứng không đóng mở được (do nền đất bên dưới đang dịch chuyển trượt).\n5. **Cây cối, cột điện trên sườn dốc bỗng nhiên nghiêng ngả**, tiếng đá lăn lạo xạo từ trên cao, hoặc thấy nước bùn đục rỉ phun ra từ chân sườn đồi.\n\n## Nguyên tắc Sơ tán Cứu mạng\n\n* **HƯỚNG CHẠY VUÔNG GÓC LÊN CAO:** Tuyệt đối **KHÔNG chạy xuôi dọc theo thung lũng hay lòng suối** (vì nước lũ chạy nhanh hơn bạn gấp nhiều lần!). Hãy lập tức chạy ngang **vuông góc với dòng chảy, leo lên các đỉnh đồi, sườn dốc đất đá cứng cao nhất** gần đó.\n* **KHÔNG cắm trại qua đêm dưới lòng suối cạn hoặc sát bờ suối** vào mùa mưa, dù tại chỗ bạn ở trời đang tạnh ráo quang đãng (mưa lớn ở thượng nguồn cách 20 km vẫn có thể dội lũ quét ập về chỗ bạn lúc nửa đêm!).\n* **TUYỆT ĐỐI KHÔNG vượt qua ngầm tràn khi nước chảy xiết:** Chỉ cần dòng nước chảy xiết sâu **15 cm** (cao ngang mắt cá chân) đã đủ sức quật ngã người lớn; nước sâu **30-50 cm** đủ sức cuốn trôi cả xe ô tô SUV nặng 2 tấn!",
+    "sources": [
+      {
+        "name": "Cục Quản lý Đê điều và Phòng, chống thiên tai (Bộ NN&PTNT) - Hướng dẫn nhận biết dấu hiệu lũ quét và sạt lở đất",
+        "url": "https://phongchongthientai.mard.gov.vn",
+        "note": "Khuyến cáo phòng tránh thiên tai quốc gia dành cho người dân vùng núi và khách du lịch"
+      },
+      {
+        "name": "U.S. Geological Survey (USGS) - Landslide Warning Signs and Preparedness",
+        "url": "https://www.usgs.gov/programs/landslide-hazards/landslide-preparedness",
+        "note": "Tiêu chuẩn địa chất quốc tế nhận diện sớm biến dạng sườn dốc gây trượt lở"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-electric-vehicle-ebike-battery-fire-089",
+    "slug": "safety-electric-vehicle-ebike-battery-fire-089",
+    "title": "Phòng ngừa cháy nổ pin Lithium xe máy điện, xe đạp điện: Tuyệt đối không sạc qua đêm tại lối thoát hiểm",
+    "description": "Cơ chế thoát nhiệt (Thermal Runaway) gây cháy nổ cực nhanh của pin Lithium, nguyên nhân gây chết ngạt khói độc tại chung cư mini và biện pháp sạc an toàn.",
+    "category": "safety",
+    "tags": [
+      "xe đạp điện",
+      "pin lithium",
+      "cháy nổ chung cư",
+      "phòng cháy chữa cháy",
+      "an toàn điện"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Tuân thủ quy tắc sạc xe hàng ngày",
+    "effort": "low",
+    "benefits": [
+      "Ngăn ngừa thảm họa cháy tầng hầm/hành lang bít kín lối thoát nạn duy nhất của cả tòa nhà",
+      "Tránh mua phải bộ pin tự độ chế không có mạch quản lý bảo vệ BMS",
+      "Bảo vệ tính mạng gia đình trước đám cháy pin tỏa khí độc cực nhanh chỉ trong 30-60 giây"
+    ],
+    "risks": [
+      "Dắt xe máy điện vào trong phòng khách, phòng ngủ hoặc ngay dưới chân cầu thang bộ để cắm sạc xuyên đêm",
+      "Cắm sạc ngay lập tức khi xe vừa chạy quãng đường dài về lúc pin còn đang nóng hầm hập"
+    ],
+    "target_groups": [
+      "Người sử dụng xe máy điện, xe đạp điện, xe cân bằng điện tại nhà phố và chung cư",
+      "Chủ nhà trọ, cư dân chung cư mini có bãi để xe tầng trệt"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Khuyến cáo phòng cháy chữa cháy pin xe điện của Cục Cảnh sát PCCC & CNCH (Bộ Công an) và Hiệp hội Phòng cháy Quốc gia Hoa Kỳ (NFPA).",
+    "body": "## Sự khác biệt đáng sợ của Đám cháy Pin Lithium (Thermal Runaway)\n\nCháy do pin Lithium-ion trên xe máy điện, xe đạp điện hoàn toàn không giống đám cháy củi hay vải thông thường:\n* **Tốc độ bùng phát tính bằng giây:** Khi xảy ra đoản mạch bên trong cell pin (do va đập, ngập nước, sạc quá dòng hoặc pin kém chất lượng), hiện tượng **Thoát nhiệt mất kiểm soát (Thermal Runaway)** tạo ra phản ứng dây chuyền khiến nhiệt độ tăng vọt lên **$800 - 1.000^\\circ C$ chỉ trong 15-30 giây**, kèm theo tiếng nổ lớn phun lửa như đèn khò.\n* **Tự sinh oxy và giải phóng khói khí độc chết người:** Pin đang cháy tự giải phóng khí oxy bên trong nên **rất khó dập tắt bằng bình chữa cháy bột thông thường**; đồng thời xả ra lượng lớn khí độc Carbon Monoxide ($CO$) và Hydro Florua ($HF$) gây ngạt bất tỉnh chỉ sau vài hơi hít phải!\n\n## 5 Nguyên tắc Vàng Sạc Xe Điện An Toàn Tuyệt Đối\n\n1. **TUYỆT ĐỐI KHÔNG sạc xe ở nơi chặn lối thoát hiểm:** Không bao giờ để xe điện đang sạc ngay trước cửa chính phòng trọ, chân cầu thang bộ thoát nạn hoặc trong phòng ngủ. Luôn sạc ở khu vực thông thoáng, có tách biệt bằng tường ngăn cháy hoặc khoảng cách an toàn với vật liệu dễ cháy (rèm cửa, sofa, giấy carton).\n2. **TUYỆT ĐỐI KHÔNG cắm sạc xuyên đêm không có người trông coi:** Theo dõi quá trình sạc ban ngày và rút phích cắm ngay khi đèn báo chuyển màu xanh sạc đầy. (Không phó thác tính mạng cho chức năng \"tự ngắt\" của bộ sạc giá rẻ!).\n3. **Quy tắc \"Nghỉ 30 phút sau khi đi về\":** Khi vừa chạy xe điện dưới trời nắng nóng về, khối pin đang ở nhiệt độ cao. Hãy để xe nghỉ **ít nhất 30 đến 45 phút cho pin nguội hẳn** rồi mới cắm sạc (và ngược lại, sạc xong chờ nguội một chút mới chạy).\n4. **Dùng đúng bộ sạc chính hãng, NÓI KHÔNG với \"Độ pin / Tăng tốc độ\":** Tuyệt đối không thay thế cell pin trôi nổi hoặc tháo bỏ mạch bảo vệ BMS (Battery Management System) để tăng dung lượng hay tốc độ xe. Kiểm tra vỏ pin định kỳ: Nếu thấy pin bị **phồng rộp, nứt vỡ hoặc sạc thấy nóng bất thường** phải ngưng sử dụng ngay.\n5. **Trang bị đầu báo khói nhiệt liên kết và bình chữa cháy gốc nước/bọt (hoặc cát khô):** Nếu thấy xe bắt đầu xì khói trắng kèm tiếng rít lách tách (dấu hiệu chuẩn bị nổ Thermal Runaway trong vài giây tới): **Lập tức hô hoán di tản mọi người chạy thoát ra ngoài trước**, không cố đứng lại dùng tay không tháo dây sạc hay dập lửa gần khối pin đang xì khói!",
+    "sources": [
+      {
+        "name": "Cục Cảnh sát PCCC và CNCH (Bộ Công an) - Hướng dẫn kỹ năng an toàn phòng cháy chữa cháy đối với xe điện",
+        "url": "http://canhsatpccc.gov.vn",
+        "note": "Khuyến cáo an toàn quốc gia về vị trí đỗ sạc và quy trình thoát nạn cháy pin xe điện"
+      },
+      {
+        "name": "National Fire Protection Association (NFPA) - E-bike and Lithium-Ion Battery Fire Safety",
+        "url": "https://www.nfpa.org/",
+        "note": "Tài liệu khoa học kỹ thuật về hiện tượng Thermal Runaway và phương án dập cháy pin"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-stranger-medical-emergency-good-samaritan-090",
+    "slug": "safety-stranger-medical-emergency-good-samaritan-090",
+    "title": "Cứu người lạ gặp nạn ngoài đường: Kiểm tra an toàn hiện trường trước và ghi hình minh bạch tránh rắc rối",
+    "description": "Trình tự xử trí an toàn khi bắt gặp người bị tai nạn hoặc đột quỵ ngoài đường phố: Nguyên tắc DRSABCD, gọi 115 và cách tự bảo vệ bản thân khỏi hiểu lầm pháp lý.",
+    "category": "safety",
+    "tags": [
+      "cứu người gặp nạn",
+      "DRSABCD",
+      "tai nạn giao thông",
+      "sơ cứu cộng đồng",
+      "an toàn hiện trường"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Xử trí trong những phút đầu tại hiện trường",
+    "effort": "low",
+    "benefits": [
+      "Giúp đỡ người gặp nạn kịp thời đúng cách mà không gây thêm tổn thương cột sống cổ cho nạn nhân",
+      "Bảo vệ chính bản thân người cứu khỏi nguy cơ bị xe khác tông phải hoặc bị điện giật/hóa chất",
+      "Tránh bị gia đình nạn nhân hiểu lầm oan ức là người gây tai nạn"
+    ],
+    "risks": [
+      "Xốc bế nạn nhân tai nạn giao thông dậy ngay lập tức khiến mảnh xương đốt sống cổ đâm đứt tủy sống gây liệt suốt đời",
+      "Lao vào kéo nạn nhân bị điện giật khi chưa ngắt nguồn điện làm chết cả người cứu"
+    ],
+    "target_groups": [
+      "Mọi công dân tham gia giao thông muốn làm việc thiện cứu người một cách thông minh và an toàn",
+      "Tài xế xe ô tô, xe máy thường xuyên di chuyển trên đường trường"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Căn cứ Điều 132 Bộ luật Hình sự 2015 (Tội không cứu giúp người đang ở trong tình trạng nguy hiểm đến tính mạng) và Quy chuẩn sơ cứu DRSABCD của Hội đồng Hồi sức Úc/Anh.",
+    "body": "## Vượt qua nỗi sợ \"Làm ơn mắc oán\" một cách thông minh\n\nTheo Điều 132 Bộ luật Hình sự Việt Nam, việc thấy người đang ở trong tình trạng nguy hiểm đến tính mạng (tai nạn, đột quỵ, đuối nước) mà có điều kiện cứu giúp nhưng bỏ mặc không cứu có thể bị truy cứu trách nhiệm hình sự. Để vừa cứu được người vừa bảo vệ tuyệt đối an toàn và danh dự của bản thân, hãy thực hiện theo quy chuẩn **DRSABCD** kết hợp **Minh bạch hiện trường**:\n\n### Bước 1: D - Danger (Kiểm tra Nguy hiểm Hiện trường TRƯỚC TIÊN - Quan trọng số 1!)\n* Trước khi lao tới chạm vào nạn nhân, dừng lại 3 giây quan sát xung quanh: Có dây điện cao thế đứt rơi dưới vũng nước không? Có xe tải đang lao tới từ phía sau không? Có mùi khí gas hoặc xăng chảy tràn không?\n* Đỗ xe chắn bảo vệ cách hiện trường một khoảng an toàn (nếu có xe ô tô), bật đèn cảnh báo Hazard, nhờ người đi đường đứng vẫy điều tiết giao thông từ xa.\n\n### Bước 2: R & S - Response & Send for Help (Kiểm tra phản ứng và Gọi 115 ngay!)\n* Vỗ nhẹ vào hai vai nạn nhân và hỏi to vào cả hai tai: *\"Anh/chị có sao không?\"*.\n* Nếu không phản hồi: Chỉ tay trực tiếp vào một người đứng cạnh ra lệnh cụ thể: *\"Anh áo xanh hãy gọi 115 ngay lập tức và báo cho tôi biết khi đã gọi xong!\"* (Việc chỉ định đích danh một người tránh hiệu ứng tâm lý đám đông \"ai cũng nghĩ người khác đã gọi rồi\").\n\n### Bước 3: Minh bạch hóa để tự bảo vệ bản thân khỏi hiểu lầm\n* Nhờ người xung quanh quay video hoặc mở điện thoại ghi lại cảnh hiện trường ban đầu (nói rõ thời điểm mình vừa đi ngang qua và bắt đầu hỗ trợ sơ cứu), giữ lại thông tin liên lạc của 1-2 nhân chứng đứng gần đó.\n* Nếu nạn nhân vẫn tỉnh táo, hỏi nhẹ họ tên và số điện thoại người thân của nạn nhân để báo tin, bàn giao nguyên vẹn tài sản/túi xách của nạn nhân trước sự chứng kiến của nhân chứng hoặc công an khu vực.\n\n### Bước 4: TUYỆT ĐỐI KHÔNG xốc vác di chuyển nạn nhân chấn thương nặng trừ khi hiện trường sắp nổ/cháy!\n* Nếu nạn nhân vừa bị tai nạn giao thông văng ngã mạnh: **KHÔNG tự ý tháo mũ bảo hiểm, KHÔNG bế xốc lên xe taxi hay kéo gập cổ nạn nhân dậy** (trừ khi nạn nhân bị ngừng thở bắt buộc phải ngửa cổ hồi sức hoặc xe đang bốc cháy phải kéo ra ngoài bằng cách kéo thẳng theo trục dọc cơ thể). Việc bế xốc bừa bãi là nguyên nhân hàng đầu làm gãy gập đốt sống cổ gây liệt tứ chi vĩnh viễn!",
+    "sources": [
+      {
+        "name": "Australian and New Zealand Committee on Resuscitation (ANZCOR) - Basic Life Support Flowchart (DRSABCD)",
+        "url": "https://resus.org.au/",
+        "note": "Quy chuẩn đánh giá an toàn hiện trường trước khi tiếp cận nạn nhân cấp cứu"
+      },
+      {
+        "name": "Quốc hội Việt Nam - Bộ luật Hình sự 2015 (Điều 132: Tội không cứu giúp người đang ở trong tình trạng nguy hiểm đến tính mạng)",
+        "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx",
+        "note": "Nghĩa vụ pháp lý hỗ trợ cứu giúp người gặp nạn trong khả năng an toàn"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-severe-bleeding-tourniquet-direct-pressure-091",
+    "slug": "safety-severe-bleeding-tourniquet-direct-pressure-091",
+    "title": "Cầm máu khẩn cấp vết thương phun thành tia: Kỹ thuật ép chặt trực tiếp (Direct Pressure) và Garo cứu mạng",
+    "description": "Cách xử lý chảy máu ồ ạt động mạch đùi hoặc cánh tay bằng ép lực trực tiếp liên tục 10 phút và chỉ định dùng garo trong chiến dịch 'Stop the Bleed'.",
+    "category": "safety",
+    "tags": [
+      "cầm máu khẩn cấp",
+      "stop the bleed",
+      "garo",
+      "chảy máu động mạch",
+      "sơ cấp cứu"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Kiểm soát chảy máu trong vòng 3 phút đầu tiên",
+    "effort": "medium",
+    "benefits": [
+      "Ngăn chặn nạn nhân tử vong do sốc mất máu chỉ trong vòng 3 đến 5 phút trước khi xe cấp cứu kịp tới",
+      "Biết cách thực hiện lực ép trực tiếp đúng chuẩn thay vì chỉ đắp hờ bông gạc lên vết thương",
+      "Sử dụng garo đúng vị trí và ghi chú thời gian thắt bảo vệ tối đa khả năng giữ lại chi thể"
+    ],
+    "risks": [
+      "Nhấc gạc lên kiểm tra liên tục mỗi 30 giây làm phá vỡ cục máu đông vừa mới hình thành",
+      "Dùng dây thép nhỏ hoặc dây cước mảnh làm garo cắt đứt thịt và mạch máu"
+    ],
+    "target_groups": [
+      "Tất cả mọi người – đặc biệt là công nhân cơ khí, xây dựng, người lái xe đường dài và leo núi",
+      "Người trang bị bộ sơ cứu chấn thương trong cốp ô tô hoặc tại nhà xưởng"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Chương trình Đào tạo Quốc tế 'Stop the Bleed' của Trường Phẫu thuật Hoa Kỳ (ACS) và Bộ Quốc phòng Hoa Kỳ.",
+    "body": "## Mất máu ồ ạt: Kẻ giết người trong 3 phút!\n\nMột người trưởng thành có khoảng 4.5 - 5.5 lít máu. Nếu một động mạch lớn (ở đùi, nách, cánh tay) bị cắt đứt phun máu đỏ tươi thành tia, nạn nhân có thể mất hơn 2 lít máu và **tử vong vì sốc mất máu chỉ trong vòng 3 đến 5 phút** – nhanh hơn thời gian xe cấp cứu 115 di chuyển tới hiện trường! Do đó, người đứng ngay tại chỗ chính là người cứu sống nạn nhân.\n\n## Kỹ thuật 1: Ép Chặt Trực Tiếp (Direct Pressure) – Dùng cho mọi vết thương chảy máu nặng\n\n1. Đeo găng tay y tế (hoặc lót túi nilon sạch nếu không có găng tay).\n2. Lấy một miếng gạc sạch, khăn vải sạch hoặc chiếc áo thun sạch đặt trực tiếp phủ kín lên miệng vết thương.\n3. **DÙNG GÓT BÀN TAY VÀ SỨC NẶNG TOÀN THÂN ĐÈ ÉP THẲNG VÀ MẠNH XUỐNG VẾT THƯƠNG** (nếu vết thương sâu ở bẹn/nách/đùi, có thể dùng gạc nhét chặt vào lòng vết thương rồi đè mạnh lên trên).\n4. **QUY TẮC SỐNG CÒN: GIỮ ÉP LIÊN TỤC KHÔNG NHẤC TAY LÊN ÍT NHẤT 10 PHÚT!**\n   * Nếu máu thấm ướt đỏ miếng vải đầu tiên: **TUYỆT ĐỐI KHÔNG BÓC MIẾNG VẢI ĐÓ RA** (vì bóc ra sẽ giật đứt các sợi fibrin đông máu đang hình thành). Hãy cứ để nguyên miếng cũ và **đắp chồng thêm miếng gạc/khăn mới lên trên** rồi tiếp tục đè ép chặt hơn!\n\n## Kỹ thuật 2: Đai Garo Cầm Máu (Chỉ dùng cho TAY HOẶC CHÂN khi ép trực tiếp không cầm được máu)\n\n*(Lưu ý: Không bao giờ garo ở cổ hay thân mình).*\n1. **Khi nào dùng:** Khi máu phun thành tia xối xả ở cánh tay hoặc cẳng chân, đứt lìa chi, hoặc lực ép trực tiếp không thể kiểm soát nổi lượng máu chảy.\n2. **Vị trí đặt Garo:** Đặt cao hơn vết thương khoảng **5 đến 7 cm (2-3 inches) về phía gần tim** (Không bao giờ đặt garo đè trực tiếp lên khớp khuỷu tay hay khớp gối!).\n3. **Chất liệu đai Garo:** Dùng garo y tế chuyên dụng (như CAT Tourniquet) hoặc dùng mảnh vải chắc chắn có bản rộng tối thiểu **3-5 cm** (cà vạt, khăn rằn, thắt lưng vải) kết hợp một thanh cây nhỏ làm cần xoắn siết chặt. **TUYỆT ĐỐI KHÔNG dùng dây kẽm, dây điện nhỏ hay dây cước** vì sẽ cắt nát cơ và dây thần kinh!\n4. **Siết chặt cho đến khi máu ngừng chảy hoàn toàn** (sẽ rất đau cho nạn nhân, đó là dấu hiệu đã siết đủ áp lực chặn được động mạch).\n5. **GHI CHÚ THỜI GIAN THẮT GARO:** Dùng bút viết thẳng thời điểm bắt đầu thắt (ví dụ `09:15`) lên trán nạn nhân hoặc lên đai garo. Một chiếc garo thắt chuẩn có thể giữ an toàn trong vòng dưới 2 giờ mà không gây mất chi; tuyệt đối **không tự ý nới lỏng garo giữa đường** khi chưa có bác sĩ chuyên khoa tiếp nhận vì có thể làm nạn nhân sốc tụt huyết áp tử vong ngay lập tức!",
+    "sources": [
+      {
+        "name": "American College of Surgeons (ACS) - Stop the Bleed: Save a Life Training Course",
+        "url": "https://www.stopthebleed.org/",
+        "note": "Chương trình đào tạo cầm máu chuẩn y khoa quốc tế cho cộng đồng"
+      },
+      {
+        "name": "American Heart Association & American Red Cross - First Aid Guidelines for Severe Bleeding",
+        "url": "https://cpr.heart.org/",
+        "note": "Khuyến cáo lâm sàng về áp lực ép trực tiếp và chỉ định dùng garo cấp cứu"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-food-poisoning-rehydration-red-flags-092",
+    "slug": "safety-food-poisoning-rehydration-red-flags-092",
+    "title": "Xử trí ngộ độc thực phẩm cấp tại nhà: Uống Oresol từng ngụm nhỏ và 5 dấu hiệu đỏ phải đi cấp cứu ngay",
+    "description": "Nguyên tắc bù nước điện giải đúng tỷ lệ khi bị nôn ói tiêu chảy cấp, cảnh báo sai lầm tự uống thuốc cầm tiêu chảy Loperamide và dấu hiệu mất nước nặng.",
+    "category": "safety",
+    "tags": [
+      "ngộ độc thực phẩm",
+      "tiêu chảy cấp",
+      "Oresol",
+      "mất nước",
+      "sơ cứu tiêu hóa"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Theo dõi sát trong 24-48 giờ đầu",
+    "effort": "low",
+    "benefits": [
+      "Ngăn ngừa biến chứng sốc giảm thể tích và suy thận cấp do mất nước mất muối điện giải",
+      "Pha Oresol đúng tỷ lệ chuẩn, tránh sai lầm pha đặc gây ngộ độc tăng natri máu co giật ở trẻ nhỏ",
+      "Phân biệt được ca ngộ độc nhẹ tự hồi phục tại nhà với ca nhiễm khuẩn nặng hoặc độc tố nguy hiểm cần nhập viện"
+    ],
+    "risks": [
+      "Tự ý uống thuốc cầm tiêu chảy (Loperamide) khi đang nhiễm khuẩn ruột làm giữ chặt vi khuẩn và độc tố ở lại trong ruột gây phình đại tràng nhiễm độc",
+      "Pha 1 gói Oresol vào một ít nước hoặc nửa cốc nước cho 'dễ uống' làm rối loạn áp suất thẩm thấu nguy kịch"
+    ],
+    "target_groups": [
+      "Người bị đau quặn bụng, nôn mửa, tiêu chảy cấp sau bữa ăn nghi ngờ nhiễm khuẩn/độc tố",
+      "Cha mẹ có con nhỏ bị tiêu chảy cấp mùa hè hoặc nhiễm virus Rota"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Hướng dẫn Xử trí Tiêu chảy và Ngộ độc Thực phẩm của Tổ chức Y tế Thế giới (WHO) và Viện Nhi khoa Hoa Kỳ (AAP).",
+    "body": "## Nguy hiểm số 1 của Ngộ độc thực phẩm: MẤT NƯỚC VÀ ĐIỆN GIẢI\n\nĐa số các ca ngộ độc thực phẩm thông thường (do vi khuẩn *Salmonella*, *E. coli*, tụ cầu vàng *Staphylococcus aureus* hoặc Norovirus) gây ra triệu chứng nôn ói và tiêu chảy dữ dội. Bản chất đây là phản xạ tống khứ độc tố và mầm bệnh ra ngoài cơ thể. Mối đe dọa trực tiếp nhất đến tính mạng trong 24 giờ đầu không phải là vi khuẩn mà là **tình trạng mất nước và rối loạn điện giải cấp tính**.\n\n## Cách Bù nước Bù muối (Oresol) Đúng Chuẩn Y Khoa\n\n1. **Pha Oresol ĐÚNG CHÍNH XÁC TỶ LỆ NƯỚC IN TRÊN BAO BÌ:**\n   * Nếu gói ghi pha với **200 ml nước sôi để nguội** (hoặc 1000 ml): Bắt buộc phải đong đủ đúng từng ml đó!\n   * **SAI LẦM CHẾT NGƯỜI:** Nhiều phụ huynh pha 1 gói Oresol (loại pha 1 lít) vào chỉ 1 cái chén nhỏ rồi xúc cho con uống dần vì sợ con không uống hết. Dung dịch quá đặc chứa nồng độ muối natri cực cao sẽ hút ngược nước từ tế bào não ra ngoài, gây **tăng natri máu, co giật và tử vong ở trẻ em**! Dung dịch đã pha quá 24 giờ phải đổ bỏ.\n2. **Kỹ thuật uống khi đang buồn nôn:**\n   * Đừng uống ừng ực một cốc đầy ngay lập tức (dạ dày đang kích thích sẽ tống nôn ra sạch ngay).\n   * Hãy uống **từng ngụm nhỏ (hoặc xúc từng thìa cà phê) cách nhau mỗi 2-3 phút**. Cách này giúp nước và điện giải kịp thấm qua niêm mạc ruột vào máu.\n3. **Không tự ý uống thuốc cầm tiêu chảy (Loperamide) hoặc kháng sinh:**\n   * Thuốc cầm đi ngoài làm liệt nhu động ruột, nhốt chặt toàn bộ vi khuẩn và độc tố bên trong đại tràng khiến sốt cao kéo dài và nhiễm trùng huyết nặng hơn!\n\n## 5 Dấu hiệu Cảnh báo Đỏ – PHẢI ĐI BỆNH VIỆN CẤP CỨU NGAY\n\nĐưa người bệnh vào khoa Cấp cứu lập tức nếu xuất hiện bất kỳ dấu hiệu nào sau đây:\n1. **Dấu hiệu mất nước nặng:** Không đi tiểu suốt > 6-8 giờ (nước tiểu cực ít và sẫm màu), môi khô nứt nẻ, khóc không có nước mắt (ở trẻ nhỏ), mắt trũng sâu, lừ đừ khó đánh thức, chóng mặt ngất xỉu khi đứng lên.\n2. **Nôn mửa liên tục không thể giữ được một giọt nước nào trong suốt 12-24 giờ.**\n3. **Đi ngoài phân có lẫn máu tươi, nhầy mũi hoặc phân đen như bã cà phê.**\n4. **Sốt cao trên $38.5^\\circ C$** kèm đau bụng dữ dội khu trú.\n5. **Dấu hiệu liệt thần kinh (Nghi ngờ độc tố Botulinum hoặc cá nóc/nấm độc):** Sụp mí mắt, nhìn mờ nhìn đôi, nói ngọng, nuốt nghẹn, tê bì môi lưỡi và yếu liệt tay chân.",
+    "sources": [
+      {
+        "name": "World Health Organization (WHO) - The Treatment of Diarrhoea: A Manual for Physicians and Other Senior Health Workers",
+        "url": "https://www.who.int/publications/i/item/9241593180",
+        "note": "Hướng dẫn toàn cầu chuẩn hóa pha Oresol áp lực thẩm thấu thấp và nhận biết mất nước nặng"
+      },
+      {
+        "name": "Centers for Disease Control and Prevention (CDC) - Food Poisoning Symptoms and Severe Warning Signs",
+        "url": "https://www.cdc.gov/food-safety/signs-symptoms/index.html",
+        "note": "Khuyến cáo phân biệt triệu chứng ngộ độc thực phẩm tại nhà và ngưỡng cấp cứu y khoa"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-rip-current-ocean-swimming-escape-093",
+    "slug": "safety-rip-current-ocean-swimming-escape-093",
+    "title": "Thoát khỏi Dòng chảy Xa bờ (Rip Current) khi tắm biển: Tuyệt đối KHÔNG bơi ngược dòng vào bờ",
+    "description": "Nhận diện mặt biển phẳng lặng đáng ngờ giữa hai vùng sóng bạc đầu và kỹ thuật bơi song song với bờ biển (Parallel to Shore) để thoát dòng nước kéo ra khơi.",
+    "category": "safety",
+    "tags": [
+      "dòng chảy xa bờ",
+      "tắm biển",
+      "đuối nước",
+      "an toàn du lịch",
+      "sinh tồn"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "3 phút quan sát mặt biển trước khi xuống nước",
+    "effort": "low",
+    "benefits": [
+      "Nhận diện được vùng biển chết người trước khi bước xuống nước tại các bãi biển Việt Nam (Nha Trang, Đà Nẵng, Vũng Tàu, Phú Quốc...)",
+      "Không bị kiệt sức chết đuối do vùng vẫy bơi ngược dòng chảy mạnh tới 1-2.5 m/giây"
+    ],
+    "risks": [
+      "Thấy chỗ nước phẳng lặng không có sóng đánh tưởng là 'an toàn nhất cho trẻ con tắm', nhưng thực chất đó lại là rãnh dòng chảy xa bờ",
+      "Hoảng loạn cố hết sức bơi thẳng ngược dòng vào bờ dẫn đến kiệt sức chìm nghỉm chỉ sau 2-3 phút"
+    ],
+    "target_groups": [
+      "Người đi du lịch biển, phụ huynh đưa con nhỏ tắm biển và người yêu thích bơi lội ngoài trời"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Theo Khuyến cáo Phòng chống Đuối nước Dòng chảy Xa bờ của Cơ quan Khí quyển & Đại dương Hoa Kỳ (NOAA / USLA) và lực lượng Cứu hộ bãi biển Đà Nẵng, Nha Trang.",
+    "body": "## Cái bẫy mang tên \"Chỗ nước êm lặng không có sóng\"\n\n**Dòng chảy xa bờ (Rip Current)** là luồng nước hẹp chảy cực mạnh từ bờ kéo thẳng ra ngoài khơi, gây ra hơn 80% các vụ cứu hộ đuối nước tại bãi biển. Điều đánh lừa người tắm biển nhiều nhất là: trong khi hai bên sóng bạc đầu vỗ ầm ầm, ở giữa lại xuất hiện một dải nước **khá phẳng lặng, màu nước đục/sẫm hơn một chút và cuốn bọt bèo trôi ra ngoài**. Nhiều phụ huynh lầm tưởng chỗ êm đó an toàn và kéo con xuống tắm, để rồi chỉ vài giây sau nước kéo tuột cả nhà ra xa bờ hàng chục mét.\n\n## 3 bước sống sót nếu chẳng may bị Dòng chảy Xa bờ cuốn ra xa\n\n1. **Giữ bình tĩnh, thả nổi và TUYỆT ĐỐI KHÔNG BƠI NGƯỢC VÀO BỜ:**\n   * Dòng chảy xa bờ không kéo bạn chìm xuống đáy biển; nó chỉ kéo bạn trôi ngang ra ngoài khơi (thường rộng khoảng 10-30 mét bề ngang). Vận tốc dòng có thể lên tới 2.5 m/giây — nhanh hơn cả vận động viên bơi lội Olympic. Cố bơi thẳng ngược lại vào bờ đồng nghĩa với việc tự vắt kiệt toàn bộ sức lực trong 2 phút.\n2. **Bơi SONG SONG với bờ biển để thoát khỏi dải dòng chảy hẹp:**\n   * Thay vì bơi hướng vào bãi cát, hãy xoay người bơi sang trái hoặc sang phải **song song với đường bờ biển** (thường hướng thuận theo chiều gió hoặc sóng đẩy) để thoát ra khỏi bề ngang của dải dòng chảy.\n   * Khi cảm thấy nước không còn kéo mình ra xa nữa, lúc đó mới bơi chếch chéo nhẹ nhàng xuôi theo sóng trở vào bờ.\n3. **Nếu không biết bơi hoặc đã quá mệt: Đứng nước / Nằm ngửa thả nổi và giơ 1 tay ra hiệu:**\n   * Đừng vùng vẫy đạp nước hoảng loạn. Hãy **nằm ngửa thả nổi người (hoặc đạp chân nhẹ giữ đầu trên mặt nước)** để dòng chảy đưa bạn ra hết đoạn cuối (dòng xa bờ sẽ tự tan yếu đi sau khi vượt qua bãi cát ngầm ngoài khơi), đồng thời **giơ cao một cánh tay vẫy và hét to** báo cho nhân viên cứu hộ trên bờ (không giơ hai tay đập nước vì dễ bị chìm đầu).\n\n## Phòng ngừa ngay từ trên bờ\n\n* Chỉ tắm tại khu vực có **cờ giới hạn an toàn và có nhân viên cứu hộ trực**; tuyệt đối không xuống biển khi có cờ đỏ cảnh báo sóng lớn hoặc dòng chảy mạnh, và không mặc quần áo quá rộng nặng khi tắm biển.",
+    "sources": [
+      {
+        "name": "NOAA National Weather Service - Rip Current Safety (Break the Grip of the Rip)",
+        "url": "https://www.weather.gov/safety/ripcurrent",
+        "note": "Dấu hiệu nhận diện dòng chảy xa bờ và kỹ thuật bơi song song với đường bờ"
+      },
+      {
+        "name": "United States Lifesaving Association (USLA) - Survival Guide for Beachgoers",
+        "url": "https://www.usla.org/page/RIPCURRENTS",
+        "note": "Vì sao tuyệt đối không bơi ngược dòng và cách thả nổi kêu cứu đúng chuẩn"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-electrical-leakage-elcb-rcbo-water-heater-094",
+    "slug": "safety-electrical-leakage-elcb-rcbo-water-heater-094",
+    "title": "Phòng ngừa điện giật chết người từ bình nóng lạnh và máy giặt: Vai trò sống còn của Aptomat chống giật (ELCB/RCBO) và dây tiếp địa",
+    "description": "Vì sao aptomat thường (MCB) KHÔNG bảo vệ bạn khỏi điện giật khi tắm, cách kiểm tra nút Test chống giật mỗi tháng và thói quen ngắt hẳn nguồn trước khi bước vào bồn tắm.",
+    "category": "safety",
+    "tags": [
+      "điện giật",
+      "bình nóng lạnh",
+      "chống giật",
+      "ELCB",
+      "an toàn điện"
+    ],
+    "cost": "low",
+    "reading_time": 6,
+    "time": "15 phút kiểm tra hệ thống điện nhà tắm",
+    "effort": "low",
+    "benefits": [
+      "Ngăn chặn nguy cơ tử vong do rò điện bình nóng lạnh gián tiếp, máy nước nóng trực tiếp hoặc máy giặt đặt trong nhà tắm ẩm ướt",
+      "Hiểu đúng sự khác biệt giữa cầu dao chống quá tải (MCB) và cầu dao chống dòng rò bảo vệ tính mạng (RCBO/ELCB)"
+    ],
+    "risks": [
+      "Vừa bật bình nóng lạnh vừa đứng dưới vòi sen tắm khi thanh đốt đã cũ rỉ sét nhiều năm không súc rửa",
+      "Cắt bỏ dây tiếp địa (dây màu vàng xanh) hoặc để thợ lắp thiếu aptomat chống rò vì tiếc vài trăm nghìn đồng"
+    ],
+    "target_groups": [
+      "Mọi hộ gia đình sử dụng bình nóng lạnh, máy giặt đặt gần khu vực ẩm ướt và người chuẩn bị thuê/nhận nhà mới"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Theo Quy chuẩn kỹ thuật quốc gia về an toàn điện trong lắp đặt công trình dân dụng (QCVN/TCVN) và khuyến cáo an toàn điện lực EVN.",
+    "body": "## Sự thật chết người: Aptomat thường trong hộp điện KHÔNG cứu bạn khỏi điện giật\n\nRất nhiều gia đình nghĩ rằng nhà đã lắp cầu dao tổng thì không lo bị điện giật. Thực tế, **MCB (Aptomat thường)** chỉ nhảy ngắt mạch khi dòng điện vượt ngưỡng 16A - 63A (tức là khi chập nổ dây cháy nhà); trong khi chỉ cần một dòng rò siêu nhỏ **0.03A (30 mA)** chạy qua cơ thể người đang ướt nước trong nhà tắm đã đủ làm rung thất và ngừng tim tử vong trong vài giây mà cầu dao thường hoàn toàn không hề nhảy!\n\n## 3 lớp bảo vệ bắt buộc cho bình nóng lạnh và máy giặt\n\n1. **Lớp 1: Phải có Aptomat Chống dòng rò (RCBO / ELCB độ nhạy 15mA - 30mA):**\n   * Thiết bị chống giật chuyên dụng phát hiện ngay sự chênh lệch dòng điện đi - về dù chỉ 30 mA (như khi điện rò qua người chạm vào vòi sen) và **ngắt điện trong tích tắc dưới 0.03 giây**.\n   * **Kiểm tra nút `T` (Test) định kỳ mỗi tháng:** Trên mặt RCBO/ELCB luôn có một nút nhỏ ghi chữ Test/T. Mỗi tháng bấm thử 1 lần; nếu công tắc không tự sập xuống ngắt điện ngay tức thì, thiết bị chống giật đã chết — phải thay mới ngay!\n2. **Lớp 2: Dây Tiếp Địa (Grounding) đúng kỹ thuật:**\n   * Với máy nước nóng trực tiếp, máy giặt vỏ kim loại, lò vi sóng và bếp từ: dây tiếp địa truyền dòng điện rò trực tiếp xuống đất thay vì truyền qua tay bạn. Tuyệt đối **không câu dây tiếp địa bừa bãi vào ống nước nhựa hoặc tay nắm cửa sổ**.\n3. **Lớp 3: Thói quen \"Bật trước - Tắt hẳn công tắc hai cực rồi mới tắm\" (An toàn tuyệt đối 100%):**\n   * Với **bình nóng lạnh gián tiếp** (loại có bình chứa 15-30 lít): Bật trước khi tắm 15-20 phút cho nước đủ nóng, sau đó **TẮT HẲN APTOMAT bình nóng lạnh trước khi mở vòi nước bước vào tắm**. Làm đúng thói quen này giúp loại bỏ 100% nguy cơ điện giật do hỏng rơ-le hay thủng thanh đốt ăn mòn dù ở nhà trọ cũ không có dây tiếp địa.\n   * **Bảo dưỡng 1-2 năm/lần:** Gọi thợ súc rửa cặn canxi trong bình và thay **thanh Magie (Anode)** chống ăn mòn vỏ bình và thanh đốt.",
+    "sources": [
+      {
+        "name": "Tập đoàn Điện lực Việt Nam (EVN) - Hướng dẫn sử dụng bình nóng lạnh an toàn tránh rò điện",
+        "url": "https://www.evn.com.vn/",
+        "note": "Khuyến cáo tắt aptomat bình nóng lạnh trước khi tắm, lắp chống giật và súc rửa định kỳ"
+      },
+      {
+        "name": "TCVN 7447 / IEC 60364 - Bảo vệ chống điện giật bằng thiết bị dòng dư RCD/RCBO 30mA",
+        "url": "https://tieuchuan.vn/",
+        "note": "Quy chuẩn ngưỡng dòng rò bảo vệ con người 30mA cho mạch ổ cắm và khu vực phòng tắm"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-button-battery-ingestion-honey-emergency-095",
+    "slug": "safety-button-battery-ingestion-honey-emergency-095",
+    "title": "Trẻ nuốt nhầm pin cúc áo (Button Battery): Tổn thương bỏng thực quản sau 2 giờ và cấp cứu khẩn cấp trước khi đến viện",
+    "description": "Vì sao pin tròn dẹt lithium trong điều khiển, đồ chơi, cân điện tử gây thủng thực quản cực nhanh dù trẻ vẫn ăn uống được, và hướng dẫn dùng mật ong cho trẻ trên 1 tuổi trên đường đi viện.",
+    "category": "safety",
+    "tags": [
+      "pin cúc áo",
+      "trẻ nuốt dị vật",
+      "cấp cứu nhi",
+      "đồ chơi trẻ em",
+      "an toàn trẻ nhỏ"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Hành động trong 2 giờ vàng",
+    "effort": "high",
+    "benefits": [
+      "Ngăn chặn bỏng điện hóa sâu gây thủng thực quản, rò khí quản hoặc xuất huyết động mạch chủ tử vong ở trẻ nhỏ",
+      "Xử lý đúng quy trình đưa đi cấp cứu chụp X-quang khẩn thay vì chờ xem pin có 'tự đi tiêu ra ngoài không'"
+    ],
+    "risks": [
+      "Nghĩ rằng nuốt pin tròn nhẵn sẽ trôi ra theo phân giống nuốt đồng xu nên để con ở nhà theo dõi qua đêm",
+      "Móc họng gây nôn ngược hoặc cho trẻ dưới 12 tháng tuổi uống mật ong (nguy cơ ngộ độc Botulism)"
+    ],
+    "target_groups": [
+      "Cha mẹ, ông bà và giáo viên mầm non chăm sóc trẻ từ 6 tháng đến 6 tuổi"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Theo Phác đồ Cấp cứu Nuốt Pin cúc áo của Trung tâm Chống độc Quốc gia Hoa Kỳ (NBIH - National Capital Poison Center) và Bệnh viện Nhi Trung ương.",
+    "body": "## Nguy hiểm chết người trong chiếc pin tròn nhỏ bằng đồng xu\n\n**Pin cúc áo (Button Battery)** — đặc biệt là loại pin Lithium 3V đường kính khoảng 20mm (mã CR2032 thường lắp trong điều khiển cửa cuốn, chìa khóa ô tô, cân sức khỏe, máy tính, đồ chơi phát sáng) — là một trong những dị vật nguy hiểm nhất đối với trẻ nhỏ. Khác với đồng xu chỉ gây tắc cơ học, pin cúc áo khi kẹt ở thực quản sẽ **tạo ra dòng điện cực mạnh ngay khi tiếp xúc với niêm mạc ẩm ướt**, sinh ra dung dịch kiềm ăn mòn mạnh làm **bỏng hoại tử thủng mô chỉ trong vòng 2 giờ**, dù bên ngoài viên pin trông có vẻ đã \"hết điện\".\n\n## Phải làm gì NGAY LẬP TỨC khi nghi ngờ trẻ nuốt pin cúc áo?\n\n1. **Đưa trẻ đến thẳng phòng Cấp cứu Bệnh viện có khả năng nội soi/chụp X-quang NGAY LẬP TỨC (Ưu tiên hàng đầu):**\n   * Tuyệt đối **KHÔNG chờ đợi** đến sáng hôm sau hay chờ trẻ kêu đau ngực, nôn máu (khi có triệu chứng nặng, thực quản thường đã loét sâu). Thời gian vàng để nội soi gắp pin ra an toàn nhất là **trong vòng 2 giờ đầu**.\n   * Nếu còn viên pin cùng loại hoặc bao bì đồ chơi ở nhà, cầm theo đưa bác sĩ xem kích thước và điện áp.\n2. **Nếu trẻ TRÊN 12 tháng tuổi và mới nuốt trong vòng 12 giờ — Cho uống Mật ong trên đường đi viện:**\n   * Theo khuyến cáo của Trung tâm Chống độc Quốc gia Hoa Kỳ (NBIH) và Hiệp hội Tiêu hóa Nhi khoa Bắc Mỹ (NASPGHAN), nếu nhà có sẵn mật ong và **trẻ từ 1 tuổi trở lên** có thể nuốt được bình thường: cho uống **10 ml (khoảng 2 thìa cà phê) mật ong mỗi 10 phút** (tối đa 6 liều) trong lúc đang ngồi trên xe lao tới bệnh viện. Lớp mật ong bao phủ tạm thời làm giảm tốc độ ăn mòn điện hóa của pin lên niêm mạc thực quản.\n   * **Lưu ý:** Tuyệt đối **KHÔNG dùng mật ong cho trẻ dưới 1 tuổi** vì nguy cơ ngộ độc vi khuẩn Clostridium botulinum.\n   * Ngoài mật ong, **không cho trẻ ăn cơm, uống sữa hay nước khác** vì cần giữ dạ dày trống để bác sĩ gây mê nội soi gắp dị vật ngay khi tới viện.\n3. **KHÔNG BAO GIỜ móc họng gây nôn:**\n   * Viên pin trồi ngược có thể kẹt vào đường thở hoặc gây sặc mật ong, làm bỏng thêm đoạn họng trên.\n\n## Biện pháp phòng ngừa triệt để trong nhà\n\n* Dùng băng dính cường lực hoặc chọn mua đồ chơi có **nắp pin bắt ốc vít chắc chắn**, kiểm tra thường xuyên điều khiển tivi, đèn LED mini, nến điện tử, cân điện tử và chìa khóa thông minh để pin không bị bung ra sàn nhà.",
+    "sources": [
+      {
+        "name": "National Capital Poison Center (Poison.org) - Button Battery Ingestion Triage and Treatment Guidelines",
+        "url": "https://www.poison.org/battery/guideline",
+        "note": "Khuyến cáo nội soi cấp cứu trong 2 giờ và phác đồ dùng mật ong cho trẻ trên 1 tuổi khi đang di chuyển tới viện"
+      },
+      {
+        "name": "Bệnh viện Nhi Trung ương - Cảnh báo tai nạn nuốt pin cúc áo ở trẻ nhỏ",
+        "url": "https://benhviennhitrunguong.gov.vn/",
+        "note": "Biến chứng bỏng thủng thực quản - khí quản và quy tắc không trì hoãn chụp X-quang"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-typhoon-window-taping-power-outage-prep-096",
+    "slug": "safety-typhoon-window-taping-power-outage-prep-096",
+    "title": "Gia cố nhà cửa trước bão lớn: Vì sao dán băng keo chữ X lên kính là sai lầm và cách chằng chống, phòng cúp điện an toàn",
+    "description": "Chuẩn bị thực chất 24 giờ trước khi bão đổ bộ: thay băng keo vô tác dụng bằng kéo rèm dày, dự trữ nước sạch, ngắt cầu dao tránh chập điện ngập nước và bảo quản máy móc.",
+    "category": "safety",
+    "tags": [
+      "phòng chống bão",
+      "cửa kính",
+      "mất điện",
+      "thiên tai",
+      "an toàn nhà ở"
+    ],
+    "cost": "low",
+    "reading_time": 6,
+    "time": "1-2 giờ gia cố trước khi bão đổ bộ",
+    "effort": "medium",
+    "benefits": [
+      "Tránh thương tích do mảnh kính vỡ lớn bắn vào người (dán băng keo chữ X làm kính vỡ thành từng mảng to sắc như dao găm nguy hiểm hơn)",
+      "Giữ an toàn điện tuyệt đối khi mưa tạt ngập sàn hoặc mái tôn tốc"
+    ],
+    "risks": [
+      "Tin theo mẹo dán băng keo chữ X lên cửa kính chung cư rồi chủ quan đứng sát cửa sổ quay phim bão",
+      "Chạm chân trần vào nền nhà ẩm ướt hoặc mở tủ điện khi khu vực tầng trệt bắt đầu ngập nước"
+    ],
+    "target_groups": [
+      "Hộ gia đình tại miền Bắc, miền Trung Việt Nam và cư dân sống trong chung cư kính lớn hướng gió bão"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Theo Khuyến cáo phòng chống bão của Cơ quan Quản lý Khẩn cấp Liên bang Hoa Kỳ (FEMA / NOAA) và Ban Chỉ đạo Quốc gia về Phòng chống Thiên tai Việt Nam.",
+    "body": "## Lầm tưởng nguy hiểm: Dán băng keo chữ X KHÔNG bảo vệ được cửa kính khi có siêu bão\n\nTrong mỗi mùa bão lớn tại Việt Nam, rất nhiều người dân dán băng keo giấy hoặc băng keo trong thành hình chữ X hay dấu sao lên cửa kính chung cư với niềm tin sẽ giúp kính khỏi vỡ. Trên thực tế, cả Cơ quan Khí tượng NOAA và FEMA đều khẳng định: **dán băng keo hoàn toàn không làm tăng sức chịu áp lực gió của kính**. Tệ hơn nữa, khi gió giật mạnh làm kính nổ vỡ, băng keo lại gắn các mảnh kính nhỏ thành **những mảng kính khổng lồ sắc nhọn bay lao thẳng vào phòng**, gây sát thương chí mạng hơn nhiều so với kính vỡ vụn.\n\n## 5 việc làm đúng chuẩn khoa học trong 24 giờ trước khi bão tới\n\n1. **Bảo vệ an toàn quanh cửa kính chung cư & nhà phố:**\n   * Đóng chặt toàn bộ khóa chốt cửa sổ, cài thanh chặn gió cửa lùa. Nếu nhà hướng trực diện gió bão, **kéo hết rèm vải dày che kín toàn bộ mặt kính** (lớp rèm vải nặng sẽ cản mảnh kính bắn sâu vào phòng nếu kính vỡ). Nếu là nhà cấp 4 không có cửa chớp gỗ/sắt, có thể đóng tạm ván gỗ ép che chắn bên ngoài nếu kịp, không dán băng keo.\n   * **Trong tâm bão:** Di chuyển cả gia đình, đặc biệt là giường ngủ của trẻ em và người già, ra xa cửa kính lớn (vào phòng ngủ phía trong hoặc hành lang giữa nhà). Tuyệt đối **không đứng sát cửa kính để quay video bão**.\n2. **Dọn sạch 100% vật thể bay trên ban công và sân thượng:**\n   * Hạ thấp hoặc mang vào nhà toàn bộ chậu hoa, giàn phơi, xô chậu, đồ nhựa nhẹ ở ban công; một chậu cây nhỏ bị gió cấp 12 cuốn bay từ tầng 15 có sức công phá như viên đạn.\n3. **Dự trữ nước sạch và thực phẩm (Phòng mất điện kéo dài 2-5 ngày):**\n   * Hứng đầy nước sạch vào các xô, thùng lớn hoặc bồn tắm để dùng sinh hoạt vệ sinh (khi mất điện thành phố, trạm bơm chung cư và máy bơm gia đình cũng ngừng hoạt động).\n   * Tích trữ nước uống đóng chai (tối thiểu 3 lít/người/ngày cho 3 ngày), đồ ăn không cần đun nấu, sạc đầy pin điện thoại, laptop và 2 sạc dự phòng.\n   * Vặn tủ lạnh/tủ đông xuống mức lạnh nhất trước bão vài giờ để giữ lạnh thực phẩm lâu hơn nếu mất điện; **không mở cửa tủ lạnh liên tục** khi mất điện.\n4. **Bảo vệ điện và chống ngập (Đặc biệt ở nhà trệt/tầng hầm):**\n   * Rút phích cắm tivi, máy tính, điều hòa không thiết yếu trước khi bão vào đỉnh điểm (ngừa xung sét và sốc điện khi điện lưới đóng cắt liên tục).\n   * Nếu nước mưa bắt đầu tràn vào sàn tầng trệt gần ổ cắm điện thấp, hãy **cúp ngay Aptomat tổng** từ lúc tay chân còn khô ráo.\n5. **Di chuyển ô tô, xe máy ra khỏi tán cây cổ thụ lớn và hầm có nguy cơ ngập sâu:**\n   * Đỗ xe ở khu đất trống cao ráo, xa cây rễ nông dễ bật gốc, biển quảng cáo tấm lớn và tường rào cũ.",
+    "sources": [
+      {
+        "name": "NOAA / Atlantic Oceanographic and Meteorological Laboratory - Hurricane Myths: Taping Windows",
+        "url": "https://www.aoml.noaa.gov/hrd-faq/#hurricane-myths",
+        "note": "Khẳng định khoa học việc dán băng keo không chống vỡ kính mà làm tăng nguy hiểm mảnh lớn"
+      },
+      {
+        "name": "Ready.gov (FEMA) - Preparing for Hurricanes and Severe Storms",
+        "url": "https://www.ready.gov/hurricanes",
+        "note": "Quy chuẩn dọn vật thể bay ban công, dự trữ nước 72 giờ và an toàn điện mùa bão"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-blind-spot-large-truck-motorcycle-safety-097",
+    "slug": "safety-blind-spot-large-truck-motorcycle-safety-097",
+    "title": "Điểm mù chết người của xe container và xe tải nặng: Vùng cấm người đi xe máy tuyệt đối không đi vào khi qua ngã tư",
+    "description": "Hiểu rõ 4 vùng mù tuyệt đối của cabin xe tải cao (đặc biệt vùng mù ôm cua phải - 'Vùng tử thần'), quy tắc 'Không thấy mặt tài xế trong gương = Tài xế không thấy bạn'.",
+    "category": "safety",
+    "tags": [
+      "điểm mù xe tải",
+      "xe container",
+      "an toàn xe máy",
+      "tai nạn giao thông",
+      "kỹ năng lái xe"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Áp dụng mỗi giây khi lưu thông cùng xe tải lớn",
+    "effort": "low",
+    "benefits": [
+      "Tránh hoàn toàn các vụ tai nạn thảm khốc do xe container, xe ben rẽ phải cuốn xe máy vào gầm tại ngã tư hoặc vòng xoay",
+      "Hình thành phản xạ giữ khoảng cách an toàn giúp bảo vệ tính mạng cả gia đình khi đi xe máy trên quốc lộ"
+    ],
+    "risks": [
+      "Tạt đầu dừng đèn đỏ ngay sát mũi cabin xe tải cao hoặc len lỏi chạy song song bên hông phải khi xe tải đang chuẩn bị vào cua",
+      "Chờ đèn đỏ sát đuôi xe container đang lên dốc (nguy cơ tụt dốc hoặc lùi xe)"
+    ],
+    "target_groups": [
+      "Người điều khiển xe máy, xe đạp điện, phụ huynh chở con nhỏ qua các tuyến đường có nhiều xe tải, xe buýt và xe container"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Theo tài liệu Cảnh báo Điểm mù Xe thương mại Lớn (No-Zones) của Cục An toàn Vận tải Cơ giới Hoa Kỳ (FMCSA) và Ủy ban An toàn Giao thông Quốc gia Việt Nam.",
+    "body": "## Tài xế xe container KHÔNG cố tình đâm bạn — họ thực sự KHÔNG HỀ NHÌN THẤY bạn\n\nCabin của một chiếc xe đầu kéo container cao hơn mặt đường gần 2 mét, dài hàng chục mét. Dù tài xế có gắn nhiều gương cầu lồi, xung quanh chiếc xe vẫn tồn tại **4 \"Vùng Cấm\" (No-Zones)** — những vùng điểm mù tuyệt đối mà từ ghế lái tài xế không thể nhìn thấy bất kỳ chiếc xe máy hay thậm chí ô tô con nào đang di chuyển bên trong.\n\n## 4 vùng điểm mù chết người phải tránh xa bằng mọi giá\n\n1. **Vùng tử thần số 1 — Bên Hông Phải khi xe chuẩn bị Rẽ Phải (Nguy hiểm nhất tại Việt Nam):**\n   * Xe container và xe tải dài có bán kính vòng quay rất lớn; để rẽ phải ở ngã tư, tài xế buộc phải **lái đầu xe hơi chếch rộng sang trái một chút rồi mới đánh lái gắt sang phải**, tạo ra một khoảng trống bên tay phải cực kỳ hấp dẫn khiến nhiều người đi xe máy lao lên lách vào.\n   * Khi thùng rơ-moóc gập góc, **bánh sau của rơ-moóc không đi theo vết bánh trước** mà cắt chéo ép sát vào lề phải, cuốn phăng mọi xe máy đang đứng lọt ở khoảng hở đó vào gầm.\n   * **Quy tắc sinh tồn:** Thấy xe tải/xe container bật xi-nhan rẽ (hoặc đang vào cua vòng xoay), **dừng hẳn lại phía sau đuôi xe cho họ đi hết cua**, tuyệt đối không bao giờ chen lên vượt ở phía bên hông phải của họ!\n2. **Vùng ngay sát Đầu Cabin (Trước mũi xe 3-5 mét):**\n   * Khi dừng đèn đỏ, nhiều người đi xe máy hay luồn lách lên đậu ngay trước mũi đầu xe tải cao để tranh xuất phát trước. Ở độ cao ghế lái xe tải, một người đi xe máy đứng cách đầu xe dưới 3 mét **lọt thỏm hoàn toàn dưới tầm kính chắn gió**, tài xế đèn xanh đạp ga sẽ cán thẳng qua mà không biết.\n3. **Vùng sát Hông Trái ngang thân thùng xe:**\n   * Đừng chạy song song kéo dài ngang thân xe container hoặc xe buýt. Hãy chủ động giảm tốc lùi lại phía sau hoặc vượt dứt khoát (chỉ khi đường thoáng an toàn) để không kẹt trong điểm mù khi họ chuyển làn đột ngột.\n4. **Vùng sát Đuôi Xe (Sau thùng xe dưới 5 mét):**\n   * Tài xế xe tải thùng kín không có gương chiếu hậu trong cabin; họ hoàn toàn mù phía sau đuôi thùng. Giữ khoảng cách đủ xa để có thể **phanh kịp khi xe lớn phanh gấp hoặc tụt dốc/cài số lùi**.\n\n## Câu thần chú \"Nhìn Gương\" cứu mạng trên đường\n\nHãy nhớ câu quy tắc ngắn gọn này mọi lúc đi gần xe tải lớn: **\"Nếu bạn không nhìn thấy khuôn mặt tài xế qua gương chiếu hậu hai bên của họ, thì CHẮC CHẮN họ cũng không nhìn thấy bạn.\"**",
+    "sources": [
+      {
+        "name": "FMCSA (U.S. Department of Transportation) - Large Truck and Bus Blind Spots (No-Zones)",
+        "url": "https://www.fmcsa.dot.gov/ourroads/large-trucks-and-buses-have-large-blind-spots",
+        "note": "Bản đồ 4 vùng điểm mù lớn và nguy cơ bánh sau cắt góc khi rẽ phải"
+      },
+      {
+        "name": "Ủy ban An toàn Giao thông Quốc gia Việt Nam - Cảnh báo phòng tránh tai nạn do điểm mù xe tải, container",
+        "url": "https://antoangiaothong.gov.vn/",
+        "note": "Khuyến cáo không vượt bên phải và giữ khoảng cách an toàn trước đầu xe tải tại ngã tư"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-pedestrian-crosswalk-nighttime-visibility-098",
+    "slug": "safety-pedestrian-crosswalk-nighttime-visibility-098",
+    "title": "An toàn cho người đi bộ qua đường ban đêm và mưa tối: Giao tiếp bằng mắt với tài xế và tránh góc khuất xe đỗ",
+    "description": "Những thói quen tưởng nhỏ cứu mạng người đi bộ tập thể dục sáng sớm hoặc tan làm buổi tối (chống lóa đèn pha ngược chiều, mặc đồ sáng màu và không đi sát mũi xe buýt vừa dừng).",
+    "category": "safety",
+    "tags": [
+      "người đi bộ",
+      "qua đường an toàn",
+      "ban đêm",
+      "tập thể dục sớm",
+      "an toàn giao thông"
+    ],
+    "cost": "free",
+    "reading_time": 5,
+    "time": "Áp dụng mỗi lần đi bộ qua đường hoặc chạy bộ ngoài trời",
+    "effort": "low",
+    "benefits": [
+      "Giảm mạnh nguy cơ bị ô tô, xe máy tông trực diện vào sáng sớm (5h sáng) hoặc chiều tối trời mưa tầm nhìn kém",
+      "Tránh bị 'lọt góc khuất' khi bước ra từ phía trước xe buýt, xe tải vừa dừng đỗ bên lề"
+    ],
+    "risks": [
+      "Mặc nguyên cây đồ đen đi chạy bộ lúc 5h sáng hoặc qua đường vạch kẻ trắng mà cứ cắm đầu đi thẳng không nhìn xem xe có giảm tốc không",
+      "Đeo tai nghe chống ồn và nhìn màn hình điện thoại lúc băng qua ngã tư"
+    ],
+    "target_groups": [
+      "Người cao tuổi đi bộ tập thể dục sáng sớm, người chạy bộ tối, học sinh đi bộ và mọi người dân đô thị"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Theo Khuyến cáo An toàn Người đi bộ của Tổ chức Y tế Thế giới (WHO) và Cục Quản lý An toàn Giao thông Đường bộ Hoa Kỳ (NHTSA).",
+    "body": "## Ảo giác chết người ban đêm: \"Mình thấy đèn pha xe họ sáng rực tức là tài xế cũng thấy mình!\"\n\nĐây là hiểu lầm khiến rất nhiều người đi bộ tập thể dục lúc 5h sáng hoặc đi làm về tối muộn gặp tai nạn thương tâm. Khi bạn mặc áo tối màu (đen, xanh than, nâu), ở khoảng cách 40 mét trong ánh đèn pha ngược chiều chói lóa hoặc trời mưa lất phất, người lái ô tô chỉ nhìn thấy bạn ở **15 mét cuối cùng** — ngắn hơn quãng đường phanh dừng xe ở tốc độ 50 km/h!\n\n## 5 nguyên tắc sinh tồn cho người đi bộ\n\n1. **Giao tiếp bằng mắt (Eye Contact) với tài xế trước khi bước chân xuống lòng đường:**\n   * Ngay cả khi đứng tại vạch kẻ đường dành cho người đi bộ hoặc đèn tín hiệu màu xanh cho người đi bộ, đừng bao giờ mặc định xe sẽ tự nhường. Hãy nhìn thẳng vào mặt tài xế để chắc chắn họ đã nhìn thấy bạn và thực sự **đang đạp phanh giảm tốc rõ rệt** rồi mới bước qua.\n2. **KHÔNG BAO GIỜ bước qua đường từ ngay trước mũi xe buýt hoặc giữa hai ô tô lớn đang đỗ:**\n   * Xe buýt vừa dừng trả khách che khuất hoàn toàn tầm nhìn của làn xe chạy bên cạnh. Nếu bạn bước vội ra trước đầu xe buýt để băng qua đường, xe máy hoặc ô tô đang vượt lên từ làn bên cạnh không hề thấy bạn cho tới khoảnh khắc va chạm. Luôn đợi xe buýt rời trạm thoáng tầm nhìn cả hai chiều mới sang đường.\n3. **Mặc đồ sáng màu hoặc gắn dải phản quang nhỏ khi đi bộ/chạy bộ sáng sớm và ban tối:**\n   * Áo màu trắng, vàng neon, cam sáng hoặc một chiếc dây đeo tay/dán gót giày phản quang giá vài chục nghìn đồng giúp tài xế nhận ra bạn từ khoảng cách **150 mét** thay vì 15 mét.\n4. **Nếu đoạn đường không có vỉa hè, hãy đi bộ SÁT MÉP ĐƯỜNG NGƯỢC CHIỀU XE CHẠY (Đối mặt với dòng xe tới):**\n   * Đi ngược chiều giúp bạn quan sát trực diện mọi xe đang lao tới mình để kịp né vào lề nếu thấy tài xế mất tập trung — an toàn hơn nhiều so với việc quay lưng lại không biết xe sau đang lao tới gần sát lưng.\n5. **Tắt chống ồn và cất điện thoại trong 15 giây sang đường:**\n   * Tháo một bên tai nghe và ngưng bấm điện thoại cho tới khi hai chân bạn đã đặt an toàn lên vỉa hè bên kia.",
+    "sources": [
+      {
+        "name": "NHTSA - Pedestrian Safety & Nighttime Visibility Tips",
+        "url": "https://www.nhtsa.gov/road-safety/pedestrian-safety",
+        "note": "Quy tắc mặc đồ sáng/phản quang, giao tiếp mắt với tài xế và đi bộ đối diện chiều xe khi thiếu vỉa hè"
+      },
+      {
+        "name": "WHO - Pedestrian Safety: A Road Safety Manual",
+        "url": "https://www.who.int/",
+        "note": "Rủi ro tầm nhìn ban đêm và điểm mù trước đầu xe công cộng đang dừng đỗ"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-scuba-snorkeling-boat-tour-safety-099",
+    "slug": "safety-scuba-snorkeling-boat-tour-safety-099",
+    "title": "An toàn khi đi ca nô biển, tàu du lịch và lặn ngắm san hô (Snorkeling): Kiểm tra áo phao vừa cỡ và đường thoát hiểm khoang tàu",
+    "description": "Bài học phòng ngừa chìm tàu/lật ca nô và tai nạn ngạt nước âm thầm khi lặn ống thở (Snorkeling): Chọn áo phao có dây luồn đũng, kiểm tra gió bão và không tụ tập đông trong khoang kín.",
+    "category": "safety",
+    "tags": [
+      "ca nô biển",
+      "tàu du lịch",
+      "áo phao",
+      "lặn ngắm san hô",
+      "an toàn du lịch"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "3 phút kiểm tra ngay khi bước lên tàu/ca nô",
+    "effort": "low",
+    "benefits": [
+      "Giảm tối đa rủi ro tuột áo phao qua đầu khi rơi xuống sóng biển dữ hoặc mắc kẹt trong khoang ca nô kín khi tàu lật",
+      "Tránh tai nạn ngạt nước thầm lặng thường gặp ở người lớn tuổi hoặc người mới lặn snorkeling ống thở"
+    ],
+    "risks": [
+      "Khoác áo phao hờ hững không cài đủ khóa, không thắt dây đũng hoặc chọn áo quá rộng cho trẻ em khiến vừa rơi xuống nước áo bật tuột lên qua mặt",
+      "Uống rượu bia rồi xuống biển đeo kính lặn ống thở hoặc đi tàu du lịch khi biển đang báo gió giật mạnh"
+    ],
+    "target_groups": [
+      "Khách du lịch đi tour đảo bằng ca nô cao tốc, tàu ngủ đêm trên vịnh và gia đình có trẻ em đi biển"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Theo Quy chuẩn An toàn Phương tiện Thủy nội địa / Tàu du lịch biển Việt Nam và khuyến cáo An toàn Du lịch Thủy của Tổ chức Hàng hải / US Coast Guard.",
+    "body": "## 3 điểm kiểm tra 60 giây bảo vệ cả gia đình khi đi tàu, ca nô du lịch biển\n\nNhững tai nạn lật ca nô cao tốc hay chìm tàu du lịch hiếm khi báo trước — nước tràn vào khoang chỉ trong vòng vài chục giây. Việc chọn đúng tàu, mặc đúng áo phao và ngồi đúng vị trí giúp tăng tỷ lệ sống sót lên gấp nhiều lần.\n\n1. **Kiểm tra Áo Phao ĐÚNG CỠ và CÀI ĐỦ DÂY ĐŨNG (Đặc biệt với trẻ em):**\n   * Áo phao không có tác dụng nếu chỉ khoác hờ hoặc rộng thùng thình. Khi xuống nước, lực đẩy nổi khiến áo phao lỏng trượt tụt lên quá tai và che mặt!\n   * **Bài test kéo vai 2 giây:** Mặc áo phao, cài chặt toàn bộ khóa ngực, **bắt buộc luồn và cài dây đũng qua hai chân** (cực kỳ quan trọng với trẻ nhỏ!). Cầm hai cầu vai áo phao kéo mạnh lên phía trên — nếu phần cổ áo vượt quá cằm/tai trẻ là áo bị rộng, phải đổi cỡ nhỏ hơn ngay.\n2. **Xác định Lối Thoát Hiểm & Không khóa chốt ở vùng kín khi tàu chạy tốc độ cao:**\n   * Ngay khi bước lên tàu/ca nô, dùng mắt xác định vị trí cửa sổ thoát hiểm/búa phá kính gần nhất và phao tròn cứu sinh.\n   * Với ca nô cao tốc mui kín đi trong sóng lớn, không nhồi nhét quá tải vượt số người ghi trên bảng kiểm định; luôn giữ lối đi giữa thông thoáng không chất vali chắn cửa thoát hiểm. Nếu thấy sóng to bất thường, gió mạnh hoặc tàu có dấu hiệu nghiêng lắc mất an toàn, kiên quyết yêu cầu mặc áo phao 100% suốt hành trình và không ra mũi tàu đứng chụp ảnh.\n3. **An toàn khi Lặn ống thở ngắm san hô (Snorkeling) — Hiểu nguy cơ ngạt thầm lặng:**\n   * Lặn ống thở tưởng dễ nhưng rất dễ bị hít sặc nước biển khi sóng đánh trùm qua đầu ống thở, gây co thắt thanh quản ngạt nước im lặng (người nạn nhân úp mặt nổi yên trên mặt biển giống như đang say mê ngắm cá nên bạn bè xung quanh không hề hay biết!).\n   * **Quy tắc an toàn:** Luôn lặn theo **cặp đôi quan sát nhau (Buddy System)**, tuyệt đối **không xuống nước sau khi uống bia rượu hoặc vừa ăn quá no**, người chưa quen thở bằng miệng hãy luyện thử thở ống ở vùng nước nông đứng chạm đáy 5 phút trước khi bơi ra xa, và luôn mặc áo phao hoặc cầm phao nổi khi bơi ở vùng nước sâu.",
+    "sources": [
+      {
+        "name": "U.S. Coast Guard - Life Jacket Wear & Sizing Fit Test (2-Second Tug Test)",
+        "url": "https://uscgboating.org/",
+        "note": "Cách kiểm tra kích cỡ áo phao vừa khít và tầm quan trọng của dây đũng cho trẻ em"
+      },
+      {
+        "name": "Cục Hàng hải Việt Nam / Bộ GTVT - Quy định an toàn hành khách trên phương tiện thủy chở khách du lịch",
+        "url": "https://vinamarine.gov.vn/",
+        "note": "Quy chuẩn mặc áo phao suốt tuyến và giới hạn tải trọng phương tiện thủy"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-home-cleaning-bleach-ammonia-toxic-gas-100",
+    "slug": "safety-home-cleaning-bleach-ammonia-toxic-gas-100",
+    "title": "Tuyệt đối KHÔNG trộn nước tẩy Javel (Clo) với nước tẩy bồn cầu axit hoặc amoniac: Nguy cơ sinh khí độc Clo cháy phổi",
+    "description": "Cảnh báo tai nạn phòng tắm kín cửa khi pha trộn chất tẩy rửa mạnh để 'rửa cho sạch hơn', gây ngạt khí độc cấp tính, bỏng giác mạc và phù phổi.",
+    "category": "safety",
+    "tags": [
+      "tẩy rửa nhà tắm",
+      "thuốc tẩy javel",
+      "khí độc clo",
+      "an toàn hóa chất",
+      "phòng tắm"
+    ],
+    "cost": "free",
+    "reading_time": 5,
+    "time": "10 giây đọc kỹ nhãn hóa chất trước khi lau dọn",
+    "effort": "low",
+    "benefits": [
+      "Ngăn chặn tai nạn ngộ độc khí Clo và Cloramin chết người ngay trong chính phòng tắm kín của gia đình",
+      "Bảo vệ đường hô hấp, giác mạc mắt cho người nội trợ và người cao tuổi lau dọn nhà vệ sinh"
+    ],
+    "risks": [
+      "Đổ nước tẩy bồn cầu (chứa Axit Clohydric HCl) vào chung với nước tẩy Javel (Natri Hypochlorite NaClO) để tẩy ố vàng gạch men nhanh hơn",
+      "Đóng kín cửa nhà tắm nhỏ không bật quạt thông gió khi sử dụng hóa chất tẩy rửa mạnh"
+    ],
+    "target_groups": [
+      "Mọi hộ gia đình, người nội trợ và nhân viên vệ sinh nhà ở"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Theo Cảnh báo Ngộ độc Hóa chất Gia dụng của Trung tâm Chống độc Bệnh viện Bạch Mai và CDC Hoa Kỳ (NIOSH).",
+    "body": "## Phản ứng hóa học chết người ngay trong chiếc xô lau nhà\n\nNhiều người có thói quen đổ cùng lúc **nước tẩy trắng quần áo/tẩy mốc Javel** với **dung dịch tẩy cặn bồn cầu** hoặc **nước lau kính** với suy nghĩ *\"trộn hai loại mạnh vào nhau chà cho trắng sạch hơn\"*. Nhưng trong phòng tắm nhỏ kín gió, hai chất này phản ứng tức thì tạo ra khí độc cực mạnh đe dọa tính mạng:\n\n1. **Nước tẩy Javel (Natri Hypochlorite) + Dung dịch tẩy bồn cầu (Axit HCl / Giấm ăn / Nước tẩy cặn canxi):** Sinh ra **Khí Clo (Chlorine)** màu vàng lục mùi hắc nồng. Hít phải khí Clo lập tức làm bỏng niêm mạc mũi họng, co thắt thanh quản khó thở, ho sặc sụa dữ dội và có thể gây **phù phổi cấp tử vong** nếu bị kẹt trong nhà tắm kín.\n2. **Nước tẩy Javel + Nước lau kính / Hóa chất chứa Amoniac (hoặc nước tiểu đọng nhiều ngày trong bồn cầu):** Sinh ra **Khí Cloramin (Chloramine)** gây bỏng rát mắt, ho kịch liệt, tức ngực và tổn thương phổi sâu.\n3. **Nước tẩy Javel + Cồn sát khuẩn (Ethanol / Isopropanol):** Sinh ra **Chloroform** và hợp chất độc hại gây choáng váng, ngất xỉu và tổn thương gan thận.\n\n## 4 quy tắc Vàng dọn nhà tắm an toàn tuyệt đối\n\n* **Quy tắc Số 1 — KHÔNG BAO GIỜ TRỘN HAI HÓA CHẤT TẨY RỬA CÙNG LÚC:** Chỉ dùng 1 loại duy nhất cho một lần cọ rửa; nếu muốn dùng loại khác phải xả sạch kỹ bằng rất nhiều nước rồi mới dùng tiếp. Tuyệt đối **chỉ pha loãng thuốc tẩy Javel với NƯỚC LẠNH**, không pha với nước nóng (làm bay hơi khí clo nhanh hơn) hay xà phòng khác.\n* **Luôn mở toang cửa phòng tắm & Bật quạt thông gió** (hoặc quạt cây thổi hướng từ cửa vào) suốt quá trình tẩy rửa.\n* **Đeo găng tay cao su và khẩu trang; đứng phía đầu chiều gió**, không cúi sát mũi trực tiếp lên mặt bồn cầu vừa đổ thuốc tẩy.\n* **Xử trí ngay nếu lỡ hít phải khí hắc sặc sụa:** Vứt ngay cây chổi lau tại chỗ, **chạy thoát ngay ra ngoài trời thoáng khí** (hít thở không khí trong lành), cởi bỏ quần áo bám hóa chất và súc rửa mắt/mặt bằng nước sạch liên tục 15 phút; nếu còn khó thở, ho khò khè hay đau ngực, đến ngay khoa Cấp cứu bệnh viện gần nhất.",
+    "sources": [
+      {
+        "name": "CDC - Dangers of Mixing Bleach with Ammonia or Acids",
+        "url": "https://www.cdc.gov/",
+        "note": "Cảnh báo phản ứng sinh khí độc Chlorine và Chloramine gây tổn thương phổi cấp tính"
+      },
+      {
+        "name": "Trung tâm Chống độc (Bệnh viện Bạch Mai) - Khuyến cáo sử dụng an toàn hóa chất tẩy rửa gia dụng",
+        "url": "https://bachmai.gov.vn/",
+        "note": "Xử lý ngộ độc khí tẩy rửa trong phòng kín và nguyên tắc thông gió khi dọn vệ sinh"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "safety-motorcycle-flooded-street-stalling-hydroplaning-101",
+    "slug": "safety-motorcycle-flooded-street-stalling-hydroplaning-101",
+    "title": "Kỹ năng đi xe máy và ô tô qua vùng đường ngập nước mùa mưa: Đo mực nước qua bánh xe và CẤM khởi động lại ô tô thủy kích",
+    "description": "Nguyên tắc 'Không thấy mặt đường = Không lao qua chỗ ngập sâu lạ', cách giữ ga đều cho xe số/xe ga khi buộc phải lội nước nông và bảo toàn động cơ ô tô tránh vỡ tay biên tốn hàng trăm triệu.",
+    "category": "safety",
+    "tags": [
+      "đường ngập",
+      "thủy kích",
+      "mùa mưa bão",
+      "xe máy",
+      "ô tô"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "Áp dụng ngay khi gặp điểm ngập úng mùa mưa",
+    "effort": "low",
+    "benefits": [
+      "Tránh bị nước cuốn trôi xuống cống mất nắp hoặc hố sâu nguy hiểm tính mạng khi trời mưa ngập trắng đường",
+      "Cứu động cơ ô tô khỏi thảm họa thủy kích cong tay biên, vỡ lốc máy trị giá hàng trăm triệu đồng"
+    ],
+    "risks": [
+      "Khi ô tô bị chết máy giữa vùng nước ngập sâu lại cố bấm nút đề khởi động lại nhiều lần (khiến nước bị hút nén mạnh vào xi-lanh làm gãy tay biên tức thì)",
+      "Liều lĩnh chạy xe máy điện hoặc xe ga qua vùng ngập quá tâm trục bánh xe gây chập pin/hỏng hộp số và ngã xe"
+    ],
+    "target_groups": [
+      "Người điều khiển xe máy, xe điện và ô tô tại các đô thị thường xuyên ngập úng mùa mưa bão"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Tổng hợp từ khuyến cáo an toàn mùa lũ (Turn Around, Don't Drown - NOAA/FEMA) và hướng dẫn kỹ thuật ô tô phòng tránh thủy kích.",
+    "body": "## 3 mối nguy hiểm rình rập dưới mặt nước ngập đục ngầu\n\nKhi phố biến thành sông sau trận mưa lớn, mối đe dọa không chỉ là chết máy xe. Dưới lớp nước đục ngầu không nhìn thấy đáy có thể là **nắp hố ga bị bật tung do áp lực nước**, đoạn đường sụt lún, hoặc **dây điện hở rò xuống mặt nước** gần cột đèn, tủ điện. Nếu dòng nước đang **chảy xiết ngang đường** (đặc biệt vùng đồi dốc hay gần cống thoát), chỉ cần mực nước sâu **15-30 cm** chảy mạnh đã đủ xô ngã xe máy và cuốn trôi cả người lẫn ô tô con!\n\n## Quy tắc đi qua đoạn ngập nông bắt buộc (và khi nào phải QUAY ĐẦU NGAY)\n\n1. **Nguyên tắc số 1: Quan sát xe đi trước làm \"thước đo độ sâu\" — Ngập quá nửa bánh xe tuyệt đối DỪNG LẠI:**\n   * Với **xe máy xăng (xe ga/xe số):** Mực nước an toàn tối đa là **không ngập quá ống xả (pô xe) và lọc gió**. Tuyệt đối tránh lội qua vùng ngập sâu ngang yên xe hoặc qua dòng nước chảy xiết.\n   * Với **xe máy điện / ô tô điện / ô tô gầm thấp:** Dù một số hãng công bố chuẩn kháng nước pin IP67, việc ngập quá nửa bánh xe hoặc ngâm nước sâu kéo dài vẫn tiềm ẩn nguy cơ nước lọt giắc nối và kẹt sóng nước hất vào khe thông gió. Hãy đỗ ở chỗ cao chờ rút hoặc đi vòng đường khác.\n2. **Nếu buộc phải chạy xe máy qua đoạn ngập nông vừa phải:**\n   * **Xe số:** Về **số thấp (Số 1 hoặc Số 2)**, giữ tay ga đều vừa phải không nhả hết ga (tránh nước trào ngược vào pô tắt máy), không bóp phanh gấp giữa nước, giữ khoảng cách xa xe tải lớn/xe buýt để tránh **sóng nước** do xe lớn tạo ra đánh trùm lên đầu xe bạn.\n   * Nếu **xe máy bị tắt máy giữa chỗ ngập:** Không cố đề lại ngay dưới nước! Dắt xe lên chỗ khô ráo trước rồi kiểm tra ống xả/bugi, thay dầu máy sớm nếu nghi nước lọt vào khoang máy.\n3. **Kỹ năng SỐNG CÒN cho người lái Ô tô gặp ngập — CẤM ĐỀ LẠI KHI CHẾT MÁY (Chống Thủy kích):**\n   * Chuyển sang chế độ số tay thấp (`L`, `S` hoặc `1-2`), tắt điều hòa A/C (để tắt quạt gió khoang máy tránh quạt hất nước tung tóe vào họng hút gió), đi tốc độ chậm đều không tạo sóng dồn lên mũi capo.\n   * **LUẬT THÉP KHI Ô TÔ BỊ TẮT MÁY GIỮA NƯỚC NGẬP:** **TUYỆT ĐỐI KHÔNG BẤM ĐỀ KHỞI ĐỘNG LẠI DÙ CHỈ MỘT LẦN!** Lúc máy tắt trong nước sâu, nước có thể đã tràn vào cổ hút gió nằm trong xi-lanh; nước không nén được như không khí — nếu bạn bấm nút đề, piston nén mạnh lên khối nước sẽ làm **cong, gãy tay biên và đâm thủng thân máy** ngay lập tức (thiệt hại từ vài chục đến hàng trăm triệu đồng và thường **bị từ chối bảo hiểm** lỗi cố ý đề nổ lại!). Hãy mở đèn cảnh báo khẩn cấp, tháo dây âm ắc quy nếu an toàn hoặc gọi ngay **xe cứu hộ kéo sàn** về gara kiểm tra xả nước.",
+    "sources": [
+      {
+        "name": "NOAA / National Weather Service - Turn Around Don't Drown Flood Safety",
+        "url": "https://www.weather.gov/safety/flood-turn-around-dont-drown",
+        "note": "Cảnh báo lực đẩy dòng nước ngập nông 15-30cm có thể xô ngã người và cuốn trôi xe"
+      },
+      {
+        "name": "Ủy ban An toàn Giao thông Quốc gia / Hướng dẫn kỹ thuật phòng chống thủy kích ô tô mùa mưa",
+        "url": "https://antoangiaothong.gov.vn/",
+        "note": "Nguyên tắc giữ ga đều ở số thấp và cấm khởi động lại khi xe tắt máy trong vùng ngập"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
   }
 ]

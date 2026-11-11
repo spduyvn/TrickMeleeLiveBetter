@@ -3566,5 +3566,1090 @@
     "review_status": "needs_review",
     "status_label": "Chờ rà soát",
     "last_updated": "2026-11-10"
+  },
+  {
+    "id": "finance-anti-mlm-pyramid-scheme-red-flags-067",
+    "slug": "finance-anti-mlm-pyramid-scheme-red-flags-067",
+    "title": "Nhận diện mô hình đa cấp biến tướng và lừa đảo tài chính Ponzi: 5 dấu hiệu cảnh báo đỏ",
+    "description": "Phân biệt bán hàng đa cấp hợp pháp với mô hình kim tự tháp (Pyramid/Ponzi) dựa trên nguồn gốc lợi nhuận từ tuyển người và cam kết lãi suất phi thực tế.",
+    "category": "finance",
+    "tags": [
+      "đa cấp biến tướng",
+      "ponzi",
+      "lừa đảo tài chính",
+      "bảo toàn vốn",
+      "cảnh báo"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "Thẩm định 15 phút trước khi xuống tiền",
+    "effort": "low",
+    "benefits": [
+      "Bảo vệ toàn bộ tiền tiết kiệm của gia đình khỏi các dự án 'đầu tư siêu lợi nhuận' lừa đảo",
+      "Không vô tình lôi kéo bạn bè, họ hàng vào vòng xoáy mất tiền rồi gánh tai tiếng suốt đời",
+      "Nhận diện chính xác các mô hình ủy thác đầu tư, tiền ảo, bất động sản chia nhỏ lừa đảo"
+    ],
+    "risks": [
+      "Tin vào hình ảnh khoe siêu xe, biệt thự, du lịch sang chảnh của các 'thủ lĩnh' trên mạng xã hội",
+      "Nghĩ rằng mình 'vào sớm rồi rút sớm' sẽ thắng được mô hình Ponzi"
+    ],
+    "target_groups": [
+      "Người được bạn bè rủ rê tham gia dự án khởi nghiệp tài chính cam kết lãi 5-15%/tháng",
+      "Người cao tuổi, sinh viên, mẹ bỉm sữa tìm kiếm việc làm thêm online thu nhập thụ động"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Căn cứ Nghị định 40/2018/NĐ-CP về quản lý hoạt động kinh doanh theo phương thức đa cấp và Cảnh báo lừa đảo của Ủy ban Cạnh tranh Quốc gia (Bộ Công Thương).",
+    "body": "## Bản chất toán học của Mô hình Kim tự tháp (Ponzi / Pyramid)\n\nMọi mô hình đa cấp biến tướng và lừa đảo tài chính Ponzi đều hoạt động theo một nguyên lý đơn giản: **Lấy tiền của người vào sau trả lãi cho người vào trước**, hoàn toàn không tạo ra giá trị thặng dư thực sự từ sản xuất hay bán hàng cho người tiêu dùng cuối cùng. Theo cấp số nhân, chỉ sau khoảng 12-13 tầng tuyển dụng, số người cần mời gọi sẽ vượt quá tổng dân số cả nước; lúc này dòng tiền vào cạn kiệt, hệ thống sụp đổ tức thì và 90% người tham gia tầng dưới mất trắng toàn bộ tiền.\n\n## 5 Dấu hiệu Cảnh báo Đỏ (Red Flags) của Đa cấp Biến tướng\n\n1. **Cam kết lãi suất cao phi thực tế và \"không rủi ro\":**\n   * Bất kỳ mô hình nào hứa hẹn trả lãi cố định $3-10\\%$ mỗi tháng (tương đương $36-120\\%/năm$) hoặc \"nhân đôi tài khoản sau 3 tháng\" đều là lừa đảo. Ngay cả quỹ đầu tư vĩ đại nhất thế giới cũng chỉ đạt lợi nhuận trung bình khoảng $15-20\\%/năm$ với đầy đủ biến động thị trường.\n2. **Thu nhập đến từ việc TUYỂN NGƯỜI mới chứ không phải BÁN SẢN PHẨM cho người ngoài:**\n   * Nếu bạn nhận thấy 80% thu nhập của hệ thống đến từ phí gia nhập/mua gói kích hoạt của tuyến dưới, còn sản phẩm (thực phẩm chức năng, mỹ phẩm, khóa học, đồng tiền số) chỉ là cái cớ bán nội bộ với giá thổi phồng gấp 10 lần giá trị thật $\\rightarrow$ Đó là mô hình kim tự tháp bất hợp pháp.\n3. **Ép mua lượng hàng tồn kho ban đầu quá lớn (Inventory Loading):**\n   * Yêu cầu người mới phải bỏ ra 30-100 triệu đồng mua ôm một lô hàng lớn hoặc nạp tiền vào ví hệ thống để \"lên cấp bậc\" nhận hoa hồng cao hơn.\n4. **Không có Giấy chứng nhận đăng ký hoạt động bán hàng đa cấp của Bộ Công Thương:**\n   * Theo Nghị định 40/2018/NĐ-CP, mọi công ty đa cấp hợp pháp tại Việt Nam bắt buộc phải được Bộ Công Thương cấp phép công khai. Tuyệt đối không có chuyện kinh doanh đa cấp đối với **tiền tệ, tiền ảo, bất động sản hay bảo hiểm**.\n5. **Tâm lý thao túng hội trường và thúc ép khẩn cấp:**\n   * Tổ chức các buổi hội thảo âm nhạc ồn ào, hô hào khẩu hiệu, tạo áp lực tâm lý đám đông (*\"Cơ hội cuối cùng trong ngày hôm nay, không đóng tiền ngay là mất suất!\"*) để tắt khả năng tư duy phản biện của nạn nhân.",
+    "sources": [
+      {
+        "name": "Chính phủ Việt Nam - Nghị định 40/2018/NĐ-CP về quản lý hoạt động kinh doanh theo phương thức đa cấp",
+        "url": "https://vanban.chinhphu.vn/?classid=1&docid=193152&orggroupid=1&pageid=27160",
+        "note": "Khung pháp lý phân định rõ đa cấp hợp pháp và hành vi kinh doanh đa cấp trái phép"
+      },
+      {
+        "name": "Ủy ban Cạnh tranh Quốc gia (Bộ Công Thương) - Danh sách doanh nghiệp bán hàng đa cấp hợp pháp và cảnh báo biến tướng",
+        "url": "https://vcca.gov.vn",
+        "note": "Cổng tra cứu danh sách công ty được cấp phép hợp pháp tại Việt Nam"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-living-on-tight-budget-survival-mode-068",
+    "slug": "finance-living-on-tight-budget-survival-mode-068",
+    "title": "Quản trị tài chính giai đoạn thu nhập thấp hoặc mất việc: Chế độ 'Sinh tồn' cắt rò rỉ tiền mặt",
+    "description": "Chiến lược 4 bức tường ưu tiên chi tiêu tối thiểu (Thực phẩm, Nhà ở, Điện nước, Y tế/Đi lại) khi tài chính gia đình rơi vào khủng hoảng dòng tiền.",
+    "category": "finance",
+    "tags": [
+      "khủng hoảng tài chính",
+      "tiết kiệm tối đa",
+      "mất việc",
+      "ngân sách sinh tồn",
+      "quản lý chi tiêu"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Áp dụng ngay trong ngày đầu thu nhập suy giảm",
+    "effort": "medium",
+    "benefits": [
+      "Kéo dài tối đa thời gian cầm cự của khoản tiền dự phòng ít ỏi hiện có",
+      "Bảo đảm các nhu cầu sống thiết yếu của gia đình không bị cắt đứt giữa chừng",
+      "Tránh phải đi vay nóng hoặc quẹt thẻ tín dụng lấy tiền mặt trả chi phí sinh hoạt"
+    ],
+    "risks": [
+      "Cố gắng duy trì mức sống và sĩ diện bên ngoài như lúc còn thu nhập cao dẫn đến vỡ nợ nhanh chóng",
+      "Cắt bỏ hoàn toàn chi phí dinh dưỡng thiết yếu hoặc thuốc men bệnh nền gây suy sụp sức khỏe"
+    ],
+    "target_groups": [
+      "Người mới bị cắt giảm thu nhập, giảm giờ làm hoặc đang trong thời gian tìm việc mới",
+      "Gia đình gặp biến cố đột xuất tiêu tốn nhiều chi phí"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Nguyên tắc Ngân sách Khẩn cấp 'Four Walls' (4 Bức Tường Sinh Tồn) trong hoạch định tài chính gia đình và khuyến cáo nợ tiêu dùng của CFPB.",
+    "body": "## Bật công tắc \"Chế độ Sinh tồn\" (Survival Budget Mode) ngay lập tức\n\nSai lầm tâm lý lớn nhất khi vừa bị mất việc hoặc sụt giảm thu nhập mạnh là **trì hoãn việc thay đổi thói quen tiêu tiền** (vẫn đi ăn ngoài cuối tuần, vẫn đặt trà sữa qua app, vẫn giữ các gói đăng ký thuê bao không cần thiết) với suy nghĩ *\"Chắc tuần sau mình tìm được việc mới ngay thôi\"*. Nếu quá trình tìm việc kéo dài 4-6 tháng, sự chậm trễ đó sẽ đốt sạch tiền tiết kiệm của bạn.\n\n## Thứ tự ưu tiên \"4 Bức Tường Sinh Tồn\" (The Four Walls)\n\nTrong ngân sách sinh tồn, mọi khoản thu nhập ít ỏi hoặc tiền mặt còn lại bắt buộc chỉ được chi theo đúng thứ tự ưu tiên sau đây trước khi trả cho bất kỳ ai khác:\n1. **Thực phẩm cơ bản (Food):** Mua nguyên liệu tươi sống tự nấu tại nhà (cơm, trứng, đậu phụ, thịt gà, rau củ theo mùa). Cắt bỏ 100% chi phí ăn hàng, cà phê tiệm, đồ ăn giao tận nơi.\n2. **Nhà ở (Shelter):** Tiền thuê nhà hoặc tiền trả góp thế chấp giữ mái nhà cho gia đình (liên hệ chủ nhà đàm phán giãn hoặc giảm tạm thời nếu thực sự khó khăn).\n3. **Tiện ích thiết yếu (Utilities):** Điện, nước, gas, gói cước internet/điện thoại cơ bản nhất để phục vụ tìm việc và học tập.\n4. **Đi lại và Y tế cơ bản (Transportation & Essential Health):** Xăng xe đi phỏng vấn và thuốc điều trị bệnh nền bắt buộc.\n\n## 4 Hành động \"Cầm máu dòng tiền\" trong 48 giờ đầu\n\n* **Kiểm toán và Hủy toàn bộ thuê bao định kỳ:** Mở lịch sử trừ tiền tự động của thẻ/ví điện tử; hủy ngay các gói xem phim, nghe nhạc, gym, lưu trữ đám mây chưa thiết yếu trong giai đoạn này.\n* **Chủ động đàm phán với chủ nợ ngân hàng trước khi quá hạn:** Nếu có khoản vay ngân hàng, đừng trốn tránh tắt máy! Hãy chủ động đến gặp cán bộ tín dụng trình bày khó khăn mất việc để xin **cơ cấu lại thời hạn trả nợ hoặc tạm ân hạn nợ gốc** theo quy định của Ngân hàng Nhà nước, giữ lịch sử tín dụng không bị rơi vào nợ xấu CIC.\n* **Thanh lý đồ đạc nhàn rỗi:** Bán các thiết bị điện tử, quần áo, đồ gia dụng không dùng đến trên các nhóm thanh lý để chuyển hóa ngay thành tiền mặt dự phòng.",
+    "sources": [
+      {
+        "name": "Consumer Financial Protection Bureau (CFPB) - Managing Cash Flow and Prioritizing Bills During Financial Hardship",
+        "url": "https://www.consumerfinance.gov/coronavirus/mortgage-and-housing-assistance/",
+        "note": "Hướng dẫn chính thức về sắp xếp thứ tự ưu tiên thanh toán hóa đơn khi thu nhập sụt giảm"
+      },
+      {
+        "name": "Ramsey Solutions - The Four Walls Budgeting Framework in Crisis",
+        "url": "https://www.ramseysolutions.com/budgeting/4-things-you-must-budget-for-first",
+        "note": "Phương pháp phân bổ ngân sách sinh tồn 4 ưu tiên cốt lõi trong khủng hoảng"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-co-signing-loan-guarantor-dangers-069",
+    "slug": "finance-co-signing-loan-guarantor-dangers-069",
+    "title": "Rủi ro chết người khi đứng tên vay hộ hoặc bảo lãnh vay vốn: Mất tiền, gánh nợ xấu và tan vỡ quan hệ",
+    "description": "Trách nhiệm pháp lý liên đới của người bảo lãnh và người đứng tên giùm trên hợp đồng tín dụng ngân hàng theo Bộ luật Dân sự 2015.",
+    "category": "finance",
+    "tags": [
+      "bảo lãnh vay vốn",
+      "vay hộ",
+      "đứng tên giùm",
+      "nợ xấu CIC",
+      "rủi ro tài chính"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Từ chối dứt khoát trước khi ký bất kỳ giấy tờ nào",
+    "effort": "low",
+    "benefits": [
+      "Bảo vệ 100% tài sản cá nhân và uy tín tín dụng CIC khỏi món nợ của người khác",
+      "Hiểu rõ rằng 'chỉ ký làm chứng / ký bảo lãnh cho có thủ tục' là một cái bẫy pháp lý nghiêm trọng",
+      "Giữ gìn tình cảm bạn bè, người thân bằng cách hỗ trợ đúng giới hạn thay vì đứng tên nợ"
+    ],
+    "risks": [
+      "Nể nang cha mẹ, người yêu, bạn thân mà ký vào hợp đồng vay trả góp điện thoại, xe máy hoặc vay thế chấp ngân hàng hộ họ",
+      "Đưa CCCD cho người quen làm hồ sơ vay tiêu dùng hộ"
+    ],
+    "target_groups": [
+      "Người trẻ mới đi làm có thu nhập ổn định và lịch sử tín dụng sạch thường bị người quen nhờ 'đứng tên mua trả góp hộ'",
+      "Thành viên gia đình được nhờ thế chấp sổ đỏ hoặc ký bảo lãnh cho người thân làm ăn"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Căn cứ Điều 335, Điều 336 và Điều 342 của Bộ luật Dân sự năm 2015 về Bảo lãnh thực hiện nghĩa vụ dân sự.",
+    "body": "## Hiểu đúng về chữ ký \"Bảo lãnh\" hoặc \"Đứng tên vay hộ\"\n\nKhi ngân hàng hoặc công ty tài chính từ chối cho bạn của bạn vay tiền và yêu cầu phải có người \"bảo lãnh\" (hoặc bạn của bạn nhờ bạn \"đứng tên mua trả góp giùm chiếc xe máy/điện thoại, tháng nào tôi cũng chuyển tiền cho bạn đóng\"), hãy dừng lại và suy nghĩ bằng lý trí:\n* Một tổ chức tài chính chuyên nghiệp với hàng chục công cụ thẩm định dữ liệu lớn đã đánh giá người đó **quá rủi ro, không đủ khả năng trả nợ**. Khi bạn ký tên vào hợp đồng đó, bạn đang gánh toàn bộ rủi ro mà chính ngân hàng còn không dám nhận!\n\n## Hậu quả pháp lý nặng nề theo Bộ luật Dân sự 2015\n\n1. **Nghĩa vụ trả nợ thay tuyệt đối (Điều 335, 342):** Khi bên được bảo lãnh không thực hiện hoặc thực hiện không đúng nghĩa vụ trả nợ khi đến hạn, **người bảo lãnh PHẢI thực hiện nghĩa vụ trả toàn bộ tiền gốc, tiền lãi và tiền phạt chậm trả thay cho họ**. Nếu bạn đứng tên vay hộ trực tiếp, đối với pháp luật và ngân hàng, **100% bạn là con nợ duy nhất** – mọi thỏa thuận miệng *\"tôi vay giùm cho anh A\"* không hề có giá trị miễn trừ nghĩa vụ với ngân hàng!\n2. **Bị cưỡng chế kê biên tài sản cá nhân:** Nếu bạn không có tiền trả thay, ngân hàng có quyền khởi kiện ra tòa yêu cầu kê biên tài sản riêng của chính bạn (tiền lương, tài khoản ngân hàng, nhà đất, xe cộ) để thi hành án.\n3. **Gánh vết đen Nợ Xấu CIC suốt 5 năm:** Toàn bộ lịch sử chậm trả của món nợ đó được ghi thẳng vào hồ sơ CIC của bạn, khiến chính bạn mất sạch cơ hội vay mua nhà hay làm ăn trong 5 năm tiếp theo.\n\n## Quy tắc Vàng bảo vệ bản thân\n\n* **TUYỆT ĐỐI KHÔNG BAO GIỜ đứng tên vay tiền hộ hoặc thế chấp tài sản bảo lãnh cho bất kỳ ai**, kể cả người thân thiết nhất, trừ khi bạn thực sự sẵn sàng và có đủ khả năng tài chính **cho không họ toàn bộ số tiền đó** mà cuộc sống của bạn không bị ảnh hưởng!\n* **Không cho mượn thẻ CCCD gốc hoặc quay video định danh khuôn mặt eKYC** giúp bất kỳ ai mở tài khoản ngân hàng hay ví trả sau.",
+    "sources": [
+      {
+        "name": "Quốc hội Việt Nam - Bộ luật Dân sự 2015 (Mục 5: Bảo lãnh - Điều 335 đến Điều 343)",
+        "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx",
+        "note": "Quy chuẩn pháp lý xác lập trách nhiệm trả nợ thay bắt buộc của người bảo lãnh"
+      },
+      {
+        "name": "Federal Trade Commission (FTC) - Cosigning a Loan FAQs",
+        "url": "https://consumer.ftc.gov/articles/cosigning-loan-faqs",
+        "note": "Khuyến cáo bảo vệ người tiêu dùng quốc tế về rủi ro tín dụng khi đồng ký tên bảo lãnh khoản vay"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-cost-of-raising-child-budgeting-070",
+    "slug": "finance-cost-of-raising-child-budgeting-070",
+    "title": "Hoạch định tài chính nuôi con từ 0 đến 18 tuổi: Phân bổ quỹ giáo dục và tránh bẫy tiêu dùng đồ trẻ em",
+    "description": "Bài toán chi phí thực tế khi sinh con (y tế, tã sữa, mầm non, quỹ đại học), tận dụng đồ sơ sinh thanh lý và tách bạch ngân sách thương con với chiều chuộng tiêu dùng.",
+    "category": "finance",
+    "tags": [
+      "chi phí nuôi con",
+      "tài chính gia đình",
+      "quỹ học vấn",
+      "tiêu dùng thông minh",
+      "lập kế hoạch sinh con"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "Hoạch định trước khi quyết định sinh con hoặc mở rộng gia đình",
+    "effort": "medium",
+    "benefits": [
+      "Giảm áp lực tài chính cho vợ chồng trẻ trong 3 năm đầu đời nhiều biến động",
+      "Tránh lãng phí hàng chục triệu đồng mua đồ dùng sơ sinh chỉ xài vài tuần rồi bỏ xó",
+      "Xây dựng quỹ học vấn tích lũy sớm tận dụng lãi suất kép trong 18 năm"
+    ],
+    "risks": [
+      "Cả hai vợ chồng chi tiêu theo tâm lý bù đắp hoặc chạy đua 'phải mua đồ đắt nhất cho con không thua bạn bè'",
+      "Chưa chuẩn bị quỹ dự phòng mất thu nhập của mẹ trong giai đoạn nghỉ thai sản kéo dài"
+    ],
+    "target_groups": [
+      "Các cặp vợ chồng trẻ đang chuẩn bị kế hoạch mang thai sinh con đầu lòng hoặc con thứ hai",
+      "Cha mẹ có con nhỏ muốn tối ưu hóa ngân sách chi tiêu hàng tháng"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên nguyên tắc hoạch định quỹ giáo dục của CFP Board và số liệu khảo sát chi tiêu hộ gia đình tại Việt Nam (Tổng cục Thống kê).",
+    "body": "## 3 Giai đoạn chi phí nuôi con và bẫy tâm lý \"Thương con là phải mua đồ đắt nhất\"\n\nNgành công nghiệp sản phẩm mẹ và bé rất giỏi khai thác tâm lý lo lắng và tình yêu thương của cha mẹ mới sinh con: Xe đẩy 20 triệu, nôi rung tự động 10 triệu, máy pha sữa thông minh, tủ quần áo sơ sinh hàng hiệu... Trong thực tế, trẻ sơ sinh lớn nhanh theo từng tuần; phần lớn quần áo size newborn chỉ mặc được đúng 3-4 tuần là chật!\n\n## Chiến lược tối ưu ngân sách 3 giai đoạn\n\n### 1. Giai đoạn 0 - 3 tuổi: Giảm tối đa chi phí vật dụng tiêu hao nhanh\n* **Tận dụng đồ xin lại (Hand-me-downs) và đồ thanh lý lướt:** Quần áo sơ sinh, cũi gỗ, xe đẩy, ghế ăn dặm, xe tập đi xin lại từ anh chị em hoặc mua thanh lý từ các gia đình giữ gìn sạch sẽ giúp tiết kiệm tới **$60-70\\%$ chi phí** mà chất lượng vải vóc đã giặt nhiều lần lại càng mềm mại an toàn cho da bé! *(Riêng Ghế ngồi ô tô cho trẻ em - Car Seat và Núm ti bình sữa thì nên mua mới 100% để bảo đảm an toàn va chạm và vệ sinh).*\n* **Nuôi con bằng sữa mẹ (nếu đủ điều kiện sức khỏe):** Tiết kiệm hàng chục triệu đồng tiền sữa công thức mỗi năm, đồng thời tăng cường miễn dịch tự nhiên giúp giảm chi phí khám chữa bệnh vặt cho trẻ.\n* **Ưu tiên BHYT và Tiêm chủng mở rộng quốc gia:** Trẻ dưới 6 tuổi được Nhà nước cấp thẻ BHYT miễn phí 100% và miễn phí các mũi vắc-xin cơ bản quan trọng nhất tại trạm y tế phường xã.\n\n### 2. Giai đoạn 4 - 12 tuổi: Đầu tư cho Môi trường Trường học và Vận động\n* Không cần chạy đua học phí trường quốc tế vượt quá khả năng tài chính (khiến gia đình kiệt quệ không còn tiền tiết kiệm dự phòng). Một ngôi trường công lập/tư thục chất lượng khá gần nhà (giảm thời gian đưa đón kẹt xe) kết hợp cha mẹ dành thời gian đọc sách và chơi thể thao cùng con mang lại hiệu quả phát triển vượt trội hơn.\n\n### 3. Xây dựng Quỹ Giáo dục Đại học 18 năm (Sức mạnh của Lãi kép)\n* Thay vì đợi con vào lớp 12 mới loay hoay bán đất vay nợ đóng học phí đại học: Nếu ngay từ tháng con chào đời, cha mẹ chỉ trích cố định **1.500.000 đồng/tháng** đầu tư đều đặn vào các kênh an toàn tăng trưởng dài hạn (như chứng chỉ quỹ mở chỉ số VN30/ETF với lợi suất kỳ vọng trung bình $9-10\\%/năm$), sau 18 năm quỹ học vấn của con sẽ tích lũy lên tới hơn **850 triệu đồng** (trong khi vốn gốc bỏ ra chỉ là 324 triệu đồng)!",
+    "sources": [
+      {
+        "name": "Certified Financial Planner Board (CFP) - Education Planning and Raising Children Costs",
+        "url": "https://www.cfp.net/",
+        "note": "Nguyên lý hoạch định quỹ giáo dục dài hạn và tối ưu hóa dòng tiền gia đình có con nhỏ"
+      },
+      {
+        "name": "American Academy of Pediatrics (AAP) - Safe Selection of Used Baby Gear & Car Seats",
+        "url": "https://www.healthychildren.org/",
+        "note": "Hướng dẫn lựa chọn đồ trẻ em mua lại an toàn và vật dụng bắt buộc phải mua mới"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-black-credit-usury-debt-trap-escape-071",
+    "slug": "finance-black-credit-usury-debt-trap-escape-071",
+    "title": "Thoát bẫy Tín dụng đen qua app: Xử lý khi bị lãi suất cắt cổ và khủng bố danh bạ điện thoại",
+    "description": "Giới hạn lãi suất cho vay tối đa 20%/năm theo Bộ luật Dân sự 2015, các bước cắt lỗ không 'vay app mới trả app cũ' và trình báo cơ quan công an tố giác cưỡng đoạt tài sản.",
+    "category": "finance",
+    "tags": [
+      "tín dụng đen",
+      "app vay tiền",
+      "cho vay lãi nặng",
+      "khủng bố đòi nợ",
+      "pháp luật dân sự"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "Ngắt vòng xoáy vay nợ ngay lập tức",
+    "effort": "high",
+    "benefits": [
+      "Chấm dứt vòng xoáy 'vay app B trả lãi cho app A' khiến món nợ 5 triệu phình to thành 200 triệu chỉ sau 2 tháng",
+      "Bảo vệ danh dự bản thân và gia đình trước thủ đoạn cắt ghép ảnh bôi nhọ, gọi điện khủng bố danh bạ",
+      "Nắm vững quy định pháp luật bảo vệ người vay trước hành vi cho vay nặng lãi trái phép"
+    ],
+    "risks": [
+      "Hoảng loạn sợ mất mặt nên giấu gia đình rồi tiếp tục cài thêm hàng chục app tín dụng đen khác để 'đảo nợ'",
+      "Chuyển tiền trả cho các số tài khoản lạ không xác định khiến không xóa được nợ trên hệ thống"
+    ],
+    "target_groups": [
+      "Người đang lỡ dính vào bẫy vay tiền nhanh qua ứng dụng trực tuyến không phép (App tín dụng đen)",
+      "Người thân, đồng nghiệp bị các đối tượng đòi nợ gọi điện đe dọa làm phiền"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Căn cứ Điều 468 Bộ luật Dân sự 2015 (trần lãi suất 20%/năm), Điều 201 Bộ luật Hình sự 2015 (Tội cho vay lãi nặng) và Hướng dẫn của Bộ Công an.",
+    "body": "## Cơ chế hút máu của \"App vay tiền nhanh\" (Tín dụng đen trực tuyến)\n\nQuảng cáo nghe rất ngọt: *\"Vay 10 triệu chỉ cần CCCD, giải ngân sau 5 phút\"*. Nhưng thực tế khi bấm nhận tiền:\n* Họ lập tức trừ sẵn \"phí dịch vụ, phí hồ sơ\" $30-40\\%$ (chỉ nhận được 6 triệu đồng) nhưng bắt trả gốc đủ 10 triệu chỉ sau **7 ngày**! Lãi suất quy đổi theo năm lên tới **$500\\% - 2.000\\%/năm$**.\n* Điều kiện cài app bắt buộc bạn phải bấm **\"Cho phép truy cập Danh bạ, Kho ảnh và Định vị\"**. Ngay từ giây phút cài app, toàn bộ số điện thoại của cha mẹ, sếp, đồng nghiệp của bạn đã bị hút về máy chủ của bọn tội phạm để làm con tin tống tiền.\n\n## Quy định pháp luật: Lãi suất vượt quá 20%/năm là VÔ HIỆU\n\n* Theo **Điều 468 Bộ luật Dân sự 2015**: Lãi suất cho vay theo thỏa thuận tối đa **không được vượt quá $20\\%/năm$** của khoản tiền vay. Phần lãi suất vượt quá mức giới hạn này không có hiệu lực pháp lý!\n* Theo **Điều 201 Bộ luật Hình sự 2015**: Hành vi cho vay với lãi suất gấp 5 lần mức cao nhất (tức từ **$100\\%/năm$ trở lên**) và thu lợi bất chính từ 30 triệu đồng trở lên là **Tội phạm Hình sự (Tội cho vay lãi nặng trong giao dịch dân sự)** có thể bị phạt tù đến 3 năm!\n\n## 4 Bước Thoát khỏi Bẫy Tín dụng đen Dứt điểm\n\n1. **DỪNG NGAY LẬP TỨC việc \"vay app mới để trả app cũ\":**\n   * Đây là quy tắc sống còn số 1! Vay app B trả cho app A không bao giờ giúp bạn hết nợ, nó chỉ nhân số tiền nợ lên cấp số nhân sau mỗi tuần. Hãy chấp nhận dừng lại ngay hôm nay!\n2. **Thú nhận trung thực với Gia đình và Cơ quan làm việc (Tiêm vắc-xin tâm lý):**\n   * Đừng sợ hãi giấu giếm! Hãy chủ động nói rõ sự thật với cha mẹ, vợ/chồng và trưởng phòng nhân sự: *\"Tôi/Em lỡ sập bẫy app lừa đảo công nghệ cao, sắp tới có thể có số lạ gọi điện hoặc cắt ghép ảnh giả mạo để quấy rối bôi nhọ danh dự. Xin mọi người chặn số lạ, tuyệt đối không chuyển tiền và giúp ghi âm lại bằng chứng\"*. Một khi mọi người đã biết trước, đòn tâm lý đe dọa của bọn đòi nợ trở nên hoàn toàn vô hiệu!\n3. **Thu thập toàn bộ bằng chứng phạm tội:**\n   * Chụp ảnh màn hình giao diện app, hợp đồng điện tử, lịch sử sao kê số tiền thực nhận và số tiền đã trả qua ngân hàng, ghi âm các cuộc gọi đe dọa chửi bới, lưu tin nhắn cắt ghép hình ảnh bôi nhọ.\n4. **Trình báo ngay tới Cơ quan Công an và Đường dây nóng 113 / Cục Cảnh sát Hình sự:**\n   * Nộp đơn tố giác tội phạm kèm toàn bộ chứng cứ lên Công an xã/phường hoặc Phòng Cảnh sát Hình sự nơi cư trú để xử lý hành vi cho vay lãi nặng và cưỡng đoạt tài sản/làm nhục người khác. Tuyệt đối không thỏa hiệp đóng tiền phạt vô lý nữa.",
+    "sources": [
+      {
+        "name": "Quốc hội Việt Nam - Bộ luật Dân sự 2015 (Điều 468: Lãi suất) & Bộ luật Hình sự 2015 (Điều 201: Tội cho vay lãi nặng)",
+        "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx",
+        "note": "Quy chuẩn pháp lý giới hạn trần lãi suất 20%/năm và xử lý hình sự tín dụng đen"
+      },
+      {
+        "name": "Cổng Thông tin Điện tử Bộ Công an - Khuyến cáo phòng ngừa và đấu tranh với tội phạm tín dụng đen qua không gian mạng",
+        "url": "https://bocongan.gov.vn",
+        "note": "Hướng dẫn nạn nhân thu thập chứng cứ và tố giác app cho vay nặng lãi trái phép"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-severance-pay-unemployment-insurance-072",
+    "slug": "finance-severance-pay-unemployment-insurance-072",
+    "title": "Nghỉ việc đúng luật: Cách tính Trợ cấp thất nghiệp (60% lương) và Trợ cấp mất việc/thôi việc",
+    "description": "Quyền lợi tài chính khi chấm dứt hợp đồng lao động tại Việt Nam: Thời hạn 3 tháng nộp hồ sơ hưởng BHTN, mức hưởng tối đa và quyền giữ thẻ BHYT miễn phí.",
+    "category": "finance",
+    "tags": [
+      "trợ cấp thất nghiệp",
+      "BHTN",
+      "trợ cấp thôi việc",
+      "nghỉ việc",
+      "Luật Việc làm"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "Nộp hồ sơ trong vòng 03 tháng kể từ ngày chấm dứt HĐLĐ",
+    "effort": "low",
+    "benefits": [
+      "Nhận tiền trợ cấp hàng tháng bằng 60% mức bình quân lương đóng BHTN của 6 tháng liền kề",
+      "Được cấp Thẻ Bảo hiểm Y tế miễn phí trong suốt thời gian đang hưởng trợ cấp thất nghiệp",
+      "Hưởng thêm Trợ cấp thôi việc/mất việc từ công ty cũ cho những năm chưa tham gia BHTN"
+    ],
+    "risks": [
+      "Quá thời hạn 3 tháng (90 ngày) mới đi nộp hồ sơ làm mất quyền hưởng trợ cấp của đợt đóng đó",
+      "Tự ý bỏ việc ngang (đơn phương chấm dứt hợp đồng trái luật) khiến mất sạch quyền hưởng BHTN và trợ cấp thôi việc"
+    ],
+    "target_groups": [
+      "Người lao động vừa nghỉ việc, hết hạn hợp đồng lao động hoặc bị công ty cắt giảm nhân sự",
+      "Người chuẩn bị xin nghỉ việc muốn biết cách nghỉ đúng luật để bảo toàn quyền lợi bảo hiểm"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Căn cứ Luật Việc làm số 38/2013/QH13 (Điều 49, 50) và Bộ luật Lao động 2019 (Điều 46, 47).",
+    "body": "## 3 Điều kiện để được nhận tiền Trợ cấp Thất nghiệp (BHTN)\n\nTheo Điều 49 Luật Việc làm, bạn được hưởng trợ cấp thất nghiệp khi đáp ứng đủ:\n1. **Chấm dứt hợp đồng lao động đúng pháp luật** (thỏa thuận nghỉ việc, hết hạn hợp đồng, báo trước đúng thời hạn 30/45 ngày theo luật, hoặc bị công ty cắt giảm nhân sự). *(Lưu ý: Nếu bạn tự ý bỏ việc ngang không báo trước đúng hạn hoặc bị sa thải do kỷ luật nặng vẫn mất hoặc bị ảnh hưởng hồ sơ hưởng).*\n2. **Đã đóng Bảo hiểm Thất nghiệp từ đủ 12 tháng trở lên** trong thời gian 24 tháng trước khi chấm dứt hợp đồng.\n3. **Đã nộp hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng** kể từ ngày chấm dứt hợp đồng lao động (làm trực tiếp tại Trung tâm Dịch vụ Việc làm tỉnh/thành phố hoặc nộp online trên Cổng Dịch vụ công Quốc gia).\n4. Chưa tìm được việc làm sau 15 ngày kể từ ngày nộp hồ sơ.\n\n## Mức hưởng và Số tháng được nhận tiền\n\n* **Mức tiền trợ cấp hàng tháng:** Bằng **$60\\%$ mức bình quân tiền lương tháng đóng BHTN của 06 tháng liền kề** trước khi thất nghiệp (Mức trần tối đa không quá 5 lần mức lương tối thiểu vùng).\n* **Thời gian hưởng:**\n  * Đóng đủ 12 đến 36 tháng: Hưởng **03 tháng** trợ cấp.\n  * Sau đó, cứ đóng đủ thêm **12 tháng** thì được hưởng thêm **01 tháng** trợ cấp (Tối đa không quá 12 tháng hưởng).\n* **Quyền lợi đi kèm cực giá trị:** Trong những tháng hưởng BHTN, bạn được cấp **Thẻ BHYT miễn phí**, được tư vấn giới thiệu việc làm miễn phí và hỗ trợ kinh phí học nghề mới!\n\n## Phân biệt với Trợ cấp Thôi việc / Mất việc làm từ Công ty (Điều 46, 47 BLLĐ)\n\n* Nếu bạn làm việc cho công ty từ đủ 12 tháng trở lên trước khi Luật BHTN áp dụng (trước năm 2009) hoặc trong khoảng thời gian công ty không đóng BHTN (ví dụ thời gian thử việc, thời gian nghỉ thai sản/nghỉ ốm dài ngày): Khi nghỉ việc đúng luật, công ty phải trả **Trợ cấp thôi việc** (mỗi năm làm việc = 1/2 tháng lương).\n* Nếu bị công ty cho nghỉ vì thay đổi cơ cấu, công nghệ hoặc lý do kinh tế (cắt giảm nhân sự diện rộng): Công ty phải trả **Trợ cấp mất việc làm** (mỗi năm làm việc = 1 tháng lương, ít nhất phải bằng 2 tháng lương nếu thời gian không đóng BHTN ít).",
+    "sources": [
+      {
+        "name": "Quốc hội Việt Nam - Luật Việc làm số 38/2013/QH13 (Mục 3: Trợ cấp thất nghiệp)",
+        "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-viec-lam-2013-215628.aspx",
+        "note": "Quy chuẩn điều kiện, mức chi trả 60% lương và thời hạn 3 tháng nộp hồ sơ hưởng BHTN"
+      },
+      {
+        "name": "Cổng Dịch vụ công Quốc gia - Thủ tục Giải quyết hưởng trợ cấp thất nghiệp trực tuyến",
+        "url": "https://dichvucong.gov.vn",
+        "note": "Kênh nộp hồ sơ hưởng trợ cấp thất nghiệp online không cần đi xếp hàng trực tiếp"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-diversifying-income-side-hustle-risk-073",
+    "slug": "finance-diversifying-income-side-hustle-risk-073",
+    "title": "Xây dựng nguồn thu nhập thứ hai an toàn: Kỷ luật không bỏ việc chính trước khi đạt ngưỡng hòa vốn",
+    "description": "Nguyên tắc 'Cầu nối An toàn' khi phát triển nghề tay trái (Side Hustle): Tránh cám dỗ nghỉ việc ngang để khởi nghiệp, cân đối thời gian và kiểm soát xung đột lợi ích.",
+    "category": "finance",
+    "tags": [
+      "thu nhập thứ hai",
+      "side hustle",
+      "nghề tay trái",
+      "khởi nghiệp an toàn",
+      "quản lý rủi ro"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "Dành 5-10 giờ ngoài giờ hành chính mỗi tuần",
+    "effort": "medium",
+    "benefits": [
+      "Giảm phụ thuộc 100% vào một nguồn lương duy nhất, tăng khả năng chống chịu trước bão sa thải",
+      "Thử nghiệm mô hình kinh doanh mới với áp lực tài chính bằng 0 nhờ vẫn có lương chính nuôi sống bản thân",
+      "Tích lũy thêm dòng vốn đầu tư hoặc rút ngắn thời gian trả hết nợ mua nhà"
+    ],
+    "risks": [
+      "Bỏ việc chính vội vã theo các lời khuyên 'đốt thuyền để tiến lên' dẫn đến cạn kiệt tiền mặt sau 3 tháng",
+      "Làm nghề tay trái vi phạm điều khoản không cạnh tranh (Non-compete) hoặc ăn cắp giờ làm việc công ty hiện tại"
+    ],
+    "target_groups": [
+      "Nhân viên văn phòng có kỹ năng chuyên môn (thiết kế, lập trình, dạy học, viết lách, dịch thuật) muốn tăng thu nhập",
+      "Người muốn chuyển hướng sang làm tự do hoặc mở công ty riêng một cách an toàn"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên nghiên cứu hành vi khởi nghiệp của GS. Joseph Raffiee (Đại học Wisconsin-Madison) và GS. Jie Feng đăng trên Academy of Management Journal.",
+    "body": "## Sự thật bất ngờ về câu chuyện \"Đốt thuyền bỏ việc để khởi nghiệp\"\n\nTruyền thông hay ca ngợi những tấm gương nghỉ việc văn phòng để mở quán hay khởi nghiệp toàn thời gian. Nhưng nghiên cứu quy mô lớn theo dõi hơn 5.000 nhà sáng lập trong 15 năm của GS. Joseph Raffiee (công bố trên *Academy of Management Journal*) chỉ ra một kết quả chấn động: **Những người giữ công việc làm công ăn lương trong khi âm thầm xây dựng dự án phụ (Hybrid Entrepreneurs) có tỷ lệ thất bại THẤP HƠN $33\\%$ so với những người bỏ việc ngay lập tức để khởi nghiệp!**\n\nKhi vẫn có lương hàng tháng trả tiền thuê nhà và tiền ăn, bạn không bao giờ bị đói đến mức phải bán rẻ sản phẩm hay đưa ra các quyết định kinh doanh liều lĩnh tuyệt vọng.\n\n## 3 Nguyên tắc Sắt để xây dựng Nguồn Thu nhập Thứ hai bền vững\n\n1. **Nguyên tắc \"Bán Kỹ Năng trước, Đầu Tư Vốn sau\":**\n   * Đừng bắt đầu nghề tay trái bằng việc vay 200 triệu mở quán trà sữa hay nhập lô hàng 100 triệu về ôm kho! Hãy bắt đầu bằng các mô hình **chi phí vốn gần bằng 0** dựa trên chính kỹ năng sẵn có của bạn: Nhận dự án thiết kế/lập trình/kế toán tự do, gia sư chuyên ngành, viết nội dung, bán sản phẩm số (mẫu file Excel, tài liệu học tập).\n2. **Tuân thủ tuyệt đối Đạo đức nghề nghiệp và Tránh xung đột lợi ích:**\n   * Không bao giờ sử dụng máy tính công ty, tài liệu mật của công ty hay **khung giờ hành chính (8h-17h)** công ty đang trả lương cho bạn để làm việc riêng.\n   * Không lôi kéo khách hàng hiện tại của công ty cũ sang làm riêng cho mình (vi phạm pháp luật lao động và sở hữu trí tuệ).\n3. **Ngưỡng an toàn trước khi cân nhắc \"Nghỉ việc chính ra làm riêng\":**\n   * Chỉ chuyển sang làm toàn thời gian cho dự án riêng khi đáp ứng ĐỒNG THỜI 2 điều kiện:\n     * Nguồn thu nhập ròng từ dự án phụ đã **duy trì ổn định bằng hoặc cao hơn $100\\%$ mức lương chính hiện tại liên tục trong ít nhất 6 tháng**.\n     * Đã tích lũy xong một **Quỹ đệm tiền mặt riêng tương đương 12 tháng sinh hoạt phí** nằm hoàn toàn tách biệt với vốn vận hành kinh doanh.",
+    "sources": [
+      {
+        "name": "Joseph Raffiee & Jie Feng (2014) - Should I Quit My Day Job? A Hybrid Path to Entrepreneurship (Academy of Management Journal)",
+        "url": "https://doi.org/10.5465/amj.2012.0522",
+        "note": "Nghiên cứu định lượng chứng minh khởi nghiệp lai (giữ việc chính) giảm 33% tỷ lệ thất bại"
+      },
+      {
+        "name": "Harvard Business Review - Managing a Side Hustle Without Burning Out",
+        "url": "https://hbr.org/",
+        "note": "Hướng dẫn quản trị ranh giới thời gian và xung đột lợi ích khi làm nghề tay trái"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-cryptocurrency-scam-rug-pull-protection-074",
+    "slug": "finance-cryptocurrency-scam-rug-pull-protection-074",
+    "title": "Phòng ngừa lừa đảo tiền mã hóa: Nhận diện sàn giả mạo, nhóm 'kéo lệnh' và chiêu trò rút thảm (Rug Pull)",
+    "description": "Các hình thức lừa đảo phổ biến trong thị trường tài sản số (Pig Butchering, ví giả, cấp quyền Smart Contract độc hại) và nguyên tắc kiểm soát rủi ro đầu tư.",
+    "category": "finance",
+    "tags": [
+      "tiền mã hóa",
+      "crypto scam",
+      "rug pull",
+      "sàn giả mạo",
+      "an toàn tài sản số"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "Kiểm tra bảo mật trước mọi giao dịch",
+    "effort": "medium",
+    "benefits": [
+      "Tránh mất sạch tiền tiết kiệm vào các sàn giao dịch ảo do kẻ lừa đảo dựng lên",
+      "Nhận diện được thủ đoạn thao túng tâm lý 'mổ lợn' (Pig Butchering) qua ứng dụng hẹn hò",
+      "Bảo vệ ví Web3 khỏi các hợp đồng thông minh độc hại rút trộm toàn bộ số dư (Drain Wallet)"
+    ],
+    "risks": [
+      "Tham gia các nhóm Telegram/Zalo có 'thầy đọc lệnh bao thắng 100%', 'nhận kèo x100 tài khoản'",
+      "Dùng tiền đi vay nợ hoặc toàn bộ quỹ khẩn cấp gia đình để đầu cơ tài sản biến động cực cao"
+    ],
+    "target_groups": [
+      "Người mới tìm hiểu đầu tư tài sản số, tiền mã hóa (Crypto / Web3)",
+      "Người thường xuyên nhận được tin nhắn làm quen qua Telegram, Tinder rủ đầu tư sàn ngoại hối/tiền ảo"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Dựa trên Cảnh báo lừa đảo tài sản số của Cục Điều tra Liên bang Hoa Kỳ (FBI IC3 Report) và Cục An toàn Thông tin (Bộ TT&TT Việt Nam).",
+    "body": "## Cảnh báo pháp lý tại Việt Nam và 4 Chiêu trò Lừa đảo phổ biến nhất\n\nTại Việt Nam hiện nay, tiền mã hóa chưa được công nhận là phương tiện thanh toán hợp pháp và chưa có hành lang pháp lý bảo hộ khi xảy ra tranh chấp. Do đó, khi bạn mất tiền vào các sàn lừa đảo, khả năng thu hồi tài sản gần như bằng không! Dưới đây là 4 cái bẫy tinh vi nhất đang cướp đi hàng nghìn tỷ đồng mỗi năm:\n\n### 1. Sàn giao dịch Giả mạo & Lừa đảo \"Mổ lợn\" (Pig Butchering)\n* Kẻ gian đóng giả người thành đạt, điển trai/xinh đẹp kết bạn trên Tinder, Facebook, Telegram, nói chuyện tình cảm suốt nhiều tuần để lấy lòng tin.\n* Sau đó chúng khoe biết \"lỗ hổng hệ thống\" hoặc có \"người thân làm nội gián\" trên một sàn giao dịch tiền ảo/vàng lạ hoắc, dụ bạn tải app ngoài App Store/CH Play (hoặc bấm link web lạ).\n* Lúc đầu bạn nạp 5 triệu thử rút ra được 6 triệu ngay lập tức. Khi bạn tin tưởng vay mượn nạp vào 500 triệu, tài khoản trên màn hình hiện lãi lên 2 tỷ nhưng khi bấm rút tiền thì hệ thống báo **\"Bị đóng băng, phải nạp thêm 20% tiền thuế/phí xác minh mới cho rút\"** $\\rightarrow$ Nạp thêm bao nhiêu mất sạch bấy nhiêu!\n\n### 2. Nhóm Telegram \"Thầy đọc lệnh bao thắng\" (Pump & Dump)\n* Kẻ gian lập nhóm Telegram vài nghìn thành viên ảo (Bot) tung hô một \"chuyên gia\" đoán đâu trúng đó. Thực tế đây là mô hình thao túng giá: \"Chuyên gia\" mua gom sẵn một đồng coin rác giá rẻ bèo rồi hô hào cả nhóm lao vào mua đẩy giá lên cao, sau đó chúng xả thẳng hàng lên đầu thành viên làm giá sập $99\\%$ trong 1 phút.\n\n### 3. Rút thảm thanh khoản (Rug Pull) trên các đồng Meme Coin mới\n* Bọn lừa đảo tạo ra một đồng token ăn theo xu hướng mới, khóa chức năng không cho người mua bán ra (Honeypot) hoặc bất ngờ rút sạch toàn bộ thanh khoản trong bể giao dịch rồi biến mất.\n\n### 4. Ký duyệt Smart Contract độc hại (Phishing Drainer)\n* Dụ người dùng kết nối ví Web3 (MetaMask, Trust Wallet) vào trang web nhận quà miễn phí (Airdrop giả) rồi bấm ký lệnh `Approve / SetApprovalForAll`. Lệnh này trao toàn quyền cho hacker tự động rút sạch toàn bộ tài sản trong ví của bạn bất cứ lúc nào mà không cần biết mật khẩu!\n\n## Nguyên tắc bảo vệ tài sản số tối thiểu\n\n* **Chỉ phân bổ tối đa $5-10\\%$ vốn nhàn rỗi chấp nhận mất hoàn toàn** vào các tài sản rủi ro cực cao; tuyệt đối không vay nợ đầu tư.\n* Không bao giờ kết nối ví chứa tài sản chính vào các đường link lạ nhận thưởng; luôn dùng công cụ thu hồi quyền hợp đồng (như `revoke.cash`).",
+    "sources": [
+      {
+        "name": "FBI Internet Crime Complaint Center (IC3) - Cryptocurrency Investment Fraud Warning",
+        "url": "https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/cryptocurrency-investment-fraud",
+        "note": "Báo cáo cảnh báo quốc tế của FBI về thủ đoạn lừa đảo mổ lợn và sàn tiền ảo giả mạo"
+      },
+      {
+        "name": "Cục An toàn thông tin (Bộ TT&TT) - Cảnh báo lừa đảo đầu tư sàn tài chính, tiền ảo trực tuyến",
+        "url": "https://khonggianmang.vn",
+        "note": "Cảnh báo các chiêu trò lừa đảo trực tuyến nhắm vào người dùng Việt Nam"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-managing-irregular-freelance-income-budget-075",
+    "slug": "finance-managing-irregular-freelance-income-budget-075",
+    "title": "Quản lý tài chính khi thu nhập bấp bênh (Freelancer, Hoa hồng, Kinh doanh mùa vụ): Kỹ thuật 'Tài khoản Đệm Trả Lương Cố Định'",
+    "description": "Cách thoát khỏi vòng xoáy 'tháng kiếm 50 triệu tiêu hết 45 triệu, tháng 0 đồng thì vay nợ' bằng mô hình tách Tài khoản Doanh thu và tự trả lương cố định hằng tháng.",
+    "category": "finance",
+    "tags": [
+      "thu nhập bấp bênh",
+      "freelancer",
+      "kinh doanh nhỏ",
+      "dòng tiền",
+      "quản lý tài chính"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "30 phút thiết lập cấu trúc 2 tài khoản ngân hàng",
+    "effort": "medium",
+    "benefits": [
+      "Biến dòng thu nhập lên xuống thất thường thành 'tiền lương ổn định' mỗi tháng để gia đình yên tâm chi tiêu",
+      "Luôn có sẵn tiền đóng thuế TNCN/thuế hộ kinh doanh và dự phòng cho 3 tháng thấp điểm vắng khách"
+    ],
+    "risks": [
+      "Coi tháng đỉnh cao doanh thu (như dịp cận Tết) là mức sống bình thường rồi nâng chi tiêu cố định lên theo, đến tháng vắng khách thì lao đao",
+      "Trộn chung tiền vốn nhập hàng của tiệm với tiền đi chợ ăn uống hằng ngày của gia đình"
+    ],
+    "target_groups": [
+      "Freelancer, nhân viên kinh doanh ăn hoa hồng bất động sản/bảo hiểm, tài xế công nghệ, chủ shop online"
+    ],
+    "value_level": "high",
+    "evidence_level": "medium",
+    "evidence_notes": "Tổng hợp thực hành quản lý dòng tiền thu nhập biến động (Variable Income Budgeting) và nguyên tắc tách biệt dòng tiền kinh doanh - cá nhân.",
+    "body": "## Căn bệnh \"Bữa đói bữa no\" của người có thu nhập biến động\n\nNgười làm công ăn lương chỉ cần nhìn bảng lương ngày mùng 5 là biết tháng này mình có bao nhiêu để tiêu. Ngược lại, người bán hàng mùa vụ, môi giới hay freelancer lại hay rơi vào bẫy tâm lý: tháng nào chốt được hợp đồng lớn thu về 60 triệu liền tự thưởng mua sắm, ăn nhà hàng sang chảnh, đến 2 tháng sau thị trường đóng băng thu về chỉ 5 triệu thì không đủ tiền trả tiền thuê nhà và đóng học cho con.\n\n## Kỹ thuật \"Tài khoản Đệm Trả Lương Cố Định\" (3 bước vận hành)\n\n1. **Bước 1: Mở riêng Tài khoản Đệm Doanh Thu (Income Hub) — CẤM quẹt thẻ hay chi tiêu trực tiếp từ đây:**\n   * 100% tiền khách hàng chuyển khoản, tiền hoa hồng hay doanh thu bán hàng đều đổ vào tài khoản này.\n   * **Việc đầu tiên mỗi khi có tiền về:** Trích ngay **10-15% chuyển sang một hũ/tài khoản riêng mang tên \"Thuế & Chi phí công việc\"** (để cuối năm quyết toán thuế TNCN, thuế khoán hoặc mua thiết bị làm việc mới không bị giật mình).\n2. **Bước 2: Xác định \"Mức Lương Sàn Cá Nhân\" (Baseline Salary):**\n   * Tính tổng chi phí sinh hoạt thiết yếu + khoản tiết kiệm tối thiểu hằng tháng của bản thân/gia đình (lấy mức sống bình dị ổn định, **không** tính theo tháng đỉnh cao nhất; ví dụ: thu nhập cả năm dao động từ 8 đến 50 triệu/tháng nhưng trung bình cộng là 20 triệu -> đặt mức lương tự trả cố định là **15-16 triệu/tháng**).\n3. **Bước 3: Cài lệnh Tự động \"Trả lương cho chính mình\" vào đúng ngày 01 hằng tháng:**\n   * Vào đúng ngày 01 mỗi tháng, chuyển đúng **16 triệu đồng** từ Tài khoản Đệm sang **Tài khoản Chi Tiêu Hằng Ngày**. Bạn chỉ được phép sinh hoạt gói gọn trong 16 triệu đó bất kể tháng vừa rồi làm ăn trúng đậm hay ế ẩm.\n   * **Điều kỳ diệu xảy ra:** Toàn bộ phần tiền dư trong những tháng bội thu tự động ở lại Tài khoản Đệm để tích thành **Bể Đệm Chống Mùa Thấp Điểm (mục tiêu đủ trả lương cho bạn ít nhất 3-6 tháng liên tiếp)** ngay cả khi tháng tới doanh thu bằng 0! Chỉ khi Bể Đệm vượt quá ngưỡng 6 tháng an toàn, bạn mới trích phần vượt đó để chia \"thưởng cuối quý\" đầu tư dài hạn hoặc du lịch.",
+    "sources": [
+      {
+        "name": "YNAB (You Need A Budget) - Budgeting With Variable Income",
+        "url": "https://www.ynab.com/blog/how-to-budget-with-variable-income",
+        "note": "Phương pháp xây dựng quỹ đệm tháng thấp điểm và tự trả lương cố định từ thu nhập biến động"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-evaluating-health-insurance-vs-life-insurance-076",
+    "slug": "finance-evaluating-health-insurance-vs-life-insurance-076",
+    "title": "Phân biệt Bảo hiểm Y tế nhà nước, Bảo hiểm sức khỏe thẻ rời và Bảo hiểm Nhân thọ liên kết đầu tư: Tránh mua nhầm mục đích",
+    "description": "Giải mã bản chất 'bảo vệ rủi ro' vs 'tích lũy đầu tư', thứ tự ưu tiên mua bảo hiểm đúng chuẩn khi ngân sách còn hạn chế để không phải bỏ hợp đồng giữa chừng mất trắng tiền.",
+    "category": "finance",
+    "tags": [
+      "bảo hiểm y tế",
+      "bảo hiểm nhân thọ",
+      "bảo hiểm sức khỏe",
+      "quản trị rủi ro",
+      "tài chính cá nhân"
+    ],
+    "cost": "medium",
+    "reading_time": 8,
+    "time": "20 phút kiểm tra nhu cầu trước khi gặp tư vấn viên bảo hiểm",
+    "effort": "medium",
+    "benefits": [
+      "Phủ kín rủi ro y tế nặng với chi phí hợp lý nhất bằng cách kết hợp đúng BHYT nhà nước trước khi mua bảo hiểm thương mại",
+      "Không bị mất 50-70% số tiền đã đóng do mua hợp đồng nhân thọ 20-30 triệu/năm quá sức tài chính rồi phải hủy ngang năm thứ 2"
+    ],
+    "risks": [
+      "Bỏ BHYT nhà nước giá vài trăm nghìn/năm vì nghe lời dụ 'mua gói nhân thọ này vừa bảo vệ sức khỏe vừa sinh lời cao hơn gửi tiết kiệm'",
+      "Mua hợp đồng bảo hiểm nhân thọ cho con nhỏ trong khi bố mẹ (người tạo ra thu nhập chính) lại chưa có bảo hiểm gì"
+    ],
+    "target_groups": [
+      "Người trẻ mới đi làm, vợ chồng trẻ có con nhỏ đang phân vân mua gói bảo hiểm đầu tiên cho gia đình"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Căn cứ Luật Kinh doanh Bảo hiểm 2022 (có hiệu lực 2023), Luật BHYT Việt Nam và nguyên tắc tháp bảo vệ tài chính cá nhân.",
+    "body": "## Sai lầm tốn kém nhất: Nhầm lẫn \"Bảo hiểm\" với \"Kênh đầu tư sinh lời\"\n\nRất nhiều tranh cãi về bảo hiểm tại Việt Nam thời gian qua xuất phát từ việc người mua được chào bán một sản phẩm **Bảo hiểm nhân thọ liên kết đầu tư (ILP/ULP)** như thể đó là \"cuốn sổ tiết kiệm lãi cao vừa được tặng kèm bảo vệ miễn phí\". Thực chất, mọi hợp đồng bảo hiểm đều có **phí rủi ro, phí quản lý và chi phí ban đầu** rất lớn trong 3-5 năm đầu (nếu hủy ngang trong 2 năm đầu, giá trị hoàn lại gần như bằng 0). Bảo hiểm sinh ra để **chuyển giao rủi ro thảm họa tài chính**, không phải để làm giàu.\n\n## Thứ tự ưu tiên 3 tầng bảo vệ chuẩn cho mọi gia đình Việt\n\n1. **Tầng 1 (Bắt buộc số 1, hiệu quả chi phí cao nhất): Bảo hiểm Y tế Nhà nước (BHYT):**\n   * Chi phí cực rẻ (chỉ vài trăm nghìn đến hơn 1 triệu/năm theo diện hộ gia đình hoặc qua công ty), nhưng **KHÔNG LOẠI TRỪ BỆNH NỀN có sẵn**, không giới hạn mức chi trả tối đa trọn đời và chi trả 80-100% chi phí điều trị bệnh hiểm nghèo kéo dài hàng chục năm (ung thư, chạy thận, tim mạch). Không một thẻ bảo hiểm thương mại nào thay thế được BHYT ở khả năng bảo vệ bệnh mạn tính dài hạn.\n2. **Tầng 2 (Nếu có dư khả năng tài chính muốn dịch vụ khám nhanh/nằm phòng riêng): Thẻ Bảo hiểm Sức khỏe thương mại rời (hoặc đi kèm):**\n   * Hợp đồng tái tục từng năm giúp thanh toán viện phí tại bệnh viện tư/quốc tế. Lưu ý đọc kỹ **thời gian chờ** (30 ngày bệnh thông thường, 365 ngày bệnh đặc biệt), **mức đồng chi trả** và danh sách bệnh loại trừ trước khi ký.\n3. **Tầng 3 (Bảo vệ thu nhập người trụ cột): Bảo hiểm Nhân thọ (Ưu tiên Bảo hiểm Tử kỳ thuần túy hoặc mức phí dưới 10% thu nhập):**\n   * **Chỉ mua bảo hiểm nhân thọ khi:** bạn có **người phụ thuộc tài chính** (con nhỏ, cha mẹ già, vợ/chồng chưa đi làm hoặc đang nợ mua nhà lớn) — nếu bạn gặp biến cố tử vong hoặc thương tật toàn bộ vĩnh viễn, gia đình có một khoản tiền thay thế thu nhập trong 5-10 năm.\n   * **Luôn bảo vệ NGƯỜI TRỤ CỘT KIẾM RA TIỀN trước tiên**, đừng dồn hết ngân sách mua gói nhân thọ đắt đỏ cho đứa con 2 tuổi!\n   * Tổng phí bảo hiểm thương mại cả nhà **không nên vượt quá 8-10% tổng thu nhập năm** để đảm bảo bạn theo nổi hợp đồng dài hạn 10-15 năm mà không đứt gánh giữa đường.\n   * Theo **Luật Kinh doanh Bảo hiểm 2022**, người mua có quyền **cân nhắc 21 ngày** kể từ ngày nhận hợp đồng để hủy và nhận lại toàn bộ phí đã đóng (sau khi trừ chi phí khám sức khỏe nếu có) nếu đọc kỹ điều khoản thấy không phù hợp.",
+    "sources": [
+      {
+        "name": "Quốc hội Việt Nam - Luật Kinh doanh bảo hiểm số 08/2022/QH15 (Điều 35 về Thời gian cân nhắc 21 ngày)",
+        "url": "https://thuvienphapluat.vn/",
+        "note": "Quy định quyền đọc kỹ hợp đồng trong 21 ngày và minh bạch tài liệu minh họa bán hàng"
+      },
+      {
+        "name": "Bảo hiểm Xã hội Việt Nam - Quyền lợi Bảo hiểm Y tế hộ gia đình",
+        "url": "https://baohiemxahoi.gov.vn/",
+        "note": "Nền tảng chi trả bệnh nặng, bệnh có sẵn không giới hạn thời gian với mức phí thấp nhất"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-home-renovation-budget-overrun-control-077",
+    "slug": "finance-home-renovation-budget-overrun-control-077",
+    "title": "Kiểm soát ngân sách khi xây sửa nhà: Dự phòng phát sinh 20%, hợp đồng vật tư theo đơn giá và nghiệm thu từng giai đoạn",
+    "description": "Ngăn chặn ác mộng 'dự toán 500 triệu làm xong đội lên 800 triệu' bằng bảng bóc tách khối lượng (BOQ) rõ mã vật tư và giữ lại ít nhất 10% tiền bảo hành sau bàn giao.",
+    "category": "finance",
+    "tags": [
+      "sửa nhà",
+      "xây nhà",
+      "kiểm soát ngân sách",
+      "hợp đồng thi công",
+      "tài chính gia đình"
+    ],
+    "cost": "low",
+    "reading_time": 7,
+    "time": "2 giờ lập bảng dự toán và rà hợp đồng trước khi đập phá tường",
+    "effort": "high",
+    "benefits": [
+      "Không bị thợ cắt xén vật tư âm tường (dây điện, ống nước, chống thấm) hoặc đòi tăng giá vô lý giữa chừng khi nhà đã dở dang",
+      "Chủ động dòng tiền để không phải vay nóng lãi cao hoàn thiện nhà vào tháng cuối"
+    ],
+    "risks": [
+      "Giao khoán miệng 'làm xong tính tiền' hoặc tạm ứng cho nhà thầu 70-80% giá trị hợp đồng khi mới xong phần thô",
+      "Dùng toàn bộ 100% số tiền tiết kiệm cho bản vẽ ban đầu mà không chừa 15-20% quỹ dự phòng phát sinh"
+    ],
+    "target_groups": [
+      "Gia đình chuẩn bị xây nhà mới, cải tạo nhà phố cũ hoặc làm nội thất căn hộ chung cư"
+    ],
+    "value_level": "high",
+    "evidence_level": "medium",
+    "evidence_notes": "Tổng hợp từ thực hành quản lý dự án xây dựng dân dụng (BOQ, giữ tiền bảo hành Retention) và phòng ngừa tranh chấp thi công.",
+    "body": "## Quy luật bất thành văn trong xây sửa nhà: Chi phí thực tế hiếm khi dưới mức dự toán ban đầu\n\nTrong cải tạo nhà ở (đặc biệt là sửa nhà cũ), khi đục tường mới lộ ra ống nước mục nát hay hệ thống điện không có ống gen, cộng với tâm lý chủ nhà muốn nâng cấp gạch đẹp hơn, tủ bếp xịn hơn vào phút chót, ngân sách rất dễ bị đội lên **20% đến 40%**. Nếu không khóa chặt hợp đồng ngay từ đầu, xung đột giữa chủ nhà và đội thợ gần như chắc chắn xảy ra.\n\n## 5 nguyên tắc thép khóa chặt ngân sách xây sửa nhà\n\n1. **Chừa cứng \"Quỹ Dự phòng Bắt buộc\" 15-20% ngay từ ngày đầu:**\n   * Nếu bạn có tổng cộng 600 triệu tiền mặt, **chỉ ký hợp đồng thiết kế và thi công ở mức tối đa 480-500 triệu**, khóa cứng 100-120 triệu còn lại để xử lý phát sinh kỹ thuật không lường trước và đồ gia dụng phát sinh sau cùng.\n2. **Hợp đồng phải có Bảng bóc tách khối lượng & Mã vật tư cụ thể (BOQ):**\n   * Tuyệt đối không chấp nhận báo giá ghi chung chung: *\"Đi lại đường điện nước trọn gói: 40 triệu\"* hoặc *\"Sơn nhà: 25 triệu\"*.\n   * Phải ghi rõ **thương hiệu, mã sản phẩm, quy cách độ dày** (ví dụ: dây điện Cadivi tiết diện 2.5mm/4.0mm, ống nước nhiệt PPR Tiền Phong/Bình Minh độ dày PN16, sơn Dulux loại nào, mấy lớp bả mấy lớp phủ). Vật tư âm tường và chống thấm nhà vệ sinh tuyệt đối không tiết kiệm dùng hàng rẻ tiền vì chi phí đục sửa lại đắt gấp 10 lần.\n3. **Chốt nguyên tắc \"Không tự ý làm phát sinh ngoài báo giá khi chưa duyệt chi phí bằng tin nhắn/văn bản\":**\n   * Thỏa thuận rõ trong hợp đồng: mọi hạng mục phát sinh nếu nhà thầu tự làm mà **chưa báo giá trước và được chủ nhà xác nhận đồng ý bằng văn bản/tin nhắn Zalo**, chủ nhà có quyền không thanh toán phần tự ý đó.\n4. **Thanh toán theo tiến độ nghiệm thu thực tế — KHÔNG BAO GIỜ trả trước vượt phần việc đã xong:**\n   * Chia làm 4-5 đợt gắn với cột mốc kiểm tra được (Ví dụ: Tạm ứng 15-20% khi ký; 25% khi xong phần xây tô/điện nước âm tường đã **test áp lực ống nước và chụp ảnh sơ đồ dây âm**; 25% khi lát gạch sơn bả xong; 20-25% khi lắp đặt nghiệm thu bàn giao; **giữ lại tối thiểu 5-10% tiền bảo hành trong 6-12 tháng** hoặc đến hết một mùa mưa để kiểm tra thấm dột!).\n5. **Chụp ảnh & quay video 360 độ toàn bộ tường trần trước khi trát kín đường ống:**\n   * Lưu lại video quay chậm vị trí tất cả ống nước, dây điện chạy ngầm trong tường trước khi thợ trát vữa để sau này khoan treo tranh, lắp kệ không khoan thủng ống nước ngầm.",
+    "sources": [
+      {
+        "name": "Bộ Xây dựng / Thực hành Hợp đồng Xây dựng Dân dụng - Nguyên tắc bảng tiên lượng và giữ tiền bảo hành",
+        "url": "https://moc.gov.vn/",
+        "note": "Minh bạch chủng loại vật tư, nghiệm thu giai đoạn ẩn khuất (điện nước, chống thấm) trước khi thanh toán"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-wedding-budgeting-avoiding-post-marriage-debt-078",
+    "slug": "finance-wedding-budgeting-avoiding-post-marriage-debt-078",
+    "title": "Tổ chức đám cưới vừa tầm tài chính: Không vay nợ ngân hàng để làm tiệc sĩ diện rồi cãi vã suốt năm đầu hôn nhân",
+    "description": "Cách lập ngân sách đám cưới dựa trên tiền mặt thực có (không trông chờ 100% vào 'tiền mừng hòa vốn'), cắt giảm chi phí phù phiếm và giữ quỹ khởi đầu hôn nhân.",
+    "category": "finance",
+    "tags": [
+      "đám cưới",
+      "tài chính hôn nhân",
+      "vay nợ",
+      "lập ngân sách",
+      "vợ chồng trẻ"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "1 giờ thống nhất trần ngân sách giữa hai bạn và hai gia đình",
+    "effort": "medium",
+    "benefits": [
+      "Bước vào hôn nhân với tinh thần nhẹ nhõm, không phải còng lưng cày trả nợ 200-300 triệu suốt 2 năm đầu",
+      "Giảm ngay nguyên nhân hàng đầu gây ly hôn sớm (xung đột nợ nần tài chính ngay sau ngày cưới)"
+    ],
+    "risks": [
+      "Vay tín chấp hoặc quẹt hết thẻ tín dụng đặt tiệc xa hoa với giả định 'khách đi phong bì chắc đủ bù chi phí'",
+      "Chạy đua chụp ảnh cưới, thuê váy cưới, trang trí hoa tươi hàng chục triệu chỉ để đăng ảnh mạng xã hội 1 ngày"
+    ],
+    "target_groups": [
+      "Các cặp đôi sắp kết hôn và cha mẹ hai bên chuẩn bị tổ chức lễ cưới"
+    ],
+    "value_level": "high",
+    "evidence_level": "medium",
+    "evidence_notes": "Dựa trên các nghiên cứu xã hội học hôn nhân (chỉ ra mối tương quan ngược giữa chi phí đám cưới quá lớn/nợ cưới và độ bền vững hôn nhân).",
+    "body": "## 5 tiếng tiệc cưới trôi qua rất nhanh — nhưng khoản nợ cưới kéo dài nhiều năm\n\nMột khảo sát nổi tiếng của hai giáo sư kinh tế học tại Đại học Emory (Francis-Liao & Mialon) trên hơn 3.000 cặp vợ chồng cho thấy: những cặp đôi chi quá nhiều tiền vay mượn cho một đám cưới xa hoa có tỷ lệ căng thẳng tài chính và nguy cơ rạn nứt cao hơn đáng kể so với những cặp đôi tổ chức ấm cúng vừa túi tiền. Thực tế ở Việt Nam, tâm lý *\"đời người có một lần\"* kết hợp với áp lực sĩ diện họ hàng khiến không ít bạn trẻ vừa cưới xong đã ôm khoản nợ tín dụng hàng trăm triệu đồng.\n\n## 5 nguyên tắc giữ đám cưới vui trọn vẹn mà không sạt nghiệp\n\n1. **Nguyên tắc số 1: Tổng chi phí tiệc cưới KHÔNG ĐƯỢC vượt quá Tiền mặt sẵn có + Hỗ trợ chắc chắn (Không vay nợ):**\n   * Tuyệt đối **không đặt cược vào tiền mừng cưới** để thanh toán hóa đơn nhà hàng! Nếu sau cưới tiền mừng thu về bù được phần lớn chi phí thì coi đó là khoản tiết kiệm khởi nghiệp của hai vợ chồng; nhưng ngay từ lúc đặt cọc, bạn phải đảm bảo nếu tiền mừng chỉ bằng 60% dự kiến, hai người vẫn không phải vay lãi.\n2. **Thống nhất rõ quy định: \"Ai trả phần nào?\" và \"Tiền mừng ai giữ?\" từ trước ngày cưới:**\n   * Hai gia đình ở các vùng miền khác nhau có tập quán rất khác nhau (nhà trai lo lễ cưới hay nhà gái lo tiệc riêng, bố mẹ giữ tiền mừng cỗ mời khách của bố mẹ hay đưa lại cho con). Hãy hỏi rõ nhẹ nhàng để lập bảng tính minh bạch, tránh hiểu lầm phút cuối.\n3. **Áp dụng quy tắc \"Chọn 2 thứ ưu tiên cao nhất, cắt gọn phần còn lại\":**\n   * Khách mời đi ăn cưới thực sự chỉ nhớ **3 thứ**: đồ ăn có ngon nóng sốt không, âm thanh không khí có ấm cúng không và cô dâu chú rể có vui vẻ tiếp chuyện không — hiếm ai nhớ đĩa hoa tươi trên bàn giá 5 triệu hay 50 triệu, hay bộ ảnh cưới chụp ở Đà Lạt hay ngoại thành.\n   * Hãy chọn **2 hạng mục hai bạn coi trọng nhất** (ví dụ: thực đơn món ăn ngon và nhiếp ảnh gia chụp phóng sự chân thực giữ làm kỷ niệm cả đời), và cắt giảm tối đa các chi phí phù phiếm chỉ dùng đúng 4 tiếng (thiệp mời in ép kim cầu kỳ, xe hoa siêu sang, 4 bộ váy thay liên tục).\n4. **Rà soát chặt danh sách khách mời — Cắt bớt khách xã giao không nhớ mặt:**\n   * Mỗi bàn tiệc thêm vào đồng nghĩa hàng triệu đồng chi phí cố định (nhân cả số mâm, thiệp, nước uống). Chỉ mời những người thực sự thân thiết, chúc phúc thật lòng cho hai bạn.\n5. **Thẳng thắn nói không với \"Vay tiêu dùng làm đám cưới\":**\n   * Một tuần trăng mật bình yên với tài khoản ngân hàng còn dư dả đáng giá hơn gấp trăm lần một đêm tiệc lung linh nhưng sáng hôm sau tỉnh dậy phải bấm máy tính trả nợ thẻ tín dụng lãi suất 30%/năm.",
+    "sources": [
+      {
+        "name": "Francis, A. M. & Mialon, H. M. (Emory University) - 'A Diamond is Forever' and Other Fairy Tales: Wedding Spending and Marriage Duration",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2501480",
+        "note": "Nghiên cứu kinh tế lượng chỉ ra gánh nặng nợ sau đám cưới xa hoa làm tăng căng thẳng và tỷ lệ ly hôn"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-currency-exchange-travel-fees-traps-079",
+    "slug": "finance-currency-exchange-travel-fees-traps-079",
+    "title": "Đổi ngoại tệ và quẹt thẻ khi đi du lịch/công tác nước ngoài: Tránh bẫy phí chuyển đổi ngoại tệ (DCC) 3-5% và tiệm vàng chui",
+    "description": "Quy tắc chọn 'Thanh toán bằng đồng tiền bản địa' trên máy POS, chuẩn bị thẻ thanh toán quốc tế phí thấp và đổi tiền mặt hợp pháp tại ngân hàng tránh bị phạt tịch thu.",
+    "category": "finance",
+    "tags": [
+      "đổi ngoại tệ",
+      "thẻ quốc tế",
+      "du lịch nước ngoài",
+      "DCC",
+      "tiết kiệm chi phí"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "15 phút chuẩn bị thẻ và ngoại tệ trước ngày bay",
+    "effort": "low",
+    "benefits": [
+      "Tiết kiệm ngay 3% đến 7% tổng hóa đơn mua sắm, đặt phòng ở nước ngoài nhờ tránh cạm bẫy quy đổi tỷ giá kép (DCC)",
+      "Không vi phạm pháp luật ngoại hối hoặc gặp rủi ro tiền giả khi mua bán ngoại tệ trôi nổi tại chợ đen"
+    ],
+    "risks": [
+      "Bấm chọn 'Thanh toán bằng VND' trên máy quẹt thẻ tại sân bay/nhà hàng nước ngoài khiến mất thêm 4-6% chênh lệch tỷ giá",
+      "Mang theo quá 5.000 USD (hoặc tương đương) tiền mặt qua cửa khẩu mà không khai báo hải quan dẫn tới bị tịch thu xử phạt"
+    ],
+    "target_groups": [
+      "Người chuẩn bị đi du lịch tự túc, công tác hoặc đưa gia đình đi khám chữa bệnh ở nước ngoài"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Căn cứ quy định quản lý ngoại hối của Ngân hàng Nhà nước Việt Nam (hạn mức mang ngoại tệ xuất nhập cảnh) và cơ chế Dynamic Currency Conversion (DCC) của Visa/Mastercard.",
+    "body": "## Hai cái bẫy mất tiền âm thầm của người Việt khi ra nước ngoài\n\nKhi đi du lịch hay công tác nước ngoài, nhiều người tính toán rất kỹ từng nghìn đồng vé máy bay giá rẻ nhưng lại vô tình mất trắng 3-7% toàn bộ chi tiêu vì đổi tiền tại quầy sân bay đắt đỏ hoặc bấm nhầm nút khi quẹt thẻ tại máy POS.\n\n## 4 nguyên tắc chi tiêu ngoại tệ thông minh và đúng luật\n\n1. **Quy tắc Vàng tại máy quẹt thẻ & ATM nước ngoài: LUÔN CHỌN ĐỒNG TIỀN BẢN ĐỊA (Local Currency):**\n   * Khi bạn quẹt thẻ Visa/Mastercard ở Thái Lan, Nhật Bản hay châu Âu, màn hình máy POS thường hiện câu hỏi rất lịch sự: *\"Bạn muốn trả bằng tiền bản địa (THB/JPY/EUR) hay quy đổi thẳng sang VND?\"*.\n   * **Đừng bao giờ chọn VND!** Tính năng này gọi là **Dynamic Currency Conversion (DCC)** — máy quẹt thẻ nước ngoài sẽ tự áp tỷ giá cực xấu của họ (đội thêm 3-6%) rồi sau đó ngân hàng Việt Nam phát hành thẻ có thể tính thêm phí xử lý ngoại tệ lần nữa. Luôn bấm chọn **tiền bản địa (Local Currency)** để hưởng tỷ giá liên ngân hàng tốt hơn nhiều.\n2. **Kiểm tra trước \"Phí giao dịch ngoại tệ\" (FX Fee) của các thẻ bạn đang có:**\n   * Mỗi ngân hàng Việt Nam thu phí chuyển đổi ngoại tệ khác nhau (dao động từ **1.1% đến 4% + VAT**). Trước khi bay, gọi tổng đài ngân hàng mở khóa thanh toán quốc tế tại quốc gia đến và chọn dùng chiếc thẻ nào có phí FX thấp nhất (hoặc thẻ hoàn tiền chi tiêu nước ngoài).\n3. **Đổi tiền mặt hợp pháp tại Ngân hàng — KHÔNG giao dịch tại tiệm vàng chui hoặc quầy đổi tiền sân bay:**\n   * Theo pháp luật Việt Nam, cá nhân mua bán ngoại tệ ở điểm không được cấp phép (tiệm vàng không có giấy phép thu đổi ngoại tệ) là hành vi vi phạm hành chính có thể bị phạt tiền nặng và tịch thu số ngoại tệ giao dịch.\n   * Hãy mang **CCCD, Hộ chiếu, Vé máy bay khứ hồi và lịch trình chuyến đi** tới các ngân hàng thương mại lớn đặt mua ngoại tệ trước 2-3 ngày bay (giá tỷ giá niêm yết tại ngân hàng thường rất sát thị trường và đảm bảo 100% tiền thật, đúng mệnh giá lẻ dễ tiêu). Tránh đổi tiền ngay tại quầy sân bay vì chênh lệch mua-bán thường cao hơn 5-8%.\n4. **Tuân thủ hạn mức tiền mặt qua cửa khẩu Hải quan Việt Nam:**\n   * Xuất cảnh mang quá **5.000 USD** (hoặc các loại ngoại tệ khác có giá trị tương đương) hoặc quá **15.000.000 VND** tiền mặt bắt buộc phải **khai báo Hải quan cửa khẩu**. Nếu mang dưới mức này không phải khai báo; số tiền lớn hơn hãy mang qua thẻ thanh toán quốc tế.",
+    "sources": [
+      {
+        "name": "Ngân hàng Nhà nước Việt Nam - Thông tư 15/2011/TT-NHNN (Quy định mang ngoại tệ tiền mặt khi xuất nhập cảnh)",
+        "url": "https://thuvienphapluat.vn/",
+        "note": "Hạn mức 5.000 USD và 15 triệu đồng phải khai báo hải quan, cùng quy định mua ngoại tệ hợp pháp tại ngân hàng"
+      },
+      {
+        "name": "Visa / Mastercard Consumer Guides - Dynamic Currency Conversion (DCC) Explained",
+        "url": "https://www.visa.com/",
+        "note": "Giải thích lý do chọn thanh toán bằng nội tệ quốc gia điểm đến để tránh tỷ giá đội cao"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-understanding-car-ownership-hidden-costs-080",
+    "slug": "finance-understanding-car-ownership-hidden-costs-080",
+    "title": "Tổng chi phí nuôi ô tô thực tế mỗi năm tại Việt Nam (Khấu hao, gửi xe, bảo hiểm, bảo dưỡng) — Khi nào thu nhập mới đủ mua xe?",
+    "description": "Bài toán TCO (Total Cost of Ownership) giúp bạn không rơi vào cảnh 'mua xe 600 triệu xong bỏ không trong bãi vì xót tiền xăng, phí gửi xe và sửa chữa hằng tháng'.",
+    "category": "finance",
+    "tags": [
+      "mua ô tô",
+      "chi phí nuôi xe",
+      "TCO",
+      "tiêu sản",
+      "tài chính cá nhân"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "20 phút tính toán lại bảng ngân sách trước khi xuống tiền đặt cọc xe",
+    "effort": "medium",
+    "benefits": [
+      "Biết chính xác tổng chi phí thực sự mỗi tháng để nuôi một chiếc ô tô phổ thông tại thành phố lớn (thường cao gấp đôi tiền xăng bạn nhẩm tính)",
+      "Đưa ra quyết định tỉnh táo giữa mua xe riêng và đi xe công nghệ/thuê xe tự lái cuối tuần"
+    ],
+    "risks": [
+      "Vay trả góp mua ô tô chạy theo bạn bè khi tổng chi phí trả nợ + nuôi xe ngốn tới 40-50% thu nhập gia đình",
+      "Quên tính khoản lỗ khấu hao giá xe 8-12% mỗi năm khi đánh giá hiệu quả tài chính"
+    ],
+    "target_groups": [
+      "Gia đình trẻ hoặc cá nhân thu nhập khá đang phân vân quyết định mua chiếc ô tô đầu tiên"
+    ],
+    "value_level": "high",
+    "evidence_level": "medium",
+    "evidence_notes": "Phân tích Tổng chi phí sở hữu (TCO - Total Cost of Ownership) áp dụng biểu phí đăng kiểm, bảo trì đường bộ, bảo hiểm và gửi xe đô thị Việt Nam.",
+    "body": "## Tiền mua xe chỉ là một nửa câu chuyện — Tiền \"nuôi xe\" mới bào mòn dòng tiền hằng tháng\n\nKhi nghĩ về việc mua một chiếc ô tô hạng A/B giá lăn bánh khoảng 550-650 triệu đồng, nhiều người chỉ nhẩm tính *\"Chắc tốn thêm 2 triệu tiền xăng mỗi tháng thôi\"*. Nhưng khi mang xe về nhà, hàng loạt hóa đơn cố định (chạy 0 km vẫn phải trả!) lần lượt xuất hiện.\n\n## Bảng tính Tổng chi phí sở hữu thực tế (TCO) cho 1 chiếc xe phổ thông tại đô thị\n\nGiả sử bạn chạy trung bình 10.000 - 12.000 km/năm ở Hà Nội hoặc TP.HCM, chi phí tối thiểu hằng năm gồm:\n1. **Gửi xe cố định & vãng lai:** Gửi qua đêm tại chung cư/bãi xe (1.2 - 2.0 triệu/tháng) + gửi xe khi đi cafe, bệnh viện, cơ quan -> khoảng **20 - 30 triệu/năm**.\n2. **Xăng xe & Phí cầu đường (BOT/VETC):** Khoảng **18 - 25 triệu/năm**.\n3. **Bảo hiểm bắt buộc TNDS + Bảo hiểm thân vỏ (tự nguyện ~1.3-1.5% giá trị xe):** Khoảng **8 - 10 triệu/năm**.\n4. **Bảo dưỡng định kỳ, thay dầu, lọc, lốp, rửa xe & phí đăng kiểm/bảo trì đường bộ:** Trung bình **10 - 15 triệu/năm** (từ năm thứ 4 trở đi tăng cao hơn khi thay lốp, ắc quy, má phanh).\n5. **Chi phí ẩn lớn nhất — Khấu hao giá trị xe:** Một chiếc xe mới mất giá khoảng **8 - 12%/năm** trong 3 năm đầu (tương đương mất khoảng **45 - 65 triệu/năm** giá trị tài sản!).\n\n**Tổng cộng:** Chi phí tiền mặt trực tiếp rơi vào khoảng **5 - 7 triệu đồng/tháng** (chưa kể tiền trả góp ngân hàng nếu vay mua xe và chưa tính khấu hao mất giá ~4-5 triệu/tháng).\n\n## 3 mốc kiểm tra xem bạn đã thực sự \"đủ sức\" mua ô tô chưa\n\n* **Quy tắc 20/4/10 (Biến thể an toàn tại Việt Nam):** Nếu không thể trả thẳng 100% tiền mặt mà phải vay, chỉ nên vay khi: trả trước tối thiểu **30-40%**, kỳ hạn vay không quá **4 năm**, và tổng **(Tiền trả góp gốc lãi + Tiền nuôi xe cố định hàng tháng)** KHÔNG ĐƯỢC vượt quá **15-20% tổng thu nhập ròng hàng tháng** của gia đình.\n* **Bài toán so sánh với Xe công nghệ + Thuê xe tự lái cuối tuần:** Nếu mỗi tháng bạn chỉ đi làm quãng ngắn trong nội thành kẹt xe (tổng cước taxi/xe công nghệ cả tháng hết 3-4 triệu) và chỉ về quê/du lịch tháng 1-2 lần (thuê xe tự lái hết 2-3 triệu), việc chưa mua xe mà đem 600 triệu gửi tiết kiệm/đầu tư sinh lời giúp bạn tiết kiệm cả chục triệu mỗi tháng mà không lo kẹt chỗ đậu hay xước xe.\n* **Khi nào ô tô thực sự đáng giá?** Khi nhà có con nhỏ/cha mẹ già hay di chuyển xa, đặc thù công việc cần đi tỉnh liên tục bằng xe riêng, hoặc khi tiền nuôi xe chỉ chiếm dưới 10-15% thu nhập mà không ảnh hưởng tới mục tiêu mua nhà và quỹ giáo dục.",
+    "sources": [
+      {
+        "name": "Quy chuẩn Phí sử dụng đường bộ, Đăng kiểm (Bộ Giao thông Vận tải) và Bảo hiểm bắt buộc TNDS (Nghị định 67/2023/NĐ-CP)",
+        "url": "https://thuvienphapluat.vn/",
+        "note": "Các khoản phí cố định bắt buộc hằng năm khi sở hữu ô tô cá nhân tại Việt Nam"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-teaching-teenagers-allowance-budgeting-081",
+    "slug": "finance-teaching-teenagers-allowance-budgeting-081",
+    "title": "Giáo dục tài chính cho trẻ 10-16 tuổi bằng tiền tiêu vặt định kỳ: Quy tắc chia 3 hũ và không 'cứu trợ' khi tiêu lố",
+    "description": "Cách cho con trải nghiệm hậu quả an toàn khi tiêu hết sạch tiền ngay ngày đầu tuần, thay cho việc cha mẹ cầm hết tiền lì xì hoặc phát tiền lẻ mỗi sáng không kiểm soát.",
+    "category": "finance",
+    "tags": [
+      "giáo dục tài chính trẻ em",
+      "tiền tiêu vặt",
+      "nuôi dạy con",
+      "tiết kiệm",
+      "tuổi teen"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "30 phút trò chuyện và thiết lập quy tắc 3 hũ cùng con",
+    "effort": "medium",
+    "benefits": [
+      "Giúp con tự hiểu giá trị đồng tiền, biết trì hoãn ham muốn và phân biệt 'Cần' vs 'Muốn' từ thực tế thất bại nhỏ ở tuổi học sinh",
+      "Tránh tình trạng sinh viên năm nhất lần đầu xa nhà vung tay quá trán hoặc sập bẫy vay app vì chưa từng tự quản tiền"
+    ],
+    "risks": [
+      "Thấy con tiêu lố hết tiền tiêu vặt vào thứ Tư liền thương con rút ví 'bơm thêm tiền' khiến bài học mất sạch tác dụng",
+      "Gắn việc nhà cơ bản (dọn phòng mình, tự rửa bát của mình) với trả lương bằng tiền khiến trẻ mặc cả tiền cho mọi trách nhiệm gia đình"
+    ],
+    "target_groups": [
+      "Phụ huynh có con từ cuối tiểu học đến trung học phổ thông (10-16 tuổi)"
+    ],
+    "value_level": "high",
+    "evidence_level": "medium",
+    "evidence_notes": "Tổng hợp từ chương trình Giáo dục Tài chính cho Thanh thiếu niên (Jump$tart Coalition / Consumer Financial Protection Bureau - CFPB).",
+    "body": "## Để con sai lầm với 50.000đ ở tuổi 12 còn hơn để con sai lầm với 500 triệu ở tuổi 25\n\nPhần lớn người trẻ trưởng thành vướng vào nợ thẻ tín dụng hoặc tiêu sạch lương ngày mùng 10 không phải vì họ kém toán, mà vì từ nhỏ đến hết cấp 3 mọi khoản chi tiêu đều do cha mẹ duyệt chi từng bữa — họ chưa bao giờ được tự quản lý một khoản ngân sách có giới hạn và nếm mùi \"hết tiền thì phải nhịn\".\n\n## 4 nguyên tắc dạy con quản lý tiền tiêu vặt cực kỳ hiệu quả\n\n1. **Phát một khoản cố định theo Tuần (với trẻ 10-12 tuổi) hoặc theo Tháng (với trẻ 13-16 tuổi):**\n   * Thống nhất rõ khoản tiền đó dùng để con tự lo cho **những nhu cầu tự chọn** (mua snack, trà sữa cùng bạn, sticker, truyện tranh, mua thêm phụ kiện game trong mức cho phép), tách biệt hoàn toàn với chi phí thiết yếu cha mẹ vẫn lo (cơm nhà, học phí, khám bệnh).\n2. **Áp dụng Quy tắc chia 3 hũ đơn giản: CHI TIÊU (60-70%) - TIẾT KIỆM MỤC TIÊU (20-30%) - CHIA SẺ/TẶNG QUÀ (10%):**\n   * Hũ **Tiết kiệm mục tiêu** giúp trẻ nếm trải niềm vui trì hoãn ham muốn: ví dụ muốn mua bộ Lego hay đôi giày 600.000đ, thay vì bố mẹ mua ngay hay từ chối thẳng, hãy nói *\"Con tự trích tiền hũ Tiết kiệm trong 8 tuần xem đủ chưa, nếu được 70% bố mẹ sẽ thưởng thêm cho con 30% còn lại (cơ chế đối ứng)!\"*.\n3. **Luật Sắt: KHÔNG \"CỨU TRỢ\" nếu con tiêu sạch tiền trước hạn (Safe Failure):**\n   * Nếu Thứ Hai con nhận 100.000đ tiêu vặt cả tuần và Thứ Ba đã mua sạch đồ chơi hết tiền, đến Thứ Sáu bạn bè rủ uống trà sữa, cha mẹ phải **nhẹ nhàng từ chối ứng trước hay cho thêm**: *\"Mẹ rất tiếc tuần này hết tiền rồi, thứ Hai tới mình rút kinh nghiệm chia lại nhé.\"* Nỗi hụt hẫng an toàn lúc 12 tuổi chính là vắc-xin tài chính quý giá nhất cả đời con.\n4. **Không trả tiền cho \"Nghĩa vụ thành viên gia đình\" cơ bản:**\n   * Tự gấp chăn, rửa bát mình ăn hay dọn góc học tập là trách nhiệm sống chung dưới một mái nhà, không phải dịch vụ trả công. Chỉ trả công thêm cho những \"dự án đặc biệt ngoài bổn phận\" (như phụ bố rửa sạch xe ô tô, dọn kho đồ cũ cuối tuần hoặc bán đồ chơi cũ tự sắp xếp).",
+    "sources": [
+      {
+        "name": "Consumer Financial Protection Bureau (CFPB) - Money As You Grow: Teaching Kids & Teens Financial Capability",
+        "url": "https://www.consumerfinance.gov/consumer-tools/money-as-you-grow/",
+        "note": "Khung hướng dẫn dạy kỹ năng lập kế hoạch chi tiêu và trải nghiệm giới hạn tiền bạc theo độ tuổi"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-protecting-elderly-parents-financial-scams-082",
+    "slug": "finance-protecting-elderly-parents-financial-scams-082",
+    "title": "Thiết lập 'Tường lửa tài chính' bảo vệ cha mẹ già khỏi lừa đảo bán thực phẩm chức năng giá cắt cổ và giả danh công an",
+    "description": "Vì sao người cao tuổi dễ sập bẫy tặng quà miễn phí đi nghe hội thảo hoặc cuộc gọi đe dọa phong tỏa tài khoản, và giải pháp kỹ thuật - tâm lý không làm cha mẹ tự ái.",
+    "category": "finance",
+    "tags": [
+      "bảo vệ người già",
+      "lừa đảo người cao tuổi",
+      "thực phẩm chức năng",
+      "giả danh công an",
+      "an toàn tài chính"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "30 phút trò chuyện tôn trọng và cài đặt giới hạn ngân hàng cho cha mẹ",
+    "effort": "medium",
+    "benefits": [
+      "Bảo vệ toàn bộ tiền lương hưu, sổ tiết kiệm cả đời tích cóp của cha mẹ trước các đường dây lừa đảo tinh vi",
+      "Giữ không khí gia đình hòa thuận thay vì mắng mỏ cụ 'lớn tuổi rồi còn ngây thơ để nó lừa'"
+    ],
+    "risks": [
+      "Quát mắng, tịch thu toàn bộ tiền của cha mẹ khiến cụ cảm thấy bị tước quyền làm chủ và càng giấu con cái mua lén",
+      "Chủ quan nghĩ bố mẹ ở nhà chỉ có mấy chục triệu nên kẻ xấu không thèm nhắm tới"
+    ],
+    "target_groups": [
+      "Con cái có cha mẹ trên 60 tuổi có lương hưu, sổ tiết kiệm riêng hoặc sống một mình ở quê/phố"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Tổng hợp từ khuyến cáo phòng chống tội phạm công nghệ cao (Bộ Công an Việt Nam) và Hướng dẫn bảo vệ tài chính người cao tuổi của AARP/CFPB.",
+    "body": "## Hai kịch bản lừa đảo \"hút cạn\" tiền tiết kiệm người già phổ biến nhất tại Việt Nam\n\n1. **Hội thảo tặng dầu ăn/nồi cơm điện bán \"Thuốc tiên, Sữa non, Máy trị liệu\" 10-50 triệu:** Kẻ xấu đánh đúng vào **nỗi cô đơn và nỗi sợ bệnh tật** của người cao tuổi. Chúng thuê hội trường sang trọng, gọi cụ bằng \"Bố/Mẹ\" ngọt xớt, tặng quà nhỏ 3 ngày đầu rồi đánh úp tâm lý đám đông chốt đơn thực phẩm chức năng/ghế massage trôi nổi với giá thổi phồng gấp 20 lần.\n2. **Cuộc gọi video giả danh Công an, Viện kiểm sát, Tòa án hoặc BHXH:** Dọa cụ liên quan đường dây rửa tiền/ma túy, yêu cầu **\"giữ bí mật tuyệt đối không được nói cho con cái biết\"** và ra ngân hàng rút sổ tiết kiệm chuyển hết vào \"tài khoản tạm giữ điều tra\".\n\n## Xây dựng \"Tường lửa 4 lớp\" bảo vệ cha mẹ mà vẫn giữ sự tôn trọng\n\n1. **Tâm lý tôn trọng trước tiên (Không bao giờ mắng cụ \"ngu\" hay \"tham\"):**\n   * Các nghiên cứu thần kinh học cho thấy vùng não phát hiện rủi ro xã hội suy giảm nhẹ theo tuổi tác, cộng thêm việc người già thường ít tiếp xúc chiêu trò công nghệ mới. Nếu lỡ mua nhầm một món đồ 2 triệu ở hội thảo, tuyệt đối đừng đay nghiến — hãy nhẹ nhàng bảo *\"Kịch bản tụi này diễn chuyên nghiệp lắm bố ạ, hôm nọ đồng nghiệp trẻ của con cũng suýt bị lừa y chang vậy\"* để cụ **dám kể thật với con lần sau**.\n2. **Thiết lập \"Tài khoản Giao dịch Hằng ngày\" tách khỏi \"Sổ Tiết kiệm Dài hạn\":**\n   * Thống nhất với cha mẹ chỉ để trên tài khoản có cài app điện thoại hoặc ví tiền mặt tối đa **5-10 triệu đồng** cho chi tiêu sinh hoạt trong tháng.\n   * Phần tiền tiết kiệm hưu trí lớn nên gửi **sổ tiết kiệm vật lý tại quầy** hoặc tài khoản không kích hoạt chuyển khoản nhanh hạn mức lớn qua app, và **cài tính năng nhận thông báo biến động số dư qua tin nhắn tới cả điện thoại của người con tin cậy** (View-only notification) hoặc giới hạn mức chuyển khoản tối đa/ngày thấp trên app của cụ.\n3. **Thỏa thuận \"Quy tắc Chờ 24 giờ cho mọi khoản chi/chuyển trên 2 triệu\":**\n   * Dán một tờ giấy chữ to ngay cạnh tivi và bàn điện thoại: *\"Mọi cuộc gọi dọa liên quan Công an/Ngân hàng/Thuế/Bảo hiểm đều là LỪA ĐẢO (Công an không làm việc và không thu tiền qua điện thoại). Bất kỳ ai giục chuyển tiền hoặc mua thuốc trên 2 triệu mà bảo GIẤU CON CÁI — hãy cúp máy ngay và gọi cho Con kiểm tra trước.\"*\n4. **Dặn dò nhân viên giao dịch ngân hàng quen & lấp đầy khoảng trống cô đơn:**\n   * Rất nhiều cụ già bị lừa mua đồ hội thảo đơn giản vì ở đó có mấy bạn trẻ... ngồi nghe cụ kể chuyện đau khớp suốt 2 tiếng. Việc con cháu gọi điện hỏi thăm 10 phút mỗi tối và đưa cụ đi khám bệnh bài bản chính là liều vắc-xin tốt nhất chống lại bọn \"bán hàng đa cấp tình thương\".",
+    "sources": [
+      {
+        "name": "Bộ Công an Việt Nam - Cảnh báo thủ đoạn giả danh cơ quan tư pháp, bán hàng hội thảo lừa đảo người cao tuổi",
+        "url": "https://bocongan.gov.vn/",
+        "note": "Khẳng định cơ quan công an không bao giờ gọi điện yêu cầu chuyển tiền xác minh tài khoản"
+      },
+      {
+        "name": "AARP Fraud Watch Network - Protecting Older Adults from Financial Exploitation",
+        "url": "https://www.aarp.org/money/scams-fraud/",
+        "note": "Chiến lược tách tài khoản chi tiêu nhỏ, cảnh báo giao dịch và tránh mắng mỏ làm người già giấu giếm"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-splitting-shared-expenses-roommates-couples-083",
+    "slug": "finance-splitting-shared-expenses-roommates-couples-083",
+    "title": "Chia tiền sinh hoạt chung công bằng giữa vợ chồng thu nhập chênh lệch hoặc bạn ở ghép: Mô hình góp theo tỷ lệ % thu nhập",
+    "description": "Vì sao chia đôi 50/50 cứng nhắc khi thu nhập hai vợ chồng chênh nhau gấp 3 lần dễ gây uất ức ngầm, và cách áp dụng mô hình Góp Theo Tỷ Lệ (Proportional Split) văn minh.",
+    "category": "finance",
+    "tags": [
+      "tiền chung vợ chồng",
+      "chia tiền sinh hoạt",
+      "tài chính hôn nhân",
+      "ở ghép",
+      "công bằng"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "30 phút bàn bạc thống nhất mô hình quỹ chung",
+    "effort": "medium",
+    "benefits": [
+      "Giúp người có thu nhập thấp hơn không bị kiệt sạch ví khi phải gánh một nửa tiền thuê nhà/chi phí sống cao theo mức của người thu nhập cao",
+      "Giữ lại một phần 'tiền riêng tự do' cho mỗi người mua quà tặng, chăm sóc bố mẹ đẻ mà không cần xin phép từng đồng"
+    ],
+    "risks": [
+      "Áp dụng chia đôi 50/50 tuyệt đối trong khi vợ ở nhà chăm con hoặc lương 10 triệu còn chồng lương 40 triệu khiến vợ mất sạch khả năng tiết kiệm riêng",
+      "Trộn chung 100% tài khoản mà không có hạn mức riêng gây cãi vã mỗi khi người kia mua món đồ sở thích"
+    ],
+    "target_groups": [
+      "Các cặp vợ chồng mới cưới có mức lương chênh lệch đáng kể hoặc các cặp đôi chuẩn bị góp tiền sinh hoạt chung"
+    ],
+    "value_level": "high",
+    "evidence_level": "medium",
+    "evidence_notes": "Tổng hợp từ tâm lý học tài chính gia đình (Yours, Mine & Ours / Proportional Budgeting).",
+    "body": "## Khi \"50/50\" hóa ra lại KHÔNG công bằng\n\nGiả sử tổng chi phí sinh hoạt chung của hai vợ chồng (tiền nhà, điện nước, ăn uống, học phí con) là **20 triệu/tháng**. Người A thu nhập **40 triệu**, người B thu nhập **12 triệu** (do đặc thù ngành hoặc phải lùi lại lo đón con, chăm sóc nhà cửa nhiều hơn). Nếu chia đều cứng nhắc mỗi người đóng **10 triệu**:\n* Người A vẫn dư **30 triệu** mỗi tháng để thoải mái đầu tư và tiêu xài.\n* Người B chỉ còn vỏn vẹn **2 triệu** cho mọi chi phí cá nhân, biếu cha mẹ và tích lũy! Theo thời gian, sự bất bình đẳng này dễ tạo ra tâm lý lép vế hoặc bực bội âm ỉ.\n\n## Mô hình \"3 Túi Tiền + Đóng góp Theo Tỷ Lệ % Thu Nhập\" (Yours, Mine & Ours)\n\n1. **Tính tỷ lệ đóng góp công bằng theo thu nhập (Proportional Split):**\n   * Cộng tổng thu nhập hai người: `40 + 12 = 52 triệu`. Người A chiếm `40/52 ≈ 77%`, người B chiếm `12/52 ≈ 23%`.\n   * Hoặc đơn giản hơn: **Cả hai cùng đóng một tỷ lệ % như nhau (ví dụ 60% lương thực nhận mỗi tháng)** vào **Tài khoản Quỹ Chung Gia Đình**. Như vậy A góp 24 triệu, B góp 7.2 triệu -> cả hai cùng giữ lại đúng **40% thu nhập riêng** trong tài khoản cá nhân để tự do chi tiêu sở thích, mua quà bất ngờ cho nhau hoặc gửi biếu bố mẹ hai bên mà không bị soi xét!\n2. **Định giá công bằng cho \"Lao động chăm sóc không lương\" ở nhà:**\n   * Nếu vợ hoặc chồng tạm nghỉ việc hoặc giảm giờ làm để ở nhà toàn thời gian chăm con sơ sinh / cha mẹ ốm, thu nhập tiền mặt của họ bằng 0 nhưng họ đang tạo ra **giá trị kinh tế khổng lồ** cho gia đình (tiết kiệm tiền thuê bảo mẫu/người chăm bệnh). Lúc này người đi làm kiếm tiền không phải đang \"nuôi ăn\", mà cả hai đang phân công lao động khác vai trò — quỹ chung và quỹ hưu trí vẫn phải đảm bảo quyền lợi đồng đều cho cả hai.\n3. **Thỏa thuận Ngưỡng Chi Tiêu Cần Hỏi Ý Kiến Từ Quỹ Chung:**\n   * Đặt một mốc con số rõ ràng (ví dụ: mọi khoản chi từ Quỹ Chung dưới 1 triệu thì tự do quyết định; từ **1-2 triệu trở lên** phải nhắn hỏi nhanh người kia một câu trước khi quẹt thẻ).",
+    "sources": [
+      {
+        "name": "Harvard Business Review / Financial Therapy Guides - Proportional Expense Splitting for Couples",
+        "url": "https://hbr.org/",
+        "note": "Mô hình kết hợp quỹ chung đóng góp theo tỷ lệ thu nhập kèm tài khoản riêng giảm xung đột hôn nhân"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-evaluating-cost-per-use-quality-purchases-084",
+    "slug": "finance-evaluating-cost-per-use-quality-purchases-084",
+    "title": "Quy tắc 'Chi phí trên mỗi lần sử dụng' (Cost Per Use): Khi nào nên mua đồ tốt bền 5 năm thay vì mua đồ rẻ dùng 3 tháng hỏng",
+    "description": "Công thức giúp bạn ra quyết định mua sắm thông minh: Chịu chi mạnh cho chiếc nệm, đôi giày chạy, ghế làm việc dùng mỗi ngày và cắt triệt để đồ giảm giá rẻ chỉ mặc đúng 1 lần.",
+    "category": "finance",
+    "tags": [
+      "mua sắm thông minh",
+      "cost per use",
+      "tiết kiệm",
+      "chất lượng",
+      "tối giản tài chính"
+    ],
+    "cost": "free",
+    "reading_time": 5,
+    "time": "30 giây nhẩm phép chia trước khi bấm nút Đặt Hàng",
+    "effort": "low",
+    "benefits": [
+      "Tránh 'cái bẫy đồ rẻ': mua 4 cái bàn phím/nồi chảo rẻ tiền hỏng liên tục tốn tổng tiền gấp đôi mua 1 cái tốt ngay từ đầu",
+      "Chặn đứng thói quen mua váy áo sale 200k-300k chất lượng kém mặc đúng 1 lần đi tiệc rồi vứt xó"
+    ],
+    "risks": [
+      "Lạm dụng lý thuyết 'mua đồ tốt' để biện minh cho việc mua xa xỉ phẩm vượt quá khả năng tài chính (như mua đồng hồ Rolex khi chưa có quỹ khẩn cấp)"
+    ],
+    "target_groups": [
+      "Người hay săn sale thương mại điện tử và người muốn tối ưu hiệu quả từng đồng tiền bỏ ra"
+    ],
+    "value_level": "high",
+    "evidence_level": "low",
+    "evidence_notes": "Ứng dụng chỉ số kinh tế tiêu dùng Cost-Per-Use (CPU) và thuyết 'Giày của Samuel Vimes' về chi phí dài hạn của hàng giá rẻ kém bền.",
+    "body": "## Nghịch lý tiêu dùng: Món đồ giá 200.000đ đôi khi đắt gấp 10 lần món đồ giá 3.000.000đ!\n\nNhìn trên hóa đơn, một chiếc áo sơ mi sale giá **250.000đ** trông có vẻ \"tiết kiệm\" hơn rất nhiều so với chiếc ghế công thái học giá **4.000.000đ**. Nhưng nếu chiếc áo mua về vì vải nóng bí bạn chỉ mặc đúng **1 lần** rồi bỏ xó tủ, chi phí thực tế là **250.000đ / lần mặc**. Trong khi chiếc ghế làm việc bền bỉ giúp bạn ngồi êm lưng suốt **5 năm (1.250 ngày làm việc)** chỉ tốn có **3.200đ / ngày** — rẻ hơn một cốc trà đá!\n\n## Công thức \"Chi phí mỗi lần sử dụng\" (Cost Per Use = Giá mua / Số lần thực tế dùng)\n\nTrước khi mua bất kỳ món đồ nào từ quần áo, gia dụng đến công cụ làm việc, hãy áp dụng quy tắc 2 chiều này:\n\n1. **Nên đầu tư hàng chất lượng tốt, bền bỉ cho \"3 Nhóm Dùng Hằng Ngày Tiếp Xúc Trực Tiếp Cơ Thể & Công Cụ Kiếm Tiền\":**\n   * **Giấc ngủ & Cột sống:** Nệm ngủ tốt (dùng 365 đêm/năm suốt 8-10 năm), ghế ngồi làm việc bảo vệ thắt lưng, đôi giày thể thao/đi làm êm chân.\n   * **Công cụ kiếm sống & An toàn:** Laptop ổn định không treo giữa buổi họp, mũ bảo hiểm đạt chuẩn bảo vệ đầu, nồi chảo inox an toàn sức khỏe dùng 10 năm không bong lớp chống dính độc hại.\n2. **Thẳng tay TỪ CHỐI \"Món hời Rẻ tiền\" có Cost-Per-Use thực tế cao ngất:**\n   * Đừng mua máy ép chậm trôi nổi 400k dùng 3 lần cháy mô-tơ hay bộ váy cầu kỳ mặc đúng 1 đám cưới rồi xếp tủ. Với đồ dùng 1 lần/năm (như váy dạ hội, máy khoan tường tự sửa nhà, vali cỡ đại đi du lịch hiếm hoi), hãy cân nhắc **đi thuê** hoặc mượn của bạn bè thay vì mua đứt cho chật nhà.\n3. **Cảnh báo ranh giới:** Quy tắc Cost Per Use **KHÔNG áp dụng cho hàng xa xỉ đóng mác thương hiệu**! Một chiếc túi 80 triệu không bền gấp 40 lần một chiếc túi da thật thủ công tốt giá 2 triệu; phần chênh lệch 78 triệu đó là tiền trả cho logo thương hiệu chứ không phải giá trị sử dụng.",
+    "sources": [
+      {
+        "name": "Investopedia / Consumer Economics - Cost Per Use & The Boots Theory of Socioeconomic Unfairness",
+        "url": "https://www.investopedia.com/",
+        "note": "Phân tích giá trị kinh tế dài hạn dựa trên tần suất sử dụng thực tế và độ bền sản phẩm"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-comparing-bank-loan-flat-vs-reducing-rate-085",
+    "slug": "finance-comparing-bank-loan-flat-vs-reducing-rate-085",
+    "title": "Phân biệt lãi suất tính trên Dư nợ gốc ban đầu (Flat Rate) và Dư nợ giảm dần khi vay tiêu dùng: Đừng để con số '1%/tháng' đánh lừa",
+    "description": "Giải mã toán học vì sao gói vay trả góp 'chỉ 1.5%/tháng tính trên gốc ban đầu' thực chất tương đương lãi suất thực (APR) gần 33%/năm, và cách so sánh đúng trước khi ký hợp đồng vay.",
+    "category": "finance",
+    "tags": [
+      "lãi suất vay",
+      "dư nợ giảm dần",
+      "dư nợ gốc",
+      "vay tiêu dùng",
+      "toán tài chính"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "5 phút nhân nhẩm hệ số 1.8 để biết lãi suất thực trước khi ký vay",
+    "effort": "low",
+    "benefits": [
+      "Không bị nhân viên tín dụng qua mặt bằng những con số quảng cáo 'lãi suất siêu nhẹ chỉ 1.2%/tháng' tính theo dư nợ gốc ban đầu",
+      "So sánh ngang bằng chuẩn xác giữa gói vay ngân hàng, vay công ty tài chính và quẹt thẻ tín dụng"
+    ],
+    "risks": [
+      "Ký hợp đồng vay tiêu dùng/mua xe trả góp tưởng lãi suất 12%/năm nhưng thực tế phải chịu chi phí lãi gần gấp đôi (~22%/năm) cộng thêm bảo hiểm khoản vay bắt buộc ngầm"
+    ],
+    "target_groups": [
+      "Người chuẩn bị vay tiêu dùng, vay mua xe máy/điện thoại trả góp hoặc vay vốn kinh doanh nhỏ"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Chuẩn hóa theo công thức tính lãi suất thực tế (IRR / APR) và Thông tư 39/2016/TT-NHNN quy định minh bạch phương pháp tính lãi của Ngân hàng Nhà nước Việt Nam.",
+    "body": "## Phép ảo thuật con số: \"Chỉ 1%/tháng\" thực chất đắt gần GẤP ĐÔI bạn nghĩ!\n\nKhi đi mua xe máy hay vay tiền mặt tại công ty tài chính tiêu dùng, bạn rất hay nghe lời chào mời ngọt ngào: *\"Gói này lãi suất chỉ 1%/tháng (12%/năm) thôi anh ơi, vay 120 triệu trong 12 tháng mỗi tháng đóng có 1 triệu tiền lãi + 10 triệu tiền gốc!\"*. Nghe qua tưởng chỉ 12%/năm ngang ngân hàng, nhưng thực tế bạn đang bị tính lãi kiểu **Dư nợ gốc ban đầu (Flat Rate)**.\n\n## So sánh trực diện hai cách tính lãi\n\nGiả sử bạn vay **120 triệu trong 12 tháng**:\n* **Cách 1 — Tính trên Dư nợ GIẢM DẦN (Chuẩn ngân hàng thương mại):** Tháng đầu bạn nợ 120 triệu -> trả lãi trên 120 triệu. Đến tháng thứ 6 bạn đã trả bớt được một nửa gốc, chỉ còn nợ ngân hàng 60 triệu -> tiền lãi tháng thứ 6 tự động giảm một nửa! Nếu lãi 12%/năm trên dư nợ giảm dần, tổng tiền lãi cả năm chỉ là **~7.8 triệu đồng**.\n* **Cách 2 — Tính trên Dư nợ GỐC BAN ĐẦU (Flat Rate):** Dù đến tháng thứ 11 bạn đã trả hết 110 triệu và thực tế chỉ còn cầm của họ đúng 10 triệu đồng, bạn VẪN bị thu tiền lãi cố định trên cả 120 triệu gốc ban đầu! Tổng tiền lãi cả năm lên tới **14.4 triệu đồng** (tương đương lãi suất thực APR trên dư nợ giảm dần lên tới **~21.5%/năm**, gần gấp đôi con số quảng cáo!).\n\n## Quy tắc nhẩm siêu nhanh trong 3 giây: \"Nhân hệ số 1.8\"\n\nNếu thấy bảng chào vay ghi **\"Tính lãi theo dư nợ gốc ban đầu\"**:\n* Lấy con số lãi suất tháng nhân 12 tháng rồi **NHÂN TIẾP VỚI ~1.8** (tức gấp gần 1.8 đến 1.9 lần) để ra **Lãi suất Thực trên Dư nợ giảm dần** nhằm so sánh công bằng! Ví dụ: chào lãi 1.5%/tháng dư nợ gốc (`18%/năm`) -> lãi suất thực tế bạn phải gánh tương đương **~32 - 34%/năm**!\n\n## 3 câu hỏi bắt buộc phải hỏi nhân viên tín dụng trước khi đặt bút ký\n\n1. **\"Lãi suất này tính trên dư nợ giảm dần hay dư nợ gốc ban đầu? Tổng số tiền gốc + lãi tôi phải đóng mỗi tháng là bao nhiêu, và tổng cộng cuối kỳ chênh bao nhiêu tiền so với số tiền nhận về?\"**\n2. **\"Ngoài tiền lãi, có bắt buộc phải mua kèm Bảo hiểm khoản vay, phí thu hộ hay phí quản lý hồ sơ không? (Tính gộp cả các phí đó vào tổng chi phí vay thực tế).\"**\n3. **\"Phí phạt trả nợ trước hạn là bao nhiêu % trên số tiền trả trước nếu sau 6 tháng tôi có tiền tất toán sớm?\"**",
+    "sources": [
+      {
+        "name": "Ngân hàng Nhà nước Việt Nam - Thông tư 39/2016/TT-NHNN (Quy định hoạt động cho vay và minh bạch lãi suất)",
+        "url": "https://thuvienphapluat.vn/",
+        "note": "Quy chuẩn công bố phương pháp tính lãi và các loại phí liên quan trong hợp đồng tín dụng"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-estate-inventory-digital-assets-list-086",
+    "slug": "finance-estate-inventory-digital-assets-list-086",
+    "title": "Lập bảng kiểm kê tài sản và tài khoản tài chính dự phòng cho gia đình ('Sổ đỏ số' phòng rủi ro đột ngột)",
+    "description": "Vì sao hàng tỷ đồng trong sổ tiết kiệm online, chứng khoán hay tiền điện tử có nguy cơ 'bốc hơi' vĩnh viễn khi chủ tài khoản gặp nạn đột ngột, và cách lập bản đồ tài sản an toàn.",
+    "category": "finance",
+    "tags": [
+      "kiểm kê tài sản",
+      "sổ tiết kiệm online",
+      "tài sản số",
+      "quản trị rủi ro",
+      "gia đình"
+    ],
+    "cost": "free",
+    "reading_time": 7,
+    "time": "45 phút lập danh mục tài sản bảo mật cho vợ/chồng",
+    "effort": "medium",
+    "benefits": [
+      "Đảm bảo vợ/chồng hoặc con cái biết chính xác gia đình đang gửi tiết kiệm ở ngân hàng nào, mua bảo hiểm của hãng nào, đang nợ ai hay cho ai vay",
+      "Tránh thảm họa tài khoản ngân hàng online/ví đầu tư bị đóng băng nhiều năm vì người thân không hề biết sự tồn tại của chúng"
+    ],
+    "risks": [
+      "Ghi thẳng mật khẩu rút tiền hoặc mã PIN lên giấy/tin nhắn Zalo dễ lộ lọt gây mất tiền ngay lập tức khi đang còn sống",
+      "Chồng (hoặc vợ) giấu nhẹm toàn bộ danh mục đầu tư chứng khoán, tiết kiệm online, bảo hiểm đến khi đột ngột qua đời làm gia đình bỏ sót tài sản"
+    ],
+    "target_groups": [
+      "Các cặp vợ chồng, người trụ cột tài chính gia đình và người có nhiều tài khoản tiết kiệm/đầu tư rải rác"
+    ],
+    "value_level": "high",
+    "evidence_level": "medium",
+    "evidence_notes": "Tổng hợp từ thực hành lập Kế hoạch Tài sản Dự phòng (In Case of Emergency Financial Binder) và bảo mật thông tin tài chính.",
+    "body": "## Thời đại \"Sổ tiết kiệm online & Ví đầu tư\": Người thân có biết bạn đang để tiền ở đâu không?\n\nTrước đây, ông bà chỉ gửi tiền ở 1 ngân hàng gần nhà và cất cuốn sổ tiết kiệm giấy trong tủ sắt — chẳng may có chuyện gì xảy ra, cả nhà mở tủ là thấy ngay. Ngày nay, một người trẻ có thể mở 4 app ngân hàng số khác nhau, gửi tiền ở quỹ mở, chứng khoán, trái phiếu, ví điện tử, cộng thêm 2 hợp đồng bảo hiểm điện tử không có giấy tờ vật lý. Nếu bạn gặp tai nạn đột ngột, **vợ/chồng bạn thậm chí không biết phải đến ngân hàng nào để làm thủ tục thừa kế**, dẫn đến hàng trăm triệu đồng nằm ngủ yên vô thời hạn!\n\n## Cách lập \"Bản đồ Tài sản Gia đình\" AN TOÀN (Không để lộ mật khẩu)\n\nNguyên tắc tối quan trọng: **Liệt kê NƠI CẤT GIỮ tài sản, KHÔNG ghi thẳng mật khẩu ngân hàng hay mã PIN lên tờ giấy chung dễ bị trộm!**\n\n1. **Tạo một Bảng Danh Mục Tổng Hợp (1-2 trang, cất chung trong cặp hồ sơ gốc ở nhà và chia sẻ vị trí với đúng 1-2 người thân tin cậy nhất):**\n   * **Ngân hàng & Sổ tiết kiệm:** Tên các Ngân hàng bạn đang mở tài khoản/tiết kiệm online + Chi nhánh mở (không cần ghi số dư chính xác từng ngày nếu ngại thay đổi, chỉ cần ghi tên ngân hàng là đủ để gia đình mang Giấy chứng tử + Hồ sơ thừa kế ra tra soát hợp pháp!).\n   * **Bảo hiểm (Nhân thọ / Sức khỏe / Bắt buộc):** Tên công ty bảo hiểm, số hợp đồng, tên + số điện thoại đại lý phụ trách và tên Người thụ hưởng.\n   * **Đầu tư & Tài sản khác:** Tên công ty chứng khoán/quỹ mở đang giao dịch, vị trí cất Sổ đỏ/Giấy đăng ký xe.\n   * **Công nợ hai chiều (Rất hay bị quên!):** Đang vay ngân hàng nào/trả góp hàng tháng bao nhiêu, hoặc đang cho ai vay khoản lớn (ghi rõ giấy biên nhận cất ở ngăn nào).\n2. **Cách bàn giao quyền truy cập Tài khoản Số / Thiết bị an toàn:**\n   * Với **Email chính, Tài khoản Đám mây và Trình quản lý Mật khẩu (Password Manager như Bitwarden, 1Password, Apple Passwords):** Nhiều hệ thống hiện đại hỗ trợ tính năng **Người liên hệ Kế thừa (Legacy Contact)** — ví dụ trên Apple iCloud hay Google Inactive Account Manager, bạn có thể chỉ định trước vợ/chồng được cấp quyền mở khóa truy cập dữ liệu sau khi xác minh sự cố, hoàn toàn bảo mật trong lúc bạn đang khỏe mạnh.\n   * Hoặc dùng một Trình quản lý Mật khẩu duy nhất và cất **Mật khẩu Chủ (Master Password)** trong phong bì niêm phong khóa riêng tại két sắt gia đình.\n3. **Cập nhật mỗi năm 1 lần vào dịp cuối năm:** Chỉ mất 10 phút gạch bớt tài khoản đã đóng và thêm tài khoản mới mở.",
+    "sources": [
+      {
+        "name": "Apple Support & Google Account Help - Adding a Legacy Contact / Inactive Account Manager",
+        "url": "https://support.apple.com/en-us/HT212360",
+        "note": "Tính năng chỉ định người kế thừa dữ liệu số hợp pháp mà không làm lộ mật khẩu khi còn sống"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-recognizing-shrinkflation-unit-pricing-habit-087",
+    "slug": "finance-recognizing-shrinkflation-unit-pricing-habit-087",
+    "title": "Nhận diện 'Lạm phát thu nhỏ bao bì' (Shrinkflation) và thói quen so sánh Giá trên 100g/1 lít khi đi siêu thị",
+    "description": "Vì sao cùng hộp bánh giá 35.000đ trông y hệt năm ngoái nhưng bóc ra thấy ít hẳn bên trong, và cách dùng giá đơn vị (Unit Price) tiết kiệm 15-25% tiền đi chợ.",
+    "category": "finance",
+    "tags": [
+      "shrinkflation",
+      "đi siêu thị",
+      "tiết kiệm tiền",
+      "lạm phát",
+      "tiêu dùng thông minh"
+    ],
+    "cost": "free",
+    "reading_time": 5,
+    "time": "10 giây liếc dòng khối lượng tịnh trên kệ siêu thị",
+    "effort": "low",
+    "benefits": [
+      "Tiết kiệm ngay 15-25% ngân sách thực phẩm, hóa mỹ phẩm mỗi tháng mà vẫn mua đúng thương hiệu chất lượng bạn thích",
+      "Không bị đánh lừa bởi gói khuyến mãi cỡ lớn hay thiết kế bao bì phồng to nhưng ruột rỗng"
+    ],
+    "risks": [
+      "Thấy chữ 'Size Gia Đình Tiết Kiệm' hoặc 'Combo Giảm Giá' liền bỏ vào giỏ mà không chia thử giá trên mỗi kg/lít (đôi khi đắt hơn mua 2 gói nhỏ!)"
+    ],
+    "target_groups": [
+      "Người nội trợ, sinh viên và bất kỳ ai tự đi mua nhu yếu phẩm hằng tuần"
+    ],
+    "value_level": "medium",
+    "evidence_level": "medium",
+    "evidence_notes": "Ứng dụng phân tích hành vi giá tiêu dùng Shrinkflation và quy chuẩn so sánh Đơn giá (Unit Pricing).",
+    "body": "## \"Gói snack toàn không khí, chai nước giặt lõm sâu đáy hơn\": Nghệ thuật Shrinkflation\n\nKhi nguyên liệu đầu vào tăng giá nhưng nhà sản xuất sợ khách hàng sốc nếu tăng thẳng giá bán từ 40.000đ lên 48.000đ, họ dùng chiến lược **Shrinkflation (Lạm phát thu nhỏ)**: giữ nguyên vỏ hộp kích thước y cũ, giữ nguyên giá 40.000đ, nhưng rút ruột từ **500g xuống còn 420g**, hoặc chai dầu ăn từ **1 lít xuống 900ml**, cuộn giấy vệ sinh quấn lỏng hơn chỉ còn 2 lớp thay vì 3 lớp. Khách hàng không để ý tưởng giá không đổi, thực chất đã tăng giá ngầm gần 20%!\n\n## 3 thói quen giúp bạn luôn mua được giá hời thật sự trên kệ siêu thị\n\n1. **Soi \"Đơn giá trên cùng 100g / 1 kg / 1 lít\" (Unit Price) thay vì nhìn Giá Niêm Yết trên thẻ:**\n   * Đứng trước kệ bột giặt hay dầu ăn: Chai A ghi **850ml giá 95.000đ**, Chai B ghi **1 lít giá 105.000đ**. Chia nhanh trong đầu bằng máy tính điện thoại: Chai A giá `111.700đ/lít`, Chai B chỉ `105.000đ/lít` — Chai B rẻ hơn thật dù số tiền trả tại quầy nhỉnh hơn 10k!\n   * Đặc biệt cẩn thận với **\"Gói Khổng lồ / Combo Tiết kiệm\"**: Nhiều siêu thị đặt giá 2 lốc sữa nhỏ đang giảm giá riêng lẻ lại **rẻ hơn** 1 thùng lớn cùng loại! Luôn kiểm tra phép chia nhanh trước khi ôm thùng to.\n2. **Kiểm tra \"Thế chất lượng thay thế\" (Skimpflation) ở thành phần sản phẩm:**\n   * Ngoài giảm khối lượng, một số hãng còn hạ chất lượng thành phần (thay bơ sữa thật bằng dầu thực vật/bột kem béo, giảm tỷ lệ thịt trong xúc xích) mà bao bì vẫn giữ giống cũ. Thói quen lật mặt sau đọc **3 thành phần đứng đầu danh sách** (xếp theo thứ tự nhiều nhất đến ít nhất) giúp bạn nhận ra ngay sản phẩm có bị pha loãng chất lượng không.\n3. **Nhìn xuống Kệ Dưới Cùng và Kệ Trên Cùng (Quy tắc Tầm Mắt):**\n   * Các sản phẩm thương hiệu chi tiền marketing cao nhất luôn được bày ở **ngang tầm mắt người lớn** (tầng 3-4). Những mặt hàng cơ bản (gạo, đường, muối, nước mắm truyền thống, giấy ăn không tẩy trắng) có chất lượng tương đương nhưng giá rẻ hơn 15-30% thường nằm ở **tầng kệ thấp nhất hoặc cao nhất** — chỉ cần cúi xuống liếc qua một giây bạn sẽ tiết kiệm được rất nhiều.",
+    "sources": [
+      {
+        "name": "Federal Reserve / Consumer Reports - Understanding Shrinkflation and Unit Pricing",
+        "url": "https://www.consumerreports.org/",
+        "note": "Kỹ thuật so sánh đơn giá trên khối lượng chuẩn và phát hiện cắt giảm định lượng ẩn sau bao bì cũ"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-negotiating-rent-renewal-lease-terms-088",
+    "slug": "finance-negotiating-rent-renewal-lease-terms-088",
+    "title": "Kỹ năng thương lượng giữ giá hoặc giảm tiền thuê nhà trọ, mặt bằng khi gia hạn hợp đồng: Dùng dữ liệu thị trường và lịch sử trả tiền đúng hạn",
+    "description": "Thay vì im lặng chấp nhận mức tăng giá 10-15% mỗi năm hoặc dọn nhà tốn kém tiền cọc/vận chuyển, học cách trao đổi có lợi cho cả chủ nhà và người thuê.",
+    "category": "finance",
+    "tags": [
+      "thuê nhà",
+      "thương lượng giá",
+      "hợp đồng thuê",
+      "tiết kiệm chi phí",
+      "kỹ năng đàm phán"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "30 phút chuẩn bị dữ liệu và nhắn tin trước khi hết hạn hợp đồng 45 ngày",
+    "effort": "medium",
+    "benefits": [
+      "Tiết kiệm hàng triệu đến hàng chục triệu đồng tiền thuê nhà mỗi năm và tránh chi phí chuyển nhà mệt mỏi",
+      "Xây dựng quan hệ tôn trọng lâu dài với chủ nhà để được hỗ trợ sửa chữa thiết bị nhanh chóng"
+    ],
+    "risks": [
+      "Chờ sát ngày hết hợp đồng 5 ngày mới nhắn tin xin giữ giá khiến chủ nhà ở thế thượng phong hoặc đã đăng tin tìm khách mới",
+      "Thương lượng theo kiểu đối đầu dọa dẫm 'Nếu tăng giá thì tôi chuyển ngay!' khi chưa khảo sát mặt bằng giá thực tế xung quanh"
+    ],
+    "target_groups": [
+      "Người đang thuê chung cư, phòng trọ dài hạn hoặc chủ hộ kinh doanh thuê mặt bằng sắp đến kỳ gia hạn"
+    ],
+    "value_level": "high",
+    "evidence_level": "medium",
+    "evidence_notes": "Ứng dụng nguyên tắc Đàm phán Hai Bên Cùng Có Lợi (BATNA & Mutual Gain - Harvard Program on Negotiation) vào thị trường thuê nhà Việt Nam.",
+    "body": "## Lợi thế ẩn bạn đang nắm trong tay mà ít người nhận ra: Chi phí trống phòng của Chủ nhà!\n\nKhi một người thuê tốt dọn đi, chủ nhà phải chịu ngay **3 khoản thiệt hại chắc chắn**: mất 2-4 tuần trống nhà không có doanh thu (tương đương mất 8% doanh thu cả năm), tốn tiền hoa hồng môi giới tìm khách mới (thường bằng nửa tháng đến 1 tháng tiền nhà), tốn chi phí sơn sửa lại tường và **rủi ro gặp khách mới hay quỵt tiền/phá đồ**. Nếu bạn là người thuê tử tế — luôn chuyển khoản tiền nhà đúng ngày, giữ nhà sạch sẽ, không gây ồn ào hàng xóm — **bạn thực sự rất đáng giá với chủ nhà**!\n\n## Quy trình 4 bước đàm phán gia hạn thuê nhà thành công\n\n1. **Bước 1: Chủ động nhắn tin trước ngày hết hạn 45-60 ngày (Không đợi chủ nhà báo tăng giá trước!):**\n   * Chủ động mở lời trước thể hiện bạn có thiện chí ở lâu dài và giúp chủ nhà yên tâm không cần gọi môi giới đăng tin.\n2. **Bước 2: Chuẩn bị sẵn \"Dữ liệu Tham chiếu Khách quan\" (BATNA):**\n   * Lướt các trang rao vặt uy tín (Batdongsan, Chotot, nhóm cư dân tòa nhà) xem 3-5 căn hộ/phòng trọ **cùng tòa nhà hoặc bán kính 500m có diện tích và nội thất tương đương** hiện đang cho thuê giá bao nhiêu. Lưu sẵn link/ảnh chụp màn hình để nói chuyện bằng số liệu thật, không mặc cả cảm tính.\n3. **Bước 3: Đưa ra Đề nghị Win-Win (Trao đổi giá trị thay vì chỉ xin bớt tiền):**\n   * *Kịch bản mẫu:* \"Chào cô/anh, hợp đồng nhà mình tháng sau hết hạn rồi. Em rất quý không gian ở đây và năm qua cũng luôn đóng tiền đúng ngày 01, giữ gìn nhà sạch sẽ chưa làm phiền hàng xóm lần nào. Hiện tại các căn tương tự cùng trục trong tòa nhà đang giao dịch quanh mức [X triệu]. Nếu năm tới cô/anh giữ nguyên mức giá cũ [hoặc chỉ điều chỉnh nhẹ 3% thay vì 10%], em rất mong được **ký gia hạn dài hạn luôn 12-24 tháng** (hoặc **đề xuất thanh toán gộp 3-6 tháng/lần** nếu dòng tiền của bạn cho phép) để cô/anh yên tâm hoàn toàn không phải tìm khách mới ạ.\"\n4. **Bước 4: Nếu chủ nhà cương quyết giữ mức tăng — Thương lượng các Quyền lợi Đi kèm (Non-cash Concessions):**\n   * Nếu chủ nhà không chịu giảm giá thuê hàng tháng, bạn vẫn có thể đề nghị: *\"Dạ vậy nếu giá mới là [Y], nhờ anh hỗ trợ thay giúp em cục nóng máy lạnh cũ/lắp thêm lưới an toàn ban công hoặc miễn phí gửi 1 xe máy để hai bên vui vẻ ký tiếp nhé ạ.\"*",
+    "sources": [
+      {
+        "name": "Harvard Program on Negotiation - Negotiating Your Lease Renewal",
+        "url": "https://www.pon.harvard.edu/",
+        "note": "Tận dụng chi phí thay thế khách thuê mới của chủ nhà và đề xuất đổi cam kết dài hạn lấy mức giá ổn định"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
+  },
+  {
+    "id": "finance-scam-fake-delivery-cod-zero-value-089",
+    "slug": "finance-scam-fake-delivery-cod-zero-value-089",
+    "title": "Lừa đảo giao hàng thu tiền hộ (COD 'bom hàng ngược') và shipper giả gọi chuyển khoản trước: Quy tắc kiểm tra mã vận đơn trước khi trả tiền",
+    "description": "Cách nhận diện chiêu lừa giao một gói hàng rỗng trị giá 150k-300k đúng lúc bạn vắng nhà nhờ người thân nhận hộ, và chiêu shipper giả gửi link 'hủy hội viên trừ 3 triệu/tháng'.",
+    "category": "finance",
+    "tags": [
+      "lừa đảo shipper",
+      "COD",
+      "mua sắm online",
+      "cảnh báo lừa đảo",
+      "an toàn tài chính"
+    ],
+    "cost": "free",
+    "reading_time": 6,
+    "time": "15 giây đối chiếu mã vận đơn trên app trước khi chuyển tiền",
+    "effort": "low",
+    "benefits": [
+      "Bảo vệ tiền của chính bạn, cha mẹ già và lễ tân công ty khỏi mất tiền oan vì những đơn hàng giả mạo 'nhìn rất giống thật'",
+      "Chặn đứng bẫy lừa đảo kép: shipper giả gọi báo chuyển nhầm vào tài khoản hội viên mất phí 3.5 triệu/tháng rồi dụ bấm link chiếm đoạt toàn bộ tài khoản"
+    ],
+    "risks": [
+      "Nghe shipper gọi giục gấp 'Em để gói hàng 180k ở cổng rồi, anh chuyển khoản vào số tài khoản này giúp em kẻo trễ chuyến!' rồi vội vàng chuyển tiền không kiểm tra app Shopee/TikTok/Lazada",
+      "Ông bà ở nhà thấy bưu kiện ghi đúng tên, SĐT, địa chỉ của con cháu nên vội rút tiền mặt trả hộ cho bưu tá giả"
+    ],
+    "target_groups": [
+      "Người hay mua hàng online, gia đình có cha mẹ ở nhà nhận hàng hộ và nhân viên văn phòng hay gửi đồ ở lễ tân"
+    ],
+    "value_level": "high",
+    "evidence_level": "high",
+    "evidence_notes": "Tổng hợp theo Cảnh báo thủ đoạn lừa đảo giả danh Shipper/COD của Cục An toàn Thông tin (Bộ TT&TT) và Bộ Công an Việt Nam.",
+    "body": "## Hai kịch bản \"Shipper Lừa Đảo\" đang bùng phát mạnh tại Việt Nam\n\nNhờ thu thập dữ liệu đơn hàng bị rò rỉ từ nhiều nguồn khác nhau, kẻ gian biết chính xác **Họ tên, Số điện thoại và Địa chỉ nhà bạn** để thực hiện hai kịch bản cực kỳ tinh vi:\n\n1. **Kịch bản 1 — Gửi Gói hàng Rác thu tiền hộ (COD giá 100k - 400k):** Kẻ xấu gửi qua dịch vụ chuyển phát thật một chiếc hộp bên trong chỉ chứa giẻ rách hoặc khẩu trang rẻ tiền, ghi ngoài hộp **\"Đồ gia dụng / Đơn Shopee - Thu hộ 250.000đ\"**, căn giờ bạn đi làm vắng để cha mẹ ở nhà hoặc bảo vệ tưởng thật trả tiền mặt hộ.\n2. **Kịch bản 2 — Shipper giả gọi điện \"Chuyển nhầm tài khoản Hội viên mất tiền tháng\" (Nguy hiểm mất sạch sổ tiết kiệm!):** Kẻ gian gọi giọng thân thiện báo *\"Em để hàng ở sảnh rồi, anh chuyển giúp em 120k vào số tài khoản này\"*. Ngay sau khi bạn chuyển khoản xong, nó gọi lại giọng hốt hoảng giả bộ: *\"Chết rồi anh ơi em gửi nhầm số tài khoản đăng ký Thẻ Hội viên Shipper rồi, mỗi tháng hệ thống tự trừ 3.5 triệu của anh đấy! Anh kết bạn Zalo bấm vào link Trung tâm Vận chuyển này hủy ngay đi!\"* — Link đó chứa mã độc hoặc trang giả mạo đánh cắp OTP/sinh trắc học rút sạch tiền ngân hàng của bạn!\n\n## 4 quy tắc Vàng chặn đứng 100% lừa đảo Shipper & COD\n\n1. **Luật Bất Biến — Không bao giờ trả tiền nếu Mã vận đơn KHÔNG KHỚP trên App chính chủ:**\n   * Khi có shipper gọi thu tiền hoặc để hàng trước cửa giục chuyển khoản: mở thẳng app bạn đã đặt (Shopee, Lazada, TikTok Shop, Tiki...) đối chiếu **4-6 ký tự cuối của Mã Vận Đơn (Tracking ID)** và số tiền chính xác trên app. Nếu không thấy đơn nào đang \"Đang giao hàng\" khớp số tiền và mã vận đơn -> **TỪ CHỐI NHẬN NGAY**, dù gói hàng in đúng tên và số điện thoại của bạn!\n2. **Quy ước Cứng với Cha mẹ, Bảo vệ & Lễ tân nhận hộ tại nhà:**\n   * Dặn dò rõ với ông bà ở nhà: **\"TUYỆT ĐỐI KHÔNG BAO GIỜ tự ý trả tiền mặt cho bất kỳ gói hàng COD nào khi chưa gọi điện thoại hỏi con xác nhận 'Đúng đơn của con, giá X đồng, hãy trả tiền!'\"**. Lý tưởng nhất là bạn thanh toán trước 0đ các đơn thật trên app để dặn gia đình: *\"Ở nhà chỉ nhận đơn 0 đồng, đơn nào đòi thu tiền mặt 100% là từ chối luôn!\"*\n3. **Cảnh giác Tuyệt đối với mọi Cuộc gọi \"Bấm Link Hủy Gói Hội Viên / Hoàn Tiền Nhầm\":**\n   * Không có dịch vụ giao hàng hợp pháp nào tự động trừ 3.5 triệu/tháng từ tài khoản ngân hàng của bạn chỉ vì bạn lỡ chuyển khoản một đơn hàng 120k! Nếu nghe thấy bất kỳ ai nói câu *\"chuyển nhầm tài khoản hội viên, phải bấm link/chia sẻ màn hình để hủy kẻo bị trừ tiền hàng tháng\"*, **1000% là LỪA ĐẢO — Cúp máy và chặn số ngay lập tức!**",
+    "sources": [
+      {
+        "name": "Cục An toàn thông tin (Bộ TT&TT) - Cảnh báo chiêu trò giả danh Shipper dẫn dụ bấm link chiếm đoạt tài khoản",
+        "url": "https://ais.gov.vn/",
+        "note": "Phân tích kịch bản shipper giả thông báo chuyển nhầm tài khoản thẻ hội viên và quy trình phòng tránh"
+      },
+      {
+        "name": "Bộ Công an Việt Nam - Khuyến cáo cảnh giác thủ đoạn gửi hàng không đặt mua thu tiền hộ COD",
+        "url": "https://bocongan.gov.vn/",
+        "note": "Đối chiếu mã vận đơn trên nền tảng thương mại điện tử trước khi thanh toán"
+      }
+    ],
+    "verified_at": null,
+    "review_status": "needs_review",
+    "status_label": "Chờ rà soát",
+    "last_updated": "2026-11-11"
   }
 ]

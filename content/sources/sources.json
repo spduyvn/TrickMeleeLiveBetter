@@ -5463,5 +5463,1200 @@
     "name": "International Federation of Red Cross (IFRC) - International First Aid Guidelines: Infant Choking",
     "url": "https://www.ifrc.org/",
     "note": "Hướng dẫn sơ cấp cứu hóc nghẹt thở ở nhũ nhi của Hội Chữ thập đỏ Quốc tế"
+  },
+  {
+    "name": "National Safety Council (NSC) - Defensive Driving Courses and Core Principles",
+    "url": "https://www.nsc.org/safety-training/defensive-driving",
+    "note": "Tiêu chuẩn quốc tế về kỹ năng lái xe phòng thủ phòng tránh va chạm giao thông"
+  },
+  {
+    "name": "Bộ Giao thông Vận tải Việt Nam - Thông tư 31/2019/TT-BGTVT về tốc độ và khoảng cách an toàn của xe cơ giới",
+    "url": "https://mt.gov.vn",
+    "note": "Quy chuẩn khoảng cách tối thiểu theo từng cấp tốc độ trên đường bộ Việt Nam"
+  },
+  {
+    "name": "Alexander Arguelles - Foreign Language Shadowing Methodology",
+    "url": "https://www.foreignlanguageexpertise.com/",
+    "note": "Tài liệu hướng dẫn nguyên bản về quy trình thực hành Shadowing đa ngôn ngữ"
+  },
+  {
+    "name": "Royal National Lifeboat Institution (RNLI) - Float to Live: Survival Technique",
+    "url": "https://rnli.org/safety/float",
+    "note": "Chiến dịch hướng dẫn kỹ thuật nổi ngửa cứu mạng quốc tế được kiểm chứng thực địa"
+  },
+  {
+    "name": "World Health Organization (WHO) - Preventing drowning: An implementation guide",
+    "url": "https://www.who.int/publications/i/item/9789241511933",
+    "note": "Khuyến cáo toàn cầu của WHO về đào tạo kỹ năng bơi sinh tồn và an toàn nước"
+  },
+  {
+    "name": "Harvard Law School - Program on Negotiation (PON): Evidence-Based Salary Negotiation",
+    "url": "https://www.pon.harvard.edu/tag/salary-negotiation/",
+    "note": "Chiến lược đàm phán lương dựa trên tiêu chuẩn khách quan và giá trị đôi bên cùng có lợi"
+  },
+  {
+    "name": "Julia Evans - Get Your Work Recognized: Write a Brag Document",
+    "url": "https://jvns.ca/blog/brag-documents/",
+    "note": "Phương pháp ghi chép thành tích định lượng chuẩn ngành công nghệ và quản trị"
+  },
+  {
+    "name": "National Institute of Diabetes and Digestive and Kidney Diseases (NIH) - Safe Weight Loss Myths and Facts",
+    "url": "https://www.niddk.nih.gov/health-information/weight-management/myths-nutrition-physical-activity",
+    "note": "Tài liệu y khoa chính thống giải thích cơ chế chuyển hóa và tốc độ giảm cân an toàn"
+  },
+  {
+    "name": "National Eczema Association & American Academy of Dermatology (AAD) - Topical Steroid Withdrawal Syndrome",
+    "url": "https://nationaleczema.org/warnings-for-topical-steroids-eczema/",
+    "note": "Tài liệu y khoa giải thích cơ chế teo da và phản ứng bùng phát khi ngừng bôi steroid"
+  },
+  {
+    "name": "American Academy of Ophthalmology (AAO) - Refractive Errors & Refractive Surgery Preferred Practice Pattern",
+    "url": "https://www.aao.org/education/preferred-practice-pattern/refractive-errors-refractive-surgery-ppp-2022",
+    "note": "Tiêu chuẩn lâm sàng nhãn khoa Hoa Kỳ về chỉ định và an toàn phẫu thuật khúc xạ"
+  },
+  {
+    "name": "U.S. Food and Drug Administration (FDA) - LASIK Quality of Life Collaboration Project (PROWL)",
+    "url": "https://www.fda.gov/medical-devices/lasik/lasik-quality-life-collaboration-project",
+    "note": "Nghiên cứu độc lập của FDA đánh giá tỷ lệ hài lòng và biến chứng khô mắt, chói sáng sau mổ mắt"
+  },
+  {
+    "name": "World Health Organization (WHO) - Make Listening Safe Initiative & Global Standard for Safe Listening",
+    "url": "https://www.who.int/activities/making-listening-safe",
+    "note": "Tiêu chuẩn toàn cầu của WHO về giới hạn cường độ và thời lượng nghe âm thanh an toàn"
+  },
+  {
+    "name": "National Institute on Deafness and Other Communication Disorders (NIDCD) - Noise-Induced Hearing Loss",
+    "url": "https://www.nidcd.nih.gov/health/noise-induced-hearing-loss",
+    "note": "Nghiên cứu sinh học thần kinh về tổn thương vĩnh viễn tế bào lông ốc tai"
+  },
+  {
+    "name": "Kenneth K. Hansraj (2014) - Assessment of Stresses in the Cervical Spine Caused by Posture and Position of the Head (Surgical Technology International)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25393825/",
+    "note": "Nghiên cứu định lượng nổi tiếng tính toán lực tải 27kg lên đốt sống cổ ở góc cúi 60 độ"
+  },
+  {
+    "name": "American Physical Therapy Association (APTA) - Physical Therapist's Guide to Neck Pain",
+    "url": "https://www.choosept.com/guide/physical-therapy-guide-neck-pain",
+    "note": "Hướng dẫn vật lý trị liệu chuẩn hóa bài tập Chin Tucks phục hồi đường cong cột sống cổ"
+  },
+  {
+    "name": "American College of Obstetricians and Gynecologists (ACOG) - Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum",
+    "url": "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/screening-and-diagnosis-of-mental-health-conditions-during-pregnancy-and-postpartum",
+    "note": "Hướng dẫn lâm sàng sàng lọc và hỗ trợ điều trị trầm cảm chu sinh"
+  },
+  {
+    "name": "World Health Organization (WHO) - Maternal Mental Health",
+    "url": "https://www.who.int/teams/mental-health-and-substance-use/promotion-prevention/maternal-mental-health",
+    "note": "Khuyến cáo chăm sóc sức khỏe tâm thần cho phụ nữ mang thai và sau sinh"
+  },
+  {
+    "name": "American Academy of Pediatrics (AAP) - Calming a Fussy Baby and Preventing Shaken Baby Syndrome",
+    "url": "https://www.healthychildren.org/English/ages-stages/baby/crying-colic/Pages/Calming-A-Fussy-Baby.aspx",
+    "note": "Hướng dẫn nhi khoa chính thức về các kỹ thuật an toàn dỗ trẻ quấy khóc và quấn kén bảo vệ khớp háng"
+  },
+  {
+    "name": "Harvey Karp, MD - The Happiest Baby on the Block (Calming Reflex Research)",
+    "url": "https://www.happiestbaby.com/blogs/baby/the-5-s-s-for-soothing-babies",
+    "note": "Cơ sở khoa học và quy trình thực hành phương pháp 5S chuẩn"
+  },
+  {
+    "name": "American Academy of Pediatrics (AAP) - Grandparents and Child Care: Navigating Differences",
+    "url": "https://www.healthychildren.org/",
+    "note": "Tư vấn nhi khoa thực tế về cách kết hợp giữa kiến thức y khoa mới và sự hỗ trợ của ông bà"
+  },
+  {
+    "name": "The Gottman Institute - Setting Boundaries with Extended Family",
+    "url": "https://www.gottman.com/blog/setting-boundaries-with-in-laws/",
+    "note": "Kỹ thuật giữ ranh giới bảo vệ hôn nhân trước sự can thiệp của đại gia đình"
+  },
+  {
+    "name": "Greater Good Science Center (UC Berkeley) - Communicating Without Conflict",
+    "url": "https://greatergood.berkeley.edu/",
+    "note": "Các nghiên cứu tâm lý học về hiệu quả của giao tiếp dùng ngôi thứ nhất 'Tôi cảm thấy' trong giảm xung đột"
+  },
+  {
+    "name": "Sonya L. Britt & Sandra J. Huston - The Role of Money Arguments in Marriage (Journal of Family and Economic Issues)",
+    "url": "https://doi.org/10.1007/s10834-012-9304-5",
+    "note": "Nghiên cứu định lượng mối liên hệ mật thiết giữa tranh cãi tiền bạc và tính bền vững của hôn nhân"
+  },
+  {
+    "name": "Journal of Consumer Research - Pooling Finances and Relationship Satisfaction",
+    "url": "https://academic.oup.com/jcr",
+    "note": "Phân tích tâm lý học hành vi về cơ chế phân bổ tài khoản chung-riêng trong gia đình"
+  },
+  {
+    "name": "MaryCarol R. Hunter et al. (2019) - Urban Nature Experiences Reduce Stress in the Context of Daily Life (Frontiers in Psychology)",
+    "url": "https://doi.org/10.3389/fpsyg.2019.00722",
+    "note": "Nghiên cứu định lượng xác định liều lượng 20-30 phút tiếp xúc thiên nhiên làm hạ cortisol tối ưu"
+  },
+  {
+    "name": "Mathew P. White et al. (2019) - Spending at least 120 minutes a week in nature is associated with good health and wellbeing (Scientific Reports)",
+    "url": "https://doi.org/10.1038/s41598-019-44097-3",
+    "note": "Nghiên cứu quy mô lớn trên gần 20.000 người về ngưỡng 120 phút/tuần trong tự nhiên"
+  },
+  {
+    "name": "Mihaly Csikszentmihalyi - Flow: The Psychology of Optimal Experience",
+    "url": "https://www.apa.org/",
+    "note": "Nghiên cứu nền tảng về trạng thái Dòng chảy giúp tối ưu hóa niềm vui và phục hồi tâm lý"
+  },
+  {
+    "name": "Sabine Sonnentag - Recovery from Job Stress: The Stressor-Detachment Model (Current Directions in Psychological Science)",
+    "url": "https://doi.org/10.1177/0963721412442416",
+    "note": "Nghiên cứu tâm lý học lao động về vai trò của tách rời nhận thức và hoạt động chủ động sau giờ làm"
+  },
+  {
+    "name": "Drew M. Altschul & Ian J. Deary (2020) - Playing Analog Games Is Associated With Reduced Declines in Cognitive Function (The Journals of Gerontology)",
+    "url": "https://doi.org/10.1093/geronb/gbz149",
+    "note": "Nghiên cứu dọc của Đại học Edinburgh chứng minh lợi ích bảo vệ chức năng nhận thức của trò chơi cờ bàn"
+  },
+  {
+    "name": "American Journal of Play - The Social and Cognitive Benefits of Tabletop Board Games",
+    "url": "https://www.journalofplay.org/",
+    "note": "Tổng hợp nghiên cứu giáo dục và tâm lý xã hội về tác động của trò chơi tương tác trực tiếp"
+  },
+  {
+    "name": "Martin E. P. Seligman et al. (2005) - Positive Psychology Progress: Empirical Validation of Interventions (American Psychologist)",
+    "url": "https://doi.org/10.1037/0003-066X.60.5.410",
+    "note": "Nghiên cứu thử nghiệm lâm sàng chứng minh hiệu quả kéo dài 6 tháng của bài tập Three Good Things"
+  },
+  {
+    "name": "Greater Good in Action (UC Berkeley) - Three Good Things Practice Guide",
+    "url": "https://ggia.berkeley.edu/practice/three-good-things",
+    "note": "Hướng dẫn thực hành chuẩn hóa của Đại học California, Berkeley"
+  },
+  {
+    "name": "Jon Kabat-Zinn - Full Catastrophe Living: Mindfulness-Based Stress Reduction (MBSR)",
+    "url": "https://www.umassmed.edu/cfm/",
+    "note": "Giáo trình chuẩn MBSR của Trung tâm Chánh niệm Đại học Y khoa Massachusetts"
+  },
+  {
+    "name": "American Psychological Association (APA) - Mindfulness meditation: A research-proven way to reduce stress",
+    "url": "https://www.apa.org/topics/mindfulness/meditation",
+    "note": "Tổng hợp bằng chứng tâm lý học về hiệu quả giảm lo âu của thực hành chánh niệm"
+  },
+  {
+    "name": "Microsoft Support - Excel Functions and PivotTable Official Documentation",
+    "url": "https://support.microsoft.com/en-us/excel",
+    "note": "Tài liệu hướng dẫn chính thức về cú pháp SUMIFS, XLOOKUP và Pivot Table"
+  },
+  {
+    "name": "Google Workspace Learning Center - Google Sheets Training and Help",
+    "url": "https://support.google.com/a/users/answer/9282959",
+    "note": "Hướng dẫn thực hành phân tích dữ liệu và xác thực nhập liệu chuẩn trên Google Sheets"
+  },
+  {
+    "name": "Karthik Rajkumar et al. (2022) - A causal test of the strength of weak ties (Science)",
+    "url": "https://www.science.org/doi/10.1126/science.abl4476",
+    "note": "Nghiên cứu thực nghiệm trên 20 triệu người dùng LinkedIn chứng minh vai trò của mạng lưới kết nối yếu trong cơ hội việc làm"
+  },
+  {
+    "name": "LinkedIn Official Talent Blog - How Recruiters Use LinkedIn Search",
+    "url": "https://www.linkedin.com/business/talent/blog",
+    "note": "Tài liệu hướng dẫn tối ưu từ khóa và cấu trúc hồ sơ theo cơ chế bộ lọc tuyển dụng"
+  },
+  {
+    "name": "S. Keshav (2007) - How to Read a Paper (ACM SIGCOMM Computer Communication Review)",
+    "url": "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf",
+    "note": "Tài liệu hướng dẫn phương pháp 3 lượt đọc bài báo khoa học nổi tiếng toàn cầu tại các trường đại học"
+  },
+  {
+    "name": "Science Magazine - How to (seriously) read a scientific paper",
+    "url": "https://www.science.org/content/article/how-seriously-read-scientific-paper",
+    "note": "Tổng hợp kinh nghiệm thực tế của các nhà khoa học hàng đầu về cách phân tích bài báo học thuật"
+  },
+  {
+    "name": "Doug Rohrer et al. (2015) - Interleaved Practice Improves Mathematics Learning (Journal of Educational Psychology)",
+    "url": "https://doi.org/10.1037/edu0000001",
+    "note": "Nghiên cứu thực nghiệm chứng minh học xen kẽ vượt trội hoàn toàn học dồn cục trong bài thi thực tế"
+  },
+  {
+    "name": "Robert A. Bjork & Elizabeth L. Bjork - Making Things Hard on Yourself, But in a Good Way (Desirable Difficulties)",
+    "url": "https://bjorklab.psych.ucla.edu/",
+    "note": "Lý thuyết 'Khó khăn Mong muốn' của Đại học UCLA giải thích cơ chế ghi nhớ sâu qua xen kẽ"
+  },
+  {
+    "name": "U.S. Food and Drug Administration (FDA) - Dermal Fillers (Soft Tissue Fillers) Safety Warnings",
+    "url": "https://www.fda.gov/medical-devices/aesthetic-cosmetic-devices/fda-warns-against-use-needle-free-devices-inject-dermal-fillers",
+    "note": "Cảnh báo toàn cầu của FDA về biến chứng tắc mạch mù mắt và đột quỵ khi tiêm filler sai quy chuẩn"
+  },
+  {
+    "name": "American Dental Association (ADA) - Tooth Whitening: Safety and Effectiveness",
+    "url": "https://www.ada.org/resources/ada-library/oral-health-topics/whitening",
+    "note": "Khuyến cáo nha khoa chính thức của ADA về nồng độ chất tẩy trắng an toàn và bảo vệ men răng"
+  },
+  {
+    "name": "Journal of the American Dental Association (JADA) - Charcoal and charcoal-based dentifrices review",
+    "url": "https://jada.ada.org/article/S0002-8177(17)30412-9/fulltext",
+    "note": "Nghiên cứu đánh giá tác hại mài mòn men răng của các sản phẩm than hoạt tính"
+  },
+  {
+    "name": "U.S. Preventive Services Task Force (USPSTF) - Folic Acid Supplementation to Prevent Neural Tube Defects",
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/folic-acid-for-the-prevention-of-neural-tube-defects-preventive-medication",
+    "note": "Khuyến cáo mức độ A bắt buộc bổ sung 400-800 mcg Axit Folic trước thụ thai"
+  },
+  {
+    "name": "Chính phủ Việt Nam - Nghị định số 13/2023/NĐ-CP về Bảo vệ dữ liệu cá nhân",
+    "url": "https://vanban.chinhphu.vn/?classid=1&docid=207764&orggroupid=1&pageid=27160",
+    "note": "Văn bản pháp quy nền tảng quy định quyền của công dân đối với dữ liệu cá nhân tại Việt Nam"
+  },
+  {
+    "name": "Cục An toàn thông tin (Bộ TT&TT) - Hệ thống tiếp nhận phản ánh cuộc gọi rác, tin nhắn rác 5656 / 156",
+    "url": "https://chongthurac.vn",
+    "note": "Cổng thông tin quốc gia đăng ký danh sách không quảng cáo (DNC) và tố giác số rác"
+  },
+  {
+    "name": "Open Source Initiative (OSI) - Approved Open Source Licenses",
+    "url": "https://opensource.org/licenses",
+    "note": "Tổ chức tiêu chuẩn hóa quốc tế định nghĩa chi tiết nghĩa vụ pháp lý của MIT, Apache 2.0, BSD, GPL"
+  },
+  {
+    "name": "Choose a License (GitHub) - Appendix & Comparison of Software Licenses",
+    "url": "https://choosealicense.com/appendix/",
+    "note": "Bảng so sánh trực quan quyền hạn và điều kiện bắt buộc giữa các giấy phép phần mềm"
+  },
+  {
+    "name": "Quốc hội Việt Nam - Luật Người khuyết tật số 51/2010/QH12",
+    "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Luat-nguoi-khuyet-tat-2010-108088.aspx",
+    "note": "Khung pháp lý cao nhất quy định quyền bình đẳng, tiếp cận và an sinh cho người khuyết tật"
+  },
+  {
+    "name": "Chính phủ Việt Nam - Nghị định 76/2024/NĐ-CP sửa đổi Nghị định 20/2021/NĐ-CP về chính sách trợ giúp xã hội",
+    "url": "https://vanban.chinhphu.vn/?classid=1&docid=210574&orggroupid=1&pageid=27160",
+    "note": "Quy định nâng mức chuẩn trợ giúp xã hội lên 500.000đ/tháng áp dụng từ 01/07/2024"
+  },
+  {
+    "name": "Quốc hội Việt Nam - Luật Bảo vệ quyền lợi người tiêu dùng số 19/2023/QH15",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Luat-Bao-ve-quyen-loi-nguoi-tieu-dung-2023-544088.aspx",
+    "note": "Khung pháp lý mới hiệu lực từ 01/07/2024 bảo vệ người tiêu dùng trong giao dịch trực tuyến"
+  },
+  {
+    "name": "Ủy ban Cạnh tranh Quốc gia (Bộ Công Thương) - Cổng thông tin Bảo vệ người tiêu dùng (Tổng đài 1800 6838)",
+    "url": "https://bvntd.gov.vn",
+    "note": "Cơ quan tiếp nhận khiếu nại và bảo vệ quyền lợi người mua hàng cấp quốc gia"
+  },
+  {
+    "name": "Centers for Disease Control and Prevention (CDC) - Extreme Heat: Heat-Related Illnesses & First Aid",
+    "url": "https://www.cdc.gov/extreme-heat/signs-symptoms/index.html",
+    "note": "Khuyến cáo nhận diện và cấp cứu sốc nhiệt khẩn cấp của CDC Hoa Kỳ"
+  },
+  {
+    "name": "Korey Stringer Institute (University of Connecticut) - Exertional Heat Stroke: Cool First, Transport Second",
+    "url": "https://ksi.uconn.edu/emergency-conditions/heat-illnesses/exertional-heat-stroke/",
+    "note": "Nghiên cứu y học thể thao chứng minh quy tắc hạ nhiệt tại hiện trường đạt tỷ lệ sống sót gần 100%"
+  },
+  {
+    "name": "American Academy of Ophthalmology (AAO) - Chemical (Alkali and Acid) Injury of the Conjunctiva and Cornea",
+    "url": "https://eyewiki.org/Chemical_(Alkali_and_Acid)_Injury_of_the_Conjunctiva_and_Cornea",
+    "note": "Phác đồ nhãn khoa quốc tế về rửa mắt liên tục cấp cứu bỏng kiềm và axit"
+  },
+  {
+    "name": "Bệnh viện Mắt Trung ương - Hướng dẫn xử trí cấp cứu ban đầu bỏng mắt do hóa chất tại cộng đồng",
+    "url": "http://vnio.vn",
+    "note": "Khuyến cáo chuyên môn của bệnh viện đầu ngành nhãn khoa Việt Nam"
+  },
+  {
+    "name": "MIT Physics / Center for Injury Research - Elevator Free-Fall Survival Physics",
+    "url": "https://web.mit.edu/",
+    "note": "Phân tích động lực học va chạm chứng minh tư thế nằm ngửa phân tán lực là phương án an toàn nhất"
+  },
+  {
+    "name": "Bộ Xây dựng / Bộ Lao động TBXH - Quy chuẩn Kỹ thuật Quốc gia về An toàn lao động đối với thang máy (QCVN 02:2019/BLĐTBXH)",
+    "url": "https://www.molisa.gov.vn",
+    "note": "Quy chuẩn an toàn kỹ thuật bắt buộc về phanh cơ khí vượt tốc và thông gió cabin thang máy"
+  },
+  {
+    "name": "Centers for Disease Control and Prevention (CDC) - Carbon Monoxide Poisoning Prevention & Generator Safety",
+    "url": "https://www.cdc.gov/carbon-monoxide/about/index.html",
+    "note": "Khuyến cáo an toàn khoảng cách tối thiểu 6 mét cho máy phát điện và xử trí ngộ độc khí CO"
+  },
+  {
+    "name": "American Psychological Association (APA) - Coping with Job Loss and Unemployment",
+    "url": "https://www.apa.org/topics/stress/unemployment",
+    "note": "Khuyến cáo thực hành tâm lý học giúp ổn định tinh thần và duy trì lòng tự trọng khi thất nghiệp"
+  },
+  {
+    "name": "Marie Jahoda - Work, Employment, and Unemployment: Values, Theories, and Approaches in Social Research (American Psychologist)",
+    "url": "https://doi.org/10.1037/0003-066X.36.2.184",
+    "note": "Mô hình kinh điển về 5 chức năng tâm lý tiềm ẩn của việc làm"
+  },
+  {
+    "name": "Margaret Stroebe & Henk Schut - The Dual Process Model of Coping with Bereavement (Death Studies)",
+    "url": "https://doi.org/10.1080/074811899201046",
+    "note": "Mô hình lý thuyết tâm lý học hiện đại chuẩn mực nhất về thích ứng sau tang chế"
+  },
+  {
+    "name": "American Psychological Association (APA) - Grief: Coping with the loss of your loved one",
+    "url": "https://www.apa.org/topics/grief",
+    "note": "Hướng dẫn thực hành chăm sóc tâm lý và nhận diện rối loạn đau buồn kéo dài"
+  },
+  {
+    "name": "Peter A. Levine - Waking the Tiger: Healing Trauma (Somatic Experiencing International)",
+    "url": "https://traumahealing.org/",
+    "note": "Nghiên cứu nền tảng về giải phóng phản ứng sinh tồn tích tụ trong cơ thể sinh vật"
+  },
+  {
+    "name": "David Berceli - Tension & Trauma Releasing Exercises (TRE Research)",
+    "url": "https://traumaprevention.com/research/",
+    "note": "Tổng hợp các nghiên cứu lâm sàng về phản xạ run sinh lý hạ căng thẳng thần kinh"
+  },
+  {
+    "name": "Thomas Curran & Andrew P. Hill (2019) - Perfectionism Is Increasing Over Time: A Meta-Analysis (Psychological Bulletin)",
+    "url": "https://doi.org/10.1037/bul0000138",
+    "note": "Phân tích gộp trên 40.000 sinh viên trong gần 30 năm chứng minh tác hại tâm lý gia tăng của chủ nghĩa hoàn hảo"
+  },
+  {
+    "name": "Harvard Business Review - How to Manage Your Perfectionism",
+    "url": "https://hbr.org/2019/04/how-to-manage-your-perfectionism",
+    "note": "Chiến lược quản trị sự cầu toàn và áp dụng tiêu chuẩn 'Đủ tốt' trong công việc"
+  },
+  {
+    "name": "Chính phủ Việt Nam - Nghị định 40/2018/NĐ-CP về quản lý hoạt động kinh doanh theo phương thức đa cấp",
+    "url": "https://vanban.chinhphu.vn/?classid=1&docid=193152&orggroupid=1&pageid=27160",
+    "note": "Khung pháp lý phân định rõ đa cấp hợp pháp và hành vi kinh doanh đa cấp trái phép"
+  },
+  {
+    "name": "Ủy ban Cạnh tranh Quốc gia (Bộ Công Thương) - Danh sách doanh nghiệp bán hàng đa cấp hợp pháp và cảnh báo biến tướng",
+    "url": "https://vcca.gov.vn",
+    "note": "Cổng tra cứu danh sách công ty được cấp phép hợp pháp tại Việt Nam"
+  },
+  {
+    "name": "Consumer Financial Protection Bureau (CFPB) - Managing Cash Flow and Prioritizing Bills During Financial Hardship",
+    "url": "https://www.consumerfinance.gov/coronavirus/mortgage-and-housing-assistance/",
+    "note": "Hướng dẫn chính thức về sắp xếp thứ tự ưu tiên thanh toán hóa đơn khi thu nhập sụt giảm"
+  },
+  {
+    "name": "Ramsey Solutions - The Four Walls Budgeting Framework in Crisis",
+    "url": "https://www.ramseysolutions.com/budgeting/4-things-you-must-budget-for-first",
+    "note": "Phương pháp phân bổ ngân sách sinh tồn 4 ưu tiên cốt lõi trong khủng hoảng"
+  },
+  {
+    "name": "Federal Trade Commission (FTC) - Cosigning a Loan FAQs",
+    "url": "https://consumer.ftc.gov/articles/cosigning-loan-faqs",
+    "note": "Khuyến cáo bảo vệ người tiêu dùng quốc tế về rủi ro tín dụng khi đồng ký tên bảo lãnh khoản vay"
+  },
+  {
+    "name": "Cổng Thông tin Điện tử Bộ Công an - Khuyến cáo phòng ngừa và đấu tranh với tội phạm tín dụng đen qua không gian mạng",
+    "url": "https://bocongan.gov.vn",
+    "note": "Hướng dẫn nạn nhân thu thập chứng cứ và tố giác app cho vay nặng lãi trái phép"
+  },
+  {
+    "name": "Quốc hội Việt Nam - Luật Việc làm số 38/2013/QH13 (Mục 3: Trợ cấp thất nghiệp)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-viec-lam-2013-215628.aspx",
+    "note": "Quy chuẩn điều kiện, mức chi trả 60% lương và thời hạn 3 tháng nộp hồ sơ hưởng BHTN"
+  },
+  {
+    "name": "Cổng Dịch vụ công Quốc gia - Thủ tục Giải quyết hưởng trợ cấp thất nghiệp trực tuyến",
+    "url": "https://dichvucong.gov.vn",
+    "note": "Kênh nộp hồ sơ hưởng trợ cấp thất nghiệp online không cần đi xếp hàng trực tiếp"
+  },
+  {
+    "name": "Harvard Business Review - Managing a Side Hustle Without Burning Out",
+    "url": "https://hbr.org/",
+    "note": "Hướng dẫn quản trị ranh giới thời gian và xung đột lợi ích khi làm nghề tay trái"
+  },
+  {
+    "name": "FBI Internet Crime Complaint Center (IC3) - Cryptocurrency Investment Fraud Warning",
+    "url": "https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/cryptocurrency-investment-fraud",
+    "note": "Báo cáo cảnh báo quốc tế của FBI về thủ đoạn lừa đảo mổ lợn và sàn tiền ảo giả mạo"
+  },
+  {
+    "name": "American Diabetes Association (ADA) - Foot Care and Preventing Amputations",
+    "url": "https://diabetes.org/living-with-diabetes/complications/foot-complications",
+    "note": "Khuyến cáo chuẩn về kiểm tra bàn chân hằng ngày và phòng ngừa loét ở người đái tháo đường"
+  },
+  {
+    "name": "CDC - Diabetes and Your Feet",
+    "url": "https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html",
+    "note": "Hướng dẫn thực hành bảo vệ bàn chân và dấu hiệu cảnh báo cần can thiệp y tế"
+  },
+  {
+    "name": "Global Initiative for Asthma (GINA) - Inhaler Technique Guides",
+    "url": "https://ginasthma.org/",
+    "note": "Hướng dẫn quốc tế chuẩn hóa kỹ thuật dùng ống xịt MDI và buồng đệm"
+  },
+  {
+    "name": "NHS UK - How to use your MDI inhaler and spacer",
+    "url": "https://www.nhs.uk/conditions/asthma/",
+    "note": "Quy trình từng bước thực hành hít thuốc và vệ sinh buồng đệm đúng cách"
+  },
+  {
+    "name": "National Institute on Aging (NIH) - Communicating With Someone Who Has Alzheimer's Disease",
+    "url": "https://www.nia.nih.gov/health/alzheimers-caregiving/communicating-someone-who-has-alzheimers-disease",
+    "note": "Hướng dẫn kỹ thuật giao tiếp, xử lý kích động và an toàn tại nhà cho người chăm sóc"
+  },
+  {
+    "name": "Alzheimer's Association - Communication and Caregiving Tips",
+    "url": "https://www.alz.org/help-support/caregiving/daily-care/communications",
+    "note": "Nguyên tắc đồng cảm cảm xúc và chuyển hướng chú ý thay vì đối đầu lý trí"
+  },
+  {
+    "name": "CDC STEADI - Check For Safety: A Home Fall Prevention Checklist for Older Adults",
+    "url": "https://www.cdc.gov/steadi/patient-education/index.html",
+    "note": "Danh mục kiểm tra an toàn nhà ở giảm thiểu nguy cơ té ngã người cao tuổi"
+  },
+  {
+    "name": "WHO - Step Safely: Strategies for Preventing and Managing Falls Across the Life-Course",
+    "url": "https://www.who.int/publications/i/item/978924002191-4",
+    "note": "Báo cáo toàn cầu về gánh nặng té ngã và biện pháp cải tạo môi trường sống hiệu quả"
+  },
+  {
+    "name": "Bệnh viện Nhi Trung ương - Hướng dẫn xử trí khi trẻ bị sốt cao co giật tại nhà",
+    "url": "https://benhviennhitrunguong.gov.vn/",
+    "note": "Phác đồ sơ cứu an toàn và các điều cấm kỵ khi trẻ lên cơn co giật do sốt"
+  },
+  {
+    "name": "American Academy of Pediatrics (HealthyChildren.org) - Febrile Seizures",
+    "url": "https://www.healthychildren.org/English/health-issues/conditions/head-neck-nervous-system/Pages/Febrile-Seizures.aspx",
+    "note": "Khuyến cáo nhi khoa về thời điểm cần cấp cứu và tiên lượng của sốt cao co giật"
+  },
+  {
+    "name": "Quốc hội Việt Nam - Luật sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế (Luật số 51/2024/QH15)",
+    "url": "https://thuvienphapluat.vn/",
+    "note": "Quy định phân cấp chuyên môn kỹ thuật khám chữa bệnh và quyền lợi thông tuyến bệnh hiểm nghèo"
+  },
+  {
+    "name": "NHS UK & Patient Safety Guides - Getting a Second Medical Opinion",
+    "url": "https://www.nhs.uk/",
+    "note": "Hướng dẫn quyền của người bệnh khi tham vấn ý kiến y khoa độc lập trước phẫu thuật"
+  },
+  {
+    "name": "MedlinePlus (NIH) - How to Understand Your Lab Results",
+    "url": "https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/",
+    "note": "Hướng dẫn đọc hiểu khoảng tham chiếu và ý nghĩa các xét nghiệm huyết học, sinh hóa cơ bản"
+  },
+  {
+    "name": "National Kidney Foundation - eGFR and Creatinine",
+    "url": "https://www.kidney.org/atoz/content/gfr",
+    "note": "Phân biệt ý nghĩa lâm sàng giữa Creatinine đơn lẻ và mức lọc cầu thận ước tính eGFR"
+  },
+  {
+    "name": "WHO - Recommendations on Maternal and Newborn Care for a Positive Postnatal Experience",
+    "url": "https://www.who.int/publications/i/item/9789240045989",
+    "note": "Khuyến cáo quốc tế về theo dõi hậu sản, vận động sớm và dấu hiệu nguy hiểm sau sinh"
+  },
+  {
+    "name": "CDC - Urgent Maternal Warning Signs",
+    "url": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html",
+    "note": "Danh sách các triệu chứng cảnh báo biến chứng sản khoa muộn cần đi cấp cứu ngay"
+  },
+  {
+    "name": "FDA - Grapefruit Juice and Some Drugs Don't Mix",
+    "url": "https://www.fda.gov/consumers/consumer-updates/grapefruit-juice-and-some-drugs-dont-mix",
+    "note": "Cảnh báo khoa học về cơ chế ức chế enzyme CYP3A4 của nước ép bưởi chùm với thuốc"
+  },
+  {
+    "name": "FDA & NIH - Avoid Food-Drug Interactions",
+    "url": "https://www.fda.gov/drugs/resources-drugs/drug-interactions-what-you-should-know",
+    "note": "Danh mục tương tác giữa kháng sinh, thuốc chống đông, paracetamol với sữa, rượu và thực phẩm"
+  },
+  {
+    "name": "Quốc hội Việt Nam - Bộ luật Hình sự 2015 (Điều 155: Làm nhục người khác; Điều 156: Vu khống)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx",
+    "note": "Khung hình phạt hình sự đối với hành vi dùng mạng máy tính làm nhục hoặc vu khống người khác"
+  },
+  {
+    "name": "Chính phủ Việt Nam - Nghị định 15/2020/NĐ-CP và Nghị định 14/2022/NĐ-CP về xử phạt vi phạm hành chính lĩnh vực bưu chính viễn thông",
+    "url": "https://vanban.chinhphu.vn/?classid=1&docid=199018&orggroupid=1&pageid=27160",
+    "note": "Quy định mức phạt tiền hành vi chia sẻ thông tin sai sự thật và xúc phạm danh dự trên mạng xã hội"
+  },
+  {
+    "name": "Tổng cục Thuế Việt Nam - Hệ thống Hóa đơn Điện tử và Quản lý Rủi ro Hóa đơn",
+    "url": "https://hoadondientu.gdt.gov.vn",
+    "note": "Cổng tra cứu tính hợp pháp của hóa đơn điện tử trên toàn quốc"
+  },
+  {
+    "name": "Chính phủ Việt Nam - Nghị định 145/2020/NĐ-CP (Chương VIII: Phòng, chống quấy rối tình dục tại nơi làm việc)",
+    "url": "https://vanban.chinhphu.vn/?classid=1&docid=202081&orggroupid=1&pageid=27160",
+    "note": "Quy chuẩn chi tiết định nghĩa hành vi quấy rối và trách nhiệm xử lý của người sử dụng lao động"
+  },
+  {
+    "name": "Chính phủ Việt Nam - Nghị định 72/2013/NĐ-CP và Nghị định 27/2018/NĐ-CP về Quản lý thông tin trên mạng",
+    "url": "https://vanban.chinhphu.vn/?classid=1&docid=168831&orggroupid=1&pageid=27160",
+    "note": "Quy chuẩn phân định trang thông tin điện tử nội bộ, trang tổng hợp ICP và mạng xã hội"
+  },
+  {
+    "name": "Cục Phát thanh, Truyền hình và Thông tin điện tử (Bộ TT&TT)",
+    "url": "https://abei.gov.vn",
+    "note": "Cơ quan quản lý và cấp phép hoạt động trang thông tin điện tử tổng hợp, mạng xã hội tại Việt Nam"
+  },
+  {
+    "name": "Bộ Giáo dục và Đào tạo - Thông tư 13/2021/TT-BGDĐT Quy định về công nhận văn bằng do cơ sở giáo dục nước ngoài cấp",
+    "url": "https://thuvienphapluat.vn/van-ban/Giao-duc/Thong-tu-13-2021-TT-BGDDT-cong-nhan-van-bang-do-co-so-giao-duc-nuoc-ngoai-cap-471696.aspx",
+    "note": "Quy chuẩn điều kiện kiểm định, hình thức đào tạo và thủ tục công nhận văn bằng tại Việt Nam"
+  },
+  {
+    "name": "Trung tâm Công nhận văn bằng (VN-NARIC) - Cục Quản lý chất lượng, Bộ GD&ĐT",
+    "url": "https://naric.edu.vn",
+    "note": "Cổng nộp hồ sơ và tra cứu hướng dẫn công nhận văn bằng nước ngoài chính thức"
+  },
+  {
+    "name": "UNICEF - Supporting Mothers to Breastfeed Without Guilt or Pressure",
+    "url": "https://www.unicef.org/parenting/",
+    "note": "Vai trò chia sẻ việc nhà của người cha và gia đình trong hỗ trợ nuôi con nhỏ"
+  },
+  {
+    "name": "Verywell Mind / Clinical Psychology Guides - Dealing With Guilt-Tripping and Controlling Parents",
+    "url": "https://www.verywellmind.com/guilt-tripping-parents-how-to-cope-5209536",
+    "note": "Phân tích cơ chế thao túng cảm giác tội lỗi và kịch bản giao tiếp kiên định ôn hòa"
+  },
+  {
+    "name": "StopBullying.gov - Warning Signs and How Parents Should Respond",
+    "url": "https://www.stopbullying.gov/bullying/warning-signs",
+    "note": "Dấu hiệu nhận diện sớm và quy trình can thiệp phối hợp với nhà trường"
+  },
+  {
+    "name": "Tổng đài Quốc gia Bảo vệ Trẻ em 111 (Bộ Lao động - Thương binh và Xã hội / UNICEF Việt Nam)",
+    "url": "https://tongdai111.vn/",
+    "note": "Kênh hỗ trợ khẩn cấp miễn phí 24/7 bảo vệ trẻ em khỏi bạo lực học đường và xâm hại mạng"
+  },
+  {
+    "name": "NHS UK - Help Your Child Beat Exam Stress",
+    "url": "https://www.nhs.uk/mental-health/children-and-young-adults/advice-for-parents/help-your-child-beat-exam-stress/",
+    "note": "Hướng dẫn cha mẹ bảo vệ giấc ngủ, dinh dưỡng và giảm áp lực kỳ vọng cho học sinh mùa thi"
+  },
+  {
+    "name": "American Psychological Association (APA) - Stress in Teens & Academic Pressure",
+    "url": "https://www.apa.org/topics/children/stress",
+    "note": "Tác động của căng thẳng kéo dài lên nhận thức và sức khỏe tâm thần tuổi vị thành niên"
+  },
+  {
+    "name": "Harvard Gazette - Over nearly 80 years, Harvard study has been showing how to live a healthy and happy life",
+    "url": "https://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/",
+    "note": "Nghiên cứu dọc của Đại học Harvard khẳng định vai trò cốt lõi của kết nối xã hội chất lượng"
+  },
+  {
+    "name": "Liu et al. (2022) - The Surprise of Reaching Out: Appreciated More Than We Think (JPSP)",
+    "url": "https://www.apa.org/pubs/journals/releases/psp-pspi0000402.pdf",
+    "note": "Nghiên cứu thực nghiệm chứng minh tin nhắn hỏi thăm bất ngờ giúp gắn kết bạn bè mạnh mẽ hơn ta tưởng"
+  },
+  {
+    "name": "American Red Cross - Reach or Throw, Don't Go Water Safety Guideline",
+    "url": "https://www.redcross.org/",
+    "note": "Nguyên tắc vàng cứu hộ người đuối nước an toàn của Hội Chữ thập đỏ"
+  },
+  {
+    "name": "International Life Saving Federation (ILS) - Medical Position Statement on Resuscitation of Drowning Victims",
+    "url": "https://www.ilsf.org/",
+    "note": "Khuyến cáo y khoa quốc tế bác bỏ hoàn toàn kỹ thuật xốc nước dốc ngược nạn nhân đuối nước"
+  },
+  {
+    "name": "U.S. Geological Survey (USGS) - Landslide Warning Signs and Preparedness",
+    "url": "https://www.usgs.gov/programs/landslide-hazards/landslide-preparedness",
+    "note": "Tiêu chuẩn địa chất quốc tế nhận diện sớm biến dạng sườn dốc gây trượt lở"
+  },
+  {
+    "name": "National Fire Protection Association (NFPA) - E-bike and Lithium-Ion Battery Fire Safety",
+    "url": "https://www.nfpa.org/",
+    "note": "Tài liệu khoa học kỹ thuật về hiện tượng Thermal Runaway và phương án dập cháy pin"
+  },
+  {
+    "name": "Australian and New Zealand Committee on Resuscitation (ANZCOR) - Basic Life Support Flowchart (DRSABCD)",
+    "url": "https://resus.org.au/",
+    "note": "Quy chuẩn đánh giá an toàn hiện trường trước khi tiếp cận nạn nhân cấp cứu"
+  },
+  {
+    "name": "American College of Surgeons (ACS) - Stop the Bleed: Save a Life Training Course",
+    "url": "https://www.stopthebleed.org/",
+    "note": "Chương trình đào tạo cầm máu chuẩn y khoa quốc tế cho cộng đồng"
+  },
+  {
+    "name": "American Heart Association & American Red Cross - First Aid Guidelines for Severe Bleeding",
+    "url": "https://cpr.heart.org/",
+    "note": "Khuyến cáo lâm sàng về áp lực ép trực tiếp và chỉ định dùng garo cấp cứu"
+  },
+  {
+    "name": "World Health Organization (WHO) - The Treatment of Diarrhoea: A Manual for Physicians and Other Senior Health Workers",
+    "url": "https://www.who.int/publications/i/item/9241593180",
+    "note": "Hướng dẫn toàn cầu chuẩn hóa pha Oresol áp lực thẩm thấu thấp và nhận biết mất nước nặng"
+  },
+  {
+    "name": "Centers for Disease Control and Prevention (CDC) - Food Poisoning Symptoms and Severe Warning Signs",
+    "url": "https://www.cdc.gov/food-safety/signs-symptoms/index.html",
+    "note": "Khuyến cáo phân biệt triệu chứng ngộ độc thực phẩm tại nhà và ngưỡng cấp cứu y khoa"
+  },
+  {
+    "name": "American Academy of Pediatrics (AAP) - Family Media Plan & Screen Time Guidelines",
+    "url": "https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx",
+    "note": "Khung hướng dẫn thiết lập ranh giới không gian và thời gian sử dụng thiết bị số cho gia đình"
+  },
+  {
+    "name": "CDC / NIOSH - Training for Nurses on Shift Work and Long Work Hours",
+    "url": "https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod2/01.html",
+    "note": "Chiến lược quản lý ánh sáng, caffeine, giấc ngủ bù và an toàn lái xe sau ca đêm"
+  },
+  {
+    "name": "Sleep Foundation - Shift Work Disorder & Coping Strategies",
+    "url": "https://www.sleepfoundation.org/shift-work-disorder",
+    "note": "Khuyến cáo vệ sinh giấc ngủ ban ngày và dinh dưỡng cho người làm việc theo ca"
+  },
+  {
+    "name": "Quốc hội Việt Nam - Bộ luật Lao động số 45/2019/QH14 (Điều 35 về quyền đơn phương chấm dứt HĐLĐ)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-luat-lao-dong-2019-333670.aspx",
+    "note": "Quy định thời hạn báo trước hợp pháp và nghĩa vụ thanh toán, trả sổ BHXH khi nghỉ việc"
+  },
+  {
+    "name": "Ready.gov (FEMA) - Build A Disaster Supplies Kit",
+    "url": "https://www.ready.gov/kit",
+    "note": "Danh mục chuẩn quốc tế về bộ dụng cụ sinh tồn 72 giờ cho hộ gia đình"
+  },
+  {
+    "name": "Hội Chữ thập đỏ Quốc tế (IFRC) - Emergency Go-Bag Guide",
+    "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html",
+    "note": "Hướng dẫn đóng gói thuốc bệnh nền, giấy tờ chống nước và công cụ liên lạc khẩn cấp"
+  },
+  {
+    "name": "Sophie Leroy (2009) - Why is it so hard to do my work? The challenge of attention residue",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0749597809000399",
+    "note": "Nghiên cứu thực nghiệm chứng minh sự suy giảm hiệu suất do chuyển đổi chú ý liên tục"
+  },
+  {
+    "name": "Center for Humane Technology - Take Control of Your Tech",
+    "url": "https://www.humanetech.com/take-control",
+    "note": "Hướng dẫn kiểm toán thông báo, bật chế độ đen trắng và giảm thiết kế gây nghiện trên smartphone"
+  },
+  {
+    "name": "APA - The Science of Goal Setting and Habit Formation",
+    "url": "https://www.apa.org/topics/behavioral-health",
+    "note": "Tầm quan trọng của tự phản tư và biến mục tiêu trừu tượng thành thói quen cụ thể"
+  },
+  {
+    "name": "American Psychological Association (APA) - Rehabilitation Psychology & Coping with Disability",
+    "url": "https://www.apa.org/topics/disability",
+    "note": "Khung hỗ trợ thích nghi tâm lý, hỗ trợ đồng cảnh và tái hòa nhập sau chấn thương"
+  },
+  {
+    "name": "WHO - World Report on Disability & Community-Based Rehabilitation",
+    "url": "https://www.who.int/teams/noncommunicable-diseases/sensory-functions-disability-and-rehabilitation",
+    "note": "Tiếp cận phục hồi chức năng toàn diện dựa vào cộng đồng và thiết bị trợ giúp"
+  },
+  {
+    "name": "Maslach, C. & Leiter, M. P. - Understanding the Burnout Experience (World Psychiatry)",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4911781/",
+    "note": "Phân tích 6 nguyên nhân cấu trúc gây burnout và chiến lược can thiệp bền vững"
+  },
+  {
+    "name": "Harvard Health Publishing - Doomscrolling dangers and how to stop",
+    "url": "https://www.health.harvard.edu/",
+    "note": "Tác động của thói quen tiêu thụ tin tức tiêu cực liên tục lên hormone stress và giấc ngủ"
+  },
+  {
+    "name": "American Psychological Association (APA) - Media Overload Is Hurting Our Mental Health",
+    "url": "https://www.apa.org/monitor/2022/11/strain-media-overload",
+    "note": "Khuyến cáo đặt khung giờ tiếp nhận tin tức và sàng lọc nguồn truyền thông uy tín"
+  },
+  {
+    "name": "APA - Feel like a fraud? Understanding Imposter Phenomenon",
+    "url": "https://www.apa.org/gradpsych/2013/11/fraud",
+    "note": "Phân tích tâm lý học về hội chứng kẻ giả mạo và cách tái cấu trúc niềm tin sai lệch"
+  },
+  {
+    "name": "American Academy of Sleep Medicine (AASM) - Healthy Sleep Habits & CBT-I",
+    "url": "https://sleepeducation.org/healthy-sleep/healthy-sleep-habits/",
+    "note": "Khuyến cáo chuẩn về kiểm soát kích thích giường ngủ, bóng tối và nhịp thức dậy cố định"
+  },
+  {
+    "name": "CDC - Tips for Better Sleep",
+    "url": "https://www.cdc.gov/sleep/about/index.html",
+    "note": "Hướng dẫn thiết kế môi trường phòng ngủ mát mẻ, tối và hạn chế caffeine, rượu trước khi ngủ"
+  },
+  {
+    "name": "YNAB (You Need A Budget) - Budgeting With Variable Income",
+    "url": "https://www.ynab.com/blog/how-to-budget-with-variable-income",
+    "note": "Phương pháp xây dựng quỹ đệm tháng thấp điểm và tự trả lương cố định từ thu nhập biến động"
+  },
+  {
+    "name": "Bộ Xây dựng / Thực hành Hợp đồng Xây dựng Dân dụng - Nguyên tắc bảng tiên lượng và giữ tiền bảo hành",
+    "url": "https://moc.gov.vn/",
+    "note": "Minh bạch chủng loại vật tư, nghiệm thu giai đoạn ẩn khuất (điện nước, chống thấm) trước khi thanh toán"
+  },
+  {
+    "name": "Francis, A. M. & Mialon, H. M. (Emory University) - 'A Diamond is Forever' and Other Fairy Tales: Wedding Spending and Marriage Duration",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2501480",
+    "note": "Nghiên cứu kinh tế lượng chỉ ra gánh nặng nợ sau đám cưới xa hoa làm tăng căng thẳng và tỷ lệ ly hôn"
+  },
+  {
+    "name": "Visa / Mastercard Consumer Guides - Dynamic Currency Conversion (DCC) Explained",
+    "url": "https://www.visa.com/",
+    "note": "Giải thích lý do chọn thanh toán bằng nội tệ quốc gia điểm đến để tránh tỷ giá đội cao"
+  },
+  {
+    "name": "Consumer Financial Protection Bureau (CFPB) - Money As You Grow: Teaching Kids & Teens Financial Capability",
+    "url": "https://www.consumerfinance.gov/consumer-tools/money-as-you-grow/",
+    "note": "Khung hướng dẫn dạy kỹ năng lập kế hoạch chi tiêu và trải nghiệm giới hạn tiền bạc theo độ tuổi"
+  },
+  {
+    "name": "AARP Fraud Watch Network - Protecting Older Adults from Financial Exploitation",
+    "url": "https://www.aarp.org/money/scams-fraud/",
+    "note": "Chiến lược tách tài khoản chi tiêu nhỏ, cảnh báo giao dịch và tránh mắng mỏ làm người già giấu giếm"
+  },
+  {
+    "name": "Hội Chữ thập đỏ Việt Nam - Chương trình Huấn luyện Sơ cấp cứu cộng đồng",
+    "url": "https://redcross.org.vn/",
+    "note": "Địa chỉ đào tạo thực hành kỹ năng sơ cấp cứu chuẩn quốc gia trên mô hình"
+  },
+  {
+    "name": "UNESCO - Guidance for Generative AI in Education and Research",
+    "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+    "note": "Khuyến cáo sử dụng AI hỗ trợ tư duy phản biện, kiểm chứng nguồn và bảo vệ dữ liệu"
+  },
+  {
+    "name": "OWASP Top 10 for Large Language Model Applications - Sensitive Information Disclosure",
+    "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+    "note": "Cảnh báo rủi ro rò rỉ dữ liệu mật khi nhập tài liệu nội bộ vào công cụ AI"
+  },
+  {
+    "name": "Center for Creative Leadership (CCL) - Use the SBI Feedback Model",
+    "url": "https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-and-impact-sbii/",
+    "note": "Khung chuẩn quốc tế giúp tách bạch hành vi quan sát được khỏi đánh giá phán xét cá nhân"
+  },
+  {
+    "name": "Stanford Life Design Lab (Bill Burnett & Dave Evans) - Prototyping Career Transitions",
+    "url": "https://lifedesignlab.stanford.edu/",
+    "note": "Phương pháp tạo nguyên mẫu nghề nghiệp chi phí thấp trước khi quyết định chuyển ngành"
+  },
+  {
+    "name": "NoHello.net - Workplace Chat Etiquette",
+    "url": "https://nohello.net/",
+    "note": "Quy chuẩn nhắn tin đồng bộ hiệu quả trên công cụ chat văn phòng"
+  },
+  {
+    "name": "Hadley Wickham - Tidy Data Principles (Journal of Statistical Software)",
+    "url": "https://vita.had.co.nz/papers/tidy-data.pdf",
+    "note": "Nguyên tắc chuẩn: Mỗi biến một cột, mỗi quan sát một hàng, không gộp giá trị"
+  },
+  {
+    "name": "Microsoft Support - Guidelines for organizing and formatting data on a worksheet",
+    "url": "https://support.microsoft.com/en-us/office/",
+    "note": "Khuyến cáo tránh Merge Cells, không để dòng trống trong bảng và chuẩn hóa kiểu dữ liệu"
+  },
+  {
+    "name": "Atlassian Team Playbook - Silent Brainstorming & Dot Voting",
+    "url": "https://www.atlassian.com/team-playbook",
+    "note": "Quy trình điều phối cuộc họp tinh gọn thu thập đồng đều ý kiến nhóm"
+  },
+  {
+    "name": "The Menopause Society (NAMS) - Nonhormonal & Hormone Therapy Position Statements",
+    "url": "https://menopause.org/",
+    "note": "Khuyến cáo chuẩn quốc tế về quản lý bốc hỏa, bảo vệ xương tim mạch và cá thể hóa MHT"
+  },
+  {
+    "name": "WHO - Menopause Fact Sheet",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/menopause",
+    "note": "Tổng quan y khoa về các giai đoạn chuyển tiếp mãn kinh và phòng ngừa bệnh lý sau mãn kinh"
+  },
+  {
+    "name": "American College of Rheumatology (ACR) - 2020 Guideline for the Management of Gout",
+    "url": "https://rheumatology.org/gout-guideline",
+    "note": "Phác đồ điều trị đạt đích acid uric < 6.0 mg/dL và lưu ý tiếp tục duy trì thuốc nền lâu dài"
+  },
+  {
+    "name": "CDC - Gout Causes, Diet Triggers and Management",
+    "url": "https://www.cdc.gov/arthritis/types/gout.html",
+    "note": "Vai trò kích hoạt của bia, đồ uống chứa fructose, nội tạng và lợi ích của giảm cân bền vững"
+  },
+  {
+    "name": "American Urological Association (AUA) - Prostate Cancer Screening & Men's Urologic Health Guidelines",
+    "url": "https://www.auanet.org/guidelines-and-quality/guidelines",
+    "note": "Khuyến cáo tầm soát PSA theo tuổi/yếu tố gia đình và chẩn đoán phân biệt phì đại lành tính"
+  },
+  {
+    "name": "MedlinePlus (NIH) - Varicocele and Testicular Pain Emergency",
+    "url": "https://medlineplus.gov/varicocele.html",
+    "note": "Nhận diện giãn tĩnh mạch thừng tinh và cửa sổ cấp cứu xoắn tinh hoàn"
+  },
+  {
+    "name": "American Thyroid Association (ATA) - Thyroid Nodules & Hypothyroidism Patient Guides",
+    "url": "https://www.thyroid.org/thyroid-nodules/",
+    "note": "Tỷ lệ lành tính trên 90% của nhân giáp và hướng dẫn chỉ định chọc tế bào FNA chuẩn"
+  },
+  {
+    "name": "American College of Radiology (ACR) - TI-RADS Thyroid Ultrasound Risk Stratification",
+    "url": "https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems/TI-RADS",
+    "note": "Ý nghĩa phân tầng nguy cơ TI-RADS 1 đến 5 trên kết quả siêu âm"
+  },
+  {
+    "name": "WHO / CDC - Catch-up Immunization Schedule Principles",
+    "url": "https://www.cdc.gov/vaccines/hcp/imz-schedules/child-adolescent-catch-up.html",
+    "note": "Nguyên tắc tiếp nối liều tiêm bị gián đoạn không cần tiêm lại từ đầu"
+  },
+  {
+    "name": "Cục Bản quyền tác giả (Bộ VHTTDL) - Hướng dẫn thủ tục đăng ký quyền tác giả, quyền liên quan",
+    "url": "https://cov.gov.vn/",
+    "note": "Biểu mẫu, mức phí nhà nước và quy trình nộp hồ sơ bảo vệ tác phẩm tại Việt Nam"
+  },
+  {
+    "name": "The Gottman Institute - Supporting Your Partner Through Job Loss or Stress",
+    "url": "https://www.gottman.com/blog/",
+    "note": "Nghệ thuật lắng nghe đồng cảm và giữ vững tinh thần đồng đội vợ chồng trước biến cố bên ngoài"
+  },
+  {
+    "name": "Brené Brown - Clear is Kind, Unclear is Unkind (Communication Boundaries)",
+    "url": "https://brenebrown.com/",
+    "note": "Nguyên tắc thiết lập kỳ vọng minh bạch ngay từ đầu để bảo vệ mối quan hệ lâu dài"
+  },
+  {
+    "name": "Lewicki, R. J. et al. (Ohio State University) - An Exploration of the Structure of Effective Apologies",
+    "url": "https://onlinelibrary.wiley.com/",
+    "note": "Nghiên cứu thực nghiệm xác định nhận trách nhiệm và đề xuất sửa sai là hai yếu tố quan trọng nhất của lời xin lỗi"
+  },
+  {
+    "name": "Mental Health First Aid (MHFA) - How to Support Someone Who Is Grieving or Depressed",
+    "url": "https://www.mentalhealthfirstaid.org/",
+    "note": "Nguyên tắc lắng nghe không phán xét và đề nghị hỗ trợ hành động cụ thể"
+  },
+  {
+    "name": "The Gottman Institute - Flooding and Taking a Break During Conflict",
+    "url": "https://www.gottman.com/blog/making-sure-emotional-flooding-doesnt-capsize-your-relationship/",
+    "note": "Nghiên cứu ngưỡng nhịp tim > 100 bpm và kỹ thuật Time-Out 20 phút có cam kết quay lại"
+  },
+  {
+    "name": "NOAA National Weather Service - Rip Current Safety (Break the Grip of the Rip)",
+    "url": "https://www.weather.gov/safety/ripcurrent",
+    "note": "Dấu hiệu nhận diện dòng chảy xa bờ và kỹ thuật bơi song song với đường bờ"
+  },
+  {
+    "name": "United States Lifesaving Association (USLA) - Survival Guide for Beachgoers",
+    "url": "https://www.usla.org/page/RIPCURRENTS",
+    "note": "Vì sao tuyệt đối không bơi ngược dòng và cách thả nổi kêu cứu đúng chuẩn"
+  },
+  {
+    "name": "Tập đoàn Điện lực Việt Nam (EVN) - Hướng dẫn sử dụng bình nóng lạnh an toàn tránh rò điện",
+    "url": "https://www.evn.com.vn/",
+    "note": "Khuyến cáo tắt aptomat bình nóng lạnh trước khi tắm, lắp chống giật và súc rửa định kỳ"
+  },
+  {
+    "name": "TCVN 7447 / IEC 60364 - Bảo vệ chống điện giật bằng thiết bị dòng dư RCD/RCBO 30mA",
+    "url": "https://tieuchuan.vn/",
+    "note": "Quy chuẩn ngưỡng dòng rò bảo vệ con người 30mA cho mạch ổ cắm và khu vực phòng tắm"
+  },
+  {
+    "name": "National Capital Poison Center (Poison.org) - Button Battery Ingestion Triage and Treatment Guidelines",
+    "url": "https://www.poison.org/battery/guideline",
+    "note": "Khuyến cáo nội soi cấp cứu trong 2 giờ và phác đồ dùng mật ong cho trẻ trên 1 tuổi khi đang di chuyển tới viện"
+  },
+  {
+    "name": "NOAA / Atlantic Oceanographic and Meteorological Laboratory - Hurricane Myths: Taping Windows",
+    "url": "https://www.aoml.noaa.gov/hrd-faq/#hurricane-myths",
+    "note": "Khẳng định khoa học việc dán băng keo không chống vỡ kính mà làm tăng nguy hiểm mảnh lớn"
+  },
+  {
+    "name": "Ready.gov (FEMA) - Preparing for Hurricanes and Severe Storms",
+    "url": "https://www.ready.gov/hurricanes",
+    "note": "Quy chuẩn dọn vật thể bay ban công, dự trữ nước 72 giờ và an toàn điện mùa bão"
+  },
+  {
+    "name": "FMCSA (U.S. Department of Transportation) - Large Truck and Bus Blind Spots (No-Zones)",
+    "url": "https://www.fmcsa.dot.gov/ourroads/large-trucks-and-buses-have-large-blind-spots",
+    "note": "Bản đồ 4 vùng điểm mù lớn và nguy cơ bánh sau cắt góc khi rẽ phải"
+  },
+  {
+    "name": "Ủy ban An toàn Giao thông Quốc gia Việt Nam - Cảnh báo phòng tránh tai nạn do điểm mù xe tải, container",
+    "url": "https://antoangiaothong.gov.vn/",
+    "note": "Khuyến cáo không vượt bên phải và giữ khoảng cách an toàn trước đầu xe tải tại ngã tư"
+  },
+  {
+    "name": "National Institute on Aging (NIH) - Maintaining Accurate Medical Records for Older Adults",
+    "url": "https://www.nia.nih.gov/health/doctor-patient-communication/how-prepare-doctors-appointment",
+    "note": "Hướng dẫn tổng hợp danh sách thuốc, dị ứng và tóm tắt bệnh sử trước mỗi buổi khám"
+  },
+  {
+    "name": "U.S. Department of Energy - Air Conditioner Maintenance",
+    "url": "https://www.energy.gov/energysaver/air-conditioner-maintenance",
+    "note": "Vệ sinh lưới lọc điều hòa định kỳ giúp giảm 5-15% điện năng tiêu thụ"
+  },
+  {
+    "name": "Atul Gawande - The Checklist Manifesto (Nguyên lý chuẩn hóa quy trình lặp lại)",
+    "url": "https://atulgawande.com/book/the-checklist-manifesto/",
+    "note": "Giảm sai sót do quên nhớ bằng danh sách kiểm tra cố định trước giờ khởi hành"
+  },
+  {
+    "name": "Cục Hàng không Việt Nam - Quy định vật phẩm hạn chế và pin sạc dự phòng khi bay",
+    "url": "https://caa.gov.vn/",
+    "note": "Quy tắc pin Lithium/sạc dự phòng và chất lỏng dưới 100ml trong hành lý xách tay"
+  },
+  {
+    "name": "FDA / FoodSafety.gov - Cold Food Storage Chart & Safe Thawing",
+    "url": "https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "note": "Thời hạn bảo quản an toàn tối đa 3-4 ngày cho đồ nấu chín và quy tắc rã đông trong ngăn mát"
+  },
+  {
+    "name": "Ready.gov (FEMA) - Safeguarding Critical Documents and Valuables",
+    "url": "https://www.ready.gov/financial-preparedness",
+    "note": "Nguyên tắc lưu trữ song song bản gốc chống ẩm cháy và bản sao số mã hóa"
+  },
+  {
+    "name": "Google Calendar Help - Share your calendar with someone",
+    "url": "https://support.google.com/calendar/answer/37082",
+    "note": "Hướng dẫn tạo và phân quyền chỉnh sửa lịch dùng chung giữa các thành viên gia đình"
+  },
+  {
+    "name": "Ngân hàng Nhà nước Việt Nam / Trung tâm Thông tin Tín dụng Quốc gia (CIC) - Lịch sử trả nợ đúng hạn",
+    "url": "https://cic.gov.vn/",
+    "note": "Tầm quan trọng của thanh toán đúng hạn đối với điểm tín dụng cá nhân"
+  },
+  {
+    "name": "Be More with Less (Project 333) - Capsule Wardrobe Guide",
+    "url": "https://bemorewithless.com/project-333/",
+    "note": "Phương pháp giới hạn tủ đồ theo mùa giúp giảm căng thẳng chọn đồ và tiết kiệm chi phí"
+  },
+  {
+    "name": "Sleep Foundation - Social Jetlag and Holiday Sleep Recovery",
+    "url": "https://www.sleepfoundation.org/circadian-rhythm/social-jetlag",
+    "note": "Tác hại của việc xáo trộn giờ ngủ cuối tuần/ngày lễ quá 2 tiếng và cách kéo nhịp sinh học về lại quỹ đạo"
+  },
+  {
+    "name": "National Cancer Institute (NIH) - End-of-Life Care & Anticipatory Grief",
+    "url": "https://www.cancer.gov/about-cancer/advanced-cancer/caregivers/planning/bereavement-pdq",
+    "note": "Nhận diện tâm lý đau buồn dự báo ở người chăm sóc và vai trò chăm sóc giảm nhẹ"
+  },
+  {
+    "name": "Ira Byock, M.D. - The Four Things That Matter Most",
+    "url": "https://irabyock.org/books/the-four-things-that-matter-most/",
+    "note": "Khung đối thoại chữa lành cuối đời giúp giảm ân hận kéo dài sau mất mát"
+  },
+  {
+    "name": "National Institute of Mental Health (NIMH) - Seasonal Affective Disorder & Light Exposure",
+    "url": "https://www.nimh.nih.gov/health/publications/seasonal-affective-disorder",
+    "note": "Cơ chế ánh sáng tác động lên serotonin, melatonin và phương pháp bù ánh sáng buổi sáng"
+  },
+  {
+    "name": "Nguyen, T. T., Ryan, R. M., & Deci, E. L. (2018) - Solitude as an Approach to Affective Self-Regulation (PSPB)",
+    "url": "https://journals.sagepub.com/doi/10.1177/0146167217733073",
+    "note": "Nghiên cứu thực nghiệm chứng minh 15 phút tĩnh lặng một mình có tác dụng hạ hưng phấn căng thẳng và điều hòa cảm xúc"
+  },
+  {
+    "name": "Harvard T.H. Chan School of Public Health - The COGfx Study: Green Buildings and Cognitive Function",
+    "url": "https://thecogfxstudy.com/",
+    "note": "Nghiên cứu thực chứng nồng độ CO2 cao và thông gió kém làm suy giảm đáng kể hiệu suất nhận thức"
+  },
+  {
+    "name": "Sonnentag, S. - The Recovery Paradox: Portraying the Complex Interplay Between Job Stressors, Lack of Recovery, and Poor Well-Being",
+    "url": "https://www.sciencedirect.com/",
+    "note": "Nghiên cứu tâm lý tổ chức chứng minh khả năng tách rời tâm lý khỏi công việc giúp phục hồi hiệu suất dài hạn"
+  },
+  {
+    "name": "Kristin Neff, Ph.D. - Self-Compassion Research and Three Elements",
+    "url": "https://self-compassion.org/the-three-elements-of-self-compassion-2/",
+    "note": "Nghiên cứu chứng minh lòng tự trắc ẩn tăng động lực sửa lỗi và khả năng phục hồi tâm lý cao hơn tự phê bình"
+  },
+  {
+    "name": "Arkes, H. R., & Blumer, C. (1985) - The Psychology of Sunk Cost (Organizational Behavior and Human Decision Processes)",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/0749597885900494",
+    "note": "Nghiên cứu nền tảng chứng minh con người ra quyết định phi lý trí vì tiếc chi phí quá khứ không thu hồi được"
+  },
+  {
+    "name": "Blanchflower, D. G. (2020) - Is Happiness U-Shaped Everywhere? Age and Subjective Well-Being in 132 Countries (NBER)",
+    "url": "https://www.nber.org/papers/w26641",
+    "note": "Nghiên cứu quy mô toàn cầu chứng minh mức độ hạnh phúc có đáy tự nhiên quanh tuổi 40-48 và hồi phục mạnh sau tuổi 50"
+  },
+  {
+    "name": "Brookings / Jonathan Rauch - The Happiness Curve: Why Life Gets Better After 50",
+    "url": "https://www.brookings.edu/",
+    "note": "Giải mã chuyển dịch ưu tiên từ tham vọng cạnh tranh sang kết nối sâu và trao truyền"
+  },
+  {
+    "name": "Investopedia / Consumer Economics - Cost Per Use & The Boots Theory of Socioeconomic Unfairness",
+    "url": "https://www.investopedia.com/",
+    "note": "Phân tích giá trị kinh tế dài hạn dựa trên tần suất sử dụng thực tế và độ bền sản phẩm"
+  },
+  {
+    "name": "Apple Support & Google Account Help - Adding a Legacy Contact / Inactive Account Manager",
+    "url": "https://support.apple.com/en-us/HT212360",
+    "note": "Tính năng chỉ định người kế thừa dữ liệu số hợp pháp mà không làm lộ mật khẩu khi còn sống"
+  },
+  {
+    "name": "Federal Reserve / Consumer Reports - Understanding Shrinkflation and Unit Pricing",
+    "url": "https://www.consumerreports.org/",
+    "note": "Kỹ thuật so sánh đơn giá trên khối lượng chuẩn và phát hiện cắt giảm định lượng ẩn sau bao bì cũ"
+  },
+  {
+    "name": "Harvard T.H. Chan / Khan Academy - Correlation vs Causation & Confounding Variables",
+    "url": "https://www.khanacademy.org/",
+    "note": "Phân biệt tương quan thống kê với nhân quả thực nghiệm có đối chứng ngẫu nhiên"
+  },
+  {
+    "name": "Keybr & TypingClub - Touch Typing Muscle Memory Methodology",
+    "url": "https://www.keybr.com/",
+    "note": "Phương pháp luyện gõ mù 10 ngón ưu tiên độ chính xác trước khi tăng WPM"
+  },
+  {
+    "name": "MIT Career Advising & Professional Development - Using the STAR Method for Interviews",
+    "url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "note": "Khung kể chuyện phỏng vấn hành vi chú trọng vai trò cá nhân (Action) và kết quả định lượng (Result)"
+  },
+  {
+    "name": "Harvard Mignone Center for Career Success - Informational Interviews Guide",
+    "url": "https://careerservices.fas.harvard.edu/",
+    "note": "Quy chuẩn xin hẹn 15-20 phút, ranh giới không xin việc trực tiếp và bộ câu hỏi khai thác thực tế nghề nghiệp"
+  },
+  {
+    "name": "Google Site Reliability Engineering (SRE) Book - Postmortem Culture: Learning from Failure",
+    "url": "https://sre.google/sre-book/postmortem-culture/",
+    "note": "Quy chuẩn viết báo cáo sự cố không đổ lỗi cá nhân để nâng cấp độ bền vững của quy trình"
+  },
+  {
+    "name": "Edward Tufte - The Visual Display of Quantitative Information (Integrity in Data Graphics)",
+    "url": "https://www.edwardtufte.com/",
+    "note": "Nguyên tắc giữ trục gốc 0 cho biểu đồ cột và tránh méo mó tỷ lệ thị giác"
+  },
+  {
+    "name": "Gerd Gigerenzer - Absolute vs Relative Risk Communication in Medicine and Finance",
+    "url": "https://www.hardingcenter.de/en",
+    "note": "Phân biệt rủi ro tương đối gây thổi phồng với rủi ro tuyệt đối thực tế"
+  },
+  {
+    "name": "BMJ / American Society of Hematology - Iron Deficiency Without Anaemia (Diagnosis and Management)",
+    "url": "https://www.bmj.com/",
+    "note": "Ý nghĩa lâm sàng của chỉ số dự trữ sắt Ferritin thấp khi Hemoglobin vẫn bình thường"
+  },
+  {
+    "name": "Stoffel, N. U. et al. (Lancet Haematology) - Alternate-day oral iron supplementation absorption",
+    "url": "https://www.thelancet.com/",
+    "note": "Bằng chứng uống sắt cách ngày giúp tăng hiệu quả hấp thu qua điều hòa Hepcidin và giảm tác dụng phụ đường ruột"
+  },
+  {
+    "name": "NIH Office of Dietary Supplements - Vitamin D Fact Sheet for Consumers & Health Professionals",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminD-Consumer/",
+    "note": "Khuyến cáo nhu cầu chuẩn 600-800 IU/ngày, giới hạn trần an toàn 4.000 IU/ngày và lưu ý kính chắn UVB"
+  },
+  {
+    "name": "Endocrine Society (2024) - Vitamin D for the Prevention of Disease Clinical Practice Guideline",
+    "url": "https://www.endocrine.org/",
+    "note": "Cập nhật hướng dẫn đối tượng cần bổ sung chủ động (trẻ em, người trên 75 tuổi, thai phụ) và tránh lạm dụng liều cao"
+  },
+  {
+    "name": "American Gastroenterological Association (AGA) - Chronic Idiopathic Constipation Management Guidelines",
+    "url": "https://gastro.org/",
+    "note": "Khuyến cáo chất xơ hòa tan, bổ sung đủ dịch, hạn chế lạm dụng thuốc nhuận tràng kích thích và tầm soát dấu hiệu đỏ"
+  },
+  {
+    "name": "Modi, R. M. et al. (Journal of Clinical Gastroenterology) - Defecation Posture Modification Device",
+    "url": "https://journals.lww.com/jcge/",
+    "note": "Nghiên cứu chứng minh ghế kê chân giảm thời gian đi tiêu, giảm công sức rặn và làm thẳng góc hậu môn trực tràng"
+  },
+  {
+    "name": "American Stroke Association (AHA/ASA) - Stroke Warning Signs (F.A.S.T. / B.E. F.A.S.T.)",
+    "url": "https://www.stroke.org/en/about-stroke/stroke-symptoms",
+    "note": "Dấu hiệu nhận diện sớm đột quỵ và tầm quan trọng của mốc thời gian Last Known Well"
+  },
+  {
+    "name": "Sleep Foundation - Couples with Different Sleep Schedules",
+    "url": "https://www.sleepfoundation.org/sleep-hygiene/sleeping-with-a-partner",
+    "note": "Giải pháp chăn riêng, đồng bộ khung giờ kết nối ngắn và tôn trọng Chronotype tự nhiên của bạn đời"
+  },
+  {
+    "name": "The Bowen Center for the Study of the Family - Triangles Theory",
+    "url": "https://www.thebowencenter.org/core-concepts-diagrams",
+    "note": "Lý thuyết hệ thống gia đình giải thích cơ chế tam giác hóa cảm xúc và cách tự tách khỏi vị trí trung gian"
+  },
+  {
+    "name": "Przybylski, A. K. & Weinstein, N. (2013) - Can you connect with me now? The effects of mobile technology on interpersonal closeness",
+    "url": "https://journals.sagepub.com/",
+    "note": "Sự hiện diện của điện thoại trên bàn làm giảm chất lượng kết nối thấu cảm trong trò chuyện trực tiếp"
+  },
+  {
+    "name": "American Academy of Pediatrics (HealthyChildren.org) - Preparing Your Older Child for a New Baby",
+    "url": "https://www.healthychildren.org/English/ages-stages/prenatal/Pages/Preparing-Your-Family-for-a-New-Baby.aspx",
+    "note": "Lộ trình chuẩn bị trước sinh, xử lý thoái lui hành vi và duy trì thời gian 1-1 cho trẻ lớn"
+  },
+  {
+    "name": "NHTSA - Pedestrian Safety & Nighttime Visibility Tips",
+    "url": "https://www.nhtsa.gov/road-safety/pedestrian-safety",
+    "note": "Quy tắc mặc đồ sáng/phản quang, giao tiếp mắt với tài xế và đi bộ đối diện chiều xe khi thiếu vỉa hè"
+  },
+  {
+    "name": "WHO - Pedestrian Safety: A Road Safety Manual",
+    "url": "https://www.who.int/",
+    "note": "Rủi ro tầm nhìn ban đêm và điểm mù trước đầu xe công cộng đang dừng đỗ"
+  },
+  {
+    "name": "U.S. Coast Guard - Life Jacket Wear & Sizing Fit Test (2-Second Tug Test)",
+    "url": "https://uscgboating.org/",
+    "note": "Cách kiểm tra kích cỡ áo phao vừa khít và tầm quan trọng của dây đũng cho trẻ em"
+  },
+  {
+    "name": "Cục Hàng hải Việt Nam / Bộ GTVT - Quy định an toàn hành khách trên phương tiện thủy chở khách du lịch",
+    "url": "https://vinamarine.gov.vn/",
+    "note": "Quy chuẩn mặc áo phao suốt tuyến và giới hạn tải trọng phương tiện thủy"
+  },
+  {
+    "name": "CDC - Dangers of Mixing Bleach with Ammonia or Acids",
+    "url": "https://www.cdc.gov/",
+    "note": "Cảnh báo phản ứng sinh khí độc Chlorine và Chloramine gây tổn thương phổi cấp tính"
+  },
+  {
+    "name": "Trung tâm Chống độc (Bệnh viện Bạch Mai) - Khuyến cáo sử dụng an toàn hóa chất tẩy rửa gia dụng",
+    "url": "https://bachmai.gov.vn/",
+    "note": "Xử lý ngộ độc khí tẩy rửa trong phòng kín và nguyên tắc thông gió khi dọn vệ sinh"
+  },
+  {
+    "name": "NOAA / National Weather Service - Turn Around Don't Drown Flood Safety",
+    "url": "https://www.weather.gov/safety/flood-turn-around-dont-drown",
+    "note": "Cảnh báo lực đẩy dòng nước ngập nông 15-30cm có thể xô ngã người và cuốn trôi xe"
+  },
+  {
+    "name": "USDA / FoodSafety.gov - Planning Meals and FIFO Pantry Organization",
+    "url": "https://www.fsis.usda.gov/",
+    "note": "Nguyên tắc sắp xếp đồ cũ phía trước để tiêu thụ kịp thời trước khi hết hạn sử dụng"
+  },
+  {
+    "name": "Apple Support & Google Play Help - Manage or Cancel Subscriptions",
+    "url": "https://support.apple.com/en-us/HT202039",
+    "note": "Hướng dẫn tra cứu toàn bộ gói gia hạn tự động đang liên kết với tài khoản di động"
+  },
+  {
+    "name": "James Clear (Atomic Habits) - Environment Design & Reducing Morning Friction",
+    "url": "https://jamesclear.com/choice-architecture",
+    "note": "Tối ưu môi trường vật lý tối hôm trước để hành vi buổi sáng diễn ra tự động không tốn ý chí"
+  },
+  {
+    "name": "Project Management Institute (PMI) - Three-Point Estimating (PERT)",
+    "url": "https://www.pmi.org/",
+    "note": "Công thức ước lượng có trọng số tính đến kịch bản rủi ro thực tế"
+  },
+  {
+    "name": "National Institute on Aging (NIH) - Safe Use of Medicines for Older Adults",
+    "url": "https://www.nia.nih.gov/health/medicines-and-medication-management/safe-use-medicines-older-adults",
+    "note": "Khuyến cáo sử dụng hộp chia thuốc, giữ nguyên vỉ với thuốc nhạy ẩm và bảng theo dõi chữ lớn"
+  },
+  {
+    "name": "James Clear - Never Miss Twice Habit Recovery Principle",
+    "url": "https://jamesclear.com/",
+    "note": "Chiến lược quay lại nhịp thói quen bằng phiên bản tối thiểu để vượt tâm lý cầu toàn đứt gánh"
+  },
+  {
+    "name": "Daniel Pink - The Power of Regret & Self-Distancing Exercise",
+    "url": "https://www.danpink.com/",
+    "note": "Sử dụng lòng tự trắc ẩn và bài học giá trị cốt lõi để chuyển hóa hối tiếc quá khứ"
+  },
+  {
+    "name": "Klimecki, O. M. & Singer, T. (Max Planck Institute) - Compassion vs. Empathic Distress Neuroscience",
+    "url": "https://www.mpg.de/en",
+    "note": "Nghiên cứu thần kinh học phân biệt kiệt sức do đồng cảm quá mức với lòng từ bi lành mạnh bền vững"
+  },
+  {
+    "name": "American Medical Association (AMA) - Preventing Compassion Fatigue in Healthcare & Helping Roles",
+    "url": "https://www.ama-assn.org/",
+    "note": "Các nghi thức ngắt kết nối cảm xúc sau ca trực và hỗ trợ đồng nghiệp"
+  },
+  {
+    "name": "Balban, M. Y., Spiegel, D., Huberman, A. D. et al. (2023) - Brief structured respiration practices enhance mood and reduce physiological arousal (Cell Reports Medicine)",
+    "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8",
+    "note": "Nghiên cứu tại ĐH Stanford chứng minh Cyclic Sighing (Thở hai nhịp sinh lý) là kỹ thuật hạ stress nhanh hiệu quả nhất"
+  },
+  {
+    "name": "Harvard Health / Cleveland Clinic - What Is Body Neutrality and Why It Helps Mental Health",
+    "url": "https://health.clevelandclinic.org/",
+    "note": "Tiếp cận trung lập tập trung vào chức năng và sự tôn trọng cơ thể thay vì ép buộc tích cực về ngoại hình"
+  },
+  {
+    "name": "National Institute of Mental Health (NIMH) - Depression Symptoms & Anhedonia",
+    "url": "https://www.nimh.nih.gov/health/topics/depression",
+    "note": "Nhận diện triệu chứng mất hứng thú, trống rỗng cảm xúc kéo dài trên 2 tuần cần đánh giá chuyên môn"
+  },
+  {
+    "name": "Verywell Mind / APA Clinical Guides - Understanding Emotional Numbness",
+    "url": "https://www.verywellmind.com/emotional-numbing-symptoms-2797372",
+    "note": "Cơ chế tự vệ ngắt kết nối của hệ thần kinh sau stress kéo dài và kỹ thuật tiếp xúc giác quan dịu nhẹ"
   }
 ]
