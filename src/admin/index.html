@@ -32,6 +32,8 @@
 
     <div class="a-nav-r">
       <span class="a-user-badge" id="a-user-badge" hidden></span>
+      <button type="button" class="a-btn a-btn-ghost" id="a-new-btn" hidden>+ Bài mới</button>
+      <button type="button" class="a-btn a-btn-ghost" id="a-batch-normalize-btn" hidden>Chuẩn hóa A/B/C</button>
       <button type="button" class="a-btn a-btn-ghost" id="a-build-btn" hidden>Build &amp; Kiểm tra</button>
       <a class="a-btn a-btn-ghost" href="<!-- BASE_PATH -->/?view=library">Thư viện</a>
       <a class="a-btn a-btn-ghost" href="<!-- BASE_PATH -->/guide/">Tra cứu</a>
@@ -136,6 +138,8 @@
             <option value="C">Mức C</option>
             <option value="unnormalized">Chưa chuẩn hóa (high/med/low)</option>
             <option value="none">Chưa đánh giá</option>
+            <option value="no_vn_src">Thiếu nguồn Việt Nam</option>
+            <option value="no_verified_at">Chưa có ngày xác minh</option>
           </select>
           <select id="a-f-file" aria-label="Lọc theo file" hidden><option value="">Tất cả tệp JSON</option></select>
         </div>
@@ -354,6 +358,31 @@
         </section>
       </div>
     </main>
+  </div>
+
+  <div class="a-modal-mask" id="a-new-modal" hidden role="dialog" aria-modal="true" aria-labelledby="a-new-title">
+    <form class="a-modal-card" id="a-new-form">
+      <div class="a-card-head">
+        <h2 id="a-new-title">Tạo bài viết mới (Bản nháp)</h2>
+        <button type="button" class="a-btn a-btn-ghost" id="a-new-close">Đóng</button>
+      </div>
+      <label class="a-field">
+        <span>Tiêu đề bài viết *</span>
+        <input type="text" name="title" required placeholder="Ví dụ: Cách kiểm tra bảo hiểm xã hội trên VssID">
+      </label>
+      <label class="a-field">
+        <span>Danh mục *</span>
+        <select name="category" id="a-new-category" required></select>
+      </label>
+      <label class="a-field">
+        <span>Tóm tắt ngắn (description) *</span>
+        <textarea name="description" rows="3" required placeholder="Tóm tắt 1–2 câu nêu vấn đề và giá trị áp dụng tại Việt Nam."></textarea>
+      </label>
+      <div class="a-auth-actions">
+        <button type="button" class="a-btn a-btn-ghost" id="a-new-cancel">Hủy</button>
+        <button type="submit" class="a-btn a-btn-primary" id="a-new-submit">Tạo &amp; Mở trình biên tập</button>
+      </div>
+    </form>
   </div>
 
   <script src="<!-- BASE_PATH -->/assets/admin.js" defer></script>

@@ -1,0 +1,20 @@
+{
+  "name": "Sống Tốt Hơn — Cẩm nang thực tiễn cho người Việt",
+  "short_name": "Sống Tốt Hơn",
+  "description": "Cẩm nang kiến thức thực tiễn về sức khỏe, tài chính, thời gian, an toàn, pháp luật và chất lượng sống.",
+  "start_url": "./guide/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f7f2",
+  "theme_color": "#0f6b58",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "./assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

@@ -1,0 +1,32 @@
+name: Kiểm tra liên kết nguồn tham khảo
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Kiểm tra URL nguồn trong content/sources/sources.json
+        run: node scripts/check-links.js --out link-report.md
+      - name: Ghi tóm tắt kết quả
+        if: always()
+        run: |
+          if [ -f link-report.md ]; then
+            cat link-report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: link-report
+          path: link-report.md
+

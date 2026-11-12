@@ -13,7 +13,7 @@
   const UI_PREF_KEY = 'sth-ui-mode';
   const THEME_KEY = 'guide-theme';
 
-  const DIMS = ['value', 'grade', 'cost', 'time', 'effort', 'audience', 'status'];
+  const DIMS = ['value', 'grade', 'cost', 'time', 'effort', 'audience', 'status', 'personal'];
 
   const LABELS = {
     grade: { A: 'Bằng chứng A', B: 'Bằng chứng B', C: 'Bằng chứng C' },
@@ -35,6 +35,9 @@
     sources: { title: 'Chính sách nguồn tham khảo', path: 'docs/SOURCE_POLICY.md', url: `${BASE}/sources/` },
   };
 
+  const tools = window.STHReader;
+  const BODY_CACHE = new Map();
+
   const state = {
     categories: [],
     categoryMap: new Map(),
@@ -48,6 +51,7 @@
     effort: new Set(),
     audience: new Set(),
     status: new Set(),
+    personal: new Set(),
   };
 
   const CARDS = [];
@@ -259,7 +263,9 @@
             </details>
             <div class="g-card-actions">
               <button type="button" class="g-read-btn" data-open-article="${esc(article.id)}">Đọc bài đầy đủ</button>
-              <a class="g-ext-link" href="${BASE}/article/?id=${encodeURIComponent(article.id)}">Mở trang riêng ↗</a>
+              <button type="button" class="g-action-pill" data-toggle-save="${esc(article.id)}" aria-pressed="false">☆ Lưu</button>
+              <button type="button" class="g-action-pill" data-toggle-done="${esc(article.id)}" aria-pressed="false">✓ Đã làm</button>
+              <a class="g-ext-link" href="${BASE}/bai-viet/${encodeURIComponent(article.slug)}/">Mở trang riêng ↗</a>
             </div>
           </div>`;
 
@@ -274,7 +280,7 @@
           ...(article.risks || []),
           ...(article.target_groups || []),
           article.evidence_notes,
-          article.body,
+          article.body || '',
           cat.name,
         ];
         const srcParts = (article.sources || []).flatMap((s) => [s.title, s.organization, s.country, s.url]);
@@ -297,6 +303,8 @@
             rows: el.querySelector('.g-rows'),
             srcDetails: el.querySelector('.g-src'),
             srcBody: el.querySelector('.g-src-body'),
+            saveBtn: el.querySelector('[data-toggle-save]'),
+            doneBtn: el.querySelector('[data-toggle-done]'),
           },
         };
 
@@ -385,6 +393,30 @@
   }
 
   /* ── Filtering & Sync ───────────────────────────────────────── */
+  function syncPersonalUI() {
+    if (!tools) return;
+    const saved = tools.getSavedIds();
+    const done = tools.getDoneIds();
+    const savedEl = document.getElementById('g-saved-count');
+    const doneEl = document.getElementById('g-done-count');
+    if (savedEl) savedEl.textContent = String(saved.size);
+    if (doneEl) doneEl.textContent = String(done.size);
+
+    for (const card of CARDS) {
+      const id = card.article.id;
+      if (card.refs.saveBtn) {
+        const isSaved = saved.has(id);
+        card.refs.saveBtn.setAttribute('aria-pressed', String(isSaved));
+        card.refs.saveBtn.textContent = isSaved ? '★ Đã lưu' : '☆ Lưu';
+      }
+      if (card.refs.doneBtn) {
+        const isDone = done.has(id);
+        card.refs.doneBtn.setAttribute('aria-pressed', String(isDone));
+        card.refs.doneBtn.textContent = isDone ? '✓ Đã làm' : '✓ Đã làm';
+      }
+    }
+  }
+
   function matchesCard(card) {
     const f = card.article.facets || {};
     if (state.value.size && !state.value.has(f.value)) return false;
@@ -393,6 +425,14 @@
     if (state.time.size && !state.time.has(f.time)) return false;
     if (state.effort.size && !state.effort.has(f.effort)) return false;
     if (state.status.size && !state.status.has(card.article.review_status)) return false;
+    if (state.personal.size && tools) {
+      const saved = tools.getSavedIds();
+      const done = tools.getDoneIds();
+      const okPersonal =
+        (state.personal.has('saved') && saved.has(card.article.id)) ||
+        (state.personal.has('done') && done.has(card.article.id));
+      if (!okPersonal) return false;
+    }
     if (state.audience.size) {
       const aud = f.audience || [];
       if (!aud.some((tag) => state.audience.has(tag))) return false;
@@ -743,19 +783,74 @@
     document.getElementById('dm-x').focus();
   }
 
-  function openArticleModal(articleId, fromEl) {
+  async function loadArticleBody(article) {
+    if (article.body) return article.body;
+    const fileName = article._file || `${article.category}.json`;
+    if (!BODY_CACHE.has(fileName)) {
+      BODY_CACHE.set(
+        fileName,
+        fetch(`${BASE}/data/articles/${encodeURIComponent(fileName)}`)
+          .then((r) => (r.ok ? r.json() : []))
+          .catch(() => [])
+      );
+    }
+    const list = await BODY_CACHE.get(fileName);
+    if (Array.isArray(list)) {
+      const byId = new Map(list.map((it) => [it.id, it]));
+      for (const art of state.articles) {
+        const hit = byId.get(art.id);
+        if (hit && hit.body && !art.body) art.body = hit.body;
+      }
+    }
+    return article.body || '';
+  }
+
+  function renderModalChecklist(container, article) {
+    if (!tools || !container) return;
+    const steps = tools.extractChecklistSteps(article);
+    if (!steps.length) {
+      container.hidden = true;
+      return;
+    }
+    container.hidden = false;
+    const draw = () => {
+      const st = tools.getChecklistState(article.id);
+      let done = 0;
+      const itemsHtml = steps
+        .map((step, i) => {
+          const checked = Boolean(st[String(i)]);
+          if (checked) done += 1;
+          return `<label class="dm-cl-item${checked ? ' done' : ''}"><input type="checkbox" data-dm-step="${i}"${checked ? ' checked' : ''}><span>${esc(step)}</span></label>`;
+        })
+        .join('');
+      container.innerHTML = `<div class="dm-cl-head"><strong>Checklist thực hành</strong><span class="dm-cl-count">${done}/${steps.length} bước</span></div><div class="dm-cl-list">${itemsHtml}</div>`;
+    };
+    container.onchange = (ev) => {
+      const cb = ev.target.closest('input[data-dm-step]');
+      if (!cb) return;
+      tools.setChecklistStep(article.id, cb.dataset.dmStep, cb.checked);
+      draw();
+    };
+    draw();
+  }
+
+  async function openArticleModal(articleId, fromEl) {
     const card = CARD_BY_ID.get(`item-${articleId}`);
     if (!card) return;
     const a = card.article;
     const cat = state.categoryMap.get(a.category);
-    showModalShell(a.title, `${BASE}/article/?id=${encodeURIComponent(a.id)}`, fromEl);
+    const seoHref = `${BASE}/bai-viet/${encodeURIComponent(a.slug)}/`;
+    showModalShell(a.title, seoHref, fromEl);
 
+    const related = tools ? tools.getRelatedArticles(a, state.articles, 4) : [];
     const heads = [
       { id: 'dm-s-overview', txt: 'Thông tin áp dụng' },
+      { id: 'dm-s-checklist', txt: 'Checklist thực hành' },
       { id: 'dm-s-body', txt: 'Nội dung chi tiết' },
       { id: 'dm-s-evidence', txt: 'Bằng chứng & giới hạn' },
       { id: 'dm-s-sources', txt: 'Nguồn tham khảo' },
     ];
+    if (related.length) heads.push({ id: 'dm-s-related', txt: 'Bài viết liên quan' });
 
     const f = a.facets || {};
     const metaItems = [
@@ -776,7 +871,17 @@
       ? `<h3>Rủi ro &amp; lưu ý</h3><ul>${a.risks.map((r) => `<li>${highlightHtml(r, curTerms)}</li>`).join('')}</ul>`
       : '';
 
+    const isSaved = tools ? tools.getSavedIds().has(a.id) : false;
+    const isDone = tools ? tools.getDoneIds().has(a.id) : false;
+    const reportUrl = tools ? tools.buildReportIssueUrl(a) : '#';
+
     DM.doc.innerHTML = `
+      <div class="dm-actions">
+        <button type="button" class="g-action-pill" data-toggle-save="${esc(a.id)}" aria-pressed="${isSaved}">${isSaved ? '★ Đã lưu' : '☆ Lưu bài'}</button>
+        <button type="button" class="g-action-pill" data-toggle-done="${esc(a.id)}" aria-pressed="${isDone}">✓ Đã làm</button>
+        <button type="button" class="g-action-pill" id="dm-copy-link">🔗 Sao chép link</button>
+        <a class="g-action-pill" href="${esc(reportUrl)}" target="_blank" rel="noopener noreferrer">⚠ Báo lỗi / Sửa nguồn</a>
+      </div>
       <h2 id="dm-s-overview">Thông tin áp dụng</h2>
       ${a.description ? `<p class="g-human">${highlightHtml(a.description, curTerms)}</p>` : ''}
       <dl class="dm-meta-grid">${metaItems
@@ -784,15 +889,115 @@
         .join('')}</dl>
       ${benefitsHtml}
       ${risksHtml}
+      <div class="dm-checklist" id="dm-s-checklist"></div>
       <h2 id="dm-s-body">Nội dung chi tiết</h2>
-      ${formatBodyText(a.body, curTerms)}
+      <div id="dm-body-content">${a.body ? formatBodyText(a.body, curTerms) : '<p>Đang tải nội dung chi tiết…</p>'}</div>
       <h2 id="dm-s-evidence">Bằng chứng &amp; giới hạn</h2>
       ${a.evidence_notes ? `<p>${highlightHtml(a.evidence_notes, curTerms)}</p>` : '<p>Chưa có ghi chú bằng chứng.</p>'}
       <h2 id="dm-s-sources">Nguồn tham khảo</h2>
       <div class="g-src"><div class="g-src-body">${renderSourcesHtml(a.sources, curTerms)}</div></div>
+      ${related.length ? `<h2 id="dm-s-related">Bài viết liên quan</h2><div class="dm-related">${related.map((r) => `<button type="button" class="dm-rel-btn" data-open-article="${esc(r.id)}"><strong>${esc(r.title)}</strong><span>${esc(r.description)}</span></button>`).join('')}</div>` : ''}
       ${a.last_updated ? `<p style="margin-top:18px;font-size:12px;color:var(--t3)">Cập nhật lần cuối: ${esc(a.last_updated)}</p>` : ''}`;
 
+    const copyBtn = document.getElementById('dm-copy-link');
+    copyBtn?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(new URL(seoHref, location.origin).href);
+        copyBtn.textContent = '✓ Đã sao chép link';
+        setTimeout(() => { copyBtn.textContent = '🔗 Sao chép link'; }, 1800);
+      } catch {}
+    });
+
+    const clEl = document.getElementById('dm-s-checklist');
+    renderModalChecklist(clEl, a);
     buildModalToc(heads);
+
+    if (!a.body) {
+      const fullBody = await loadArticleBody(a);
+      const bodyTarget = document.getElementById('dm-body-content');
+      if (bodyTarget && !DM.mask.hidden) {
+        bodyTarget.innerHTML = formatBodyText(fullBody, curTerms);
+        renderModalChecklist(clEl, a);
+      }
+    }
+  }
+
+  function openToolsModal(fromEl) {
+    showModalShell('Công cụ tính thực hành (VND)', '', fromEl);
+    DM.toc.textContent = '';
+    const fmt = (n) => Math.round(Number(n) || 0).toLocaleString('vi-VN');
+    DM.doc.innerHTML = `
+      <p class="g-human">Tính toán nhanh hoàn toàn trên trình duyệt của bạn, không gửi dữ liệu ra ngoài.</p>
+      <div class="g-calc-grid">
+        <section class="g-calc-box" aria-label="Tính quỹ dự phòng khẩn cấp">
+          <h3>🛡 Quỹ dự phòng khẩn cấp</h3>
+          <label>Chi tiêu thiết yếu / tháng (VNĐ)
+            <input type="number" id="c-ef-spend" value="12000000" min="0" step="500000">
+          </label>
+          <label>Số tháng dự phòng mục tiêu
+            <select id="c-ef-months">
+              <option value="3">3 tháng (tối thiểu)</option>
+              <option value="6" selected>6 tháng (khuyến nghị)</option>
+              <option value="9">9 tháng (an toàn cao)</option>
+              <option value="12">12 tháng (thu nhập biến động)</option>
+            </select>
+          </label>
+          <label>Quỹ hiện đã có (VNĐ)
+            <input type="number" id="c-ef-have" value="20000000" min="0" step="500000">
+          </label>
+          <div class="g-calc-out" id="c-ef-out"></div>
+        </section>
+
+        <section class="g-calc-box" aria-label="Kiểm tra mua trả góp 0%">
+          <h3>💳 Kiểm tra trả góp "0%" thực tế</h3>
+          <label>Giá mua trả thẳng (VNĐ)
+            <input type="number" id="c-in-cash" value="15000000" min="0" step="100000">
+          </label>
+          <label>Tổng giá gốc khi trả góp + phí hồ sơ/bảo hiểm (VNĐ)
+            <input type="number" id="c-in-total" value="16500000" min="0" step="100000">
+          </label>
+          <label>Kỳ hạn trả góp (tháng)
+            <input type="number" id="c-in-months" value="12" min="1" max="60">
+          </label>
+          <div class="g-calc-out" id="c-in-out"></div>
+        </section>
+      </div>`;
+
+    const calcEf = () => {
+      const spend = Math.max(0, Number(document.getElementById('c-ef-spend').value) || 0);
+      const months = Math.max(1, Number(document.getElementById('c-ef-months').value) || 6);
+      const have = Math.max(0, Number(document.getElementById('c-ef-have').value) || 0);
+      const target = spend * months;
+      const gap = Math.max(0, target - have);
+      const pct = target > 0 ? Math.min(100, Math.round((have / target) * 100)) : 100;
+      document.getElementById('c-ef-out').innerHTML =
+        `Mục tiêu: <strong>${fmt(target)} đ</strong> (đạt ${pct}%).<br>` +
+        (gap > 0
+          ? `Cần tích lũy thêm <strong>${fmt(gap)} đ</strong> (~${fmt(gap / 12)} đ/tháng trong 1 năm).`
+          : 'Bạn đã đạt mức quỹ dự phòng mục tiêu.');
+    };
+
+    const calcInstallment = () => {
+      const cash = Math.max(1, Number(document.getElementById('c-in-cash').value) || 0);
+      const total = Math.max(0, Number(document.getElementById('c-in-total').value) || 0);
+      const months = Math.max(1, Number(document.getElementById('c-in-months').value) || 12);
+      const diff = total - cash;
+      const pct = (diff / cash) * 100;
+      const approxApr = ((diff / cash) * (24 / (months + 1))) * 100;
+      document.getElementById('c-in-out').innerHTML =
+        diff <= 0
+          ? `Không phát sinh thêm chi phí (tiết kiệm <strong>${fmt(Math.abs(diff))} đ</strong> so với trả thẳng).`
+          : `Trả nhiều hơn trả thẳng: <strong>${fmt(diff)} đ</strong> (+${pct.toFixed(1)}%).<br>Lãi suất thực quy đổi ước tính trên dư nợ giảm dần: <strong>~${approxApr.toFixed(1)}%/năm</strong>.`;
+    };
+
+    ['c-ef-spend', 'c-ef-months', 'c-ef-have'].forEach((id) => {
+      document.getElementById(id)?.addEventListener('input', calcEf);
+    });
+    ['c-in-cash', 'c-in-total', 'c-in-months'].forEach((id) => {
+      document.getElementById(id)?.addEventListener('input', calcInstallment);
+    });
+    calcEf();
+    calcInstallment();
   }
 
   async function openDocModal(docKey, fromEl) {
@@ -936,8 +1141,31 @@
     menuBtn?.addEventListener('click', () => setMenu(!sidebar.classList.contains('open')));
     backdrop?.addEventListener('click', () => setMenu(false));
 
-    // Open article / doc modals via delegation
+    // Open article / doc modals & personal save/done toggles via delegation
     document.addEventListener('click', (ev) => {
+      const saveTrigger = ev.target.closest('[data-toggle-save]');
+      if (saveTrigger && tools) {
+        const res = tools.toggleSaved(saveTrigger.dataset.toggleSave);
+        if (saveTrigger.closest('#doc-modal')) {
+          saveTrigger.setAttribute('aria-pressed', String(res.active));
+          saveTrigger.textContent = res.active ? '★ Đã lưu' : '☆ Lưu bài';
+        }
+        syncPersonalUI();
+        if (state.personal.has('saved')) apply();
+        return;
+      }
+
+      const doneTrigger = ev.target.closest('[data-toggle-done]');
+      if (doneTrigger && tools) {
+        const res = tools.toggleDone(doneTrigger.dataset.toggleDone);
+        if (doneTrigger.closest('#doc-modal')) {
+          doneTrigger.setAttribute('aria-pressed', String(res.active));
+        }
+        syncPersonalUI();
+        if (state.personal.has('done')) apply();
+        return;
+      }
+
       const artTrigger = ev.target.closest('[data-open-article]');
       if (artTrigger) {
         openArticleModal(artTrigger.dataset.openArticle, artTrigger);
@@ -947,6 +1175,60 @@
       if (docTrigger) {
         openDocModal(docTrigger.dataset.doc, docTrigger);
       }
+    });
+
+    // Quick Presets
+    document.getElementById('g-presets')?.addEventListener('click', (ev) => {
+      const btn = ev.target.closest('[data-preset]');
+      if (!btn) return;
+      const preset = btn.dataset.preset;
+      resetAllFilters();
+      if (preset === 'quick-free') {
+        state.cost.add('free');
+        state.time.add('quick');
+      } else if (preset === 'grade-a') {
+        state.grade.add('A');
+      } else if (preset === 'safety' || preset === 'finance' || preset === 'health') {
+        state.sec = preset;
+      } else if (preset === 'saved') {
+        state.personal.add('saved');
+      }
+      apply();
+      toTop();
+    });
+
+    // Personal JSON Export / Import
+    document.getElementById('g-export-personal')?.addEventListener('click', () => {
+      if (!tools) return;
+      const data = tools.exportPersonalData();
+      const blob = new Blob([JSON.stringify(data, null, 2) + '\n'], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'song-tot-hon-tu-bai.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+
+    const importFileInput = document.getElementById('g-import-file');
+    document.getElementById('g-import-personal')?.addEventListener('click', () => importFileInput?.click());
+    importFileInput?.addEventListener('change', async (ev) => {
+      const file = ev.target.files?.[0];
+      if (!file || !tools) return;
+      try {
+        const text = await file.text();
+        tools.importPersonalData(JSON.parse(text));
+        syncPersonalUI();
+        apply();
+      } catch {
+        alert('File JSON tủ bài cá nhân không hợp lệ.');
+      } finally {
+        ev.target.value = '';
+      }
+    });
+
+    document.getElementById('g-tools-btn')?.addEventListener('click', (ev) => {
+      openToolsModal(ev.currentTarget);
     });
 
     document.getElementById('g-method-btn')?.addEventListener('click', (ev) => {
@@ -999,6 +1281,7 @@
   }
 
   async function init() {
+    tools?.registerServiceWorker(BASE);
     wireEvents();
     setProgress(20, 'Đang tải thư viện 769 bài viết…');
 
@@ -1006,7 +1289,8 @@
       if (location.protocol === 'file:') {
         throw new Error('Hãy chạy website qua lệnh npm run preview, không mở trực tiếp bằng file://.');
       }
-      const resp = await fetch(`${BASE}/data/catalog.json`);
+      let resp = await fetch(`${BASE}/data/catalog-index.json`);
+      if (!resp.ok) resp = await fetch(`${BASE}/data/catalog.json`);
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       setProgress(65, 'Đang lập chỉ mục tìm kiếm…');
 
@@ -1018,6 +1302,7 @@
       setProgress(90, 'Đang dựng giao diện…');
       buildContentDOM();
       buildSidebarCategories();
+      syncPersonalUI();
       setupCardObserver();
       readUrl();
       apply();

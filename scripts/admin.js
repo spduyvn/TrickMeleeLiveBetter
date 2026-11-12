@@ -130,6 +130,124 @@ function sanitizeArticleForDisk(payload) {
   return clean;
 }
 
+function slugifyVietnamese(text) {
+  return String(text || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'd')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 60) || 'bai-viet';
+}
+
+function collectUsedIdsAndSlugs() {
+  const usedIds = new Set();
+  const usedSlugs = new Set();
+  const files = fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json'));
+  for (const file of files) {
+    const list = JSON.parse(fs.readFileSync(path.join(articlesDir, file), 'utf8'));
+    if (!Array.isArray(list)) continue;
+    for (const art of list) {
+      if (art.id) usedIds.add(art.id);
+      if (art.slug) usedSlugs.add(art.slug);
+    }
+  }
+  return { usedIds, usedSlugs };
+}
+
+function buildNewArticleRecord({ title, category, description }, categories) {
+  const cleanTitle = String(title || '').trim();
+  const cleanDesc = String(description || '').trim();
+  const cleanCat = String(category || '').trim();
+  if (!cleanTitle) throw new Error('Thiếu tiêu đề bài viết.');
+  if (!categories.some((c) => c.id === cleanCat)) throw new Error(`Danh mục không tồn tại: ${cleanCat}`);
+  if (!cleanDesc) throw new Error('Thiếu tóm tắt ngắn (description).');
+
+  const { usedIds, usedSlugs } = collectUsedIdsAndSlugs();
+  const baseSlug = slugifyVietnamese(cleanTitle);
+  let slug = baseSlug;
+  let seq = 2;
+  while (usedSlugs.has(slug)) {
+    slug = `${baseSlug}-${seq}`;
+    seq += 1;
+  }
+
+  let id = `${cleanCat}-${baseSlug}`;
+  let idSeq = 2;
+  while (usedIds.has(id)) {
+    id = `${cleanCat}-${baseSlug}-${idSeq}`;
+    idSeq += 1;
+  }
+
+  const today = new Date().toISOString().slice(0, 10);
+  const article = {
+    id,
+    slug,
+    title: cleanTitle,
+    category: cleanCat,
+    tags: [],
+    cost: null,
+    reading_time: '3 phút',
+    time: null,
+    effort: null,
+    benefits: [],
+    risks: [],
+    target_groups: ['Mọi người'],
+    value_level: 'Cao',
+    evidence_level: 'B',
+    evidence_notes: '',
+    description: cleanDesc,
+    body: '',
+    sources: [],
+    verified_at: null,
+    review_status: 'draft',
+    status_label: 'Bản nháp',
+    last_updated: today,
+  };
+
+  const preferredFile = `${cleanCat}.json`;
+  const targetFile = fs.existsSync(path.join(articlesDir, preferredFile)) ? preferredFile : 'demo.json';
+  return { article, targetFile };
+}
+
+function normalizeBatchFiles() {
+  const files = fs.readdirSync(articlesDir).filter((f) => f.endsWith('.json')).sort();
+  let updatedCount = 0;
+  const touchedFiles = [];
+
+  for (const file of files) {
+    const filePath = path.join(articlesDir, file);
+    const list = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    if (!Array.isArray(list)) continue;
+    let fileChanged = false;
+
+    for (const art of list) {
+      let changed = false;
+      if (art.evidence_level === 'high') { art.evidence_level = 'A'; changed = true; }
+      else if (art.evidence_level === 'medium') { art.evidence_level = 'B'; changed = true; }
+      else if (art.evidence_level === 'low') { art.evidence_level = 'C'; changed = true; }
+
+      if (art.value_level === 'high') { art.value_level = 'Cao'; changed = true; }
+      else if (art.value_level === 'medium') { art.value_level = 'Trung bình'; changed = true; }
+      else if (art.value_level === 'low') { art.value_level = 'Thấp'; changed = true; }
+
+      if (changed) {
+        updatedCount += 1;
+        fileChanged = true;
+      }
+    }
+
+    if (fileChanged) {
+      fs.writeFileSync(filePath, JSON.stringify(list, null, 2) + '\n', 'utf8');
+      touchedFiles.push(file);
+    }
+  }
+
+  return { updatedCount, touchedFiles };
+}
+
 function serveStatic(pathname, response) {
   if (pathname === '/' || pathname === '') {
     response.writeHead(302, { Location: '/admin/' });
@@ -361,6 +479,36 @@ function createAdminApp(options = {}) {
         list[idx] = article;
         fs.writeFileSync(targetPath, JSON.stringify(list, null, 2) + '\n', 'utf8');
         sendJson(response, 200, { ok: true, article: { ...article, _file: targetFile } });
+        return;
+      }
+
+      if (request.method === 'POST' && pathname === '/api/article/create') {
+        if (!isSameOrigin(request)) {
+          sendJson(response, 403, { ok: false, error: 'Origin không hợp lệ.' });
+          return;
+        }
+        if (!requireAuth()) return;
+
+        const body = await readJsonBody(request);
+        const categories = readCategories();
+        const { article, targetFile } = buildNewArticleRecord(body || {}, categories);
+        const targetPath = path.join(articlesDir, targetFile);
+        const list = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
+        list.unshift(article);
+        fs.writeFileSync(targetPath, JSON.stringify(list, null, 2) + '\n', 'utf8');
+        sendJson(response, 201, { ok: true, article: { ...article, _file: targetFile } });
+        return;
+      }
+
+      if (request.method === 'POST' && pathname === '/api/normalize-batch') {
+        if (!isSameOrigin(request)) {
+          sendJson(response, 403, { ok: false, error: 'Origin không hợp lệ.' });
+          return;
+        }
+        if (!requireAuth()) return;
+
+        const result = normalizeBatchFiles();
+        sendJson(response, 200, { ok: true, ...result });
         return;
       }
 

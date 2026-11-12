@@ -420,6 +420,11 @@
         if (state.filters.evidence === 'unnormalized' && !['high', 'medium', 'low'].includes(ev)) return false;
         if (state.filters.evidence === 'none' && ev !== '') return false;
         if (['A', 'B', 'C'].includes(state.filters.evidence) && ev !== state.filters.evidence) return false;
+        if (state.filters.evidence === 'no_vn_src') {
+          const hasVn = (a.sources || []).some((s) => /việt nam|viet nam|^vn$/i.test(String(s.country || '')));
+          if (hasVn) return false;
+        }
+        if (state.filters.evidence === 'no_verified_at' && a.verified_at) return false;
       }
       if (q) {
         const hay = normalize([a.id, a.slug, a.title, a.description, ...(a.tags || [])].join(' '));
@@ -799,6 +804,151 @@
     }
   }
 
+  function slugifyVi(text) {
+    return String(text || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/đ/g, 'd')
+      .replace(/Đ/g, 'd')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+      .slice(0, 60) || 'bai-viet';
+  }
+
+  function closeNewArticleModal() {
+    document.getElementById('a-new-modal').hidden = true;
+  }
+
+  async function handleCreateArticle(ev) {
+    ev.preventDefault();
+    const form = ev.currentTarget;
+    const btn = document.getElementById('a-new-submit');
+    const title = form.elements.title.value.trim();
+    const category = form.elements.category.value;
+    const description = form.elements.description.value.trim();
+    if (!title || !category || !description) return;
+
+    btn.disabled = true;
+    btn.textContent = 'Đang tạo…';
+    try {
+      if (state.mode === 'local') {
+        const resp = await fetch('/api/article/create', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ title, category, description }),
+        });
+        if (resp.status === 401) {
+          closeNewArticleModal();
+          showAuthLock('Phiên đăng nhập đã hết hạn.');
+          return;
+        }
+        const data = await resp.json();
+        if (!resp.ok || !data.ok) throw new Error(data.error || 'Không thể tạo bài viết.');
+        state.articles.unshift(data.article);
+        closeNewArticleModal();
+        form.reset();
+        updateCounters();
+        applyQueueFilters();
+        selectArticle(data.article.id, true);
+        showToast(`Đã tạo bài mới ${data.article.id} (${data.article._file}).`, 'ok');
+      } else if (state.mode === 'github' && state.gh) {
+        const usedIds = new Set(state.articles.map((a) => a.id));
+        const usedSlugs = new Set(state.articles.map((a) => a.slug));
+        const baseSlug = slugifyVi(title);
+        let slug = baseSlug;
+        let seq = 2;
+        while (usedSlugs.has(slug)) { slug = `${baseSlug}-${seq}`; seq += 1; }
+        let id = `${category}-${baseSlug}`;
+        let idSeq = 2;
+        while (usedIds.has(id)) { id = `${category}-${baseSlug}-${idSeq}`; idSeq += 1; }
+
+        const targetFile = state.files.includes(`${category}.json`) ? `${category}.json` : (state.files[0] || `${category}.json`);
+        const today = todayISO();
+        const newArticle = {
+          id,
+          slug,
+          title,
+          category,
+          tags: [],
+          cost: null,
+          reading_time: '3 phút',
+          time: null,
+          effort: null,
+          benefits: [],
+          risks: [],
+          target_groups: ['Mọi người'],
+          value_level: 'Cao',
+          evidence_level: 'B',
+          evidence_notes: '',
+          description,
+          body: '',
+          sources: [],
+          verified_at: null,
+          review_status: 'draft',
+          status_label: 'Bản nháp',
+          last_updated: today,
+        };
+
+        const list = [newArticle, ...(state.gh.fileLists.get(targetFile) || [])];
+        const { token, owner, repo, branch } = state.gh;
+        const res = await ghJson(
+          `https://api.github.com/repos/${owner}/${repo}/contents/content/articles/${encodeURIComponent(targetFile)}`,
+          token,
+          {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              message: `admin(create): ${id}`,
+              content: utf8ToBase64(JSON.stringify(list, null, 2) + '\n'),
+              sha: state.gh.fileShas.get(targetFile),
+              branch,
+            }),
+          }
+        );
+        if (res?.content?.sha) state.gh.fileShas.set(targetFile, res.content.sha);
+        state.gh.fileLists.set(targetFile, list);
+        const stored = { ...newArticle, _file: targetFile };
+        state.articles.unshift(stored);
+        closeNewArticleModal();
+        form.reset();
+        updateCounters();
+        applyQueueFilters();
+        selectArticle(stored.id, true);
+        showToast(`Đã tạo & commit bài mới ${stored.id} lên ${targetFile}.`, 'ok');
+      }
+    } catch (err) {
+      showToast(`Lỗi tạo bài: ${err.message}`, 'err');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Tạo & Mở trình biên tập';
+    }
+  }
+
+  async function handleBatchNormalize() {
+    if (state.mode !== 'local') return;
+    if (!confirm('Chuẩn hóa tất cả high/medium/low thành A/B/C và Cao/Trung bình/Thấp trên toàn bộ content/articles/*.json?')) {
+      return;
+    }
+    const btn = document.getElementById('a-batch-normalize-btn');
+    btn.disabled = true;
+    try {
+      const resp = await fetch('/api/normalize-batch', { method: 'POST' });
+      if (resp.status === 401) {
+        showAuthLock('Phiên đăng nhập đã hết hạn.');
+        return;
+      }
+      const data = await resp.json();
+      if (!resp.ok || !data.ok) throw new Error(data.error || 'Chuẩn hóa thất bại');
+      await enterLocalSession(state.username);
+      showToast(`Đã chuẩn hóa ${data.updatedCount} bài trong ${data.touchedFiles?.length || 0} tệp.`, 'ok');
+    } catch (err) {
+      showToast(`Lỗi chuẩn hóa: ${err.message}`, 'err');
+    } finally {
+      btn.disabled = false;
+    }
+  }
+
   function downloadJson(filename, obj) {
     const blob = new Blob([JSON.stringify(obj, null, 2) + '\n'], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
@@ -1017,11 +1167,23 @@
       }
     });
 
-    // Logout & Auth forms
+    // Logout & Auth forms & New article / Batch normalize
     document.getElementById('a-logout-btn')?.addEventListener('click', handleLogout);
     document.getElementById('a-auth-recheck')?.addEventListener('click', checkEnvironmentAndAuth);
     document.getElementById('a-login-local')?.addEventListener('submit', handleLocalLogin);
     document.getElementById('a-login-github')?.addEventListener('submit', handleGithubLogin);
+
+    document.getElementById('a-new-btn')?.addEventListener('click', () => {
+      document.getElementById('a-new-modal').hidden = false;
+      document.getElementById('a-new-form').elements.title.focus();
+    });
+    document.getElementById('a-new-close')?.addEventListener('click', closeNewArticleModal);
+    document.getElementById('a-new-cancel')?.addEventListener('click', closeNewArticleModal);
+    document.getElementById('a-new-modal')?.addEventListener('click', (ev) => {
+      if (ev.target.id === 'a-new-modal') closeNewArticleModal();
+    });
+    document.getElementById('a-new-form')?.addEventListener('submit', handleCreateArticle);
+    document.getElementById('a-batch-normalize-btn')?.addEventListener('click', handleBatchNormalize);
 
     window.addEventListener('beforeunload', (ev) => {
       if (state.dirty) {
@@ -1056,6 +1218,8 @@
     document.getElementById('a-logout-btn').hidden = true;
     document.getElementById('a-user-badge').hidden = true;
     document.getElementById('a-build-btn').hidden = true;
+    document.getElementById('a-new-btn').hidden = true;
+    document.getElementById('a-batch-normalize-btn').hidden = true;
     document.getElementById('a-progress-wrap').hidden = true;
 
     const badge = document.getElementById('a-mode-badge');
@@ -1112,6 +1276,8 @@
 
     document.getElementById('a-logout-btn').hidden = false;
     document.getElementById('a-build-btn').hidden = !showBuild;
+    document.getElementById('a-new-btn').hidden = false;
+    document.getElementById('a-batch-normalize-btn').hidden = !showBuild;
     document.getElementById('a-progress-wrap').hidden = false;
 
     const fileSelect = document.getElementById('a-f-file');
@@ -1121,12 +1287,15 @@
 
     const fCat = document.getElementById('a-f-cat');
     const formCat = document.getElementById('f-category');
+    const newCat = document.getElementById('a-new-category');
     fCat.innerHTML = '<option value="">Tất cả danh mục</option>';
     formCat.innerHTML = '';
+    if (newCat) newCat.innerHTML = '';
     state.categories.forEach((c) => {
       const opt = `<option value="${esc(c.id)}">${esc(c.number)} · ${esc(c.name)}</option>`;
       fCat.insertAdjacentHTML('beforeend', opt);
       formCat.insertAdjacentHTML('beforeend', opt);
+      if (newCat) newCat.insertAdjacentHTML('beforeend', opt);
     });
 
     document.getElementById('a-auth-gate').hidden = true;

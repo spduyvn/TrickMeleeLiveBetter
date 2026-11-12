@@ -8,6 +8,7 @@
   <title>Sống Tốt Hơn — Giao diện tra cứu nhanh</title>
   <meta name="description" content="Tra cứu nhanh 769 hướng dẫn thực tiễn cho người Việt: lọc theo chi phí, thời gian, công sức, đối tượng và mức độ bằng chứng.">
   <link rel="canonical" href="https://spduyvn.github.io/TrickMeleeLiveBetter/guide/">
+  <link rel="manifest" href="<!-- BASE_PATH -->/manifest.webmanifest">
   <script>(function(){try{var s=localStorage.getItem('guide-theme');var d=s?s==='dark':matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +39,9 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h7v6H4zm9 0h7v6h-7zM4 13h7v6H4zm9 0h7v6h-7z"/></svg>
           <span>Giao diện thư viện</span>
         </a>
+        <button class="g-icon-btn" id="g-tools-btn" type="button" title="Công cụ tính thực hành" aria-label="Công cụ tính thực hành">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2 3v3h10V6H7zm0 5v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm-8 4v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"/></svg>
+        </button>
         <button class="g-icon-btn" id="g-method-btn" type="button" title="Phương pháp biên tập &amp; bằng chứng" aria-label="Phương pháp biên tập">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6zm8 1.5V8h4.5zM8 12h8v1.5H8zm0 3.5h8V17H8z"/></svg>
         </button>
@@ -60,6 +64,19 @@
         <span>Đặt làm giao diện mặc định</span>
       </label>
       <p class="g-default-hint" id="g-default-hint">Khi bật, lần sau mở trang chủ sẽ vào thẳng giao diện này.</p>
+    </div>
+
+    <div class="g-group">
+      <div class="g-gt">Tủ bài cá nhân <small>Lưu trên thiết bị này</small></div>
+      <div class="g-chips" data-dim="personal">
+        <button class="g-chip" type="button" data-v="saved" aria-pressed="false">★ Đã lưu (<i id="g-saved-count">0</i>)</button>
+        <button class="g-chip" type="button" data-v="done" aria-pressed="false">✓ Đã áp dụng (<i id="g-done-count">0</i>)</button>
+      </div>
+      <div class="g-personal-actions">
+        <button type="button" class="g-mini-btn" id="g-export-personal">Xuất JSON</button>
+        <button type="button" class="g-mini-btn" id="g-import-personal">Nhập JSON</button>
+        <input type="file" id="g-import-file" accept=".json,application/json" hidden>
+      </div>
     </div>
 
     <div class="g-group">
@@ -155,6 +172,14 @@
           <span aria-hidden="true">·</span>
           <button class="g-link-btn" type="button" data-doc="sources">Chính sách nguồn</button>
         </div>
+        <div class="g-presets" id="g-presets" aria-label="Gợi ý nhanh theo tình huống">
+          <button type="button" class="g-preset" data-preset="quick-free">⚡ Làm ngay · Miễn phí</button>
+          <button type="button" class="g-preset" data-preset="grade-a">🏆 Bằng chứng mức A</button>
+          <button type="button" class="g-preset" data-preset="safety">🛡 An toàn &amp; Phòng rủi ro</button>
+          <button type="button" class="g-preset" data-preset="finance">💰 Tài chính cá nhân</button>
+          <button type="button" class="g-preset" data-preset="health">🏥 Sức khỏe &amp; Giấc ngủ</button>
+          <button type="button" class="g-preset" data-preset="saved">★ Đã lưu của tôi</button>
+        </div>
       </div>
 
       <div id="g-sections">
@@ -189,6 +214,7 @@
     </div>
   </div>
 
+  <script src="<!-- BASE_PATH -->/assets/reader-tools.js" defer></script>
   <script src="<!-- BASE_PATH -->/assets/guide.js" defer></script>
 </body>
 </html>

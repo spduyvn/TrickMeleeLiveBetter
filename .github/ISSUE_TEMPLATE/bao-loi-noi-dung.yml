@@ -1,0 +1,35 @@
+name: Báo lỗi nội dung / Đề xuất sửa nguồn
+description: Báo thông tin lỗi thời, sai sót hoặc link nguồn hỏng cho một bài viết trên Sống Tốt Hơn
+title: "[Báo lỗi nội dung] "
+labels:
+  - content-review
+body:
+  - type: markdown
+    attributes:
+      value: Cảm ơn bạn đã góp phần giúp cẩm nang **Sống Tốt Hơn** chính xác và hữu ích hơn cho người Việt.
+  - type: input
+    id: article_id
+    attributes:
+      label: Mã bài viết (ID / Slug)
+      placeholder: "Ví dụ: finance-emergency-fund-001"
+    validations:
+      required: true
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Loại vấn đề
+      options:
+        - Thông tin hoặc quy định pháp luật/y tế đã lỗi thời
+        - Link nguồn tham khảo bị hỏng (404 / không truy cập được)
+        - Thiếu ngữ cảnh hoặc chi phí/quy trình thực tế tại Việt Nam
+        - Lỗi chính tả / trình bày / đề xuất bổ sung
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Chi tiết cần chỉnh sửa & nguồn thay thế (nếu có)
+      description: Nêu rõ đoạn nội dung có vấn đề và dẫn link nguồn chính thống mới nếu bạn có.
+    validations:
+      required: true
+
