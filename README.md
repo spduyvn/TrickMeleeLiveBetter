@@ -5,8 +5,11 @@
 Mỗi bài viết đều trình bày rõ ràng: tóm tắt hành động, chi phí – thời gian – công sức ước tính, lợi ích, rủi ro, mức độ bằng chứng (`A` / `B` / `C`) và nguồn tham khảo đáng tin cậy để bạn tự đối chiếu theo bối cảnh Việt Nam.
 
 - **Trang web chính thức**: [https://spduyvn.github.io/TrickMeleeLiveBetter/](https://spduyvn.github.io/TrickMeleeLiveBetter/)
-- **Thư viện bài viết**: xem theo từng nhóm chủ đề và bài viết chi tiết.
-- **Tra cứu nhanh (`/guide/`)**: lọc nhanh theo đối tượng, mức bằng chứng, chi phí, thời gian, công sức; lưu tủ bài cá nhân; đánh dấu checklist thực hành và sử dụng ngoại tuyến (PWA).
+- **4 Chế độ giao diện tùy biến (bấm biểu tượng ⚙️ Cài đặt hoặc phím tắt `Alt + S` để chuyển đổi)**:
+  1. **Thư viện chuẩn (`/`)**: dạng tạp chí/cổng thông tin, duyệt khám phá theo 8 danh mục chủ đề lớn.
+  2. **Tra cứu nhanh (`/guide/`)**: bảng điều khiển 2 cột đa chiều (lọc chi phí, thời gian, công sức, mức bằng chứng, checklist thực hành và PWA offline).
+  3. **Đọc tập trung — Reader Mode (`/reader/`)**: bố cục 1 cột tối giản (Medium/Substack style), thanh tiến trình đọc % cuộn, thanh công cụ đọc nổi (tăng giảm cỡ chữ `A-/A+`, đổi phông Serif/Sans-serif, mục lục trôi TOC).
+  4. **Bảng nén & Flashcard (`/compact/`)**: chế độ bảng dữ liệu dày (Dense Table) để duyệt nhanh 100+ bài và chế độ Thẻ ghi nhớ (Flashcard Flip 3D) luyện tập hành động thực tế bằng phím `Space`.
 
 ---
 

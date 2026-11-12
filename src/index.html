@@ -10,11 +10,13 @@
   <meta property="og:description" content="Tìm hiểu những lựa chọn thực tiễn cho sức khỏe, tài chính, thời gian và chất lượng sống.">
   <link rel="canonical" href="https://spduyvn.github.io/TrickMeleeLiveBetter/">
   <link rel="manifest" href="<!-- BASE_PATH -->/manifest.webmanifest">
-  <script>(function(){try{var p=new URLSearchParams(location.search);if(p.get('view')==='library'||location.hash)return;if(localStorage.getItem('sth-ui-mode')==='guide')location.replace('<!-- BASE_PATH -->/guide/'+(location.search||''));}catch(e){}})();</script>
+  <script>(function(){try{var p=new URLSearchParams(location.search);if(p.get('view')==='library'||location.hash)return;var s=localStorage.getItem('sth-settings');var d=s?JSON.parse(s):null;var target=(d&&d.autoRedirect&&d.defaultView)?d.defaultView:(localStorage.getItem('sth-ui-mode'));if(target==='guide')location.replace('<!-- BASE_PATH -->/guide/'+(location.search||''));else if(target==='reader')location.replace('<!-- BASE_PATH -->/reader/'+(location.search||''));else if(target==='compact')location.replace('<!-- BASE_PATH -->/compact/'+(location.search||''));}catch(e){}})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/styles.css">
+  <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/settings.css">
+  <script src="<!-- BASE_PATH -->/assets/settings.js"></script>
   <title>Sống Tốt Hơn — Kiến thức cho cuộc sống</title>
 </head>
 <body>
@@ -26,6 +28,9 @@
       <a href="<!-- BASE_PATH -->/#kham-pha">Khám phá</a><a href="<!-- BASE_PATH -->/#danh-muc">Danh mục</a>
       <a href="<!-- BASE_PATH -->/sources/">Nguồn tham khảo</a><a href="<!-- BASE_PATH -->/method/">Phương pháp</a><a href="<!-- BASE_PATH -->/dong-gop/">Đóng góp bài</a><a href="<!-- BASE_PATH -->/#gioi-thieu">Giới thiệu</a>
       <a class="nav-mode-pill" href="<!-- BASE_PATH -->/guide/">Tra cứu nhanh</a>
+      <button type="button" class="sth-settings-btn" data-open-settings aria-label="Cài đặt giao diện">
+        <span>⚙️ Cài đặt</span>
+      </button>
     </nav>
   </header>
   <main id="main">

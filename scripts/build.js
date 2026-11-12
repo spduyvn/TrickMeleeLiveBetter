@@ -234,6 +234,8 @@ function renderArticleHtmlPage(article, category, relatedArticles) {
   <link rel="canonical" href="${escHtml(canonicalUrl)}">
   <link rel="manifest" href="${basePath}/manifest.webmanifest">
   <link rel="stylesheet" href="${basePath}/assets/styles.css">
+  <link rel="stylesheet" href="${basePath}/assets/settings.css">
+  <script src="${basePath}/assets/settings.js"></script>
   <script type="application/ld+json">${escJsonLd(jsonLd)}</script>
 </head>
 <body>
@@ -246,6 +248,9 @@ function renderArticleHtmlPage(article, category, relatedArticles) {
       <a href="${basePath}/sources/">Nguồn tham khảo</a>
       <a href="${basePath}/method/">Phương pháp</a>
       <a class="nav-mode-pill" href="${basePath}/guide/#item-${escHtml(article.id)}">Tra cứu nhanh</a>
+      <button type="button" class="sth-settings-btn" data-open-settings aria-label="Cài đặt">
+        <span>⚙️ Cài đặt</span>
+      </button>
     </nav>
   </header>
 
@@ -331,7 +336,7 @@ function renderArticleHtmlPage(article, category, relatedArticles) {
 }
 
 function buildSitemapXml(categories, publishedArticles) {
-  const staticPaths = ['/', '/guide/', '/dong-gop/', '/category/', '/article/', '/sources/', '/method/', '/EVIDENCE_GRADING.html', '/CONTRIBUTING.html'];
+  const staticPaths = ['/', '/guide/', '/reader/', '/compact/', '/dong-gop/', '/category/', '/article/', '/sources/', '/method/', '/EVIDENCE_GRADING.html', '/CONTRIBUTING.html'];
   const urls = [];
   for (const p of staticPaths) {
     urls.push(`  <url><loc>${SITE_ORIGIN}${p}</loc></url>`);
@@ -433,6 +438,12 @@ for (const pathname of [
   'assets/admin.js',
   'assets/reader-tools.js',
   'assets/article-page.js',
+  'assets/settings.css',
+  'assets/settings.js',
+  'assets/reader.css',
+  'assets/reader.js',
+  'assets/compact.css',
+  'assets/compact.js',
   'assets/contribute.css',
   'assets/contribute.js',
   'manifest.webmanifest',
@@ -442,6 +453,8 @@ for (const pathname of [
   'category/index.html',
   'article/index.html',
   'guide/index.html',
+  'reader/index.html',
+  'compact/index.html',
   'dong-gop/index.html',
   'admin/index.html',
   'sources/index.html',

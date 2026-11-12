@@ -12,8 +12,10 @@
   <script>(function(){try{var s=localStorage.getItem('guide-theme');var d=s?s==='dark':matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/guide.css">
+  <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/settings.css">
+  <script src="<!-- BASE_PATH -->/assets/settings.js"></script>
 </head>
 <body class="guide-page">
   <a class="g-skip" href="#guide-main">Bỏ qua điều hướng</a>
@@ -44,6 +46,9 @@
         </button>
         <button class="g-icon-btn" id="g-method-btn" type="button" title="Phương pháp biên tập &amp; bằng chứng" aria-label="Phương pháp biên tập">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6zm8 1.5V8h4.5zM8 12h8v1.5H8zm0 3.5h8V17H8z"/></svg>
+        </button>
+        <button class="g-icon-btn" type="button" data-open-settings title="Cài đặt giao diện &amp; Trải nghiệm" aria-label="Cài đặt giao diện">
+          <span style="font-size: 1.1rem;" aria-hidden="true">⚙️</span>
         </button>
         <button class="g-switch" id="g-theme" type="button" aria-label="Chuyển chế độ sáng/tối" title="Chuyển chế độ sáng/tối">
           <span class="g-knob">

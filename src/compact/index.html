@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f2">
+  <meta name="description" content="Sống Tốt Hơn — Chế độ Bảng nén dữ liệu & Thẻ ghi nhớ Flashcard.">
+  <title>Sống Tốt Hơn — Bảng nén &amp; Thẻ ghi nhớ (Compact / Flashcard)</title>
+  <link rel="canonical" href="https://spduyvn.github.io/TrickMeleeLiveBetter/compact/">
+  <link rel="manifest" href="<!-- BASE_PATH -->/manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/styles.css">
+  <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/settings.css">
+  <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/compact.css">
+  <script src="<!-- BASE_PATH -->/assets/settings.js"></script>
+</head>
+<body class="compact-mode-body">
+  <a class="skip-link" href="#main-compact">Bỏ qua điều hướng</a>
+
+  <header class="compact-header">
+    <div class="compact-header-in">
+      <a class="brand" href="<!-- BASE_PATH -->/" aria-label="Sống Tốt Hơn — Trang chủ">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Sống Tốt Hơn</span>
+      </a>
+      
+      <!-- Bộ chuyển đổi chế độ xem: Bảng dữ liệu vs Flashcard -->
+      <div class="compact-view-tabs" role="tablist">
+        <button type="button" class="compact-tab active" id="tab-table" role="tab" aria-selected="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 4h18v4H3zm0 6h18v10H3zm2 2v6h6v-6zm8 0v6h6v-6z"/></svg>
+          <span>Bảng nén dữ liệu</span>
+        </button>
+        <button type="button" class="compact-tab" id="tab-flashcard" role="tab" aria-selected="false">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4 6h16v12H4zm2 2v8h12V8zm-4 4h2v6H2z"/></svg>
+          <span>Thẻ ghi nhớ (Flashcard)</span>
+        </button>
+      </div>
+
+      <div class="compact-header-right">
+        <button type="button" class="sth-settings-btn" data-open-settings aria-label="Mở cài đặt">
+          <span>⚙️ Cài đặt</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="compact-main wrap" id="main-compact">
+    <!-- VIEW 1: BẢNG NÉN DỮ LIỆU -->
+    <section class="compact-view-section" id="view-table-section">
+      <div class="compact-toolbar">
+        <div class="compact-search-wrap">
+          <input type="search" id="compact-search" placeholder="Lọc nhanh 770 bài viết theo tên, chủ đề, chi phí…" autocomplete="off">
+        </div>
+        <div class="compact-filters">
+          <select id="compact-cat-filter" class="compact-select">
+            <option value="">Tất cả chủ đề</option>
+          </select>
+          <select id="compact-evidence-filter" class="compact-select">
+            <option value="">Mọi bằng chứng</option>
+            <option value="A">Mức A (Đồng thuận cao)</option>
+            <option value="B">Mức B (Nghiên cứu tốt)</option>
+            <option value="C">Mức C (Kinh nghiệm)</option>
+          </select>
+          <button type="button" id="compact-saved-only" class="compact-pill-btn" aria-pressed="false">★ Đã lưu</button>
+        </div>
+      </div>
+
+      <div class="compact-table-wrap">
+        <table class="compact-table" id="compact-table">
+          <thead>
+            <tr>
+              <th style="width: 50px;">STT</th>
+              <th>Chủ đề</th>
+              <th>Hướng dẫn &amp; Hành động cốt lõi</th>
+              <th style="width: 120px;">Bằng chứng</th>
+              <th style="width: 130px;">Chi phí</th>
+              <th style="width: 120px;">Thời gian</th>
+              <th style="width: 110px;">Thao tác</th>
+            </tr>
+          </thead>
+          <tbody id="compact-table-body">
+            <tr><td colspan="7" class="loading">Đang tải dữ liệu bảng nén…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compact-status-bar" id="compact-status-bar">Đang tải…</p>
+    </section>
+
+    <!-- VIEW 2: THẺ GHI NHỚ FLASHCARD -->
+    <section class="compact-view-section" id="view-flashcard-section" hidden>
+      <div class="flashcard-deck-header">
+        <div>
+          <h2>Luyện tập kiến thức &amp; Hành động thực tế</h2>
+          <p class="flashcard-deck-sub">Bấm vào thẻ hoặc nhấn <kbd>Phím cách (Space)</kbd> để lật mặt sau · Dùng <kbd>→</kbd> <kbd>←</kbd> để chuyển thẻ</p>
+        </div>
+        <div class="flashcard-controls">
+          <span class="flashcard-counter" id="fc-counter">0 / 0</span>
+          <button type="button" class="fc-nav-btn" id="fc-prev" aria-label="Thẻ trước">←</button>
+          <button type="button" class="fc-nav-btn" id="fc-next" aria-label="Thẻ tiếp theo">→</button>
+        </div>
+      </div>
+
+      <!-- Khung Flashcard lật 3D -->
+      <div class="flashcard-stage">
+        <div class="flashcard-card" id="flashcard-card" tabindex="0" role="button" aria-label="Lật thẻ ghi nhớ">
+          <!-- Mặt trước -->
+          <div class="flashcard-face flashcard-front">
+            <span class="fc-tag" id="fc-front-cat">Chủ đề</span>
+            <h3 class="fc-question" id="fc-front-title">Tiêu đề bài viết</h3>
+            <p class="fc-desc" id="fc-front-desc">Mô tả tình huống / vấn đề cần giải quyết</p>
+            <div class="fc-hint">💡 Bấm vào thẻ để xem hành động cốt lõi &amp; căn cứ</div>
+          </div>
+          <!-- Mặt sau -->
+          <div class="flashcard-face flashcard-back">
+            <span class="fc-tag fc-tag-back" id="fc-back-level">Bằng chứng: Mức B</span>
+            <h4 class="fc-back-title">Hành động cần làm:</h4>
+            <div class="fc-back-body" id="fc-back-body">Chi tiết hành động</div>
+            <div class="fc-back-meta">
+              <span id="fc-back-cost">Chi phí: Thấp</span>
+              <span id="fc-back-time">Thời gian: 15p</span>
+            </div>
+            <div class="fc-action-row">
+              <a href="#" id="fc-view-full" class="fc-full-link" target="_blank">Xem toàn bài hướng dẫn ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="<!-- BASE_PATH -->/"><span class="brand-mark" aria-hidden="true">S</span><span>Sống Tốt Hơn</span></a>
+      <p>Kiến thức để tham khảo, không thay thế tư vấn chuyên môn.</p>
+      <div>
+        <a href="<!-- BASE_PATH -->/?view=library">Thư viện</a>
+        <a href="<!-- BASE_PATH -->/guide/">Tra cứu nhanh</a>
+        <a href="<!-- BASE_PATH -->/reader/">Đọc tập trung</a>
+        <a href="<!-- BASE_PATH -->/dong-gop/">Đóng góp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="<!-- BASE_PATH -->/assets/reader-tools.js"></script>
+  <script src="<!-- BASE_PATH -->/assets/compact.js"></script>
+</body>
+</html>
+

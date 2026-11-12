@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f2">
+  <meta name="description" content="Sống Tốt Hơn — Chế độ Đọc tập trung (Reader Mode) tối giản, không phân tâm.">
+  <title>Sống Tốt Hơn — Chế độ Đọc tập trung (Reader Mode)</title>
+  <link rel="canonical" href="https://spduyvn.github.io/TrickMeleeLiveBetter/reader/">
+  <link rel="manifest" href="<!-- BASE_PATH -->/manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/styles.css">
+  <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/settings.css">
+  <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/reader.css">
+  <script src="<!-- BASE_PATH -->/assets/settings.js"></script>
+</head>
+<body class="reader-mode-body">
+  <a class="skip-link" href="#main-reader">Bỏ qua điều hướng</a>
+
+  <!-- Header đọc tối giản -->
+  <header class="reader-header">
+    <div class="reader-header-in">
+      <a class="brand" href="<!-- BASE_PATH -->/" aria-label="Sống Tốt Hơn — Trang chủ">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Sống Tốt Hơn</span>
+      </a>
+      <span class="reader-badge">Đọc tập trung</span>
+
+      <div class="reader-actions">
+        <!-- Bộ chọn bài viết nhanh -->
+        <select id="reader-category-select" class="reader-select" aria-label="Chọn chủ đề">
+          <option value="">Tất cả chủ đề</option>
+        </select>
+        <button type="button" class="sth-settings-btn" data-open-settings aria-label="Mở cài đặt">
+          <span>⚙️ Cài đặt</span>
+        </button>
+      </div>
+    </div>
+    <!-- Thanh tiến trình đọc trôi theo % cuộn -->
+    <div class="reader-progress-bar" id="reader-progress-bar" style="width: 0%;"></div>
+  </header>
+
+  <!-- Thanh công cụ nổi khi đọc (Floating controls) -->
+  <aside class="reader-floating-bar" id="reader-floating-bar" aria-label="Công cụ đọc nhanh">
+    <button type="button" id="rfb-toc" title="Mục lục bài viết" aria-label="Mục lục">📑</button>
+    <button type="button" id="rfb-font-down" title="Giảm cỡ chữ (A-)" aria-label="Giảm cỡ chữ">A-</button>
+    <button type="button" id="rfb-font-up" title="Tăng cỡ chữ (A+)" aria-label="Tăng cỡ chữ">A+</button>
+    <button type="button" id="rfb-font-family" title="Đổi phông Serif / Sans-serif" aria-label="Đổi phông">T</button>
+    <button type="button" id="rfb-save" title="Lưu bài viết" aria-label="Lưu bài">☆</button>
+    <button type="button" id="rfb-done" title="Đánh dấu đã áp dụng" aria-label="Đã áp dụng">✔</button>
+  </aside>
+
+  <!-- Drawer mục lục bài viết -->
+  <div class="reader-toc-drawer" id="reader-toc-drawer" hidden>
+    <div class="reader-toc-header">
+      <h3>Mục lục hướng dẫn</h3>
+      <button type="button" id="reader-toc-close" aria-label="Đóng mục lục">×</button>
+    </div>
+    <nav class="reader-toc-list" id="reader-toc-list"></nav>
+  </div>
+
+  <main class="reader-main" id="main-reader">
+    <!-- Khu vực danh sách hoặc xem chi tiết bài viết -->
+    <div class="reader-container">
+      <!-- Bộ tìm kiếm & filter nhanh -->
+      <div class="reader-filter-box">
+        <input type="search" id="reader-search" placeholder="Gõ từ khóa tìm bài đọc (VD: giấc ngủ, tài chính, rủi ro)…" autocomplete="off">
+        <div class="reader-filter-meta">
+          <span id="reader-article-count">Đang tải bài viết…</span>
+          <button type="button" id="reader-only-saved" class="reader-pill-btn" aria-pressed="false">★ Đã lưu</button>
+        </div>
+      </div>
+
+      <!-- Khung hiển thị nội dung đọc tập trung (1 cột) -->
+      <article class="reader-article-view" id="reader-article-view">
+        <p class="reader-loading">Đang tải kho bài viết…</p>
+      </article>
+
+      <!-- Phân trang / Bài trước - Bài sau -->
+      <nav class="reader-pagination" id="reader-pagination" hidden>
+        <button type="button" id="reader-prev-btn" class="reader-nav-btn">← Bài trước</button>
+        <button type="button" id="reader-next-btn" class="reader-nav-btn">Bài tiếp theo →</button>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="<!-- BASE_PATH -->/"><span class="brand-mark" aria-hidden="true">S</span><span>Sống Tốt Hơn</span></a>
+      <p>Kiến thức để tham khảo, không thay thế tư vấn chuyên môn.</p>
+      <div>
+        <a href="<!-- BASE_PATH -->/?view=library">Thư viện</a>
+        <a href="<!-- BASE_PATH -->/guide/">Tra cứu nhanh</a>
+        <a href="<!-- BASE_PATH -->/compact/">Bảng nén</a>
+        <a href="<!-- BASE_PATH -->/dong-gop/">Đóng góp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="<!-- BASE_PATH -->/assets/reader-tools.js"></script>
+  <script src="<!-- BASE_PATH -->/assets/reader.js"></script>
+</body>
+</html>
+
