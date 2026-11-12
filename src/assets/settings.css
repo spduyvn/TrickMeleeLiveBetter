@@ -17,21 +17,21 @@
 
 /* 1. Theme Tối */
 :root.dark {
-  --paper: #171b19 !important;
+  --paper: #121614 !important;
   --surface: #1e2421 !important;
-  --ink: #e2e8e5 !important;
-  --muted: #9aa8a1 !important;
-  --teal-dark: #63d4b6 !important;
-  --teal: #4cbfa0 !important;
-  --teal-pale: #22352f !important;
-  --line: #2e3a34 !important;
+  --ink: rgba(244, 246, 240, 0.90) !important;
+  --muted: rgba(218, 224, 217, 0.72) !important;
+  --teal-dark: #7ad8be !important;
+  --teal: #5cc9ab !important;
+  --teal-pale: rgba(92, 201, 171, 0.15) !important;
+  --line: #2d3632 !important;
   --sth-bg: #1e2421;
-  --sth-text: #e2e8e5;
-  --sth-muted: #9aa8a1;
-  --sth-line: #2e3a34;
+  --sth-text: rgba(244, 246, 240, 0.90);
+  --sth-muted: rgba(218, 224, 217, 0.72);
+  --sth-line: #2d3632;
   --sth-panel: #171b19;
-  --sth-primary: #4cbfa0;
-  --sth-primary-light: #22352f;
+  --sth-primary: #5cc9ab;
+  --sth-primary-light: rgba(92, 201, 171, 0.15);
   color-scheme: dark;
 }
 
