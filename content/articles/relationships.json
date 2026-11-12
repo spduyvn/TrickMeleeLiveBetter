@@ -12,7 +12,7 @@
       "sức khỏe sinh sản",
       "di truyền"
     ],
-    "cost": "Chi phí khoảng 1.500.000 – 3.000.000 VNĐ cho gói khám cơ bản tại các bệnh viện công lập",
+    "cost": "Chi phí khoảng 1.500.000 – 3.000.000 VNĐ cho gói khám cơ bản tại các bệnh viện công lập, gói nâng cao / chuyên sâu: khoảng 3.500.000 – 7.000.000 đồng/người (hoặc cao hơn nếu làm các xét nghiệm di truyền, nội tiết tố chi tiết cao hơn cho nữ và nữ chưa quan hệ)",
     "reading_time": "5 phút",
     "time": "Thực hiện trước ngày cưới tối thiểu 3 đến 6 tháng",
     "effort": "Thấp (chỉ cần dành 1 buổi sáng đi khám và làm xét nghiệm)",
@@ -54,7 +54,7 @@
         "accessed_at": "2026-11-10"
       }
     ],
-    "verified_at": null,
+    "verified_at": "2026-11-12",
     "review_status": "needs_review",
     "status_label": "Chờ rà soát",
     "last_updated": "2026-11-10"
