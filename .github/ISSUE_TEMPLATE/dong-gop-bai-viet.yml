@@ -1,0 +1,39 @@
+name: Đóng góp bài viết mới
+description: Đề xuất bài viết kiến thức thực tiễn mới cho cẩm nang Sống Tốt Hơn
+title: "[Đóng góp bài] "
+labels:
+  - article-submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã đóng góp nội dung cho **Sống Tốt Hơn**.
+        Nếu bạn gửi từ trang biểu mẫu `/dong-gop/`, thông tin đã được điền sẵn bên dưới.
+  - type: input
+    id: article_title
+    attributes:
+      label: Tiêu đề bài viết
+      placeholder: "Ví dụ: Cách kiểm tra bảo hiểm xã hội trên VssID"
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Danh mục (category id)
+      placeholder: "health | finance | time | safety | growth | relationships | law | wellbeing"
+    validations:
+      required: true
+  - type: input
+    id: contributor
+    attributes:
+      label: Bút danh / Người đóng góp (tùy chọn)
+      placeholder: "Tên hoặc @username"
+  - type: textarea
+    id: article_json
+    attributes:
+      label: Dữ liệu bài viết chuẩn JSON (tạo tự động từ /dong-gop/)
+      description: Dán khối JSON từ trang /dong-gop/ vào đây (nếu chưa được điền sẵn).
+      render: json
+    validations:
+      required: true
+

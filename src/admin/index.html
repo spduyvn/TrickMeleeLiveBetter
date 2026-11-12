@@ -33,6 +33,7 @@
     <div class="a-nav-r">
       <span class="a-user-badge" id="a-user-badge" hidden></span>
       <button type="button" class="a-btn a-btn-ghost" id="a-new-btn" hidden>+ Bài mới</button>
+      <button type="button" class="a-btn a-btn-ghost" id="a-import-btn" hidden>Nhập đóng góp</button>
       <button type="button" class="a-btn a-btn-ghost" id="a-batch-normalize-btn" hidden>Chuẩn hóa A/B/C</button>
       <button type="button" class="a-btn a-btn-ghost" id="a-build-btn" hidden>Build &amp; Kiểm tra</button>
       <a class="a-btn a-btn-ghost" href="<!-- BASE_PATH -->/?view=library">Thư viện</a>
@@ -381,6 +382,34 @@
       <div class="a-auth-actions">
         <button type="button" class="a-btn a-btn-ghost" id="a-new-cancel">Hủy</button>
         <button type="submit" class="a-btn a-btn-primary" id="a-new-submit">Tạo &amp; Mở trình biên tập</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="a-modal-mask" id="a-import-modal" hidden role="dialog" aria-modal="true" aria-labelledby="a-import-title">
+    <form class="a-modal-card a-modal-wide" id="a-import-form">
+      <div class="a-card-head">
+        <h2 id="a-import-title">Nhập bài đóng góp từ người đọc</h2>
+        <button type="button" class="a-btn a-btn-ghost" id="a-import-close">Đóng</button>
+      </div>
+      <div id="a-gh-issues-box" class="a-gh-issues-box" hidden>
+        <div class="a-card-head">
+          <strong style="font-size:13px">Hàng chờ GitHub Issues (<code>article-submission</code>)</strong>
+          <button type="button" class="a-btn a-btn-ghost" id="a-gh-issues-load">Tải danh sách Issue</button>
+        </div>
+        <div id="a-gh-issues-list" class="a-gh-issues-list"></div>
+      </div>
+      <label class="a-field">
+        <span>Chọn file JSON bài đóng góp (tùy chọn)</span>
+        <input type="file" id="a-import-file" accept=".json,application/json">
+      </label>
+      <label class="a-field">
+        <span>Hoặc dán JSON / nội dung từ GitHub Issue *</span>
+        <textarea id="a-import-raw" rows="8" required placeholder='{"title": "...", "category": "health", "description": "...", "body": "...", "sources": [...]}'></textarea>
+      </label>
+      <div class="a-auth-actions">
+        <button type="button" class="a-btn a-btn-ghost" id="a-import-cancel">Hủy</button>
+        <button type="submit" class="a-btn a-btn-primary" id="a-import-submit">Nhập &amp; Mở trình biên tập</button>
       </div>
     </form>
   </div>

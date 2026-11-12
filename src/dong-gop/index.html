@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f6b58">
+  <title>Đóng góp bài viết — Sống Tốt Hơn</title>
+  <meta name="description" content="Gửi bài viết kiến thức thực tiễn mới cho Sống Tốt Hơn qua biểu mẫu trực quan: hỗ trợ gửi bằng GitHub Issue hoặc tải JSON không cần tài khoản.">
+  <link rel="canonical" href="https://spduyvn.github.io/TrickMeleeLiveBetter/dong-gop/">
+  <link rel="manifest" href="<!-- BASE_PATH -->/manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/styles.css">
+  <link rel="stylesheet" href="<!-- BASE_PATH -->/assets/contribute.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  <header class="site-header">
+    <a class="brand" href="<!-- BASE_PATH -->/?view=library" aria-label="Sống Tốt Hơn — Trang chủ"><span class="brand-mark" aria-hidden="true">S</span><span>Sống Tốt Hơn</span></a>
+    <nav id="primary-nav" class="primary-nav" aria-label="Điều hướng chính">
+      <a href="<!-- BASE_PATH -->/?view=library#kham-pha">Thư viện</a>
+      <a href="<!-- BASE_PATH -->/guide/">Tra cứu nhanh</a>
+      <a href="<!-- BASE_PATH -->/sources/">Nguồn tham khảo</a>
+      <a href="<!-- BASE_PATH -->/method/">Phương pháp</a>
+    </nav>
+  </header>
+
+  <main id="main" class="section wrap c-page">
+    <div class="c-head">
+      <p class="eyebrow">CỘNG ĐỒNG ĐÓNG GÓP</p>
+      <h1>Đóng góp bài viết mới</h1>
+      <p class="c-lead">Điền biểu mẫu bên dưới để đề xuất một hướng dẫn thực tiễn cho độc giả Việt Nam. Bài gửi sẽ ở trạng thái <code>chờ rà soát</code> để ban biên tập kiểm chứng nguồn trước khi xuất bản.</p>
+      <div class="c-rules">
+        <strong>Nguyên tắc bắt buộc:</strong> Không tạo số liệu hay nguồn giả; thông tin y tế, pháp luật, giá cả cần dẫn link nguồn chính thống và ghi rõ giới hạn áp dụng tại Việt Nam.
+      </div>
+    </div>
+
+    <div class="c-alert" id="c-alert" role="alert" hidden></div>
+
+    <form id="c-form" class="c-form" novalidate>
+      <section class="c-card">
+        <h2>1. Thông tin cơ bản</h2>
+        <div class="c-grid-2">
+          <label class="c-field c-span-2">
+            <span>Tiêu đề bài viết *</span>
+            <input type="text" name="title" required placeholder="Ví dụ: Cách tra cứu quá trình đóng BHXH trên ứng dụng VssID">
+          </label>
+          <label class="c-field">
+            <span>Danh mục *</span>
+            <select name="category" id="c-category" required>
+              <option value="">Đang tải danh mục…</option>
+            </select>
+          </label>
+          <label class="c-field">
+            <span>Thẻ từ khóa (phân cách bằng dấu phẩy)</span>
+            <input type="text" name="tags" placeholder="bhxh, dịch vụ công, việt nam">
+          </label>
+          <label class="c-field c-span-2">
+            <span>Tóm tắt ngắn 1–2 câu *</span>
+            <textarea name="description" rows="2" required placeholder="Nêu rõ bài viết giúp giải quyết vấn đề gì và giá trị thực tế cho người Việt."></textarea>
+          </label>
+        </div>
+      </section>
+
+      <section class="c-card">
+        <h2>2. Thông tin áp dụng</h2>
+        <div class="c-grid-2">
+          <label class="c-field">
+            <span>Chi phí ước tính</span>
+            <input type="text" name="cost" placeholder="Ví dụ: Miễn phí / ~100.000đ">
+          </label>
+          <label class="c-field">
+            <span>Thời gian áp dụng</span>
+            <input type="text" name="time" placeholder="Ví dụ: 10 phút / Duy trì hằng ngày">
+          </label>
+          <label class="c-field">
+            <span>Công sức thực hiện</span>
+            <input type="text" name="effort" placeholder="Ví dụ: Thấp / Trung bình / Cao">
+          </label>
+          <label class="c-field">
+            <span>Thời lượng đọc</span>
+            <input type="text" name="reading_time" value="3 phút" placeholder="3 phút">
+          </label>
+          <label class="c-field c-span-2">
+            <span>Lợi ích chính (mỗi dòng 1 ý)</span>
+            <textarea name="benefits" rows="3" placeholder="Phát hiện sớm sai sót quá trình đóng&#10;Không cần đi lại trực tiếp"></textarea>
+          </label>
+          <label class="c-field">
+            <span>Rủi ro &amp; lưu ý (mỗi dòng 1 ý)</span>
+            <textarea name="risks" rows="3" placeholder="Cần tài khoản định danh VNeID hoặc mã số BHXH"></textarea>
+          </label>
+          <label class="c-field">
+            <span>Đối tượng phù hợp (mỗi dòng 1 nhóm)</span>
+            <textarea name="target_groups" rows="3" placeholder="Người lao động&#10;Người tham gia BHXH tự nguyện"></textarea>
+          </label>
+        </div>
+      </section>
+
+      <section class="c-card">
+        <h2>3. Nội dung chi tiết &amp; Bối cảnh Việt Nam</h2>
+        <div class="c-grid-1">
+          <label class="c-field">
+            <span>Nội dung hướng dẫn chi tiết * (có thể viết các bước 1., 2., 3. để tự tạo checklist)</span>
+            <textarea name="body" rows="8" required placeholder="1. Chuẩn bị mã số BHXH hoặc tài khoản VNeID...&#10;2. Đăng nhập và chọn mục Quá trình tham gia..."></textarea>
+          </label>
+          <label class="c-field">
+            <span>Ghi chú bằng chứng &amp; giới hạn áp dụng tại Việt Nam</span>
+            <textarea name="evidence_notes" rows="3" placeholder="Ghi rõ cơ quan ban hành, năm hiệu lực hoặc phạm vi áp dụng nếu trích nguồn quốc tế."></textarea>
+          </label>
+          <label class="c-field">
+            <span>Bút danh / Tên người đóng góp (tùy chọn)</span>
+            <input type="text" name="contributor" placeholder="Để trống nếu muốn ẩn danh">
+          </label>
+        </div>
+      </section>
+
+      <section class="c-card">
+        <div class="c-card-head">
+          <h2>4. Nguồn tham khảo chính thống * (tối thiểu 1 nguồn có link)</h2>
+          <button type="button" class="c-btn c-btn-ghost" id="c-add-src">+ Thêm nguồn</button>
+        </div>
+        <div id="c-sources-list" class="c-sources-list"></div>
+      </section>
+
+      <section class="c-card c-submit-card">
+        <h2>5. Gửi bài đóng góp</h2>
+        <div class="c-submit-grid">
+          <div class="c-channel">
+            <h3>Kênh 1: Có tài khoản GitHub (Khuyên dùng)</h3>
+            <p>Tự động mở trang tạo Issue trên GitHub với toàn bộ nội dung bài đã chuẩn hóa.</p>
+            <button type="button" class="c-btn c-btn-primary" id="c-submit-gh">Gửi qua GitHub Issue ↗</button>
+          </div>
+          <div class="c-channel">
+            <h3>Kênh 2: Không có tài khoản GitHub</h3>
+            <p>Tải tệp JSON chuẩn về máy hoặc gửi trực tiếp qua biểu mẫu ngoài / email ban biên tập.</p>
+            <div class="c-btn-row">
+              <button type="button" class="c-btn c-btn-secondary" id="c-submit-ext" hidden>Gửi trực tiếp ngay</button>
+              <button type="button" class="c-btn c-btn-secondary" id="c-download-json">Tải file .json</button>
+              <button type="button" class="c-btn c-btn-ghost" id="c-copy-json">Copy JSON</button>
+              <button type="button" class="c-btn c-btn-ghost" id="c-mailto-btn">Gửi qua Email</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <details class="c-preview-wrap">
+        <summary>Xem trước dữ liệu JSON chuẩn sẽ gửi</summary>
+        <pre class="c-json-pre" id="c-json-pre">{}</pre>
+      </details>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="<!-- BASE_PATH -->/?view=library"><span class="brand-mark" aria-hidden="true">S</span><span>Sống Tốt Hơn</span></a>
+      <p>Kiến thức để tham khảo, không thay thế tư vấn chuyên môn.</p>
+      <div><a href="<!-- BASE_PATH -->/sources/">Nguồn tham khảo</a><a href="<!-- BASE_PATH -->/method/">Phương pháp</a></div>
+    </div>
+  </footer>
+
+  <script src="<!-- BASE_PATH -->/assets/reader-tools.js" defer></script>
+  <script src="<!-- BASE_PATH -->/assets/contribute.js" defer></script>
+</body>
+</html>
+

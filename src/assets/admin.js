@@ -949,6 +949,223 @@
     }
   }
 
+  function closeImportModal() {
+    const modal = document.getElementById('a-import-modal');
+    if (modal) modal.hidden = true;
+  }
+
+  function extractContributionJson(raw) {
+    const text = String(raw || '').trim();
+    if (!text) throw new Error('Chưa có nội dung JSON để nhập.');
+
+    const candidates = [text];
+    const fenceMatch = text.match(/```(?:json)?\s*([\s\S]*?)```/i);
+    if (fenceMatch && fenceMatch[1]) {
+      candidates.unshift(fenceMatch[1].trim());
+    }
+    const firstBrace = text.indexOf('{');
+    const lastBrace = text.lastIndexOf('}');
+    if (firstBrace !== -1 && lastBrace > firstBrace) {
+      candidates.push(text.slice(firstBrace, lastBrace + 1));
+    }
+
+    for (const candidate of candidates) {
+      try {
+        const parsed = JSON.parse(candidate);
+        if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+          return parsed;
+        }
+      } catch (_) {
+        // try next candidate
+      }
+    }
+    throw new Error('Không phân tích được JSON bài viết hợp lệ.');
+  }
+
+  async function handleLoadGithubIssues() {
+    if (state.mode !== 'github' || !state.gh) return;
+    const btn = document.getElementById('a-gh-issues-load');
+    const listEl = document.getElementById('a-gh-issues-list');
+    if (!btn || !listEl) return;
+
+    btn.disabled = true;
+    btn.textContent = 'Đang tải…';
+    listEl.innerHTML = '';
+    try {
+      const { token, owner, repo } = state.gh;
+      const issues = await ghJson(
+        `https://api.github.com/repos/${owner}/${repo}/issues?labels=article-submission&state=open&per_page=20`,
+        token
+      );
+      if (!Array.isArray(issues) || !issues.length) {
+        listEl.innerHTML = '<div class="a-gh-empty">Chưa có GitHub Issue đóng góp nào đang mở.</div>';
+        return;
+      }
+      for (const issue of issues) {
+        const itemBtn = document.createElement('button');
+        itemBtn.type = 'button';
+        itemBtn.className = 'a-gh-issue-btn';
+        const author = issue.user?.login ? `@${issue.user.login}` : 'độc giả';
+        itemBtn.textContent = `#${issue.number} · ${issue.title} (${author})`;
+        itemBtn.addEventListener('click', () => {
+          const rawEl = document.getElementById('a-import-raw');
+          if (!rawEl) return;
+          try {
+            const extracted = extractContributionJson(issue.body || '');
+            rawEl.value = JSON.stringify(extracted, null, 2);
+          } catch (_) {
+            const fallback = {
+              title: String(issue.title || '').replace(/^\[Đóng góp\]\s*/i, '').trim(),
+              category: 'song-hieu-qua',
+              description: 'Bài viết đóng góp từ GitHub Issue #' + issue.number,
+              body: String(issue.body || '').trim(),
+            };
+            rawEl.value = JSON.stringify(fallback, null, 2);
+          }
+          showToast(`Đã nạp Issue #${issue.number} vào khung JSON.`, 'ok');
+        });
+        listEl.appendChild(itemBtn);
+      }
+    } catch (err) {
+      listEl.innerHTML = `<div class="a-gh-empty">Lỗi tải Issue: ${escapeHtml(err.message)}</div>`;
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Tải Issue đóng góp';
+    }
+  }
+
+  async function handleImportSubmit(ev) {
+    ev.preventDefault();
+    const rawEl = document.getElementById('a-import-raw');
+    const btn = document.getElementById('a-import-submit');
+    if (!rawEl || !btn) return;
+
+    let payload;
+    try {
+      payload = extractContributionJson(rawEl.value);
+    } catch (err) {
+      showToast(err.message, 'err');
+      return;
+    }
+
+    const title = String(payload.title || '').trim();
+    const category = String(payload.category || '').trim();
+    const description = String(payload.description || '').trim();
+    if (!title || !category || !description) {
+      showToast('JSON cần có đủ title, category và description.', 'err');
+      return;
+    }
+
+    const normalizedPayload = {
+      ...payload,
+      title,
+      category,
+      description,
+      review_status: 'needs_review',
+    };
+
+    btn.disabled = true;
+    btn.textContent = 'Đang nhập…';
+    try {
+      if (state.mode === 'local') {
+        const resp = await fetch('/api/article/create', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(normalizedPayload),
+        });
+        if (resp.status === 401) {
+          closeImportModal();
+          showAuthLock('Phiên đăng nhập đã hết hạn.');
+          return;
+        }
+        const data = await resp.json();
+        if (!resp.ok || !data.ok) throw new Error(data.error || 'Không thể nhập bài viết.');
+        state.articles.unshift(data.article);
+        closeImportModal();
+        rawEl.value = '';
+        const fileEl = document.getElementById('a-import-file');
+        if (fileEl) fileEl.value = '';
+        updateCounters();
+        applyQueueFilters();
+        selectArticle(data.article.id, true);
+        showToast(`Đã nhập bài đóng góp ${data.article.id} (${data.article._file}).`, 'ok');
+      } else if (state.mode === 'github' && state.gh) {
+        const usedIds = new Set(state.articles.map((a) => a.id));
+        const usedSlugs = new Set(state.articles.map((a) => a.slug));
+        const baseSlug = slugifyVi(title);
+        let slug = baseSlug;
+        let seq = 2;
+        while (usedSlugs.has(slug)) { slug = `${baseSlug}-${seq}`; seq += 1; }
+        let id = `${category}-${baseSlug}`;
+        let idSeq = 2;
+        while (usedIds.has(id)) { id = `${category}-${baseSlug}-${idSeq}`; idSeq += 1; }
+
+        const targetFile = state.files.includes(`${category}.json`) ? `${category}.json` : (state.files[0] || `${category}.json`);
+        const today = todayISO();
+        const newArticle = {
+          id,
+          slug,
+          title,
+          category,
+          tags: Array.isArray(normalizedPayload.tags) ? normalizedPayload.tags : [],
+          cost: normalizedPayload.cost ?? null,
+          reading_time: normalizedPayload.reading_time || '3 phút',
+          time: normalizedPayload.time ?? null,
+          effort: normalizedPayload.effort ?? null,
+          benefits: Array.isArray(normalizedPayload.benefits) ? normalizedPayload.benefits : [],
+          risks: Array.isArray(normalizedPayload.risks) ? normalizedPayload.risks : [],
+          target_groups: Array.isArray(normalizedPayload.target_groups) && normalizedPayload.target_groups.length
+            ? normalizedPayload.target_groups
+            : ['Mọi người'],
+          value_level: normalizedPayload.value_level || 'Cao',
+          evidence_level: normalizedPayload.evidence_level || 'B',
+          evidence_notes: normalizedPayload.evidence_notes || '',
+          description,
+          body: normalizedPayload.body || '',
+          sources: Array.isArray(normalizedPayload.sources) ? normalizedPayload.sources : [],
+          verified_at: null,
+          review_status: 'needs_review',
+          status_label: 'Cần rà soát',
+          last_updated: today,
+        };
+
+        const list = [newArticle, ...(state.gh.fileLists.get(targetFile) || [])];
+        const { token, owner, repo, branch } = state.gh;
+        const res = await ghJson(
+          `https://api.github.com/repos/${owner}/${repo}/contents/content/articles/${encodeURIComponent(targetFile)}`,
+          token,
+          {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              message: `admin(import): ${id}`,
+              content: utf8ToBase64(JSON.stringify(list, null, 2) + '\n'),
+              sha: state.gh.fileShas.get(targetFile),
+              branch,
+            }),
+          }
+        );
+        if (res?.content?.sha) state.gh.fileShas.set(targetFile, res.content.sha);
+        state.gh.fileLists.set(targetFile, list);
+        const stored = { ...newArticle, _file: targetFile };
+        state.articles.unshift(stored);
+        closeImportModal();
+        rawEl.value = '';
+        const fileEl = document.getElementById('a-import-file');
+        if (fileEl) fileEl.value = '';
+        updateCounters();
+        applyQueueFilters();
+        selectArticle(stored.id, true);
+        showToast(`Đã nhập & commit bài đóng góp ${stored.id} lên ${targetFile}.`, 'ok');
+      }
+    } catch (err) {
+      showToast(`Lỗi nhập bài: ${err.message}`, 'err');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Nhập vào hàng đợi duyệt';
+    }
+  }
+
   function downloadJson(filename, obj) {
     const blob = new Blob([JSON.stringify(obj, null, 2) + '\n'], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
@@ -1183,6 +1400,31 @@
       if (ev.target.id === 'a-new-modal') closeNewArticleModal();
     });
     document.getElementById('a-new-form')?.addEventListener('submit', handleCreateArticle);
+    document.getElementById('a-import-btn')?.addEventListener('click', () => {
+      const ghBox = document.getElementById('a-gh-issues-box');
+      if (ghBox) ghBox.hidden = state.mode !== 'github';
+      const modal = document.getElementById('a-import-modal');
+      if (modal) modal.hidden = false;
+      document.getElementById('a-import-raw')?.focus();
+    });
+    document.getElementById('a-import-close')?.addEventListener('click', closeImportModal);
+    document.getElementById('a-import-cancel')?.addEventListener('click', closeImportModal);
+    document.getElementById('a-import-modal')?.addEventListener('click', (ev) => {
+      if (ev.target.id === 'a-import-modal') closeImportModal();
+    });
+    document.getElementById('a-import-file')?.addEventListener('change', async (ev) => {
+      const file = ev.currentTarget.files?.[0];
+      if (!file) return;
+      try {
+        const text = await file.text();
+        const rawEl = document.getElementById('a-import-raw');
+        if (rawEl) rawEl.value = text;
+      } catch (err) {
+        showToast(`Không đọc được file: ${err.message}`, 'err');
+      }
+    });
+    document.getElementById('a-gh-issues-load')?.addEventListener('click', handleLoadGithubIssues);
+    document.getElementById('a-import-form')?.addEventListener('submit', handleImportSubmit);
     document.getElementById('a-batch-normalize-btn')?.addEventListener('click', handleBatchNormalize);
 
     window.addEventListener('beforeunload', (ev) => {
@@ -1219,8 +1461,10 @@
     document.getElementById('a-user-badge').hidden = true;
     document.getElementById('a-build-btn').hidden = true;
     document.getElementById('a-new-btn').hidden = true;
+    document.getElementById('a-import-btn').hidden = true;
     document.getElementById('a-batch-normalize-btn').hidden = true;
     document.getElementById('a-progress-wrap').hidden = true;
+    closeImportModal();
 
     const badge = document.getElementById('a-mode-badge');
     badge.classList.remove('local', 'static');
@@ -1277,6 +1521,7 @@
     document.getElementById('a-logout-btn').hidden = false;
     document.getElementById('a-build-btn').hidden = !showBuild;
     document.getElementById('a-new-btn').hidden = false;
+    document.getElementById('a-import-btn').hidden = false;
     document.getElementById('a-batch-normalize-btn').hidden = !showBuild;
     document.getElementById('a-progress-wrap').hidden = false;
 

@@ -331,7 +331,7 @@ function renderArticleHtmlPage(article, category, relatedArticles) {
 }
 
 function buildSitemapXml(categories, publishedArticles) {
-  const staticPaths = ['/', '/guide/', '/category/', '/article/', '/sources/', '/method/', '/EVIDENCE_GRADING.html', '/CONTRIBUTING.html'];
+  const staticPaths = ['/', '/guide/', '/dong-gop/', '/category/', '/article/', '/sources/', '/method/', '/EVIDENCE_GRADING.html', '/CONTRIBUTING.html'];
   const urls = [];
   for (const p of staticPaths) {
     urls.push(`  <url><loc>${SITE_ORIGIN}${p}</loc></url>`);
@@ -433,6 +433,8 @@ for (const pathname of [
   'assets/admin.js',
   'assets/reader-tools.js',
   'assets/article-page.js',
+  'assets/contribute.css',
+  'assets/contribute.js',
   'manifest.webmanifest',
   'sw.js',
   'data/catalog.json',
@@ -440,6 +442,7 @@ for (const pathname of [
   'category/index.html',
   'article/index.html',
   'guide/index.html',
+  'dong-gop/index.html',
   'admin/index.html',
   'sources/index.html',
   'method/index.html',
