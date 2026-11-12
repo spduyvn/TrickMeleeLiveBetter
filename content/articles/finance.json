@@ -176,10 +176,10 @@
         "accessed_at": "2026-11-10"
       }
     ],
-    "verified_at": null,
-    "review_status": "needs_review",
-    "status_label": "Chờ rà soát",
-    "last_updated": "2026-11-10"
+    "verified_at": "2026-11-12",
+    "review_status": "verified",
+    "status_label": "Đã xác minh",
+    "last_updated": "2026-11-12"
   },
   {
     "id": "finance-budget-rule-004",
