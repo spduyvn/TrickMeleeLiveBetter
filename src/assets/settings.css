@@ -1,61 +1,114 @@
 @charset "UTF-8";
 
 /* ========================================================
-   settings.css — Popup Modal Cài đặt & Tùy biến toàn trang
+   settings.css — Tùy chỉnh hiển thị & Trải nghiệm đọc
    ======================================================== */
 
-/* CSS Variables theo theme & accent */
+/* CSS Variables cho Theme Sáng / Tối / Sepia & Tương phản */
 :root {
-  --sth-modal-bg: #ffffff;
-  --sth-modal-text: #1d2724;
-  --sth-modal-muted: #586660;
-  --sth-modal-line: #dde4dc;
-  --sth-modal-panel: #f8f7f2;
-  --sth-accent-emerald: #0f6b58;
-  --sth-accent-emerald-light: #e5f1ec;
-  --sth-accent-ocean: #1765a3;
-  --sth-accent-ocean-light: #e6f1fa;
-  --sth-accent-amber: #b26514;
-  --sth-accent-amber-light: #faefe4;
+  --sth-bg: #ffffff;
+  --sth-text: #1d2724;
+  --sth-muted: #586660;
+  --sth-line: #dde4dc;
+  --sth-panel: #f8f7f2;
+  --sth-primary: #0f6b58;
+  --sth-primary-light: #e5f1ec;
 }
 
-/* Đổi màu nhấn linh hoạt */
-:root[data-sth-accent="ocean"] {
-  --teal: var(--sth-accent-ocean) !important;
-  --teal-dark: #0f4877 !important;
-  --teal-pale: var(--sth-accent-ocean-light) !important;
-}
-:root[data-sth-accent="amber"] {
-  --teal: var(--sth-accent-amber) !important;
-  --teal-dark: #824709 !important;
-  --teal-pale: var(--sth-accent-amber-light) !important;
+/* 1. Theme Tối */
+:root.dark {
+  --paper: #171b19 !important;
+  --surface: #1e2421 !important;
+  --ink: #e2e8e5 !important;
+  --muted: #9aa8a1 !important;
+  --teal-dark: #63d4b6 !important;
+  --teal: #4cbfa0 !important;
+  --teal-pale: #22352f !important;
+  --line: #2e3a34 !important;
+  --sth-bg: #1e2421;
+  --sth-text: #e2e8e5;
+  --sth-muted: #9aa8a1;
+  --sth-line: #2e3a34;
+  --sth-panel: #171b19;
+  --sth-primary: #4cbfa0;
+  --sth-primary-light: #22352f;
+  color-scheme: dark;
 }
 
-/* Cỡ chữ toàn trang */
-:root[data-sth-font-size="90"] { font-size: 14.5px; }
-:root[data-sth-font-size="100"] { font-size: 16px; }
-:root[data-sth-font-size="115"] { font-size: 18.4px; }
-:root[data-sth-font-size="130"] { font-size: 20.8px; }
+/* 2. Theme Sepia (Vàng sách ấm dịu mắt) */
+:root.sepia {
+  --paper: #f4ecd8 !important;
+  --surface: #fbf5e6 !important;
+  --ink: #382e21 !important;
+  --muted: #706352 !important;
+  --teal-dark: #1e4d3f !important;
+  --teal: #1f5f4f !important;
+  --teal-pale: #e7dfca !important;
+  --line: #dfd4bc !important;
+  --sth-bg: #fbf5e6;
+  --sth-text: #382e21;
+  --sth-muted: #706352;
+  --sth-line: #dfd4bc;
+  --sth-panel: #f4ecd8;
+  --sth-primary: #1f5f4f;
+  --sth-primary-light: #e7dfca;
+  color-scheme: light;
+}
 
-/* Phông chữ */
-:root[data-sth-font="serif"] body,
-:root[data-sth-font="serif"] .hero-copy,
-:root[data-sth-font="serif"] .article-body,
-:root[data-sth-font="serif"] .prose-page {
+/* 3. Tương phản cao (High Contrast) */
+:root.contrast-high {
+  --ink: #000000 !important;
+  --muted: #222222 !important;
+  --sth-text: #000000 !important;
+  --sth-muted: #222222 !important;
+}
+
+:root.dark.contrast-high {
+  --ink: #ffffff !important;
+  --muted: #dddddd !important;
+  --sth-text: #ffffff !important;
+  --sth-muted: #dddddd !important;
+}
+
+/* 4. Cỡ chữ toàn hệ thống */
+:root[data-font-size="90"] { font-size: 14.5px; }
+:root[data-font-size="100"] { font-size: 16px; }
+:root[data-font-size="115"] { font-size: 18.4px; }
+:root[data-font-size="130"] { font-size: 20.8px; }
+
+/* 5. Kiểu phông chữ */
+:root[data-font="serif"] body,
+:root[data-font="serif"] .hero-copy,
+:root[data-font="serif"] .article-body,
+:root[data-font="serif"] .prose-page,
+:root[data-font="serif"] p {
   font-family: 'Merriweather', 'Georgia', serif !important;
 }
 
-/* Dark mode cho Modal */
-:root.dark {
-  --sth-modal-bg: #1e2422;
-  --sth-modal-text: #e1e7e4;
-  --sth-modal-muted: #9aa8a1;
-  --sth-modal-line: #313c38;
-  --sth-modal-panel: #161b19;
+/* Nút Aa trên Header */
+.sth-btn-aa {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--teal);
+  font-size: .84rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .15s ease;
+  white-space: nowrap;
 }
 
-/* Modal Popup container */
-.sth-settings-modal {
+.sth-btn-aa:hover {
+  background: var(--teal-pale);
+  border-color: var(--teal);
+}
+
+/* Modal Overlay */
+.sth-modal-overlay {
   position: fixed;
   inset: 0;
   z-index: 99999;
@@ -63,435 +116,213 @@
   align-items: center;
   justify-content: center;
   padding: 16px;
+  background: rgba(10, 20, 16, 0.6);
+  backdrop-filter: blur(5px);
+  animation: sthFade .2s ease;
 }
 
-.sth-settings-modal[hidden] {
+.sth-modal-overlay[hidden] {
   display: none !important;
 }
 
-.sth-modal-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(10, 20, 16, 0.65);
-  backdrop-filter: blur(6px);
-  animation: sthFadeIn .2s ease;
-}
-
-.sth-modal-content {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 680px;
-  max-height: 88vh;
-  border-radius: 16px;
-  background: var(--sth-modal-bg);
-  color: var(--sth-modal-text);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
-  border: 1px solid var(--sth-modal-line);
-  animation: sthSlideUp .22s cubic-bezier(0.16, 1, 0.3, 1);
-  overflow: hidden;
-}
-
-@keyframes sthFadeIn {
+@keyframes sthFade {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-@keyframes sthSlideUp {
-  from { opacity: 0; transform: translateY(18px) scale(0.98); }
+.sth-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  background: var(--sth-bg);
+  color: var(--sth-text);
+  border: 1px solid var(--sth-line);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  animation: sthPop .2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes sthPop {
+  from { opacity: 0; transform: translateY(14px) scale(0.98); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* Header */
-.sth-modal-header {
+.sth-modal-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 24px;
-  border-bottom: 1px solid var(--sth-modal-line);
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--sth-line);
 }
 
-.sth-modal-title-wrap {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.sth-modal-icon {
-  font-size: 1.35rem;
-}
-
-.sth-modal-header h2 {
+.sth-modal-top h2 {
   margin: 0;
-  font-size: 1.18rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: inherit;
 }
 
-.sth-modal-close {
+.sth-modal-x {
   display: grid;
   place-items: center;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   border: 0;
-  border-radius: 8px;
+  border-radius: 6px;
   background: transparent;
-  color: var(--sth-modal-muted);
-  font-size: 1.6rem;
+  color: var(--sth-muted);
+  font-size: 1.5rem;
   line-height: 1;
   cursor: pointer;
-  transition: background .15s, color .15s;
 }
 
-.sth-modal-close:hover {
-  background: var(--sth-modal-panel);
-  color: var(--sth-modal-text);
+.sth-modal-x:hover {
+  background: var(--sth-panel);
+  color: var(--sth-text);
 }
 
-/* Body */
-.sth-modal-body {
-  padding: 20px 24px;
+.sth-modal-content {
+  padding: 20px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
-.sth-setting-section {
+.sth-setting-block {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
-.sth-setting-section h3 {
-  margin: 0;
-  font-size: .95rem;
+.sth-setting-label {
+  font-size: .8rem;
   font-weight: 750;
   text-transform: uppercase;
-  letter-spacing: .06em;
-  color: var(--teal);
+  letter-spacing: .05em;
+  color: var(--sth-muted);
 }
 
-.sth-setting-desc {
-  margin: 0;
-  font-size: .84rem;
-  color: var(--sth-modal-muted);
-}
-
-/* Cards chọn UI */
-.sth-ui-cards {
+.sth-setting-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
-.sth-ui-card {
-  position: relative;
-  display: block;
+/* Segmented Buttons */
+.sth-segmented {
+  display: flex;
+  padding: 3px;
+  border-radius: 8px;
+  background: var(--sth-panel);
+  border: 1px solid var(--sth-line);
+  gap: 3px;
+}
+
+.sth-segmented button {
+  flex: 1;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--sth-muted);
+  font-size: .82rem;
+  font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
+  transition: all .12s;
 }
 
-.sth-ui-card input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
+.sth-segmented button:hover {
+  color: var(--sth-text);
 }
 
-.sth-ui-card-in {
+.sth-segmented button.active {
+  background: var(--sth-bg);
+  color: var(--sth-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-weight: 750;
+}
+
+/* Radio Group */
+.sth-radio-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  height: 100%;
-  padding: 14px;
-  border: 2px solid var(--sth-modal-line);
-  border-radius: 12px;
-  background: var(--sth-modal-panel);
-  transition: border-color .15s, box-shadow .15s, transform .15s;
-}
-
-.sth-ui-card:hover .sth-ui-card-in {
-  border-color: var(--teal);
-  transform: translateY(-1px);
-}
-
-.sth-ui-card input:checked + .sth-ui-card-in {
-  border-color: var(--teal);
-  background: var(--teal-pale);
-  box-shadow: 0 4px 12px rgba(15, 107, 88, 0.12);
-}
-
-.sth-ui-badge {
-  align-self: flex-start;
-  padding: 2px 7px;
-  border-radius: 999px;
-  font-size: .68rem;
-  font-weight: 700;
-  background: var(--sth-modal-bg);
-  color: var(--teal);
-  border: 1px solid var(--sth-modal-line);
-}
-
-.sth-ui-card-in strong {
-  font-size: .92rem;
-  font-weight: 700;
-}
-
-.sth-ui-card-in span {
-  font-size: .78rem;
-  color: var(--sth-modal-muted);
-  line-height: 1.45;
-}
-
-.sth-quick-link {
-  margin-top: auto;
-  font-size: .78rem;
-  font-weight: 700;
-  color: var(--teal);
-  text-decoration: none;
-}
-
-.sth-quick-link:hover {
-  text-decoration: underline;
-}
-
-.sth-checkbox-row {
-  display: inline-flex;
-  align-items: center;
   gap: 8px;
-  margin-top: 4px;
-  font-size: .84rem;
-  cursor: pointer;
-  color: var(--sth-modal-muted);
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--sth-panel);
+  border: 1px solid var(--sth-line);
 }
 
-.sth-checkbox-row input {
-  accent-color: var(--teal);
+.sth-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: .86rem;
+  color: var(--sth-text);
+  cursor: pointer;
+}
+
+.sth-radio-label input {
+  accent-color: var(--sth-primary);
   width: 16px;
   height: 16px;
 }
 
-/* Option Grids */
-.sth-option-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.sth-field-label {
-  display: block;
-  margin-bottom: 7px;
-  font-size: .8rem;
-  font-weight: 700;
-  color: var(--sth-modal-muted);
-}
-
-/* Segmented Control Buttons */
-.sth-seg-control {
-  display: flex;
-  padding: 3px;
-  border-radius: 8px;
-  background: var(--sth-modal-panel);
-  border: 1px solid var(--sth-modal-line);
-  gap: 3px;
-}
-
-.sth-seg-control button {
-  flex: 1;
-  padding: 6px 8px;
-  border: 0;
-  border-radius: 6px;
-  background: transparent;
-  color: var(--sth-modal-muted);
-  font-size: .8rem;
-  font-weight: 600;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: background .12s, color .12s;
-}
-
-.sth-seg-control button:hover {
-  color: var(--sth-modal-text);
-}
-
-.sth-seg-control button.active {
-  background: var(--sth-modal-bg);
-  color: var(--teal);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  font-weight: 700;
-}
-
-/* Color Accent Row */
-.sth-color-row {
-  display: flex;
-  gap: 10px;
-}
-
-.sth-color-btn {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: transform .12s, box-shadow .12s;
-}
-
-.sth-color-btn:hover {
-  transform: scale(1.08);
-}
-
-.sth-color-btn.active {
-  border-color: var(--sth-modal-text);
-  box-shadow: 0 0 0 2px var(--sth-modal-bg);
-}
-
-.sth-c-emerald { background: #0f6b58; }
-.sth-c-ocean { background: #1765a3; }
-.sth-c-amber { background: #b26514; }
-
-/* Data box */
-.sth-data-box {
+/* Footer */
+.sth-modal-bot {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 14px 16px;
-  border: 1px solid var(--sth-modal-line);
-  border-radius: 10px;
-  background: var(--sth-modal-panel);
+  padding: 14px 20px;
+  border-top: 1px solid var(--sth-line);
+  background: var(--sth-panel);
 }
 
-.sth-data-stats {
-  display: flex;
-  gap: 16px;
-  font-size: .84rem;
-  color: var(--sth-modal-muted);
-}
-
-.sth-data-stats strong {
-  color: var(--teal);
-}
-
-.sth-data-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.sth-btn-outline {
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 12px;
-  border: 1px solid var(--sth-modal-line);
-  border-radius: 6px;
-  background: var(--sth-modal-bg);
-  color: var(--sth-modal-text);
-  font-size: .8rem;
-  font-weight: 600;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.sth-btn-outline:hover {
-  border-color: var(--teal);
-  color: var(--teal);
-}
-
-.sth-btn-text-danger {
+.sth-btn-reset {
   padding: 6px 10px;
   border: 0;
   background: transparent;
-  color: #c0392b;
-  font-size: .78rem;
+  color: var(--sth-muted);
+  font-size: .8rem;
   font-weight: 600;
   cursor: pointer;
 }
 
-.sth-btn-text-danger:hover {
+.sth-btn-reset:hover {
+  color: #c0392b;
   text-decoration: underline;
 }
 
-/* Footer */
-.sth-modal-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 24px;
-  border-top: 1px solid var(--sth-modal-line);
-  background: var(--sth-modal-panel);
-}
-
-.sth-modal-hint {
-  font-size: .76rem;
-  color: var(--sth-modal-muted);
-}
-
-.sth-modal-hint kbd {
-  display: inline-block;
-  padding: 2px 5px;
-  border: 1px solid var(--sth-modal-line);
-  border-radius: 4px;
-  background: var(--sth-modal-bg);
-  font-size: .7rem;
-  font-family: inherit;
-}
-
-.sth-btn-primary {
-  padding: 8px 18px;
+.sth-btn-done {
+  padding: 7px 18px;
   border: 0;
-  border-radius: 8px;
-  background: var(--teal);
+  border-radius: 7px;
+  background: var(--sth-primary);
   color: #ffffff;
-  font-size: .85rem;
+  font-size: .84rem;
   font-weight: 700;
   cursor: pointer;
-  transition: opacity .15s;
 }
 
-.sth-btn-primary:hover {
-  opacity: .92;
+.sth-btn-done:hover {
+  opacity: .9;
 }
 
-/* Nút kích hoạt Settings trên Header */
-.sth-settings-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  color: var(--muted);
-  font-size: .84rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: border-color .15s, color .15s, background .15s;
-}
-
-.sth-settings-btn:hover {
-  border-color: var(--teal);
-  color: var(--teal);
-  background: var(--teal-pale);
-}
-
-/* Responsive */
-@media (max-width: 620px) {
-  .sth-ui-cards, .sth-option-grid {
+@media (max-width: 520px) {
+  .sth-setting-grid {
     grid-template-columns: 1fr;
   }
-  .sth-data-box {
-    flex-direction: column;
-    align-items: flex-start;
+  .sth-segmented {
+    flex-wrap: wrap;
   }
-  .sth-modal-content {
-    max-height: 92vh;
-  }
-  .sth-modal-body {
-    padding: 16px;
+  .sth-segmented button {
+    flex: 1 1 calc(50% - 3px);
   }
 }
-

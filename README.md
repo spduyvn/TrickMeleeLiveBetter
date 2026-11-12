@@ -5,11 +5,15 @@
 Mỗi bài viết đều trình bày rõ ràng: tóm tắt hành động, chi phí – thời gian – công sức ước tính, lợi ích, rủi ro, mức độ bằng chứng (`A` / `B` / `C`) và nguồn tham khảo đáng tin cậy để bạn tự đối chiếu theo bối cảnh Việt Nam.
 
 - **Trang web chính thức**: [https://spduyvn.github.io/TrickMeleeLiveBetter/](https://spduyvn.github.io/TrickMeleeLiveBetter/)
-- **4 Chế độ giao diện tùy biến (bấm biểu tượng ⚙️ Cài đặt hoặc phím tắt `Alt + S` để chuyển đổi)**:
-  1. **Thư viện chuẩn (`/`)**: dạng tạp chí/cổng thông tin, duyệt khám phá theo 8 danh mục chủ đề lớn.
-  2. **Tra cứu nhanh (`/guide/`)**: bảng điều khiển 2 cột đa chiều (lọc chi phí, thời gian, công sức, mức bằng chứng, checklist thực hành và PWA offline).
-  3. **Đọc tập trung — Reader Mode (`/reader/`)**: bố cục 1 cột tối giản (Medium/Substack style), thanh tiến trình đọc % cuộn, thanh công cụ đọc nổi (tăng giảm cỡ chữ `A-/A+`, đổi phông Serif/Sans-serif, mục lục trôi TOC).
-  4. **Bảng nén & Flashcard (`/compact/`)**: chế độ bảng dữ liệu dày (Dense Table) để duyệt nhanh 100+ bài và chế độ Thẻ ghi nhớ (Flashcard Flip 3D) luyện tập hành động thực tế bằng phím `Space`.
+- **Hai giao diện xem nội dung song song (chuyển đổi linh hoạt trên thanh điều hướng)**:
+  1. **Thư viện bài viết (`/`)**: Trình bày theo phong cách tạp chí, khám phá theo 8 danh mục chủ đề lớn và thẻ bài viết trực quan.
+  2. **Tra cứu nhanh (`/guide/`)**: Bảng điều khiển 2 cột đa chiều (lọc theo chi phí, thời gian, công sức, mức độ bằng chứng, checklist thực hành tương tác và hỗ trợ PWA đọc offline).
+- **Tùy chỉnh hiển thị & Trải nghiệm đọc (Nút "Aa Cài đặt" hoặc phím tắt `Alt + S`)**:
+  - **Màu nền & Chủ đề**: `☀️ Sáng (Giấy ấm)`, `🌙 Tối (Dịu mắt)`, `📖 Vàng ấm (Sepia - chống mỏi mắt)`, `💻 Tự động theo OS`.
+  - **Cỡ chữ**: 4 nấc từ `90% (Nhỏ)` đến `130% (Rất lớn cho người lớn tuổi)`.
+  - **Độ tương phản**: `Chuẩn (Dịu mắt)` hoặc `Tương phản cao (Đen sâu dễ đọc)`.
+  - **Kiểu phông**: `Không chân (Inter hiện đại)` hoặc `Có chân (Merriweather thanh lịch)`.
+  - **Giao diện mặc định**: Tùy chọn tự động mở Thư viện hoặc Tra cứu nhanh khi vào trang chủ.
 
 ---
 
