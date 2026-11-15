@@ -27,7 +27,9 @@
   }
 
   const saveBtn = document.getElementById('ap-save-btn');
+  const readBtn = document.getElementById('ap-read-btn');
   const doneBtn = document.getElementById('ap-done-btn');
+  const randomBtn = document.getElementById('ap-random-btn');
   const copyBtn = document.getElementById('ap-copy-btn');
 
   function syncButtons() {
@@ -35,6 +37,11 @@
       const saved = tools.getSavedIds().has(articleId);
       saveBtn.setAttribute('aria-pressed', String(saved));
       saveBtn.textContent = saved ? '★ Đã lưu' : '☆ Lưu bài';
+    }
+    if (readBtn) {
+      const isRead = tools.isRead(articleId);
+      readBtn.setAttribute('aria-pressed', String(isRead));
+      readBtn.textContent = isRead ? '✓ Đã đọc' : '👁️ Đánh dấu đã đọc';
     }
     if (doneBtn) {
       const done = tools.getDoneIds().has(articleId);
@@ -48,9 +55,29 @@
     syncButtons();
   });
 
+  readBtn?.addEventListener('click', () => {
+    tools.toggleRead(articleId);
+    syncButtons();
+  });
+
   doneBtn?.addEventListener('click', () => {
     tools.toggleDone(articleId);
     syncButtons();
+  });
+
+  randomBtn?.addEventListener('click', async () => {
+    try {
+      let res = await fetch(`${base}/data/catalog-index.json`);
+      if (!res.ok) res = await fetch(`${base}/data/catalog.json`);
+      const catalog = await res.json();
+      const articles = catalog.articles || [];
+      const nextArt = tools.getRandomArticle(articles.filter((a) => a.id !== articleId), true);
+      if (nextArt && nextArt.slug) {
+        location.href = `${base}/bai-viet/${encodeURIComponent(nextArt.slug)}/`;
+      }
+    } catch {
+      // fallback
+    }
   });
 
   copyBtn?.addEventListener('click', async () => {

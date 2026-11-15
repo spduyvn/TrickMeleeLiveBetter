@@ -48,4 +48,11 @@
 .ap-breadcrumbs a:hover{text-decoration:underline}
 .lib-personal-toggle{display:inline-flex;align-items:center;gap:6px;padding:0 12px;height:39px;border:1px solid var(--line);border-radius:6px;background:var(--surface);font-size:.82rem;font-weight:700;color:var(--ink);cursor:pointer;align-self:end}
 .lib-personal-toggle[aria-pressed="true"]{background:var(--teal-pale);border-color:var(--teal);color:var(--teal)}
+.btn-random-hero{display:inline-flex;align-items:center;gap:6px;padding:0 20px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--teal);font-weight:700;font-size:.9rem;cursor:pointer;white-space:nowrap;transition:all .15s}
+.btn-random-hero:hover{background:var(--teal-pale);border-color:var(--teal)}
+.btn-card-read{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--muted);font-size:.74rem;font-weight:600;cursor:pointer;transition:all .15s}
+.btn-card-read:hover{border-color:var(--teal);color:var(--teal)}
+.btn-card-read.active{background:var(--teal-pale);border-color:var(--teal);color:var(--teal)}
+.article-card.is-read{opacity:.65;border-style:dashed}
+.article-card.is-read:hover{opacity:1}
 @media(max-width:620px){.source-groups,.metadata-grid,.ap-related-grid{grid-template-columns:1fr}.metadata-panel{padding:18px}.notice-panel{padding:24px 20px}.nav-mode-pill{text-align:center;margin-top:6px}.view-default-toggle{margin-left:0}}

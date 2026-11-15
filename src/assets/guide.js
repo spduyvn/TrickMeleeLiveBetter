@@ -264,6 +264,7 @@
             <div class="g-card-actions">
               <button type="button" class="g-read-btn" data-open-article="${esc(article.id)}">Đọc bài đầy đủ</button>
               <button type="button" class="g-action-pill" data-toggle-save="${esc(article.id)}" aria-pressed="false">☆ Lưu</button>
+              <button type="button" class="g-action-pill" data-toggle-read="${esc(article.id)}" aria-pressed="false">👁️ Đã đọc</button>
               <button type="button" class="g-action-pill" data-toggle-done="${esc(article.id)}" aria-pressed="false">✓ Đã làm</button>
               <a class="g-ext-link" href="${BASE}/bai-viet/${encodeURIComponent(article.slug)}/">Mở trang riêng ↗</a>
             </div>
@@ -304,6 +305,7 @@
             srcDetails: el.querySelector('.g-src'),
             srcBody: el.querySelector('.g-src-body'),
             saveBtn: el.querySelector('[data-toggle-save]'),
+            readBtn: el.querySelector('[data-toggle-read]'),
             doneBtn: el.querySelector('[data-toggle-done]'),
           },
         };
@@ -397,9 +399,12 @@
     if (!tools) return;
     const saved = tools.getSavedIds();
     const done = tools.getDoneIds();
+    const read = tools.getReadIds ? tools.getReadIds() : new Set();
     const savedEl = document.getElementById('g-saved-count');
+    const readEl = document.getElementById('g-read-count');
     const doneEl = document.getElementById('g-done-count');
     if (savedEl) savedEl.textContent = String(saved.size);
+    if (readEl) readEl.textContent = String(read.size);
     if (doneEl) doneEl.textContent = String(done.size);
 
     for (const card of CARDS) {
@@ -408,6 +413,11 @@
         const isSaved = saved.has(id);
         card.refs.saveBtn.setAttribute('aria-pressed', String(isSaved));
         card.refs.saveBtn.textContent = isSaved ? '★ Đã lưu' : '☆ Lưu';
+      }
+      if (card.refs.readBtn) {
+        const isRead = read.has(id);
+        card.refs.readBtn.setAttribute('aria-pressed', String(isRead));
+        card.refs.readBtn.textContent = isRead ? '✓ Đã đọc' : '👁️ Đã đọc';
       }
       if (card.refs.doneBtn) {
         const isDone = done.has(id);
@@ -428,10 +438,16 @@
     if (state.personal.size && tools) {
       const saved = tools.getSavedIds();
       const done = tools.getDoneIds();
+      const read = tools.getReadIds ? tools.getReadIds() : new Set();
       const okPersonal =
         (state.personal.has('saved') && saved.has(card.article.id)) ||
+        (state.personal.has('read') && read.has(card.article.id)) ||
         (state.personal.has('done') && done.has(card.article.id));
       if (!okPersonal) return false;
+    } else if (tools && tools.getReadIds && !curTerms.length) {
+      // Mặc định tự động ẩn bài đã đọc khi không tìm kiếm và không chọn lọc cá nhân
+      const read = tools.getReadIds();
+      if (read.has(card.article.id)) return false;
     }
     if (state.audience.size) {
       const aud = f.audience || [];
@@ -872,12 +888,14 @@
       : '';
 
     const isSaved = tools ? tools.getSavedIds().has(a.id) : false;
+    const isRead = tools && tools.isRead ? tools.isRead(a.id) : false;
     const isDone = tools ? tools.getDoneIds().has(a.id) : false;
     const reportUrl = tools ? tools.buildReportIssueUrl(a) : '#';
 
     DM.doc.innerHTML = `
       <div class="dm-actions">
         <button type="button" class="g-action-pill" data-toggle-save="${esc(a.id)}" aria-pressed="${isSaved}">${isSaved ? '★ Đã lưu' : '☆ Lưu bài'}</button>
+        <button type="button" class="g-action-pill" data-toggle-read="${esc(a.id)}" aria-pressed="${isRead}">${isRead ? '✓ Đã đọc' : '👁️ Đã đọc'}</button>
         <button type="button" class="g-action-pill" data-toggle-done="${esc(a.id)}" aria-pressed="${isDone}">✓ Đã làm</button>
         <button type="button" class="g-action-pill" id="dm-copy-link">🔗 Sao chép link</button>
         <a class="g-action-pill" href="${esc(reportUrl)}" target="_blank" rel="noopener noreferrer">⚠ Báo lỗi / Sửa nguồn</a>
@@ -1129,6 +1147,17 @@
       syncDefaultHint(checked);
     });
 
+    // Random Article button in Header
+    document.getElementById('g-random-btn')?.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      if (!CARDS.length) return;
+      const allArts = CARDS.map((c) => c.article);
+      const chosen = tools ? tools.getRandomArticle(allArts, true) : allArts[Math.floor(Math.random() * allArts.length)];
+      if (chosen) {
+        openArticleModal(chosen.id, ev.currentTarget);
+      }
+    });
+
     // Dark mode toggle
     document.getElementById('g-theme')?.addEventListener('click', () => {
       const dark = document.documentElement.classList.toggle('dark');
@@ -1152,6 +1181,18 @@
         }
         syncPersonalUI();
         if (state.personal.has('saved')) apply();
+        return;
+      }
+
+      const readTrigger = ev.target.closest('[data-toggle-read]');
+      if (readTrigger && tools) {
+        const res = tools.toggleRead(readTrigger.dataset.toggleRead);
+        if (readTrigger.closest('#doc-modal')) {
+          readTrigger.setAttribute('aria-pressed', String(res.active));
+          readTrigger.textContent = res.active ? '✓ Đã đọc' : '👁️ Đã đọc';
+        }
+        syncPersonalUI();
+        apply();
         return;
       }
 

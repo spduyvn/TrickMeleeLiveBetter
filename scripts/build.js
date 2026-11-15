@@ -274,7 +274,9 @@ function renderArticleHtmlPage(article, category, relatedArticles) {
         </p>
         <div class="ap-actions">
           <button type="button" class="ap-btn" id="ap-save-btn" aria-pressed="false">☆ Lưu bài</button>
+          <button type="button" class="ap-btn" id="ap-read-btn" aria-pressed="false">👁️ Đã đọc</button>
           <button type="button" class="ap-btn" id="ap-done-btn" aria-pressed="false">Đánh dấu đã áp dụng</button>
+          <button type="button" class="ap-btn" id="ap-random-btn">🎲 Bài ngẫu nhiên</button>
           <button type="button" class="ap-btn" id="ap-copy-btn">🔗 Sao chép link</button>
           <a class="ap-btn" href="${basePath}/guide/#item-${escHtml(article.id)}">Mở trên Tra cứu nhanh</a>
           <a class="ap-btn" href="${escHtml(renderReportIssueUrl(article))}" target="_blank" rel="noopener noreferrer">⚠ Báo lỗi / Sửa nguồn</a>

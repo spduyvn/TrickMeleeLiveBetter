@@ -11,6 +11,7 @@
 
   const SAVED_KEY = 'sth-saved-ids';
   const DONE_KEY = 'sth-done-ids';
+  const READ_KEY = 'sth-read-ids';
   const CHECKLIST_PREFIX = 'sth-checklist-';
   const GITHUB_REPO = 'spduyvn/TrickMeleeLiveBetter';
 
@@ -40,6 +41,10 @@
     return readJsonSet(DONE_KEY);
   }
 
+  function getReadIds() {
+    return readJsonSet(READ_KEY);
+  }
+
   function toggleSaved(id) {
     const set = getSavedIds();
     const key = String(id);
@@ -58,6 +63,38 @@
     else set.delete(key);
     writeJsonSet(DONE_KEY, set);
     return { active, count: set.size };
+  }
+
+  function toggleRead(id) {
+    const set = getReadIds();
+    const key = String(id);
+    const active = !set.has(key);
+    if (active) set.add(key);
+    else set.delete(key);
+    writeJsonSet(READ_KEY, set);
+    return { active, count: set.size };
+  }
+
+  function isRead(id) {
+    return getReadIds().has(String(id));
+  }
+
+  function getRandomArticle(pool, prioritizeUnread = true) {
+    if (!Array.isArray(pool) || !pool.length) return null;
+    const candidates = pool.filter((a) => a && a.review_status !== 'draft');
+    if (!candidates.length) return null;
+
+    if (prioritizeUnread) {
+      const readSet = getReadIds();
+      const unreadList = candidates.filter((a) => !readSet.has(String(a.id)));
+      if (unreadList.length > 0) {
+        const randomIndex = Math.floor(Math.random() * unreadList.length);
+        return unreadList[randomIndex];
+      }
+    }
+
+    const randomIndex = Math.floor(Math.random() * candidates.length);
+    return candidates[randomIndex];
   }
 
   function getChecklistState(articleId) {
@@ -177,6 +214,7 @@
       exportedAt: new Date().toISOString(),
       saved: [...getSavedIds()],
       done: [...getDoneIds()],
+      read: [...getReadIds()],
       checklists,
     };
   }
@@ -185,10 +223,13 @@
     if (!payload || typeof payload !== 'object') throw new Error('Dữ liệu JSON không hợp lệ.');
     const saved = getSavedIds();
     const done = getDoneIds();
+    const read = getReadIds();
     if (Array.isArray(payload.saved)) payload.saved.forEach((id) => saved.add(String(id)));
     if (Array.isArray(payload.done)) payload.done.forEach((id) => done.add(String(id)));
+    if (Array.isArray(payload.read)) payload.read.forEach((id) => read.add(String(id)));
     writeJsonSet(SAVED_KEY, saved);
     writeJsonSet(DONE_KEY, done);
+    writeJsonSet(READ_KEY, read);
 
     if (payload.checklists && typeof payload.checklists === 'object') {
       for (const [id, map] of Object.entries(payload.checklists)) {
@@ -201,7 +242,7 @@
         }
       }
     }
-    return { savedCount: saved.size, doneCount: done.size };
+    return { savedCount: saved.size, doneCount: done.size, readCount: read.size };
   }
 
   function registerServiceWorker(basePath = '') {
@@ -214,8 +255,12 @@
   global.STHReader = {
     getSavedIds,
     getDoneIds,
+    getReadIds,
     toggleSaved,
     toggleDone,
+    toggleRead,
+    isRead,
+    getRandomArticle,
     getChecklistState,
     setChecklistStep,
     extractChecklistSteps,

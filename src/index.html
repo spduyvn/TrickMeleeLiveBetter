@@ -38,7 +38,14 @@
       <p class="eyebrow">KIẾN THỨC THỰC TIỄN · BIÊN SOẠN CHO VIỆT NAM</p>
       <h1 id="hero-title">Sống tốt hơn,<br><em>từng lựa chọn một.</em></h1>
       <p class="hero-copy">Cẩm nang mở về những quyết định có thể cải thiện sức khỏe, tài chính, thời gian và chất lượng sống — trình bày rõ căn cứ, giới hạn và mức độ phù hợp với bối cảnh Việt Nam.</p>
-      <form class="search-form" role="search"><label for="search">Tìm kiếm hướng dẫn thực tiễn</label><div class="search-control"><input id="search" type="search" placeholder="Nhập từ khóa (ví dụ: quỹ khẩn cấp, giấc ngủ, tập luyện…)…" autocomplete="off"><button type="submit">Tìm kiếm</button></div></form>
+      <form class="search-form" role="search">
+        <label for="search">Tìm kiếm hướng dẫn thực tiễn</label>
+        <div class="search-control">
+          <input id="search" type="search" placeholder="Nhập từ khóa (ví dụ: quỹ khẩn cấp, giấc ngủ, tập luyện…)…" autocomplete="off">
+          <button type="submit">Tìm kiếm</button>
+          <button type="button" class="btn-random-hero" id="btn-random-hero" title="Đọc bài viết ngẫu nhiên">🎲 Ngẫu nhiên</button>
+        </div>
+      </form>
       <p class="search-status" id="search-status" aria-live="polite"></p>
     </section>
     <section class="section wrap" id="danh-muc" aria-labelledby="category-heading">
@@ -47,7 +54,13 @@
     </section>
     <section class="section section-soft" id="kham-pha" aria-labelledby="explore-heading"><div class="wrap">
       <div class="section-heading"><div><p class="eyebrow">THƯ VIỆN</p><h2 id="explore-heading">Khám phá nội dung</h2></div><p id="result-count">Bài viết chỉ được xuất bản sau khi qua quy trình biên tập và kiểm chứng.</p></div>
-      <div class="filter-row"><label>Danh mục<select id="filter-category"><option value="">Tất cả danh mục</option></select></label><label>Sắp xếp<select id="sort-order"><option value="title">Tên bài viết</option><option value="updated">Cập nhật gần đây</option></select></label><label>Trạng thái<select id="filter-status"><option value="">Mọi trạng thái</option><option value="verified">Đã xác minh</option><option value="draft">Bản nháp</option><option value="needs_review">Cần thẩm định</option></select></label><button type="button" class="lib-personal-toggle" id="filter-saved" aria-pressed="false">★ Đã lưu (0)</button></div>
+      <div class="filter-row">
+        <label>Danh mục<select id="filter-category"><option value="">Tất cả danh mục</option></select></label>
+        <label>Sắp xếp<select id="sort-order"><option value="title">Tên bài viết</option><option value="updated">Cập nhật gần đây</option></select></label>
+        <label>Trạng thái<select id="filter-status"><option value="">Mọi trạng thái</option><option value="verified">Đã xác minh</option><option value="draft">Bản nháp</option><option value="needs_review">Cần thẩm định</option></select></label>
+        <button type="button" class="lib-personal-toggle" id="filter-saved" aria-pressed="false">★ Đã lưu (0)</button>
+        <button type="button" class="lib-personal-toggle" id="filter-read" aria-pressed="false" title="Hiển thị các bài đã đọc">👁️ Đã đọc (0)</button>
+      </div>
       <div class="article-grid" id="article-list" aria-live="polite"><p class="loading">Đang tải nội dung…</p></div>
       <p class="empty-state" id="empty-state" hidden>Không tìm thấy nội dung phù hợp. Hãy thử từ khóa hoặc bộ lọc khác.</p>
       <div class="load-more-wrap" id="load-more-wrap" hidden>
