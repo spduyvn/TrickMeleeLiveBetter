@@ -419,6 +419,7 @@
         card.refs.readBtn.setAttribute('aria-pressed', String(isRead));
         card.refs.readBtn.textContent = isRead ? '✓ Đã đọc' : '👁️ Đã đọc';
       }
+      card.el.classList.toggle('is-read', read.has(id));
       if (card.refs.doneBtn) {
         const isDone = done.has(id);
         card.refs.doneBtn.setAttribute('aria-pressed', String(isDone));

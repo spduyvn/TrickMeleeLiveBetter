@@ -496,9 +496,15 @@ html.dark .g-switch .g-moon { display: block; }
   border-radius: 12px;
   padding: 20px 24px 18px;
   margin-bottom: 16px;
-  transition: border-color 0.2s, background 0.2s;
+  transition: border-color 0.2s, background 0.2s, opacity 0.2s;
   content-visibility: auto;
   contain-intrinsic-size: auto 320px;
+}
+.g-card.is-read {
+  opacity: 0.72;
+}
+.g-card.is-read:hover {
+  opacity: 1;
 }
 .g-card:hover { border-color: var(--divider); }
 .g-card.flash { animation: g-xflash 1.8s ease-out; }
