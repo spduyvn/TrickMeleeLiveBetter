@@ -55,4 +55,155 @@
 .btn-card-read.active{background:var(--teal-pale);border-color:var(--teal);color:var(--teal)}
 .article-card.is-read{opacity:.65;border-style:dashed}
 .article-card.is-read:hover{opacity:1}
+
+/* Modal Khám phá Ngẫu nhiên 5 bài */
+.sth-rnd-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(10, 20, 16, 0.65);
+  backdrop-filter: blur(5px);
+  animation: sthFade .2s ease;
+}
+.sth-rnd-modal[hidden] { display: none !important; }
+.sth-rnd-card {
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+}
+.sth-rnd-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.sth-rnd-head h2 { margin: 0; font-size: 1.12rem; font-weight: 700; color: var(--teal-dark); }
+.sth-rnd-x {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.sth-rnd-x:hover { background: var(--paper); color: var(--ink); }
+
+.sth-rnd-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 20px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  font-size: .84rem;
+}
+.sth-rnd-filter-bar select {
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: .82rem;
+}
+.sth-rnd-chk {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 600;
+}
+.sth-rnd-chk input { accent-color: var(--teal); width: 15px; height: 15px; }
+
+.sth-rnd-body {
+  padding: 16px 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sth-rnd-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  transition: all .15s ease;
+}
+.sth-rnd-item:hover { border-color: var(--teal); transform: translateY(-1px); }
+.sth-rnd-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.sth-rnd-item h3 { margin: 2px 0 4px; font-size: 1rem; line-height: 1.4; color: var(--teal-dark); }
+.sth-rnd-item h3 a { text-decoration: none; }
+.sth-rnd-item h3 a:hover { text-decoration: underline; }
+.sth-rnd-item p { margin: 0; font-size: .84rem; color: var(--muted); line-height: 1.5; }
+.sth-rnd-item-acts {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.sth-rnd-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+.sth-rnd-btn-roll {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--teal);
+  color: #fff;
+  font-size: .88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity .15s;
+}
+.sth-rnd-btn-roll:hover { opacity: .9; }
+.sth-rnd-btn-close {
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: .85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sth-rnd-btn-close:hover { color: var(--ink); border-color: var(--ink); }
 @media(max-width:620px){.source-groups,.metadata-grid,.ap-related-grid{grid-template-columns:1fr}.metadata-panel{padding:18px}.notice-panel{padding:24px 20px}.nav-mode-pill{text-align:center;margin-top:6px}.view-default-toggle{margin-left:0}}

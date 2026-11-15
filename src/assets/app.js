@@ -131,12 +131,13 @@ async function init() {
     renderArticles();
   });
   document.querySelector('#btn-random-hero')?.addEventListener('click', () => {
-    if (window.STHReader) {
-      const art = window.STHReader.getRandomArticle(state.articles, true);
-      if (art && art.slug) {
-        location.href = `${BASE}/bai-viet/${encodeURIComponent(art.slug)}/`;
-      }
+    if (window.STHReader && window.STHReader.openRandomModal) {
+      window.STHReader.openRandomModal(state.articles, state.categories, BASE);
     }
+  });
+
+  document.addEventListener('sth:data-changed', () => {
+    renderArticles();
   });
   const toggle = document.querySelector('.menu-toggle');
   toggle.addEventListener('click', () => { const expanded = toggle.getAttribute('aria-expanded') === 'true'; toggle.setAttribute('aria-expanded', String(!expanded)); document.querySelector('#primary-nav').classList.toggle('is-open', !expanded); });

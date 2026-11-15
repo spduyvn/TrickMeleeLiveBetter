@@ -70,13 +70,19 @@
       let res = await fetch(`${base}/data/catalog-index.json`);
       if (!res.ok) res = await fetch(`${base}/data/catalog.json`);
       const catalog = await res.json();
-      const articles = catalog.articles || [];
-      const nextArt = tools.getRandomArticle(articles.filter((a) => a.id !== articleId), true);
-      if (nextArt && nextArt.slug) {
-        location.href = `${base}/bai-viet/${encodeURIComponent(nextArt.slug)}/`;
+      const articles = (catalog.articles || []).filter((a) => a.id !== articleId);
+      const categories = catalog.categories || [];
+      if (tools.openRandomModal) {
+        tools.openRandomModal(articles, categories, base);
       }
     } catch {
       // fallback
+    }
+  });
+
+  document.addEventListener('sth:data-changed', (ev) => {
+    if (ev.detail && ev.detail.id === articleId) {
+      syncButtons();
     }
   });
 

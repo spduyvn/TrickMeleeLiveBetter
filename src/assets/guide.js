@@ -1148,15 +1148,21 @@
       syncDefaultHint(checked);
     });
 
-    // Random Article button in Header
+    // Random Article button in Header (mở modal 5 bài ngẫu nhiên kèm bộ lọc)
     document.getElementById('g-random-btn')?.addEventListener('click', (ev) => {
       ev.preventDefault();
       if (!CARDS.length) return;
       const allArts = CARDS.map((c) => c.article);
-      const chosen = tools ? tools.getRandomArticle(allArts, true) : allArts[Math.floor(Math.random() * allArts.length)];
-      if (chosen) {
-        openArticleModal(chosen.id, ev.currentTarget);
+      if (tools && tools.openRandomModal) {
+        tools.openRandomModal(allArts, state.categories, BASE, (artId) => {
+          openArticleModal(artId, ev.currentTarget);
+        });
       }
+    });
+
+    document.addEventListener('sth:data-changed', () => {
+      syncPersonalUI();
+      apply();
     });
 
     // Dark mode toggle
