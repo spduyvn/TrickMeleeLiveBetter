@@ -62,6 +62,7 @@
   const TOC_MAN = new Map(); // catId -> boolean
 
   let curTerms = [];
+  let curExactPhrase = '';
   let curKey = '';
   let spyTimer = 0;
   let spyLast = '';
@@ -77,34 +78,86 @@
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/đ/g, 'd')
-      .replace(/Đ/g, 'D')
+      .replace(/Đ/g, 'd')
       .toLowerCase();
+
+  function buildNormMapping(raw) {
+    let norm = '';
+    const map = [];
+    for (let i = 0; i < raw.length; i++) {
+      const ch = raw[i];
+      const nCh = ch
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/đ/g, 'd')
+        .replace(/Đ/g, 'd')
+        .toLowerCase();
+      for (let j = 0; j < nCh.length; j++) {
+        map.push(i);
+        norm += nCh[j];
+      }
+    }
+    return { norm, map };
+  }
+
+  function isWordChar(char) {
+    return char ? /[a-z0-9]/i.test(char) : false;
+  }
+
+  function containsTerm(hay, term) {
+    if (!hay || !term) return false;
+    if (term.length >= 4) return hay.includes(term);
+    let pos = hay.indexOf(term);
+    if (pos === -1) return false;
+    while (pos !== -1) {
+      const prev = pos > 0 ? hay[pos - 1] : ' ';
+      const next = pos + term.length < hay.length ? hay[pos + term.length] : ' ';
+      if (!isWordChar(prev) && !isWordChar(next)) return true;
+      pos = hay.indexOf(term, pos + 1);
+    }
+    return false;
+  }
 
   function highlightHtml(text, terms) {
     const raw = String(text ?? '');
     if (!terms.length) return esc(raw);
-    const normRaw = normalize(raw);
-    // Map normalized indices back when lengths match; fallback safely to direct case-insensitive match on raw
+    const { norm, map } = buildNormMapping(raw);
     const ranges = [];
-    const lowerRaw = raw.toLowerCase();
-    for (const term of terms) {
-      if (!term) continue;
+
+    // Sắp xếp các term dài nhất trước để ưu tiên cụm từ
+    const sortedTerms = [...new Set(terms.filter(Boolean))].sort((a, b) => b.length - a.length);
+
+    for (const term of sortedTerms) {
       let idx = 0;
-      let foundInRaw = false;
-      while ((idx = lowerRaw.indexOf(term, idx)) !== -1) {
-        ranges.push([idx, idx + term.length]);
+      const termMatches = [];
+      let hasBoundaryMatch = false;
+
+      while ((idx = norm.indexOf(term, idx)) !== -1) {
+        const prevChar = idx > 0 ? norm[idx - 1] : '';
+        const nextChar = idx + term.length < norm.length ? norm[idx + term.length] : '';
+        const isBoundary = !isWordChar(prevChar) && !isWordChar(nextChar);
+
+        const rawStart = map[idx];
+        let rawEnd = (map[idx + term.length - 1] ?? map[map.length - 1]) + 1;
+        while (rawEnd < raw.length && /[\u0300-\u036f]/.test(raw[rawEnd].normalize('NFD'))) {
+          rawEnd++;
+        }
+
+        termMatches.push({ range: [rawStart, rawEnd], isBoundary });
+        if (isBoundary) hasBoundaryMatch = true;
         idx += term.length;
-        foundInRaw = true;
       }
-      if (!foundInRaw && normRaw.length === raw.length) {
-        let nIdx = 0;
-        while ((nIdx = normRaw.indexOf(term, nIdx)) !== -1) {
-          ranges.push([nIdx, nIdx + term.length]);
-          nIdx += term.length;
+
+      const filterBoundary = term.length <= 3 && hasBoundaryMatch;
+      for (const m of termMatches) {
+        if (!filterBoundary || m.isBoundary) {
+          ranges.push(m.range);
         }
       }
     }
+
     if (!ranges.length) return esc(raw);
+
     ranges.sort((a, b) => a[0] - b[0] || b[1] - a[1]);
     const merged = [];
     for (const r of ranges) {
@@ -114,6 +167,7 @@
         merged[merged.length - 1][1] = r[1];
       }
     }
+
     let out = '';
     let pos = 0;
     for (const [s, e] of merged) {
@@ -123,6 +177,76 @@
     }
     if (pos < raw.length) out += esc(raw.slice(pos));
     return out;
+  }
+
+  function evaluateSearchMatch(card, terms, exactPhrase) {
+    if (!terms.length) return { match: true, score: 0 };
+
+    let score = 0;
+    let matchedTermsCount = 0;
+    let titleMatched = false;
+    let descMatched = false;
+
+    for (const term of terms) {
+      let termMatched = false;
+      if (containsTerm(card.hayTitle, term)) {
+        score += 40;
+        termMatched = true;
+        titleMatched = true;
+      }
+      if (containsTerm(card.hayDesc, term)) {
+        score += 20;
+        termMatched = true;
+        descMatched = true;
+      }
+      if (containsTerm(card.hayTags, term)) {
+        score += 15;
+        termMatched = true;
+      }
+      if (containsTerm(card.hayDetails, term)) {
+        score += 10;
+        termMatched = true;
+      }
+      if (containsTerm(card.hayCat, term)) {
+        score += 8;
+        termMatched = true;
+      }
+      if (containsTerm(card.hayBody, term)) {
+        score += 4;
+        termMatched = true;
+      }
+      if (containsTerm(card.haySrc, term)) {
+        score += 1;
+        termMatched = true;
+      }
+      if (termMatched) matchedTermsCount++;
+    }
+
+    if (exactPhrase && exactPhrase.length >= 3) {
+      if (card.hayTitle.includes(exactPhrase)) score += 120;
+      else if (card.hayDesc.includes(exactPhrase)) score += 60;
+      else if (card.hayTags.includes(exactPhrase) || card.hayDetails.includes(exactPhrase)) score += 30;
+      else if (card.hayBody.includes(exactPhrase)) score += 15;
+      else if (card.haySrc.includes(exactPhrase)) score += 5;
+    }
+
+    if (matchedTermsCount === terms.length) {
+      score += 50; // AND match bonus
+    }
+
+    // Tiêu chí match linh hoạt:
+    let match = false;
+    if (terms.length === 1) {
+      match = matchedTermsCount === 1;
+    } else if (terms.length === 2) {
+      match = matchedTermsCount === 2 || (matchedTermsCount === 1 && (titleMatched || descMatched));
+    } else {
+      const minMatch = Math.ceil(terms.length * 0.6);
+      const hasPhraseInHead = exactPhrase && (card.hayTitle.includes(exactPhrase) || card.hayDesc.includes(exactPhrase));
+      match = matchedTermsCount >= minMatch || hasPhraseInHead || (matchedTermsCount >= 2 && titleMatched);
+    }
+
+    return { match, score };
   }
 
   function renderListHtml(arr, terms) {
@@ -196,9 +320,9 @@
     f.srcBody.innerHTML = renderSourcesHtml(a.sources, terms);
     if (f.srcDetails) {
       const onlyInSrc =
-        terms.length > 0 &&
-        terms.every((t) => card.haySrc.includes(t)) &&
-        !terms.every((t) => card.hayMain.includes(t));
+        curTerms.length > 0 &&
+        curTerms.some((t) => card.haySrc.includes(t)) &&
+        !curTerms.some((t) => card.hayMain.includes(t));
       f.srcDetails.open = onlyInSrc;
     }
     card.renderedKey = key;
@@ -238,7 +362,8 @@
       }
 
       const countSpan = headEl.querySelector('.g-shown');
-      BLOCKS.push({ cat, el: secEl, countEl: countSpan });
+      const blockObj = { cat, el: secEl, countEl: countSpan, cards: [] };
+      BLOCKS.push(blockObj);
 
       list.forEach((article, idx) => {
         const cardId = `item-${article.id}`;
@@ -270,10 +395,10 @@
             </div>
           </div>`;
 
-        const mainParts = [
-          article.title,
-          article.description,
-          ...(article.tags || []),
+        const hayTitle = normalize(article.title);
+        const hayDesc = normalize(article.description);
+        const hayTags = normalize((article.tags || []).join(' '));
+        const hayDetails = normalize([
           article.cost,
           article.time,
           article.effort,
@@ -281,12 +406,13 @@
           ...(article.risks || []),
           ...(article.target_groups || []),
           article.evidence_notes,
-          article.body || '',
-          cat.name,
-        ];
+        ].filter(Boolean).join(' '));
+        const hayCat = normalize(cat.name);
+        const hayBody = normalize(article.body || '');
         const srcParts = (article.sources || []).flatMap((s) => [s.title, s.organization, s.country, s.url]);
-        const hayMain = normalize(mainParts.join(' '));
         const haySrc = normalize(srcParts.join(' '));
+        const hayMain = `${hayTitle} ${hayDesc} ${hayTags} ${hayDetails} ${hayCat} ${hayBody}`;
+        const hay = `${hayMain} ${haySrc}`;
 
         const card = {
           article,
@@ -295,9 +421,16 @@
           el,
           vis: false,
           renderedKey: null,
-          hayMain,
+          searchScore: 0,
+          hayTitle,
+          hayDesc,
+          hayTags,
+          hayDetails,
+          hayCat,
+          hayBody,
           haySrc,
-          hay: `${hayMain} ${haySrc}`,
+          hayMain,
+          hay,
           refs: {
             titleBtn: el.querySelector('.g-card-title-btn'),
             human: el.querySelector('.g-human'),
@@ -312,6 +445,7 @@
 
         CARDS.push(card);
         CARD_BY_ID.set(cardId, card);
+        blockObj.cards.push(card);
         secEl.appendChild(el);
       });
 
@@ -371,21 +505,23 @@
   /* ── Lazy Render via IntersectionObserver ───────────────────── */
   let cardIO = null;
   function setupCardObserver() {
+    const highlightTerms = curExactPhrase ? [curExactPhrase, ...curTerms] : curTerms;
     if (!('IntersectionObserver' in window)) {
       for (const c of CARDS) {
         c.vis = true;
-        renderCardBody(c, curTerms, curKey);
+        renderCardBody(c, highlightTerms, curKey);
       }
       return;
     }
     cardIO = new IntersectionObserver(
       (entries) => {
+        const hTerms = curExactPhrase ? [curExactPhrase, ...curTerms] : curTerms;
         for (const entry of entries) {
           const card = CARD_BY_ID.get(entry.target.id);
           if (!card) continue;
           card.vis = entry.isIntersecting;
           if (entry.isIntersecting && !card.el.hidden) {
-            renderCardBody(card, curTerms, curKey);
+            renderCardBody(card, hTerms, curKey);
           }
         }
       },
@@ -454,7 +590,13 @@
       const aud = f.audience || [];
       if (!aud.some((tag) => state.audience.has(tag))) return false;
     }
-    if (curTerms.length && !curTerms.every((t) => card.hay.includes(t))) return false;
+    if (curTerms.length) {
+      const { match, score } = evaluateSearchMatch(card, curTerms, curExactPhrase);
+      if (!match) return false;
+      card.searchScore = score;
+    } else {
+      card.searchScore = 0;
+    }
     return true;
   }
 
@@ -474,6 +616,8 @@
         shouldOpen = TOC_MAN.get(catId);
       } else if (state.sec) {
         shouldOpen = state.sec === catId;
+      } else if (curTerms.length && sub.dataset.hasMatch === 'true') {
+        shouldOpen = true;
       } else if (activeCat) {
         shouldOpen = activeCat === catId;
       }
@@ -531,7 +675,9 @@
 
   function apply() {
     curTerms = normalize(state.q).split(/\s+/).filter(Boolean);
-    curKey = curTerms.join(' ');
+    curExactPhrase = curTerms.length > 1 ? normalize(state.q).trim() : '';
+    const highlightTerms = curExactPhrase ? [curExactPhrase, ...curTerms] : curTerms;
+    curKey = highlightTerms.join(' ');
 
     let shown = 0;
     let matched = 0;
@@ -552,7 +698,7 @@
         shown++;
         perSec[card.catId] = (perSec[card.catId] || 0) + 1;
         if (card.vis && card.renderedKey !== curKey) {
-          renderCardBody(card, curTerms, curKey);
+          renderCardBody(card, highlightTerms, curKey);
         }
       }
     }
@@ -561,6 +707,17 @@
       const n = perSec[b.cat.id] || 0;
       if (b.el.hidden !== (n === 0)) b.el.hidden = n === 0;
       b.countEl.textContent = `${n} mục`;
+
+      if (b.cards && b.cards.length) {
+        if (curTerms.length) {
+          b.cards.sort((a, b) => b.searchScore - a.searchScore || a.idx - b.idx);
+        } else {
+          b.cards.sort((a, b) => a.idx - b.idx);
+        }
+        for (const card of b.cards) {
+          b.el.appendChild(card.el);
+        }
+      }
     }
 
     for (const [catId, sub] of TOC_SUB) {
@@ -568,6 +725,7 @@
       const btn = sub.previousElementSibling;
       btn.querySelector('i').textContent = String(count);
       sub.lastElementChild.hidden = count !== 0;
+      sub.dataset.hasMatch = String(count > 0);
     }
 
     const allCount = document.querySelector('#g-f-sec .all i');
@@ -575,7 +733,11 @@
 
     const statEl = document.getElementById('g-stat');
     if (statEl) {
-      statEl.innerHTML = `Đang hiển thị <b>${shown}</b> / ${CARDS.length} mục đã Việt hóa`;
+      if (state.q) {
+        statEl.innerHTML = `Đang hiển thị <b>${shown}</b> kết quả cho "<em>${esc(state.q)}</em>" (tổng ${CARDS.length} mục)`;
+      } else {
+        statEl.innerHTML = `Đang hiển thị <b>${shown}</b> / ${CARDS.length} mục đã Việt hóa`;
+      }
     }
 
     const emptyEl = document.getElementById('g-empty');
