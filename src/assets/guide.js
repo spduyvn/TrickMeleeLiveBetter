@@ -1055,11 +1055,14 @@
     const isDone = tools ? tools.getDoneIds().has(a.id) : false;
     const reportUrl = tools ? tools.buildReportIssueUrl(a) : '#';
 
+    const isFocus = window.SthSettings && window.SthSettings.isFocus ? window.SthSettings.isFocus() : false;
+
     DM.doc.innerHTML = `
       <div class="dm-actions">
         <button type="button" class="g-action-pill" data-toggle-save="${esc(a.id)}" aria-pressed="${isSaved}">${isSaved ? '★ Đã lưu' : '☆ Lưu bài'}</button>
         <button type="button" class="g-action-pill" data-toggle-read="${esc(a.id)}" aria-pressed="${isRead}">${isRead ? '✓ Đã đọc' : '👁️ Đã đọc'}</button>
         <button type="button" class="g-action-pill" data-toggle-done="${esc(a.id)}" aria-pressed="${isDone}">✓ Đã làm</button>
+        <button type="button" class="g-action-pill ${isFocus ? 'active' : ''}" id="dm-focus-btn" aria-pressed="${isFocus}">🎯 Tập trung</button>
         <button type="button" class="g-action-pill" id="dm-copy-link">🔗 Sao chép link</button>
         <a class="g-action-pill" href="${esc(reportUrl)}" target="_blank" rel="noopener noreferrer">⚠ Báo lỗi / Sửa nguồn</a>
       </div>
@@ -1079,6 +1082,17 @@
       <div class="g-src"><div class="g-src-body">${renderSourcesHtml(a.sources, curTerms)}</div></div>
       ${related.length ? `<h2 id="dm-s-related">Bài viết liên quan</h2><div class="dm-related">${related.map((r) => `<button type="button" class="dm-rel-btn" data-open-article="${esc(r.id)}"><strong>${esc(r.title)}</strong><span>${esc(r.description)}</span></button>`).join('')}</div>` : ''}
       ${a.last_updated ? `<p style="margin-top:18px;font-size:12px;color:var(--t3)">Cập nhật lần cuối: ${esc(a.last_updated)}</p>` : ''}`;
+
+    const focusBtn = document.getElementById('dm-focus-btn');
+    focusBtn?.addEventListener('click', () => {
+      if (window.SthSettings) {
+        window.SthSettings.toggleFocus();
+        const active = window.SthSettings.isFocus();
+        focusBtn.setAttribute('aria-pressed', String(active));
+        focusBtn.classList.toggle('active', active);
+        focusBtn.textContent = active ? '✓ Đang tập trung' : '🎯 Tập trung';
+      }
+    });
 
     const copyBtn = document.getElementById('dm-copy-link');
     copyBtn?.addEventListener('click', async () => {

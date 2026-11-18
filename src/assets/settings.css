@@ -76,14 +76,44 @@
 :root[data-font-size="115"] { font-size: 18.4px; }
 :root[data-font-size="130"] { font-size: 20.8px; }
 
-/* 5. Kiểu phông chữ */
-:root[data-font="serif"] body,
-:root[data-font="serif"] .hero-copy,
-:root[data-font="serif"] .article-body,
-:root[data-font="serif"] .prose-page,
-:root[data-font="serif"] p {
-  font-family: 'Merriweather', 'Georgia', serif !important;
+/* 5. Kiểu phông chữ (Chuẩn tiếng Việt không lỗi font) */
+:root[data-font="sans"] {
+  --sth-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
+:root[data-font="vietnam"] {
+  --sth-font: 'Be Vietnam Pro', 'Nunito', 'Segoe UI', Arial, sans-serif;
+}
+:root[data-font="serif"] {
+  --sth-font: 'Merriweather', 'Georgia', 'Times New Roman', serif;
+}
+:root[data-font="lora"] {
+  --sth-font: 'Lora', 'Charter', 'Palatino Linotype', 'Georgia', serif;
+}
+
+:root[data-font] body,
+:root[data-font] .hero-copy,
+:root[data-font] .article-body,
+:root[data-font] .prose-page,
+:root[data-font] .dm-doc,
+:root[data-font] .g-card,
+:root[data-font] p {
+  font-family: var(--sth-font) !important;
+}
+
+:root[data-font="serif"] h1,
+:root[data-font="serif"] h2,
+:root[data-font="serif"] h3,
+:root[data-font="lora"] h1,
+:root[data-font="lora"] h2,
+:root[data-font="lora"] h3 {
+  font-family: var(--sth-font) !important;
+}
+
+/* Xem trước font trong modal */
+.sth-font-opt-sans { font-family: 'Inter', sans-serif !important; }
+.sth-font-opt-vietnam { font-family: 'Be Vietnam Pro', sans-serif !important; font-weight: 600; }
+.sth-font-opt-serif { font-family: 'Merriweather', Georgia, serif !important; }
+.sth-font-opt-lora { font-family: 'Lora', Georgia, serif !important; }
 
 /* Nút Aa trên Header */
 .sth-btn-aa {
@@ -325,4 +355,160 @@
   .sth-segmented button {
     flex: 1 1 calc(50% - 3px);
   }
+}
+
+/* =============================================================
+   6. CHẾ ĐỘ TẬP TRUNG (FOCUS MODE)
+   ============================================================= */
+:root.sth-focus-mode .site-header,
+:root.sth-focus-mode .site-footer,
+:root.sth-focus-mode .ap-breadcrumbs,
+:root.sth-focus-mode .metadata-panel,
+:root.sth-focus-mode .notice-panel,
+:root.sth-focus-mode .article-meta,
+:root.sth-focus-mode .skip-link,
+:root.sth-focus-mode #dm-s-sources,
+:root.sth-focus-mode #dm-s-related,
+:root.sth-focus-mode .dm-related,
+:root.sth-focus-mode .dm-toc,
+:root.sth-focus-mode #guide-nav,
+:root.sth-focus-mode #g-sidebar,
+:root.sth-focus-mode #g-hero,
+:root.sth-focus-mode .g-fold {
+  display: none !important;
+}
+
+/* Căn giữa & tối ưu độ rộng đọc cho bài viết */
+:root.sth-focus-mode .article-page,
+:root.sth-focus-mode .prose-page,
+:root.sth-focus-mode #pre-article {
+  max-width: 720px !important;
+  margin-inline: auto !important;
+  padding-top: 50px !important;
+  padding-bottom: 90px !important;
+}
+
+:root.sth-focus-mode .article-body {
+  max-width: 720px !important;
+  font-size: 1.08rem !important;
+  line-height: 1.95 !important;
+}
+
+:root.sth-focus-mode .article-body p,
+:root.sth-focus-mode .article-body li {
+  line-height: 1.95 !important;
+  margin-bottom: 1.5em !important;
+}
+
+:root.sth-focus-mode .hero-copy {
+  font-size: 1.15rem !important;
+  line-height: 1.9 !important;
+}
+
+/* Modal đọc bài trong Guide */
+:root.sth-focus-mode #dm-shell {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+:root.sth-focus-mode .dm-doc {
+  max-width: 720px !important;
+  margin-inline: auto !important;
+  padding: 40px 24px 100px !important;
+  font-size: 1.06rem !important;
+  line-height: 1.95 !important;
+}
+
+:root.sth-focus-mode .dm-doc p,
+:root.sth-focus-mode .dm-doc li {
+  line-height: 1.95 !important;
+}
+
+/* Thanh điều khiển nổi khi ở Chế độ Tập trung (Focus Dock) */
+.sth-focus-dock {
+  position: fixed;
+  top: 14px;
+  right: 18px;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 30px;
+  background: var(--sth-panel, #ffffff);
+  color: var(--sth-text, #1d2724);
+  border: 1px solid var(--sth-line, #dde4dc);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.16);
+  font-size: .84rem;
+  backdrop-filter: blur(10px);
+  transition: opacity .25s ease, transform .25s ease;
+  user-select: none;
+}
+
+.sth-focus-dock.dimmed {
+  opacity: 0.35;
+}
+
+.sth-focus-dock:hover {
+  opacity: 1 !important;
+}
+
+.sth-focus-dock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  color: var(--sth-primary, #0f6b58);
+  padding: 0 4px;
+}
+
+.sth-focus-dock-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sth-focus-dock button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--sth-text);
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .15s ease;
+}
+
+.sth-focus-dock button:hover {
+  background: var(--sth-line);
+}
+
+.sth-focus-dock-sep {
+  width: 1px;
+  height: 16px;
+  background: var(--sth-line);
+  margin: 0 2px;
+}
+
+.sth-focus-dock-exit {
+  background: rgba(192, 57, 43, 0.1) !important;
+  color: #c0392b !important;
+  font-weight: 700 !important;
+  padding: 2px 10px !important;
+  border-radius: 20px !important;
+}
+
+.sth-focus-dock-exit:hover {
+  background: #c0392b !important;
+  color: #ffffff !important;
 }

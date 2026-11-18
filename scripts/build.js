@@ -233,6 +233,9 @@ function renderArticleHtmlPage(article, category, relatedArticles) {
   <meta property="og:url" content="${escHtml(canonicalUrl)}">
   <link rel="canonical" href="${escHtml(canonicalUrl)}">
   <link rel="manifest" href="${basePath}/manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${basePath}/assets/styles.css">
   <link rel="stylesheet" href="${basePath}/assets/settings.css">
   <script src="${basePath}/assets/settings.js"></script>
@@ -276,6 +279,7 @@ function renderArticleHtmlPage(article, category, relatedArticles) {
           <button type="button" class="ap-btn" id="ap-save-btn" aria-pressed="false">☆ Lưu bài</button>
           <button type="button" class="ap-btn" id="ap-read-btn" aria-pressed="false">👁️ Đã đọc</button>
           <button type="button" class="ap-btn" id="ap-done-btn" aria-pressed="false">Đánh dấu đã áp dụng</button>
+          <button type="button" class="ap-btn" id="ap-focus-btn" title="Phím tắt: Alt + F">🎯 Chế độ tập trung</button>
           <button type="button" class="ap-btn" id="ap-random-btn">🎲 Bài ngẫu nhiên</button>
           <button type="button" class="ap-btn" id="ap-copy-btn">🔗 Sao chép link</button>
           <a class="ap-btn" href="${basePath}/guide/#item-${escHtml(article.id)}">Mở trên Tra cứu nhanh</a>

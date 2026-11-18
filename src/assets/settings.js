@@ -3,7 +3,8 @@
  *   - Màu nền & Chủ đề: Sáng (Giấy ấm), Tối, Sepia (Vàng sách báo), Tự động (OS)
  *   - Cỡ chữ: 90% (Nhỏ), 100% (Chuẩn), 115% (Lớn), 130% (Rất lớn)
  *   - Độ tương phản chữ: Chuẩn (Dịu mắt), Tương phản cao (Đen sâu)
- *   - Kiểu phông: Không chân (Inter), Có chân (Merriweather)
+ *   - Kiểu phông: Inter (Hiện đại), Be Vietnam Pro (Dịu mắt), Merriweather (Sách báo), Lora (Văn học)
+ *   - Chế độ tập trung (Focus Mode): Ẩn xao nhãng, căn giữa dòng đọc 720px tối ưu
  *   - Giao diện mặc định: Thư viện (library), Tra cứu nhanh (guide)
  */
 (function (global) {
@@ -14,7 +15,8 @@
     theme: 'auto',          // 'light' | 'dark' | 'sepia' | 'auto'
     fontSize: '100',        // '90' | '100' | '115' | '130'
     contrast: 'normal',     // 'normal' | 'high'
-    fontFamily: 'sans',     // 'sans' | 'serif'
+    fontFamily: 'sans',     // 'sans' | 'vietnam' | 'serif' | 'lora'
+    focusMode: false,       // boolean
     defaultView: 'library', // 'library' | 'guide'
   };
 
@@ -42,6 +44,82 @@
     } catch (_) {}
   }
 
+  // Quản lý thanh điều khiển nổi khi ở Chế độ tập trung (Focus Dock)
+  let dockScrollTimer = 0;
+  function ensureFocusDock(show) {
+    let dock = document.getElementById('sth-focus-dock');
+    if (!show) {
+      if (dock) dock.remove();
+      return;
+    }
+    if (!dock) {
+      dock = document.createElement('div');
+      dock.id = 'sth-focus-dock';
+      dock.className = 'sth-focus-dock';
+      dock.setAttribute('role', 'toolbar');
+      dock.setAttribute('aria-label', 'Điều khiển chế độ tập trung');
+      dock.innerHTML = `
+        <span class="sth-focus-dock-badge">🎯 Tập trung</span>
+        <div class="sth-focus-dock-actions">
+          <button type="button" data-f-theme="light" title="Nền sáng">☀️</button>
+          <button type="button" data-f-theme="dark" title="Nền tối">🌙</button>
+          <button type="button" data-f-theme="sepia" title="Nền sepia">📖</button>
+          <span class="sth-focus-dock-sep"></span>
+          <button type="button" data-f-size="down" title="Giảm cỡ chữ">A-</button>
+          <button type="button" data-f-size="up" title="Tăng cỡ chữ">A+</button>
+          <span class="sth-focus-dock-sep"></span>
+          <button type="button" data-f-exit class="sth-focus-dock-exit" title="Thoát chế độ tập trung (phím Esc)">✕ Thoát</button>
+        </div>
+      `;
+      document.body.appendChild(dock);
+
+      // Xử lý sự kiện trên Dock
+      dock.querySelector('[data-f-exit]')?.addEventListener('click', () => {
+        toggleFocus(false);
+      });
+
+      dock.querySelectorAll('[data-f-theme]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const s = readSettings();
+          s.theme = btn.dataset.fTheme;
+          writeSettings(s);
+          applySettings(s);
+        });
+      });
+
+      const fontSizes = ['90', '100', '115', '130'];
+      dock.querySelector('[data-f-size="down"]')?.addEventListener('click', () => {
+        const s = readSettings();
+        const curIdx = fontSizes.indexOf(s.fontSize || '100');
+        if (curIdx > 0) {
+          s.fontSize = fontSizes[curIdx - 1];
+          writeSettings(s);
+          applySettings(s);
+        }
+      });
+
+      dock.querySelector('[data-f-size="up"]')?.addEventListener('click', () => {
+        const s = readSettings();
+        const curIdx = fontSizes.indexOf(s.fontSize || '100');
+        if (curIdx !== -1 && curIdx < fontSizes.length - 1) {
+          s.fontSize = fontSizes[curIdx + 1];
+          writeSettings(s);
+          applySettings(s);
+        }
+      });
+
+      // Tự động mờ nhẹ khi cuộn để không che chữ
+      window.addEventListener('scroll', () => {
+        if (!document.documentElement.classList.contains('sth-focus-mode')) return;
+        dock.classList.add('dimmed');
+        clearTimeout(dockScrollTimer);
+        dockScrollTimer = setTimeout(() => {
+          dock.classList.remove('dimmed');
+        }, 900);
+      }, { passive: true });
+    }
+  }
+
   function applySettings(s) {
     const root = document.documentElement;
 
@@ -61,8 +139,31 @@
     // 3. Tương phản
     root.classList.toggle('contrast-high', s.contrast === 'high');
 
-    // 4. Phông chữ
+    // 4. Phông chữ (100% tiếng Việt không lỗi)
     root.setAttribute('data-font', s.fontFamily || 'sans');
+
+    // 5. Chế độ tập trung (Focus Mode)
+    const isFocus = Boolean(s.focusMode);
+    root.classList.toggle('sth-focus-mode', isFocus);
+    ensureFocusDock(isFocus);
+
+    // Đồng bộ nút Focus ngoài trang nếu có
+    document.querySelectorAll('[data-toggle-focus], #ap-focus-btn, #dm-focus-btn').forEach(btn => {
+      btn.setAttribute('aria-pressed', String(isFocus));
+      btn.classList.toggle('active', isFocus);
+      btn.textContent = isFocus ? '✓ Đang tập trung' : '🎯 Chế độ tập trung';
+    });
+
+    document.dispatchEvent(new CustomEvent('sth:settings-changed', { detail: s }));
+  }
+
+  function toggleFocus(forceState) {
+    const s = readSettings();
+    s.focusMode = typeof forceState === 'boolean' ? forceState : !s.focusMode;
+    writeSettings(s);
+    applySettings(s);
+    const modal = document.getElementById('sth-modal-overlay');
+    if (modal && !modal.hidden) syncModal(modal, s);
   }
 
   // Khởi động tức thời để tránh giật giao diện (FOUC)
@@ -110,7 +211,18 @@
               </div>
             </div>
 
-            <!-- 3. Độ tương phản & Phông chữ -->
+            <!-- 3. Kiểu phông chữ (Không lỗi tiếng Việt) -->
+            <div class="sth-setting-block">
+              <span class="sth-setting-label">Kiểu phông chữ (Chuẩn tiếng Việt)</span>
+              <div class="sth-segmented sth-segmented-wrap" id="sth-font-options">
+                <button type="button" data-val="sans" class="sth-font-opt-sans">Inter <small>(Hiện đại)</small></button>
+                <button type="button" data-val="vietnam" class="sth-font-opt-vietnam">Be Vietnam Pro <small>(Dịu mắt)</small></button>
+                <button type="button" data-val="serif" class="sth-font-opt-serif">Merriweather <small>(Sách báo)</small></button>
+                <button type="button" data-val="lora" class="sth-font-opt-lora">Lora <small>(Văn học)</small></button>
+              </div>
+            </div>
+
+            <!-- 4. Độ tương phản & Chế độ tập trung -->
             <div class="sth-setting-grid">
               <div class="sth-setting-block">
                 <span class="sth-setting-label">Độ tương phản chữ</span>
@@ -121,15 +233,15 @@
               </div>
 
               <div class="sth-setting-block">
-                <span class="sth-setting-label">Kiểu phông chữ</span>
-                <div class="sth-segmented" id="sth-font-options">
-                  <button type="button" data-val="sans">Không chân (Inter)</button>
-                  <button type="button" data-val="serif">Có chân (Sách báo)</button>
+                <span class="sth-setting-label">Chế độ tập trung <small style="font-weight:400;color:var(--sth-muted)">(Alt+F)</small></span>
+                <div class="sth-segmented" id="sth-focus-options">
+                  <button type="button" data-val="false">Tắt</button>
+                  <button type="button" data-val="true">🎯 Bật tập trung</button>
                 </div>
               </div>
             </div>
 
-            <!-- 4. Giao diện trang chủ mặc định -->
+            <!-- 5. Giao diện trang chủ mặc định -->
             <div class="sth-setting-block">
               <span class="sth-setting-label">Giao diện khi mở trang chủ</span>
               <div class="sth-radio-group">
@@ -166,6 +278,9 @@
     });
     modal.querySelectorAll('#sth-font-options button').forEach(b => {
       b.classList.toggle('active', b.dataset.val === s.fontFamily);
+    });
+    modal.querySelectorAll('#sth-focus-options button').forEach(b => {
+      b.classList.toggle('active', b.dataset.val === String(Boolean(s.focusMode)));
     });
     const radio = modal.querySelector(`input[name="sth-default-view"][value="${s.defaultView}"]`);
     if (radio) radio.checked = true;
@@ -243,6 +358,17 @@
       });
     });
 
+    // Focus mode buttons
+    modal.querySelectorAll('#sth-focus-options button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const s = readSettings();
+        s.focusMode = btn.dataset.val === 'true';
+        writeSettings(s);
+        applySettings(s);
+        syncModal(modal, s);
+      });
+    });
+
     // Default view radio
     modal.querySelectorAll('input[name="sth-default-view"]').forEach(radio => {
       radio.addEventListener('change', () => {
@@ -261,24 +387,42 @@
     });
   }
 
-  // Phím tắt bàn phím: Alt + S hoặc Esc
+  // Phím tắt bàn phím: Alt + S (Cài đặt), Alt + F (Chế độ tập trung), hoặc Esc
   window.addEventListener('keydown', (ev) => {
     if (ev.key === 'Escape') {
-      closeModal();
+      const modal = document.getElementById('sth-modal-overlay');
+      if (modal && !modal.hidden) {
+        closeModal();
+      } else {
+        const s = readSettings();
+        if (s.focusMode) {
+          toggleFocus(false);
+        }
+      }
     } else if (ev.altKey && (ev.key === 's' || ev.key === 'S')) {
       ev.preventDefault();
       const modal = document.getElementById('sth-modal-overlay');
       if (modal && !modal.hidden) closeModal();
       else openModal();
+    } else if (ev.altKey && (ev.key === 'f' || ev.key === 'F')) {
+      ev.preventDefault();
+      toggleFocus();
     }
   });
 
-  // Tự động gắn sự kiện cho mọi nút có [data-open-settings]
+  // Tự động gắn sự kiện cho mọi nút có [data-open-settings] và [data-toggle-focus]
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-open-settings]').forEach(btn => {
       btn.addEventListener('click', (ev) => {
         ev.preventDefault();
         openModal();
+      });
+    });
+
+    document.querySelectorAll('[data-toggle-focus]').forEach(btn => {
+      btn.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        toggleFocus();
       });
     });
   });
@@ -290,6 +434,9 @@
     apply: applySettings,
     open: openModal,
     close: closeModal,
+    toggleFocus: toggleFocus,
+    setFocus: (flag) => toggleFocus(Boolean(flag)),
+    isFocus: () => Boolean(readSettings().focusMode),
   };
 
 })(typeof window !== 'undefined' ? window : this);

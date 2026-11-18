@@ -29,6 +29,7 @@
   const saveBtn = document.getElementById('ap-save-btn');
   const readBtn = document.getElementById('ap-read-btn');
   const doneBtn = document.getElementById('ap-done-btn');
+  const focusBtn = document.getElementById('ap-focus-btn');
   const randomBtn = document.getElementById('ap-random-btn');
   const copyBtn = document.getElementById('ap-copy-btn');
 
@@ -48,7 +49,24 @@
       doneBtn.setAttribute('aria-pressed', String(done));
       doneBtn.textContent = done ? '✓ Đã áp dụng' : 'Đánh dấu đã áp dụng';
     }
+    if (focusBtn && window.SthSettings) {
+      const isFocus = window.SthSettings.isFocus();
+      focusBtn.setAttribute('aria-pressed', String(isFocus));
+      focusBtn.classList.toggle('active', isFocus);
+      focusBtn.textContent = isFocus ? '✓ Đang tập trung' : '🎯 Chế độ tập trung';
+    }
   }
+
+  focusBtn?.addEventListener('click', () => {
+    if (window.SthSettings) {
+      window.SthSettings.toggleFocus();
+      syncButtons();
+    }
+  });
+
+  document.addEventListener('sth:settings-changed', () => {
+    syncButtons();
+  });
 
   saveBtn?.addEventListener('click', () => {
     tools.toggleSaved(articleId);
