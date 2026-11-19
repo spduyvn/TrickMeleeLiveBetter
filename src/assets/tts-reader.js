@@ -1,7 +1,9 @@
 /**
- * tts-reader.js — Trình phát giọng đọc bài viết (Text-to-Speech Reader)
- * Sử dụng Web Speech API chuẩn trình duyệt, hỗ trợ giọng đọc tiếng Việt,
- * tự động phân đoạn văn bản tránh ngắt tiếng và đồng bộ cuộn trang trực quan.
+ * tts-reader.js — Trình phát giọng đọc bài viết tiếng Việt (Dual-Engine TTS)
+ * Tự động chọn:
+ *   1. Giọng tiếng Việt chuẩn hệ thống (Web Speech API) nếu máy có sẵn giọng Việt.
+ *   2. Giọng đọc Tiếng Việt chuẩn Google (Google TTS) phát qua HTML5 Audio nếu máy chưa cài giọng Việt,
+ *      ngăn chặn 100% tình trạng text tiếng Việt bị phát âm nhầm sang tiếng Anh!
  */
 (function (global) {
   'use strict';
@@ -32,7 +34,8 @@
       .trim();
   }
 
-  function splitIntoChunks(text, maxLen = 140) {
+  // Tách văn bản thành các câu/vế ngắn (tối đa 110 ký tự) để giọng đọc tự nhiên
+  function splitIntoChunks(text, maxLen = 110) {
     const clean = cleanSpeechText(text);
     if (!clean) return [];
     const matches = clean.match(/[^.!?;\n]+[.!?;\n]*/g) || [clean];
@@ -49,6 +52,7 @@
         if (s.length <= maxLen) {
           current = s;
         } else {
+          // Tách câu dài theo dấu phẩy
           const subParts = s.match(/[^,]+[,]?/g) || [s];
           let subCurrent = '';
           for (const sp of subParts) {
@@ -71,7 +75,7 @@
 
   class AudioReader {
     constructor() {
-      this.supported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+      this.hasSpeechSynth = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
       this.state = 'idle'; // 'idle' | 'playing' | 'paused'
       this.chunks = [];
       this.currentIndex = -1;
@@ -82,32 +86,41 @@
       this.activeElement = null;
       this.activeTriggerBtn = null;
       this.dockEl = null;
+      this.audioEl = null;
+      this.currentMode = 'online'; // 'native' | 'online'
 
-      if (this.supported) {
-        this.initVoice();
-        if (window.speechSynthesis.onvoiceschanged !== undefined) {
-          window.speechSynthesis.onvoiceschanged = () => this.initVoice();
-        }
+      this.initVoice();
+      if (this.hasSpeechSynth && window.speechSynthesis.onvoiceschanged !== undefined) {
+        window.speechSynthesis.onvoiceschanged = () => this.initVoice();
       }
     }
 
     initVoice() {
-      if (!this.supported) return;
-      const voices = window.speechSynthesis.getVoices() || [];
-      // 1. Tìm giọng tiếng Việt chính xác
-      const viVoices = voices.filter((v) => v.lang && v.lang.toLowerCase().replace('_', '-').startsWith('vi'));
-      if (viVoices.length > 0) {
-        // Ưu tiên giọng tự nhiên (Google, Microsoft, Natural)
-        this.vietnameseVoice =
-          viVoices.find((v) => /natural|google|hoaimy|namminh|linh|online/i.test(v.name)) ||
-          viVoices[0];
-      } else {
-        // Fallback giọng mặc định nếu máy chưa cài giọng Việt
-        this.vietnameseVoice = voices.find((v) => v.default) || voices[0] || null;
+      if (!this.hasSpeechSynth) {
+        this.vietnameseVoice = null;
+        return;
+      }
+      try {
+        const voices = window.speechSynthesis.getVoices() || [];
+        // Tìm giọng tiếng Việt thực sự (lang starts with 'vi')
+        const viVoices = voices.filter(
+          (v) => v.lang && v.lang.toLowerCase().replace('_', '-').startsWith('vi')
+        );
+        if (viVoices.length > 0) {
+          // Ưu tiên giọng tự nhiên (Google, Microsoft, Natural)
+          this.vietnameseVoice =
+            viVoices.find((v) => /natural|google|hoaimy|namminh|linh|online/i.test(v.name)) ||
+            viVoices[0];
+        } else {
+          // TUYỆT ĐỐI KHÔNG fallback sang giọng tiếng Anh!
+          this.vietnameseVoice = null;
+        }
+      } catch {
+        this.vietnameseVoice = null;
       }
     }
 
-    getVoice() {
+    getVietnameseVoice() {
       if (!this.vietnameseVoice) this.initVoice();
       return this.vietnameseVoice;
     }
@@ -119,7 +132,7 @@
         dock.id = 'sth-audio-dock';
         dock.className = 'sth-audio-dock';
         dock.setAttribute('role', 'region');
-        dock.setAttribute('aria-label', 'Trình phát giọng đọc');
+        dock.setAttribute('aria-label', 'Trình phát giọng đọc tiếng Việt');
         dock.innerHTML = `
           <div class="sth-audio-track"><div class="sth-audio-bar" id="sth-audio-bar"></div></div>
           <div class="sth-audio-body">
@@ -168,7 +181,8 @@
       const total = this.chunks.length;
       const current = Math.max(1, this.currentIndex + 1);
       if (progressEl) {
-        progressEl.textContent = total > 0 ? `Đoạn ${current} / ${total}` : 'Chuẩn bị đọc…';
+        const modeLabel = this.currentMode === 'online' ? 'Chuẩn Tiếng Việt' : 'Tiếng Việt';
+        progressEl.textContent = total > 0 ? `Đoạn ${current} / ${total} · ${modeLabel}` : 'Chuẩn bị đọc…';
       }
 
       if (barEl) {
@@ -201,34 +215,30 @@
       if (chunk && chunk.elementRef) {
         this.activeElement = chunk.elementRef;
         this.activeElement.classList.add('sth-tts-active');
-        // Cuộn nhẹ nhàng tới đoạn đang đọc
         try {
           this.activeElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         } catch {}
       }
     }
 
-    speakCurrentChunk() {
-      if (!this.supported) return;
-      if (this.currentIndex < 0 || this.currentIndex >= this.chunks.length) {
-        this.stop();
-        return;
+    playChunkOnline(chunk) {
+      this.currentMode = 'online';
+      if (this.audioEl) {
+        this.audioEl.onended = null;
+        this.audioEl.onerror = null;
+        this.audioEl.pause();
       }
 
-      window.speechSynthesis.cancel();
-
-      const chunk = this.chunks[this.currentIndex];
       this.highlightChunk(chunk);
       this.updateDockUI();
 
-      const utter = new SpeechSynthesisUtterance(chunk.text);
-      utter.rate = this.rate;
-      utter.lang = 'vi-VN';
+      // Sử dụng Google TTS chuẩn tiếng Việt (tl=vi)
+      const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(chunk.text)}&tl=vi&client=tw-ob`;
+      const audio = new Audio(url);
+      this.audioEl = audio;
+      audio.playbackRate = this.rate;
 
-      const voice = this.getVoice();
-      if (voice) utter.voice = voice;
-
-      utter.onend = () => {
+      audio.onended = () => {
         if (this.state === 'playing') {
           this.currentIndex += 1;
           if (this.currentIndex < this.chunks.length) {
@@ -239,9 +249,8 @@
         }
       };
 
-      utter.onerror = (ev) => {
-        if (ev.error === 'interrupted' || ev.error === 'canceled') return;
-        // Nếu gặp lỗi nhỏ, thử nhảy tiếp chunk kế
+      audio.onerror = () => {
+        // Nếu một đoạn lỗi, tự động chuyển tiếp đoạn kế
         if (this.state === 'playing') {
           this.currentIndex += 1;
           this.speakCurrentChunk();
@@ -250,15 +259,67 @@
 
       this.state = 'playing';
       this.updateDockUI();
-      window.speechSynthesis.speak(utter);
+      audio.play().catch(() => {});
     }
 
-    playArticle({ id, title, items, triggerBtn }) {
-      if (!this.supported) {
-        alert('Trình duyệt của bạn không hỗ trợ tính năng đọc bài (Web Speech API).');
+    speakCurrentChunk() {
+      if (this.currentIndex < 0 || this.currentIndex >= this.chunks.length) {
+        this.stop();
         return;
       }
 
+      const chunk = this.chunks[this.currentIndex];
+      const viVoice = this.getVietnameseVoice();
+
+      // Nếu máy có giọng tiếng Việt thực sự thì dùng Web Speech API
+      if (viVoice) {
+        this.currentMode = 'native';
+        if (this.audioEl) {
+          this.audioEl.pause();
+          this.audioEl.src = '';
+        }
+        window.speechSynthesis.cancel();
+        this.highlightChunk(chunk);
+        this.updateDockUI();
+
+        const utter = new SpeechSynthesisUtterance(chunk.text);
+        utter.voice = viVoice;
+        utter.lang = viVoice.lang || 'vi-VN';
+        utter.rate = this.rate;
+
+        utter.onend = () => {
+          if (this.state === 'playing') {
+            this.currentIndex += 1;
+            if (this.currentIndex < this.chunks.length) {
+              this.speakCurrentChunk();
+            } else {
+              this.stop();
+            }
+          }
+        };
+
+        utter.onerror = (ev) => {
+          if (ev.error === 'interrupted' || ev.error === 'canceled') return;
+          if (this.state === 'playing') {
+            this.currentIndex += 1;
+            this.speakCurrentChunk();
+          }
+        };
+
+        this.state = 'playing';
+        this.updateDockUI();
+        window.speechSynthesis.speak(utter);
+      } else {
+        // Nếu máy KHÔNG có giọng tiếng Việt (như Windows tiếng Anh mặc định):
+        // Chuyển sang Audio Stream Google TTS chuẩn tiếng Việt, TUYỆT ĐỐI không đọc tiếng Anh!
+        if (this.hasSpeechSynth) {
+          window.speechSynthesis.cancel();
+        }
+        this.playChunkOnline(chunk);
+      }
+    }
+
+    playArticle({ id, title, items, triggerBtn }) {
       // Nếu đang phát chính bài này
       if (this.currentArticleId === id && this.state !== 'idle') {
         this.toggle();
@@ -296,14 +357,26 @@
     }
 
     toggle() {
-      if (!this.supported || this.state === 'idle') return;
+      if (this.state === 'idle') return;
       if (this.state === 'playing') {
         this.state = 'paused';
-        window.speechSynthesis.cancel();
+        if (this.currentMode === 'online' && this.audioEl) {
+          this.audioEl.pause();
+        } else if (this.hasSpeechSynth) {
+          window.speechSynthesis.pause();
+        }
         this.updateDockUI();
       } else if (this.state === 'paused') {
         this.state = 'playing';
-        this.speakCurrentChunk();
+        if (this.currentMode === 'online' && this.audioEl) {
+          this.audioEl.play().catch(() => {});
+          this.updateDockUI();
+        } else if (this.hasSpeechSynth) {
+          window.speechSynthesis.resume();
+          this.updateDockUI();
+        } else {
+          this.speakCurrentChunk();
+        }
       }
     }
 
@@ -324,15 +397,25 @@
       const nextIdx = (idx + 1) % RATES.length;
       this.rate = RATES[nextIdx];
       saveRate(this.rate);
+      if (this.audioEl) {
+        this.audioEl.playbackRate = this.rate;
+      }
       this.updateDockUI();
-      if (this.state === 'playing') {
+      if (this.state === 'playing' && this.currentMode === 'native') {
         this.speakCurrentChunk();
       }
     }
 
     stop() {
-      if (this.supported) {
+      if (this.hasSpeechSynth) {
         window.speechSynthesis.cancel();
+      }
+      if (this.audioEl) {
+        this.audioEl.onended = null;
+        this.audioEl.onerror = null;
+        this.audioEl.pause();
+        this.audioEl.src = '';
+        this.audioEl = null;
       }
       this.state = 'idle';
       this.highlightChunk(null);
