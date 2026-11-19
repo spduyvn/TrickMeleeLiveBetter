@@ -1,7 +1,7 @@
 /**
- * tts-reader.js — Trình phát giọng đọc bài viết tiếng Việt (Dual-Engine TTS)
- * Đảm bảo 100% phát âm chuẩn tiếng Việt, xử lý bất đồng bộ voices,
- * tự động dự phòng và bảo vệ không bao giờ bị lỗi lướt nhanh mất tiếng.
+ * tts-reader.js — Trình phát giọng đọc bài viết tiếng Việt (Native Web Speech)
+ * Tự động tìm kiếm và ưu tiên giọng đọc Tiếng Việt chuẩn (Edge Natural, Chrome, iOS Linh, Android Google Tiếng Việt),
+ * phân đoạn câu mạch lạc, cuộn trang theo dõi và xử lý giao diện trực quan.
  */
 (function (global) {
   'use strict';
@@ -32,8 +32,8 @@
       .trim();
   }
 
-  // Tách văn bản thành các câu/vế ngắn (tối đa 100 ký tự) để giọng đọc mượt và phát nhanh
-  function splitIntoChunks(text, maxLen = 100) {
+  // Tách văn bản thành các câu/vế ngắn (tối đa 110 ký tự) để giọng đọc tự nhiên
+  function splitIntoChunks(text, maxLen = 110) {
     const clean = cleanSpeechText(text);
     if (!clean) return [];
     const matches = clean.match(/[^.!?;\n]+[.!?;\n]*/g) || [clean];
@@ -50,7 +50,6 @@
         if (s.length <= maxLen) {
           current = s;
         } else {
-          // Tách câu dài theo dấu phẩy
           const subParts = s.match(/[^,]+[,]?/g) || [s];
           let subCurrent = '';
           for (const sp of subParts) {
@@ -84,9 +83,6 @@
       this.activeElement = null;
       this.activeTriggerBtn = null;
       this.dockEl = null;
-      this.audioEl = null;
-      this.engine = 'native'; // 'native' | 'online'
-      this.retryCount = 0;
 
       this.initVoice();
       if (this.hasSpeechSynth && window.speechSynthesis.onvoiceschanged !== undefined) {
@@ -119,11 +115,12 @@
         });
 
         if (viVoices.length > 0) {
+          // Ưu tiên giọng tự nhiên (Microsoft HoaiMy / NamMinh, Google Tiếng Việt, Apple Linh)
           this.vietnameseVoice =
-            viVoices.find((v) => /natural|google|hoaimy|namminh|linh|online/i.test(v.name)) ||
+            viVoices.find((v) => /natural|hoaimy|namminh|google|linh|online/i.test(v.name)) ||
             viVoices[0];
         } else {
-          // TUYỆT ĐỐI KHÔNG lấy giọng tiếng Anh
+          // TUYỆT ĐỐI KHÔNG dùng giọng tiếng Anh để đọc tiếng Việt!
           this.vietnameseVoice = null;
         }
         return this.vietnameseVoice;
@@ -131,22 +128,6 @@
         this.vietnameseVoice = null;
         return null;
       }
-    }
-
-    getAudioElement() {
-      if (!this.audioEl) {
-        let el = document.getElementById('sth-tts-audio-node');
-        if (!el) {
-          el = document.createElement('audio');
-          el.id = 'sth-tts-audio-node';
-          el.setAttribute('preload', 'auto');
-          el.setAttribute('referrerpolicy', 'no-referrer');
-          el.referrerPolicy = 'no-referrer';
-          if (document.body) document.body.appendChild(el);
-        }
-        this.audioEl = el;
-      }
-      return this.audioEl;
     }
 
     ensureDock() {
@@ -209,8 +190,8 @@
         if (customStatus) {
           progressEl.textContent = customStatus;
         } else {
-          const engineLabel = this.engine === 'native' ? 'Tiếng Việt' : 'Chuẩn Tiếng Việt';
-          progressEl.textContent = total > 0 ? `Đoạn ${current} / ${total} · ${engineLabel}` : 'Chuẩn bị đọc…';
+          const voiceName = this.vietnameseVoice?.name?.replace(/Microsoft|Google|Apple|Online|\(Natural\)|\(Vietnam\)/gi, '').trim() || 'Tiếng Việt';
+          progressEl.textContent = total > 0 ? `Đoạn ${current} / ${total} · ${voiceName}` : 'Chuẩn bị đọc…';
         }
       }
 
@@ -250,31 +231,34 @@
       }
     }
 
-    // Engine 1: Native Web Speech API
-    speakNative(chunk, voice) {
-      this.engine = 'native';
-      const audio = this.getAudioElement();
-      if (audio) {
-        audio.pause();
-        audio.removeAttribute('src');
+    speakCurrentChunk() {
+      if (!this.hasSpeechSynth) {
+        this.showNoVoiceNotice();
+        return;
+      }
+      if (this.currentIndex < 0 || this.currentIndex >= this.chunks.length) {
+        this.stop();
+        return;
+      }
+
+      const viVoice = this.vietnameseVoice;
+      if (!viVoice) {
+        this.showNoVoiceNotice();
+        return;
       }
 
       window.speechSynthesis.cancel();
+      const chunk = this.chunks[this.currentIndex];
       this.highlightChunk(chunk);
       this.updateDockUI();
 
       const utter = new SpeechSynthesisUtterance(chunk.text);
-      if (voice) {
-        utter.voice = voice;
-        utter.lang = voice.lang || 'vi-VN';
-      } else {
-        utter.lang = 'vi-VN';
-      }
+      utter.voice = viVoice;
+      utter.lang = viVoice.lang || 'vi-VN';
       utter.rate = this.rate;
 
       utter.onend = () => {
         if (this.state === 'playing') {
-          this.retryCount = 0;
           this.currentIndex += 1;
           if (this.currentIndex < this.chunks.length) {
             this.speakCurrentChunk();
@@ -286,14 +270,9 @@
 
       utter.onerror = (ev) => {
         if (ev.error === 'interrupted' || ev.error === 'canceled') return;
-        console.warn('Native speech error:', ev.error);
-        // Nếu native lỗi, thử chuyển sang online một lần
-        if (this.engine === 'native' && this.retryCount === 0) {
-          this.retryCount = 1;
-          this.speakOnline(chunk);
-        } else {
-          this.handlePlaybackFailure();
-        }
+        console.warn('Speech error:', ev.error);
+        this.state = 'paused';
+        this.updateDockUI('⚠️ Tạm dừng do lỗi phát');
       };
 
       this.state = 'playing';
@@ -301,87 +280,19 @@
       window.speechSynthesis.speak(utter);
     }
 
-    // Engine 2: Audio Stream với Google TTS Tiếng Việt
-    speakOnline(chunk) {
-      this.engine = 'online';
-      if (this.hasSpeechSynth) {
-        window.speechSynthesis.cancel();
-      }
-
-      this.highlightChunk(chunk);
-      this.updateDockUI();
-
-      const audio = this.getAudioElement();
-      if (!audio) {
-        this.handlePlaybackFailure();
-        return;
-      }
-
-      audio.onended = null;
-      audio.onerror = null;
-      audio.pause();
-
-      const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(chunk.text)}&tl=vi&client=tw-ob`;
-      audio.src = url;
-      audio.playbackRate = this.rate;
-
-      audio.onended = () => {
-        if (this.state === 'playing') {
-          this.retryCount = 0;
-          this.currentIndex += 1;
-          if (this.currentIndex < this.chunks.length) {
-            this.speakCurrentChunk();
-          } else {
-            this.stop();
-          }
-        }
-      };
-
-      audio.onerror = (e) => {
-        console.warn('Online audio stream error:', e);
-        this.handlePlaybackFailure();
-      };
-
-      this.state = 'playing';
-      this.updateDockUI();
-
-      audio.play().catch((err) => {
-        console.warn('Audio play failed:', err);
-        this.handlePlaybackFailure();
-      });
-    }
-
-    handlePlaybackFailure() {
-      // Khi gặp lỗi thực sự, DỪNG LẠI và thông báo cho người dùng, KHÔNG lướt qua đoạn sau
+    showNoVoiceNotice() {
       this.state = 'paused';
-      if (this.hasSpeechSynth) window.speechSynthesis.cancel();
-      const audio = this.getAudioElement();
-      if (audio) audio.pause();
-
-      this.updateDockUI('⚠️ Chưa có giọng đọc tiếng Việt trên trình duyệt này');
+      this.ensureDock();
       if (this.dockEl) {
+        this.dockEl.hidden = false;
         const titleEl = this.dockEl.querySelector('#sth-audio-title');
-        if (titleEl) titleEl.textContent = 'Khuyên dùng Edge hoặc Chrome có Speech';
+        const progressEl = this.dockEl.querySelector('#sth-audio-progress');
+        if (titleEl) titleEl.textContent = 'Chưa có giọng đọc Tiếng Việt';
+        if (progressEl) {
+          progressEl.innerHTML = 'Khuyên dùng <strong>Microsoft Edge</strong> hoặc Chrome trên điện thoại để có giọng đọc Tiếng Việt chuẩn.';
+        }
       }
-    }
-
-    async speakCurrentChunk() {
-      if (this.currentIndex < 0 || this.currentIndex >= this.chunks.length) {
-        this.stop();
-        return;
-      }
-
-      const chunk = this.chunks[this.currentIndex];
-      const viVoice = await this.initVoice();
-
-      if (viVoice) {
-        // Máy có giọng tiếng Việt thực sự
-        this.speakNative(chunk, viVoice);
-      } else {
-        // Máy không có giọng tiếng Việt (Windows tiếng Anh mặc định)
-        // Thử phát qua Audio Engine Google TTS tiếng Việt
-        this.speakOnline(chunk);
-      }
+      alert('Trình duyệt hoặc máy tính của bạn hiện chưa có sẵn giọng đọc Tiếng Việt.\n\n👉 Bạn hãy thử mở trang web này bằng trình duyệt Microsoft Edge (có sẵn giọng đọc AI Hoài My/Nam Minh cực hay), hoặc mở trên điện thoại (iPhone / Android) để nghe mượt mà nhé!');
     }
 
     async playArticle({ id, title, items, triggerBtn }) {
@@ -394,7 +305,13 @@
       this.currentArticleId = id;
       this.currentTitle = title || 'Bài viết';
       this.activeTriggerBtn = triggerBtn || null;
-      this.retryCount = 0;
+
+      // Kiểm tra và chờ giọng tiếng Việt
+      const viVoice = await this.initVoice();
+      if (!viVoice) {
+        this.showNoVoiceNotice();
+        return;
+      }
 
       const parsedChunks = [];
       for (const item of items) {
@@ -417,33 +334,20 @@
       this.currentIndex = 0;
       this.ensureDock();
       if (this.dockEl) this.dockEl.hidden = false;
-      this.updateDockUI('Đang tải giọng đọc Tiếng Việt…');
-
-      await this.speakCurrentChunk();
+      this.speakCurrentChunk();
     }
 
     toggle() {
       if (this.state === 'idle') return;
       if (this.state === 'playing') {
         this.state = 'paused';
-        if (this.engine === 'online') {
-          const audio = this.getAudioElement();
-          if (audio) audio.pause();
-        } else if (this.hasSpeechSynth) {
+        if (this.hasSpeechSynth) {
           window.speechSynthesis.pause();
         }
         this.updateDockUI();
       } else if (this.state === 'paused') {
         this.state = 'playing';
-        if (this.engine === 'online') {
-          const audio = this.getAudioElement();
-          if (audio && audio.src) {
-            audio.play().catch(() => {});
-            this.updateDockUI();
-          } else {
-            this.speakCurrentChunk();
-          }
-        } else if (this.hasSpeechSynth) {
+        if (this.hasSpeechSynth) {
           window.speechSynthesis.resume();
           this.updateDockUI();
         } else {
@@ -469,12 +373,8 @@
       const nextIdx = (idx + 1) % RATES.length;
       this.rate = RATES[nextIdx];
       saveRate(this.rate);
-      const audio = this.getAudioElement();
-      if (audio) {
-        audio.playbackRate = this.rate;
-      }
       this.updateDockUI();
-      if (this.state === 'playing' && this.engine === 'native') {
+      if (this.state === 'playing') {
         this.speakCurrentChunk();
       }
     }
@@ -482,13 +382,6 @@
     stop() {
       if (this.hasSpeechSynth) {
         window.speechSynthesis.cancel();
-      }
-      const audio = this.getAudioElement();
-      if (audio) {
-        audio.onended = null;
-        audio.onerror = null;
-        audio.pause();
-        audio.removeAttribute('src');
       }
       this.state = 'idle';
       this.highlightChunk(null);
@@ -504,7 +397,6 @@
       this.currentArticleId = null;
       this.currentIndex = -1;
       this.chunks = [];
-      this.retryCount = 0;
     }
   }
 
