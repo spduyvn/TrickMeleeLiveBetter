@@ -30,8 +30,54 @@
   const readBtn = document.getElementById('ap-read-btn');
   const doneBtn = document.getElementById('ap-done-btn');
   const focusBtn = document.getElementById('ap-focus-btn');
+  const audioBtn = document.getElementById('ap-audio-btn');
   const randomBtn = document.getElementById('ap-random-btn');
   const copyBtn = document.getElementById('ap-copy-btn');
+
+  function getArticleContentItems() {
+    const items = [];
+    const titleEl = document.querySelector('.article-heading h1');
+    if (titleEl) items.push({ text: titleEl.textContent, element: titleEl });
+
+    const descEl = document.querySelector('.article-heading .hero-copy');
+    if (descEl) items.push({ text: descEl.textContent, element: descEl });
+
+    const metaGrid = document.querySelector('.metadata-grid');
+    if (metaGrid) {
+      metaGrid.querySelectorAll('div').forEach((div) => {
+        const dt = div.querySelector('dt')?.textContent || '';
+        const dd = div.querySelector('dd')?.textContent || '';
+        if (dt && dd && dd !== '—' && !dt.includes('Thời lượng đọc')) {
+          items.push({ text: `${dt}: ${dd}`, element: div });
+        }
+      });
+    }
+
+    const bodyEl = document.querySelector('.article-body');
+    if (bodyEl) {
+      bodyEl.querySelectorAll('h2, h3, p, li').forEach((el) => {
+        const txt = el.textContent?.trim();
+        if (txt && txt.length > 3) {
+          items.push({ text: txt, element: el });
+        }
+      });
+    }
+
+    return items;
+  }
+
+  audioBtn?.addEventListener('click', () => {
+    if (window.STHAudioReader) {
+      const items = getArticleContentItems();
+      const title = document.querySelector('.article-heading h1')?.textContent || 'Bài viết';
+      window.STHAudioReader.playArticle({
+        id: articleId,
+        title,
+        items,
+        triggerBtn: audioBtn,
+      });
+    }
+  });
 
   function syncButtons() {
     if (saveBtn) {

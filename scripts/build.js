@@ -239,6 +239,7 @@ function renderArticleHtmlPage(article, category, relatedArticles) {
   <link rel="stylesheet" href="${basePath}/assets/styles.css">
   <link rel="stylesheet" href="${basePath}/assets/settings.css">
   <script src="${basePath}/assets/settings.js"></script>
+  <script src="${basePath}/assets/tts-reader.js"></script>
   <script type="application/ld+json">${escJsonLd(jsonLd)}</script>
 </head>
 <body>
@@ -276,6 +277,7 @@ function renderArticleHtmlPage(article, category, relatedArticles) {
           <span>${article.verified_at ? `Xác minh: ${escHtml(article.verified_at)}` : 'Ngày xác minh: chưa có'}</span>
         </p>
         <div class="ap-actions">
+          <button type="button" class="ap-btn" id="ap-audio-btn" title="Nghe đọc bài viết">🔊 Nghe đọc bài</button>
           <button type="button" class="ap-btn" id="ap-save-btn" aria-pressed="false">☆ Lưu bài</button>
           <button type="button" class="ap-btn" id="ap-read-btn" aria-pressed="false">👁️ Đã đọc</button>
           <button type="button" class="ap-btn" id="ap-done-btn" aria-pressed="false">Đánh dấu đã áp dụng</button>

@@ -1062,6 +1062,7 @@
         <button type="button" class="g-action-pill" data-toggle-save="${esc(a.id)}" aria-pressed="${isSaved}">${isSaved ? '★ Đã lưu' : '☆ Lưu bài'}</button>
         <button type="button" class="g-action-pill" data-toggle-read="${esc(a.id)}" aria-pressed="${isRead}">${isRead ? '✓ Đã đọc' : '👁️ Đã đọc'}</button>
         <button type="button" class="g-action-pill" data-toggle-done="${esc(a.id)}" aria-pressed="${isDone}">✓ Đã làm</button>
+        <button type="button" class="g-action-pill" id="dm-audio-btn">🔊 Nghe đọc bài</button>
         <button type="button" class="g-action-pill ${isFocus ? 'active' : ''}" id="dm-focus-btn" aria-pressed="${isFocus}">🎯 Tập trung</button>
         <button type="button" class="g-action-pill" id="dm-copy-link">🔗 Sao chép link</button>
         <a class="g-action-pill" href="${esc(reportUrl)}" target="_blank" rel="noopener noreferrer">⚠ Báo lỗi / Sửa nguồn</a>
@@ -1082,6 +1083,29 @@
       <div class="g-src"><div class="g-src-body">${renderSourcesHtml(a.sources, curTerms)}</div></div>
       ${related.length ? `<h2 id="dm-s-related">Bài viết liên quan</h2><div class="dm-related">${related.map((r) => `<button type="button" class="dm-rel-btn" data-open-article="${esc(r.id)}"><strong>${esc(r.title)}</strong><span>${esc(r.description)}</span></button>`).join('')}</div>` : ''}
       ${a.last_updated ? `<p style="margin-top:18px;font-size:12px;color:var(--t3)">Cập nhật lần cuối: ${esc(a.last_updated)}</p>` : ''}`;
+
+    const audioBtn = document.getElementById('dm-audio-btn');
+    audioBtn?.addEventListener('click', () => {
+      if (window.STHAudioReader) {
+        const items = [];
+        const title = DM.title.textContent || a.title;
+        items.push({ text: title, element: DM.title });
+        if (a.description) {
+          items.push({ text: a.description, element: DM.doc.querySelector('.g-human') });
+        }
+        DM.doc.querySelectorAll('h2, h3, p, li').forEach((el) => {
+          if (el.closest('.dm-actions, .dm-related, .g-src, .dm-checklist')) return;
+          const txt = el.textContent?.trim();
+          if (txt && txt.length > 3) items.push({ text: txt, element: el });
+        });
+        window.STHAudioReader.playArticle({
+          id: a.id,
+          title,
+          items,
+          triggerBtn: audioBtn,
+        });
+      }
+    });
 
     const focusBtn = document.getElementById('dm-focus-btn');
     focusBtn?.addEventListener('click', () => {
@@ -1216,6 +1240,9 @@
 
   function closeModal() {
     if (DM.mask.hidden) return;
+    if (window.STHAudioReader) {
+      window.STHAudioReader.stop();
+    }
     DM.mask.hidden = true;
     document.body.style.overflow = '';
     DM.lastFocus?.focus?.({ preventScroll: true });
