@@ -52,6 +52,10 @@
       if (dock) dock.remove();
       return;
     }
+    if (!document.body) {
+      document.addEventListener('DOMContentLoaded', () => ensureFocusDock(true), { once: true });
+      return;
+    }
     if (!dock) {
       dock = document.createElement('div');
       dock.id = 'sth-focus-dock';
