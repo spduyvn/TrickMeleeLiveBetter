@@ -259,6 +259,18 @@
                 </label>
               </div>
             </div>
+
+            <!-- 6. Giọng đọc bài viết (Text-to-Speech) -->
+            <div class="sth-setting-block">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                <span class="sth-setting-label" style="margin-bottom:0;">Giọng đọc bài viết (TTS)</span>
+                <button type="button" class="sth-voice-guide-link" id="sth-open-voice-guide">ℹ️ Hướng dẫn &amp; Mẹo nghe</button>
+              </div>
+              <div class="sth-voice-status-box" id="sth-voice-status-box">
+                <span class="sth-voice-status-dot" id="sth-settings-voice-dot"></span>
+                <span id="sth-settings-voice-text" style="font-size:0.83rem;">Đang kiểm tra giọng đọc hệ thống…</span>
+              </div>
+            </div>
           </div>
 
           <footer class="sth-modal-bot">
@@ -288,6 +300,24 @@
     });
     const radio = modal.querySelector(`input[name="sth-default-view"][value="${s.defaultView}"]`);
     if (radio) radio.checked = true;
+
+    // Cập nhật trạng thái giọng đọc
+    const dot = modal.querySelector('#sth-settings-voice-dot');
+    const txt = modal.querySelector('#sth-settings-voice-text');
+    if (dot && txt) {
+      if (window.STHAudioReader?.getVoiceInfo) {
+        const info = window.STHAudioReader.getVoiceInfo();
+        if (info.available) {
+          dot.className = 'sth-voice-status-dot sth-voice-dot-ok';
+          txt.textContent = `Sẵn sàng: ${info.label}`;
+        } else {
+          dot.className = 'sth-voice-status-dot sth-voice-dot-warn';
+          txt.textContent = 'Chưa có giọng Tiếng Việt (Bấm "Hướng dẫn" để bật)';
+        }
+      } else {
+        txt.textContent = 'Trình phát giọng đọc bài viết sẵn sàng';
+      }
+    }
   }
 
   function openModal() {
@@ -316,6 +346,14 @@
     modal.querySelector('#sth-btn-done')?.addEventListener('click', closeModal);
     modal.addEventListener('click', (ev) => {
       if (ev.target.id === 'sth-modal-overlay') closeModal();
+    });
+
+    // Mở modal hướng dẫn giọng đọc
+    modal.querySelector('#sth-open-voice-guide')?.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      if (window.STHAudioReader?.openGuideModal) {
+        window.STHAudioReader.openGuideModal();
+      }
     });
 
     // Theme buttons
@@ -394,6 +432,12 @@
   // Phím tắt bàn phím: Alt + S (Cài đặt), Alt + F (Chế độ tập trung), hoặc Esc
   window.addEventListener('keydown', (ev) => {
     if (ev.key === 'Escape') {
+      const voiceModal = document.getElementById('sth-voice-modal-overlay');
+      if (voiceModal && !voiceModal.hidden) {
+        voiceModal.hidden = true;
+        document.body.style.overflow = '';
+        return;
+      }
       const modal = document.getElementById('sth-modal-overlay');
       if (modal && !modal.hidden) {
         closeModal();

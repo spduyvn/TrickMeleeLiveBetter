@@ -86,8 +86,24 @@
 
       this.initVoice();
       if (this.hasSpeechSynth && window.speechSynthesis.onvoiceschanged !== undefined) {
-        window.speechSynthesis.onvoiceschanged = () => this.initVoice();
+        window.speechSynthesis.onvoiceschanged = () => {
+          this.initVoice();
+          const overlay = document.getElementById('sth-voice-modal-overlay');
+          if (overlay && !overlay.hidden) this.updateGuideModalVoiceStatus(overlay);
+        };
       }
+
+      // Phím tắt Space để tạm dừng / tiếp tục khi đang nghe
+      window.addEventListener('keydown', (ev) => {
+        const tag = (ev.target?.tagName || '').toLowerCase();
+        if (tag === 'input' || tag === 'textarea' || ev.target?.isContentEditable) return;
+        if (this.state === 'idle') return;
+
+        if (ev.code === 'Space' && !ev.altKey && !ev.ctrlKey && !ev.metaKey) {
+          ev.preventDefault();
+          this.toggle();
+        }
+      });
     }
 
     async initVoice() {
@@ -130,6 +146,26 @@
       }
     }
 
+    getVoiceInfo() {
+      const v = this.vietnameseVoice;
+      if (!v) {
+        return {
+          available: false,
+          name: '',
+          label: 'Chưa phát hiện giọng Tiếng Việt',
+          isNatural: false,
+        };
+      }
+      const isNatural = /natural|online|google|apple/i.test(v.name);
+      return {
+        available: true,
+        name: v.name,
+        lang: v.lang || 'vi-VN',
+        label: `${v.name}${isNatural ? ' (Giọng AI tự nhiên)' : ''}`,
+        isNatural,
+      };
+    }
+
     ensureDock() {
       if (!document.body) return null;
       let dock = document.getElementById('sth-audio-dock');
@@ -154,6 +190,7 @@
               <button type="button" class="sth-audio-btn sth-audio-play" data-act="toggle" title="Phát / Tạm dừng (Space)">⏸</button>
               <button type="button" class="sth-audio-btn" data-act="next" title="Đoạn kế tiếp (⏭)">⏭</button>
               <button type="button" class="sth-audio-btn sth-audio-rate" data-act="rate" title="Đổi tốc độ đọc">${this.rate}x</button>
+              <button type="button" class="sth-audio-btn sth-audio-help" data-act="help" title="Hướng dẫn &amp; Mẹo giọng đọc (❓)">❓</button>
               <button type="button" class="sth-audio-btn" data-act="stop" title="Dừng đọc (⏹)">⏹</button>
               <button type="button" class="sth-audio-btn sth-audio-close" data-act="close" title="Đóng thanh phát">×</button>
             </div>
@@ -165,6 +202,7 @@
         dock.querySelector('[data-act="toggle"]')?.addEventListener('click', () => this.toggle());
         dock.querySelector('[data-act="next"]')?.addEventListener('click', () => this.next());
         dock.querySelector('[data-act="rate"]')?.addEventListener('click', () => this.toggleRate());
+        dock.querySelector('[data-act="help"]')?.addEventListener('click', () => this.openGuideModal());
         dock.querySelector('[data-act="stop"]')?.addEventListener('click', () => this.stop());
         dock.querySelector('[data-act="close"]')?.addEventListener('click', () => this.stop());
       }
@@ -289,10 +327,213 @@
         const progressEl = this.dockEl.querySelector('#sth-audio-progress');
         if (titleEl) titleEl.textContent = 'Chưa có giọng đọc Tiếng Việt';
         if (progressEl) {
-          progressEl.innerHTML = 'Khuyên dùng <strong>Microsoft Edge</strong> hoặc Chrome trên điện thoại để có giọng đọc Tiếng Việt chuẩn.';
+          progressEl.innerHTML = 'Khuyên dùng <strong>Edge</strong> hoặc điện thoại · Bấm <strong>❓</strong> xem cách bật';
         }
       }
-      alert('Trình duyệt hoặc máy tính của bạn hiện chưa có sẵn giọng đọc Tiếng Việt.\n\n👉 Bạn hãy thử mở trang web này bằng trình duyệt Microsoft Edge (có sẵn giọng đọc AI Hoài My/Nam Minh cực hay), hoặc mở trên điện thoại (iPhone / Android) để nghe mượt mà nhé!');
+      this.openGuideModal('⚠️ Trình duyệt hoặc máy tính của bạn hiện chưa có sẵn giọng đọc Tiếng Việt. Vui lòng xem hướng dẫn bên dưới để kích hoạt nhanh:');
+    }
+
+    openGuideModal(noticeMessage = '') {
+      let overlay = document.getElementById('sth-voice-modal-overlay');
+      if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'sth-voice-modal-overlay';
+        overlay.className = 'sth-voice-modal-overlay';
+        overlay.setAttribute('role', 'dialog');
+        overlay.setAttribute('aria-modal', 'true');
+        overlay.setAttribute('aria-label', 'Hướng dẫn giọng đọc Tiếng Việt');
+        overlay.innerHTML = `
+          <div class="sth-voice-modal-card">
+            <header class="sth-voice-modal-top">
+              <div class="sth-voice-modal-title-wrap">
+                <span class="sth-voice-modal-icon" aria-hidden="true">🎙️</span>
+                <div>
+                  <h2 id="sth-voice-modal-h">Hướng dẫn &amp; Mẹo giọng đọc Tiếng Việt</h2>
+                  <p class="sth-voice-modal-sub">Trải nghiệm nghe đọc bài viết chuẩn ngữ điệu, mượt mà và không mỏi mắt</p>
+                </div>
+              </div>
+              <button type="button" class="sth-voice-modal-x" id="sth-voice-modal-x" aria-label="Đóng cửa sổ">×</button>
+            </header>
+
+            <div class="sth-voice-modal-content">
+              <div id="sth-voice-modal-alert" class="sth-voice-alert" ${noticeMessage ? '' : 'style="display:none;"'}>
+                ${noticeMessage || ''}
+              </div>
+
+              <!-- Trạng thái giọng đọc hiện tại -->
+              <div class="sth-voice-status-banner">
+                <div class="sth-voice-status-left">
+                  <span class="sth-voice-status-dot" id="sth-voice-dot"></span>
+                  <div class="sth-voice-status-text">
+                    <strong id="sth-voice-status-title">Đang kiểm tra giọng đọc…</strong>
+                    <span id="sth-voice-status-desc">Hệ thống đang quét các giọng đọc có sẵn trên thiết bị của bạn</span>
+                  </div>
+                </div>
+                <button type="button" class="sth-voice-rescan-btn" id="sth-voice-rescan-btn" title="Quét lại danh sách giọng đọc">
+                  🔄 Quét lại
+                </button>
+              </div>
+
+              <!-- Hướng dẫn chính: 2 lựa chọn tiện nhất -->
+              <div class="sth-voice-section">
+                <h3 class="sth-voice-section-title">🌟 Cách 1: Sử dụng Microsoft Edge hoặc Điện thoại (Khuyên dùng - Nhanh nhất)</h3>
+                <div class="sth-voice-recom-grid">
+                  <div class="sth-voice-recom-card">
+                    <div class="sth-voice-recom-head">
+                      <span class="sth-voice-recom-badge">Tốt nhất trên PC</span>
+                      <strong>Trình duyệt Microsoft Edge</strong>
+                    </div>
+                    <p>Edge tích hợp sẵn 2 giọng đọc AI tiếng Việt <strong>Hoài My (Nữ)</strong> và <strong>Nam Minh (Nam)</strong> cực kỳ truyền cảm, tự nhiên như podcast. Không cần cài đặt bất cứ thứ gì!</p>
+                  </div>
+                  <div class="sth-voice-recom-card">
+                    <div class="sth-voice-recom-head">
+                      <span class="sth-voice-recom-badge">Tiện lợi</span>
+                      <strong>Điện thoại iPhone / Android</strong>
+                    </div>
+                    <p>Tất cả smartphone đã có sẵn giọng tiếng Việt (Siri Tiếng Việt / Google Speech). Chỉ cần mở Safari hoặc Chrome trên điện thoại và bấm <strong>Nghe đọc bài</strong>.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hướng dẫn Windows: Cho Google Chrome / Cốc Cốc -->
+              <div class="sth-voice-section">
+                <h3 class="sth-voice-section-title">⚙️ Cách 2: Bật giọng Tiếng Việt cho Google Chrome trên Windows (Chỉ 30s)</h3>
+                <p class="sth-voice-section-desc">Mặc định Windows bản tiếng Anh chưa cài gói giọng nói Tiếng Việt. Bạn hãy bật theo 4 bước sau:</p>
+                <div class="sth-voice-steps">
+                  <div class="sth-voice-step">
+                    <span class="sth-voice-step-num">1</span>
+                    <div class="sth-voice-step-body">
+                      <strong>Mở cài đặt Windows</strong>
+                      <span>Nhấn phím <code>Windows + I</code> trên bàn phím &rarr; chọn <strong>Time &amp; Language</strong> &rarr; <strong>Language</strong> (hoặc <em>Language &amp; Region</em>).</span>
+                    </div>
+                  </div>
+                  <div class="sth-voice-step">
+                    <span class="sth-voice-step-num">2</span>
+                    <div class="sth-voice-step-body">
+                      <strong>Thêm ngôn ngữ Tiếng Việt</strong>
+                      <span>Trong danh sách ngôn ngữ, nếu chưa có hãy bấm <strong>Add a language</strong> &rarr; gõ tìm <strong>Tiếng Việt</strong>.</span>
+                    </div>
+                  </div>
+                  <div class="sth-voice-step">
+                    <span class="sth-voice-step-num">3</span>
+                    <div class="sth-voice-step-body">
+                      <strong>Tải gói Giọng nói (Speech)</strong>
+                      <span>Bấm dấu <strong>...</strong> (hoặc nút <em>Options</em>) cạnh Tiếng Việt &rarr; ở mục <strong>Speech (Giọng nói)</strong> nhấn nút <strong>Download</strong> (~15 giây).</span>
+                    </div>
+                  </div>
+                  <div class="sth-voice-step">
+                    <span class="sth-voice-step-num">4</span>
+                    <div class="sth-voice-step-body">
+                      <strong>Hoàn tất &amp; Trải nghiệm</strong>
+                      <span>Khởi động lại Chrome hoặc bấm nút <strong>🔄 Quét lại</strong> ở trên để bắt đầu nghe đọc bài mượt mà!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phím tắt & Thao tác tiện ích -->
+              <div class="sth-voice-section">
+                <h3 class="sth-voice-section-title">⌨️ Phím tắt &amp; Mẹo khi nghe đọc</h3>
+                <div class="sth-voice-tips-grid">
+                  <div class="sth-voice-tip-item">
+                    <kbd>Space</kbd>
+                    <span>Phát hoặc Tạm dừng đọc</span>
+                  </div>
+                  <div class="sth-voice-tip-item">
+                    <kbd>Esc</kbd>
+                    <span>Dừng hẳn &amp; đóng thanh phát</span>
+                  </div>
+                  <div class="sth-voice-tip-item">
+                    <kbd>⏮ / ⏭</kbd>
+                    <span>Nhảy tới hoặc lùi từng câu</span>
+                  </div>
+                  <div class="sth-voice-tip-item">
+                    <kbd>0.85x – 1.5x</kbd>
+                    <span>Tùy chỉnh tốc độ đọc phù hợp</span>
+                  </div>
+                </div>
+                <p class="sth-voice-note">💡 <em>Mẹo:</em> Khi giọng đọc phát đến đâu, bài viết sẽ tự động cuộn nhẹ và tô sáng đoạn đó để bạn theo dõi nội dung một cách tự nhiên.</p>
+              </div>
+            </div>
+
+            <footer class="sth-voice-modal-bot">
+              <button type="button" class="sth-voice-btn-close" id="sth-voice-btn-close">Đã hiểu</button>
+            </footer>
+          </div>
+        `;
+        document.body.appendChild(overlay);
+
+        const closeBtn = overlay.querySelector('#sth-voice-modal-x');
+        const doneBtn = overlay.querySelector('#sth-voice-btn-close');
+        const rescanBtn = overlay.querySelector('#sth-voice-rescan-btn');
+
+        const doClose = () => {
+          overlay.hidden = true;
+          document.body.style.overflow = '';
+        };
+
+        closeBtn?.addEventListener('click', doClose);
+        doneBtn?.addEventListener('click', doClose);
+        overlay.addEventListener('click', (ev) => {
+          if (ev.target === overlay) doClose();
+        });
+
+        rescanBtn?.addEventListener('click', async () => {
+          rescanBtn.textContent = '⏳ Đang quét…';
+          await this.initVoice();
+          this.updateGuideModalVoiceStatus(overlay);
+          setTimeout(() => {
+            rescanBtn.textContent = '🔄 Quét lại';
+          }, 400);
+        });
+      }
+
+      const alertBox = overlay.querySelector('#sth-voice-modal-alert');
+      if (alertBox) {
+        if (noticeMessage) {
+          alertBox.style.display = 'block';
+          alertBox.textContent = noticeMessage;
+        } else {
+          alertBox.style.display = 'none';
+        }
+      }
+
+      this.updateGuideModalVoiceStatus(overlay);
+      overlay.hidden = false;
+      document.body.style.overflow = 'hidden';
+    }
+
+    updateGuideModalVoiceStatus(overlay) {
+      if (!overlay) overlay = document.getElementById('sth-voice-modal-overlay');
+      if (!overlay) return;
+
+      const dot = overlay.querySelector('#sth-voice-dot');
+      const title = overlay.querySelector('#sth-voice-status-title');
+      const desc = overlay.querySelector('#sth-voice-status-desc');
+
+      const viVoice = this.vietnameseVoice;
+      if (viVoice) {
+        if (dot) {
+          dot.className = 'sth-voice-status-dot sth-voice-dot-ok';
+        }
+        if (title) {
+          const isAi = /natural|online|google|apple/i.test(viVoice.name);
+          title.textContent = `🟢 Sẵn sàng: ${viVoice.name} ${isAi ? '· Giọng AI chất lượng cao' : ''}`;
+        }
+        if (desc) {
+          desc.textContent = `Hệ thống đã nhận diện giọng đọc Tiếng Việt (${viVoice.lang || 'vi-VN'}). Bạn có thể nghe bài viết bất cứ lúc nào!`;
+        }
+      } else {
+        if (dot) {
+          dot.className = 'sth-voice-status-dot sth-voice-dot-warn';
+        }
+        if (title) {
+          title.textContent = '🟡 Chưa phát hiện giọng đọc Tiếng Việt';
+        }
+        if (desc) {
+          desc.textContent = 'Trình duyệt hiện tại chưa có sẵn gói giọng đọc Tiếng Việt. Vui lòng xem 2 cách kích hoạt bên dưới.';
+        }
+      }
     }
 
     async playArticle({ id, title, items, triggerBtn }) {
